@@ -58,7 +58,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
     decorateCode(t, value);
   }
@@ -68,7 +68,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -76,7 +76,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -84,7 +84,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
     decorateCode(t, value);
   }
@@ -93,7 +93,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -101,7 +101,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -109,7 +109,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -117,7 +117,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -125,7 +125,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -133,7 +133,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -141,7 +141,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -149,7 +149,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -157,7 +157,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -165,7 +165,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -173,7 +173,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -181,7 +181,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -189,7 +189,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -197,7 +197,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -205,7 +205,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -213,7 +213,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
@@ -221,7 +221,7 @@ public class RdfParser extends RdfParserBase {
     if (value == null)
       return;
     Complex t = parent.predicate("fhir:"+parentType+"."+name);
-    t.predicate("fhir:value", ttlLiteral(value.asStringValue()));
+    t.predicate("fhir:v", ttlLiteral(value.asStringValue()));
     composeElement(t, parentType, name, value, index);
   }
 
