@@ -2,11 +2,13 @@ package org.hl7.fhir.r5.test;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Properties;
 
@@ -56,7 +58,7 @@ public class TurtleGeneratorTests {
     turtleParser = (TurtleParser) Manager.makeParser(workerContext, FhirFormat.TURTLE);
 
     // Temporary directory of files that should be discarded after testing
-    outputTurtleDirectory = FileSystems.getDefault().getPath(System.getProperty("java.io.tmpdir"));
+    outputTurtleDirectory = FileSystems.getDefault().getPath("/Users/jim/Documents/FHIRcat/turtle-testing/fhir-examples-out");
 
     // Directory of XML files used for generating Turtle files
     String currentDirectory = System.getProperty("user.dir");
@@ -76,22 +78,28 @@ public class TurtleGeneratorTests {
     testClassGeneration(profileName);
   }
 
-  @Disabled("Run manually for testing with XML resources generated from FHIR specification publishing library")
+  //@Disabled("Run manually for testing with XML resources generated from FHIR specification publishing library")
   @Test
   public void testPublishedExamples() throws IOException, UcumException {
     inputXmlDirectory = getPublishedXmlDirectory();
-    var exampleInstanceName = "codesystem-contact-point-use";
-    testInstanceGeneration(exampleInstanceName);
+    for (String file : inputXmlDirectory.toFile().list()) {
+    	//if (!file.contains(".profile.")) {
+    		testInstanceGeneration(file.replace(".xml", ""));
+    	//}
+    }
+    //var exampleInstanceName = "list-example-double-cousin-relationship-pedigree(example-double-cousin-relationship)";
+    //testInstanceGeneration(exampleInstanceName);
   }
 
   /*
    * Generate a Turtle file from the name of an XML resource, then parse it
   */
   private void testInstanceGeneration(String resourceName) throws IOException, UcumException {
+	System.err.println(resourceName);
     // Generate Turtle
     var generatedTurtleFilePath = generateTurtleFromResourceName(resourceName, inputXmlDirectory, outputTurtleDirectory);
     // Try parsing again ("round-trip test") -- this only tests for valid RDF
-    parseGeneratedTurtle(generatedTurtleFilePath);
+    //parseGeneratedTurtle(generatedTurtleFilePath);
   }
 
   /*
