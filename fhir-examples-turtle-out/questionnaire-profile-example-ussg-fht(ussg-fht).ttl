@@ -122,7 +122,7 @@
      fhir:name [ fhir:v "Length Units" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:description [ fhir:v "Length units" ] ;
-     fhir:immutable [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:immutable [ fhir:v true ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -147,7 +147,7 @@
      fhir:name [ fhir:v "Weight Units" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:description [ fhir:v "Weight units" ] ;
-     fhir:immutable [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:immutable [ fhir:v true ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -168,7 +168,7 @@
   ] ) ; # 
   fhir:title [ fhir:v "US Surgeon General - Family Health Portrait"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
   fhir:date [ fhir:v "2015"^^xsd:gYear] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
@@ -235,7 +235,7 @@
      fhir:definition [ fhir:v "http://loinc.org/rdf#54126-8"^^xsd:anyURI ] ;
      fhir:text [ fhir:v "Your health information" ] ;
      fhir:type [ fhir:v "group" ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:item ( [
        fhir:linkId [ fhir:v "1.1" ] ;
        fhir:type [ fhir:v "group" ] ;
@@ -244,13 +244,13 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#54125-0"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Name" ] ;
          fhir:type [ fhir:v "string" ] ;
-         fhir:maxLength [ fhir:v "200"^^xsd:integer ]
+         fhir:maxLength [ fhir:v 200 ]
        ] [
          fhir:linkId [ fhir:v "1.1.2" ] ;
          fhir:definition [ fhir:v "http://loinc.org/rdf#54131-8"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Gender" ] ;
          fhir:type [ fhir:v "coding" ] ;
-         fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:required [ fhir:v true ] ;
          fhir:answerValueSet [
            fhir:v "http://hl7.org/fhir/us/sdc/ValueSet/LL1-9"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/sdc/ValueSet/LL1-9>
@@ -259,7 +259,7 @@
            fhir:linkId [ fhir:v "1.1.2.1.1" ] ;
            fhir:text [ fhir:v "Please specify" ] ;
            fhir:type [ fhir:v "string" ] ;
-           fhir:required [ fhir:v "true"^^xsd:boolean ]
+           fhir:required [ fhir:v true ]
          ] )
        ] [
          fhir:linkId [ fhir:v "1.1.3" ] ;
@@ -306,7 +306,7 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#8302-2"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Height" ] ;
          fhir:type [ fhir:v "decimal" ] ;
-         fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:required [ fhir:v true ] ;
          fhir:item ( [
            fhir:linkId [ fhir:v "1.1.7.1.1" ] ;
            fhir:text [ fhir:v "Units" ] ;
@@ -329,13 +329,13 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#39156-5"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Body mass index (BMI) [Ratio]" ] ;
          fhir:type [ fhir:v "decimal" ] ;
-         fhir:readOnly [ fhir:v "true"^^xsd:boolean ] #    This is a placeholder for a calculated element   
+         fhir:readOnly [ fhir:v true ] #    This is a placeholder for a calculated element   
        ] [
          fhir:linkId [ fhir:v "1.1.10" ] ;
          fhir:definition [ fhir:v "http://loinc.org/rdf#54134-2"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Race" ] ;
          fhir:type [ fhir:v "coding" ] ;
-         fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:required [ fhir:v true ] ;
          fhir:answerValueSet [
            fhir:v "http://hl7.org/fhir/us/sdc/ValueSet/LL629-7"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/sdc/ValueSet/LL629-7>
@@ -345,7 +345,7 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#54133-4"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Ethnicity" ] ;
          fhir:type [ fhir:v "coding" ] ;
-         fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:repeats [ fhir:v true ] ;
          fhir:answerValueSet [
            fhir:v "http://hl7.org/fhir/us/sdc/ValueSet/LL628-9"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/sdc/ValueSet/LL628-9>
@@ -356,7 +356,7 @@
        fhir:definition [ fhir:v "http://loinc.org/rdf#54137-5"^^xsd:anyURI ] ;
        fhir:text [ fhir:v "Your diseases history" ] ;
        fhir:type [ fhir:v "group" ] ;
-       fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v true ] ;
        fhir:item ( [
          fhir:linkId [ fhir:v "1.2.1" ] ;
          fhir:definition [ fhir:v "http://loinc.org/rdf#54140-9"^^xsd:anyURI ] ;
@@ -385,7 +385,7 @@
      fhir:item ( [
        fhir:linkId [ fhir:v "2.1" ] ;
        fhir:type [ fhir:v "group" ] ;
-       fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:repeats [ fhir:v true ] ;
        fhir:item ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceResource"^^xsd:anyURI ] ;
@@ -424,7 +424,7 @@
            fhir:linkId [ fhir:v "2.1.1.3.1.1" ] ;
            fhir:text [ fhir:v "Please specify" ] ;
            fhir:type [ fhir:v "string" ] ;
-           fhir:required [ fhir:v "true"^^xsd:boolean ]
+           fhir:required [ fhir:v true ]
          ] )
        ] [
          fhir:linkId [ fhir:v "2.1.1.4" ] ;
@@ -500,7 +500,7 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#54119-3"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Race" ] ;
          fhir:type [ fhir:v "coding" ] ;
-         fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:repeats [ fhir:v true ] ;
          fhir:answerValueSet [
            fhir:v "http://hl7.org/fhir/us/sdc/ValueSet/LL629-7"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/sdc/ValueSet/LL629-7>
@@ -510,7 +510,7 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#54120-1"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "Ethnicity" ] ;
          fhir:type [ fhir:v "coding" ] ;
-         fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:repeats [ fhir:v true ] ;
          fhir:answerValueSet [
            fhir:v "http://hl7.org/fhir/us/sdc/ValueSet/LL628-9"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/us/sdc/ValueSet/LL628-9>
@@ -520,13 +520,13 @@
          fhir:definition [ fhir:v "http://loinc.org/rdf#54117-7"^^xsd:anyURI ] ;
          fhir:text [ fhir:v "This family member's history of disease" ] ;
          fhir:type [ fhir:v "group" ] ;
-         fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:repeats [ fhir:v true ] ;
          fhir:item ( [
            fhir:linkId [ fhir:v "2.1.2.1" ] ;
            fhir:definition [ fhir:v "http://loinc.org/rdf#54116-9"^^xsd:anyURI ] ;
            fhir:text [ fhir:v "Disease or Condition" ] ;
            fhir:type [ fhir:v "coding" ] ;
-           fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+           fhir:required [ fhir:v true ] ;
            fhir:answerValueSet [
              fhir:v "http://hl7.org/fhir/us/sdc/ValueSet/LL626-3"^^xsd:anyURI ;
              fhir:link <http://hl7.org/fhir/us/sdc/ValueSet/LL626-3>
@@ -574,7 +574,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Male=1, Female=2"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -609,7 +609,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool twin"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -644,7 +644,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Yes/No"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -676,7 +676,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool race"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -756,7 +756,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool ethnicity"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -818,7 +818,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool diseases"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -1042,7 +1042,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool age range"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -1101,7 +1101,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool relationship to patient"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -1193,7 +1193,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool living"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
@@ -1228,7 +1228,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:publisher [ fhir:v "Regenstrief Institute, Inc and the LOINC Committee"] ; # 
   fhir:description [ fhir:v "Family history tool diseases and cause of death"] ; # 
-  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:immutable [ fhir:v true] ; # 
   fhir:copyright [ fhir:v "Refer to https://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [

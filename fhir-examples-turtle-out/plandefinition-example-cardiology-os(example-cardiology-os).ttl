@@ -142,7 +142,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "metoprololTartrate25Substance" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -239,7 +239,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "metoprololTartrate50Substance" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -321,7 +321,7 @@
        fhir:strength [
          a fhir:Ratio ;
          fhir:numerator [
-           fhir:value [ fhir:v "0.4"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 0.4 ] ;
            fhir:unit [ fhir:v "mg" ]
          ] ;
          fhir:denominator [
@@ -333,7 +333,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "nitroglycerinSubstance" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -351,8 +351,8 @@
        fhir:linkId [ fhir:v "1" ] ;
        fhir:text [ fhir:v "Reason for Cardiology Consult" ] ;
        fhir:type [ fhir:v "coding" ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:repeats [ fhir:v true ] ;
        fhir:answerValueSet [ fhir:v "#CardiologyReferralReasonValues"^^xsd:anyURI ]
      ] )
   ] [

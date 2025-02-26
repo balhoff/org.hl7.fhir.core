@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "1"^^xsd:integer
+       fhir:v 1
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Find a functional list"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,24 +52,24 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v false] ; # 
   fhir:code [ fhir:v "find"] ; # 
   fhir:comment [ fhir:v "Note that servers may support searching by a functional list, and not support this operation that allows clients to find the list directly"] ; # 
   fhir:resource ( [ fhir:v "List"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "patient" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The id of a patient resource located on the server on which this operation is executed" ] ;
      fhir:type [ fhir:v "id" ]
   ] [
      fhir:name [ fhir:v "name" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The code for the functional list that is being found" ] ;
      fhir:type [ fhir:v "code" ]

@@ -52,9 +52,9 @@
      fhir:text [ fhir:v "Patient cannot remember the name of the tablet, but takes it every day in the morning for water retention" ]
   ] ) ; # 
   fhir:dosage ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "1 tablet per day" ] ;
-     fhir:asNeeded [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:asNeeded [ fhir:v false ] ;
      fhir:route [
        fhir:coding ( [
          a sct:260548002 ;

@@ -38,7 +38,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "0"^^xsd:integer
+       fhir:v 0
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category"^^xsd:anyURI ] ;
@@ -57,7 +57,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "EventDefinition"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health Level Seven International (Clinical Decision Support)"] ; # 
   fhir:contact ( [
@@ -98,7 +98,7 @@
      fhir:name [ fhir:v "RIM Mapping" ]
   ] ) ; # 
   fhir:kind [ fhir:v "resource"] ; # 
-  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:abstract [ fhir:v false] ; # 
   fhir:type [ fhir:v "EventDefinition"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ;
@@ -128,9 +128,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/EventDefinition>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "conformance.behavior,clinical.general" ]
@@ -161,9 +161,9 @@
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ; #  Note: special primitive values have a FHIRPath system type. e.g. this is compiler magic (j) 
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "EventDefinition.meta" ] ;
        fhir:path [ fhir:v "EventDefinition.meta" ] ;
@@ -189,9 +189,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "EventDefinition.implicitRules" ] ;
        fhir:path [ fhir:v "EventDefinition.implicitRules" ] ;
@@ -218,10 +218,10 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies its meaning or interpretation" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:isSummary [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "EventDefinition.language" ] ;
        fhir:path [ fhir:v "EventDefinition.language" ] ;
@@ -248,9 +248,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -262,7 +262,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
@@ -307,9 +307,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Act.text?" ]
@@ -332,9 +332,9 @@
          fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
        ] ) ;
        fhir:condition ( [ fhir:v "dom-2" ] [ fhir:v "dom-4" ] [ fhir:v "dom-3" ] [ fhir:v "dom-5" ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
@@ -375,9 +375,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
@@ -419,10 +419,10 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "N/A" ]
@@ -463,9 +463,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.url" ]
@@ -500,9 +500,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.identifier" ]
@@ -539,9 +539,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.version" ]
@@ -577,9 +577,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
@@ -622,9 +622,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.name" ]
@@ -635,13 +635,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.title" ] ;
@@ -668,9 +668,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.title" ]
@@ -700,9 +700,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.status" ] ;
        fhir:path [ fhir:v "EventDefinition.status" ] ;
@@ -729,10 +729,10 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This is labeled as \"Is Modifier\" because applications should not use a retired {{title}} without due consideration" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -744,7 +744,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
@@ -789,9 +789,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.experimental" ]
@@ -831,9 +831,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -845,7 +845,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
@@ -886,9 +886,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.date" ]
@@ -902,13 +902,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.publisher" ] ;
@@ -936,9 +936,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.publisher" ]
@@ -972,9 +972,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.contact" ]
@@ -985,13 +985,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.description" ] ;
@@ -1018,9 +1018,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.description" ]
@@ -1052,9 +1052,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.useContext" ]
@@ -1092,9 +1092,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -1106,7 +1106,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
@@ -1126,13 +1126,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.purpose" ] ;
@@ -1159,9 +1159,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.purpose" ]
@@ -1197,22 +1197,22 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.copyright" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.copyright" ] ;
@@ -1241,9 +1241,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.copyright" ]
@@ -1257,13 +1257,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.copyrightLabel" ] ;
@@ -1291,9 +1291,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.copyrightLabel" ]
@@ -1330,9 +1330,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.approvalDate" ]
@@ -1367,9 +1367,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.lastReviewDate" ]
@@ -1404,9 +1404,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.effectivePeriod" ]
@@ -1448,9 +1448,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -1491,9 +1491,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=AUT]" ]
@@ -1523,9 +1523,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.reviewer" ] ;
        fhir:path [ fhir:v "EventDefinition.reviewer" ] ;
@@ -1552,9 +1552,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=VRF] {not clear whether VRF best corresponds to reviewer or endorser}" ]
@@ -1585,9 +1585,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=VRF] {not clear whether VRF best corresponds to reviewer or endorser}" ]
@@ -1619,9 +1619,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.trigger" ] ;
        fhir:path [ fhir:v "EventDefinition.trigger" ] ;
@@ -1647,9 +1647,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] )
   ] ; # 
   fhir:differential [
@@ -1670,8 +1670,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/EventDefinition>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition" ]
@@ -1701,9 +1701,9 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/EventDefinition>
          ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.url" ]
@@ -1723,9 +1723,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.identifier" ]
@@ -1747,9 +1747,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.version" ]
@@ -1770,9 +1770,9 @@
        ] [
          fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:valueSet [
@@ -1800,9 +1800,9 @@
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
        fhir:condition ( [ fhir:v "cnl-0" ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.name" ]
@@ -1813,13 +1813,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.title" ] ;
@@ -1831,9 +1831,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.title" ]
@@ -1848,9 +1848,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.status" ] ;
        fhir:path [ fhir:v "EventDefinition.status" ] ;
@@ -1862,10 +1862,10 @@
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v true ] ;
        fhir:isModifierReason [ fhir:v "This is labeled as \"Is Modifier\" because applications should not use a retired {{title}} without due consideration" ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -1877,7 +1877,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "required" ] ;
@@ -1907,9 +1907,9 @@
          fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
        ] ) ;
        fhir:meaningWhenMissing [ fhir:v "If absent, this resource is treated as though it is not experimental." ] ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.experimental" ]
@@ -1934,9 +1934,9 @@
          ] )
        ] ) ;
        fhir:meaningWhenMissing [ fhir:v "Patient" ] ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -1948,7 +1948,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
@@ -1974,9 +1974,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.date" ]
@@ -1990,13 +1990,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.publisher" ] ;
@@ -2009,9 +2009,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.publisher" ]
@@ -2030,9 +2030,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.contact" ]
@@ -2043,13 +2043,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.description" ] ;
@@ -2061,9 +2061,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.description" ]
@@ -2080,9 +2080,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "UsageContext"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.useContext" ]
@@ -2105,9 +2105,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -2119,7 +2119,7 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:boolean ;
-             fhir:v "true"^^xsd:boolean
+             fhir:v true
            ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
@@ -2139,13 +2139,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.purpose" ] ;
@@ -2157,9 +2157,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.purpose" ]
@@ -2180,22 +2180,22 @@
        fhir:type ( [
          fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.copyright" ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.copyright" ] ;
@@ -2209,9 +2209,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.copyright" ]
@@ -2225,13 +2225,13 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ]
        ] ) ;
        fhir:path [ fhir:v "EventDefinition.copyrightLabel" ] ;
@@ -2244,9 +2244,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "string"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.copyrightLabel" ]
@@ -2268,9 +2268,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.approvalDate" ]
@@ -2290,9 +2290,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.lastReviewDate" ]
@@ -2312,9 +2312,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "Period"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Definition.effectivePeriod" ]
@@ -2341,9 +2341,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:binding [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
@@ -2369,9 +2369,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=AUT]" ]
@@ -2386,9 +2386,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.reviewer" ] ;
        fhir:path [ fhir:v "EventDefinition.reviewer" ] ;
@@ -2400,9 +2400,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=VRF] {not clear whether VRF best corresponds to reviewer or endorser}" ]
@@ -2418,9 +2418,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "ContactDetail"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
        fhir:mapping ( [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=VRF] {not clear whether VRF best corresponds to reviewer or endorser}" ]
@@ -2437,9 +2437,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "RelatedArtifact"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "EventDefinition.trigger" ] ;
        fhir:path [ fhir:v "EventDefinition.trigger" ] ;
@@ -2450,9 +2450,9 @@
        fhir:type ( [
          fhir:code [ fhir:v "TriggerDefinition"^^xsd:anyURI ]
        ] ) ;
-       fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+       fhir:mustSupport [ fhir:v false ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ]
      ] )
   ] . # 
 

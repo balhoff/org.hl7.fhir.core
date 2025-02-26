@@ -29,7 +29,7 @@
        fhir:display [ fhir:v "Founding Fathers Memorial Hospital" ] #    <reference value=\"http:\/\/hl7.org\/fhir\/ig\/vhdir\/Organization\/foundingfathers\"\/>   
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:period [
      fhir:start [ fhir:v "2018-02-09"^^xsd:date ] ; #    The relationship between the organizations began on February 9, 2018, ends on February 01, 2022   
      fhir:end [ fhir:v "2022-02-01"^^xsd:date ]
@@ -48,7 +48,7 @@
        fhir:system [ fhir:v "http://hl7.org/fhir/organization-role"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "provider" ] ;
        fhir:display [ fhir:v "Provider" ] ;
-       fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+       fhir:userSelected [ fhir:v true ]
      ] ) ; #    Indicates the role of the participating organization (Independence) in the relationship   
      fhir:text [ fhir:v "Provider of rehabilitation services" ]
   ] ) ; # 

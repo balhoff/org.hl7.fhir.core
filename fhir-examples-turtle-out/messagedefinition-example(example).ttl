@@ -28,7 +28,7 @@
   fhir:name [ fhir:v "EXAMPLE"] ; # 
   fhir:title [ fhir:v "Message definition base example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2016-11-09"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health Level Seven, Int'l"] ; # 
   fhir:contact ( [

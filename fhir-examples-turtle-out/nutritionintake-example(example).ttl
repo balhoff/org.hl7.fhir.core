@@ -139,7 +139,7 @@
        ]
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "10.4"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 10.4 ] ;
        fhir:unit [ fhir:v "grams" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "g" ]
@@ -151,7 +151,7 @@
        ]
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "18.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 18.00 ] ;
        fhir:unit [ fhir:v "grams" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "g" ]
@@ -163,7 +163,7 @@
        ]
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "26.47"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 26.47 ] ;
        fhir:unit [ fhir:v "grams" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "g" ]

@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "DataAccessFrameworkDAF"] ; # 
   fhir:title [ fhir:v "Data Access Framework (DAF)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2015-01-01"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "ONC / HL7 Joint project"] ; # 
   fhir:contact ( [

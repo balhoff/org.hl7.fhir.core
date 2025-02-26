@@ -50,28 +50,28 @@
            fhir:code [ fhir:v "initial-population" ]
          ] )
        ] ;
-       fhir:count [ fhir:v "500"^^xsd:integer ]
+       fhir:count [ fhir:v 500 ]
      ] [
        fhir:code [
          fhir:coding ( [
            fhir:code [ fhir:v "numerator" ]
          ] )
        ] ;
-       fhir:count [ fhir:v "200"^^xsd:integer ]
+       fhir:count [ fhir:v 200 ]
      ] [
        fhir:code [
          fhir:coding ( [
            fhir:code [ fhir:v "denominator" ]
          ] )
        ] ;
-       fhir:count [ fhir:v "500"^^xsd:integer ]
+       fhir:count [ fhir:v 500 ]
      ] [
        fhir:code [
          fhir:coding ( [
            fhir:code [ fhir:v "denominator-exclusion" ]
          ] )
        ] ;
-       fhir:count [ fhir:v "100"^^xsd:integer ]
+       fhir:count [ fhir:v 100 ]
      ] ) ;
      fhir:stratifier ( [
        fhir:code [
@@ -80,7 +80,7 @@
        fhir:stratum ( [
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ] ;
          fhir:population ( [
            fhir:code [
@@ -88,33 +88,33 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "100"^^xsd:integer ]
+           fhir:count [ fhir:v 100 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "50"^^xsd:integer ]
+           fhir:count [ fhir:v 50 ]
          ] )
        ] [
          fhir:value [
            a fhir:boolean ;
-           fhir:v "false"^^xsd:boolean
+           fhir:v false
          ] ;
          fhir:population ( [
            fhir:code [
@@ -122,28 +122,28 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "100"^^xsd:integer ]
+           fhir:count [ fhir:v 100 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "50"^^xsd:integer ]
+           fhir:count [ fhir:v 50 ]
          ] )
        ] )
      ] [
@@ -153,7 +153,7 @@
        fhir:stratum ( [
          fhir:value [
            a fhir:boolean ;
-           fhir:v "true"^^xsd:boolean
+           fhir:v true
          ] ;
          fhir:population ( [
            fhir:code [
@@ -161,33 +161,33 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "100"^^xsd:integer ]
+           fhir:count [ fhir:v 100 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "50"^^xsd:integer ]
+           fhir:count [ fhir:v 50 ]
          ] )
        ] [
          fhir:value [
            a fhir:boolean ;
-           fhir:v "false"^^xsd:boolean
+           fhir:v false
          ] ;
          fhir:population ( [
            fhir:code [
@@ -195,28 +195,28 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "100"^^xsd:integer ]
+           fhir:count [ fhir:v 100 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "50"^^xsd:integer ]
+           fhir:count [ fhir:v 50 ]
          ] )
        ] )
      ] [
@@ -234,28 +234,28 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "100"^^xsd:integer ]
+           fhir:count [ fhir:v 100 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "50"^^xsd:integer ]
+           fhir:count [ fhir:v 50 ]
          ] )
        ] [
          fhir:value [
@@ -268,28 +268,28 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "100"^^xsd:integer ]
+           fhir:count [ fhir:v 100 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "250"^^xsd:integer ]
+           fhir:count [ fhir:v 250 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "50"^^xsd:integer ]
+           fhir:count [ fhir:v 50 ]
          ] )
        ] [
          fhir:value [
@@ -302,28 +302,28 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] )
        ] [
          fhir:value [
@@ -336,28 +336,28 @@
                fhir:code [ fhir:v "initial-population" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "numerator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] [
            fhir:code [
              fhir:coding ( [
                fhir:code [ fhir:v "denominator-exclusion" ]
              ] )
            ] ;
-           fhir:count [ fhir:v "0"^^xsd:integer ]
+           fhir:count [ fhir:v 0 ]
          ] )
        ] )
      ] )

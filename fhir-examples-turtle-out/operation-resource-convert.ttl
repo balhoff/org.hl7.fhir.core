@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "1"^^xsd:integer
+       fhir:v 1
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Convert from one form to another"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,24 +52,24 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v false] ; # 
   fhir:code [ fhir:v "convert"] ; # 
   fhir:comment [ fhir:v "While the primary use of this operation is simple - converting a resource from one format to another, there are many potential uses including:\n\n* converting resources from one version to another\n* restructuring information in a resource (e.g. moving method into/out of Observation.code)\n* extracting data from a questionnaire\n* converting CDA documents or v2 messages (as a binary resource) to a bundle (or vice versa) (or even openEHR or openMHealth). \n\nThese variants would all be associated with parameters that define and control these kind of conversions, though such parameters are not defined at this time. In the absence of any parameters, simple format conversion is all that will occur.\n\nFor this reason, implementers should be aware that:\n\n* the `return` resource type may be different from the `resource` parameter resource type (for example, it might be a bundle)\n* binary resources may be represented directly using some other content-type (in other words, just post the content directly)\n\nImplementers are encouraged to provide feedback to HL7 about their use of this operation"] ; # 
   fhir:resource ( [ fhir:v "Resource"] ) ; # 
-  fhir:system [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v true] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "resource" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The resource that is to be converted" ] ;
      fhir:type [ fhir:v "Resource" ]
   ] [
      fhir:name [ fhir:v "return" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The resource after conversion" ] ;
      fhir:type [ fhir:v "Resource" ]

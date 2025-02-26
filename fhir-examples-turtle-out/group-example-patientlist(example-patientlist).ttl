@@ -35,7 +35,7 @@
        fhir:link <http://hl7.org/fhir/Practitioner/123> ;
        fhir:reference [ fhir:v "Practitioner/123" ]
      ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ]
+     fhir:exclude [ fhir:v false ]
   ] ) . # 
 
 <http://hl7.org/fhir/Practitioner/123> a fhir:Practitioner .

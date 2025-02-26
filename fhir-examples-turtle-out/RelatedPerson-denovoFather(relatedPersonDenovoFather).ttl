@@ -38,7 +38,7 @@
        fhir:display [ fhir:v "Child Hospital" ]
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:patient [
      fhir:link <http://hl7.org/fhir/Patient/denovoChild> ;
      fhir:reference [ fhir:v "Patient/denovoChild" ]

@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "TestScriptExample"] ; # 
   fhir:title [ fhir:v "TestScript Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-01-18"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7"] ; # 
   fhir:contact ( [
@@ -83,8 +83,8 @@
        fhir:description [ fhir:v "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ]
      ] ) ;
      fhir:capability ( [
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:validated [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:validated [ fhir:v false ] ;
        fhir:description [ fhir:v "Patient Update, Read and Delete Operations" ] ;
        fhir:link ( [ fhir:v "http://hl7.org/fhir/http.html#delete"^^xsd:anyURI ] [ fhir:v "http://hl7.org/fhir/http.html#read"^^xsd:anyURI ] [ fhir:v "http://hl7.org/fhir/http.html#update"^^xsd:anyURI ] ) ;
        fhir:capabilities [
@@ -95,8 +95,8 @@
   ] ; # 
   fhir:fixture ( [
      fhir:id [ fhir:v "fixture-patient-create" ] ;
-     fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
-     fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:autocreate [ fhir:v false ] ;
+     fhir:autodelete [ fhir:v false ] ;
      fhir:resource [
        fhir:link <http://hl7.org/fhir/Patient/example> ;
        fhir:reference [ fhir:v "Patient/example" ] ;
@@ -104,8 +104,8 @@
      ]
   ] [
      fhir:id [ fhir:v "fixture-patient-minimum" ] ;
-     fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
-     fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:autocreate [ fhir:v false ] ;
+     fhir:autodelete [ fhir:v false ] ;
      fhir:resource [
        fhir:link <http://hl7.org/fhir/Patient/example> ;
        fhir:reference [ fhir:v "Patient/example" ] ;
@@ -133,7 +133,7 @@
          fhir:label [ fhir:v "SetupDeletePatient" ] ;
          fhir:description [ fhir:v "Execute a delete operation to insure the patient does not exist on the server." ] ;
          fhir:accept [ fhir:v "json" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ]
        ]
      ] [
@@ -142,8 +142,8 @@
          fhir:direction [ fhir:v "response" ] ;
          fhir:operator [ fhir:v "in" ] ;
          fhir:responseCode [ fhir:v "200,204" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:operation [
@@ -156,7 +156,7 @@
          fhir:description [ fhir:v "Create patient resource on test server using the contents of fixture-patient-create" ] ;
          fhir:accept [ fhir:v "json" ] ;
          fhir:contentType [ fhir:v "json" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-create" ]
        ]
@@ -165,8 +165,8 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 201(Created)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:responseCode [ fhir:v "201" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:operation [
@@ -176,7 +176,7 @@
          ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Read the created patient resource on the test server using the id from fixture-patient-create. Verify contents." ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:targetId [ fhir:v "fixture-patient-create" ]
        ]
      ] [
@@ -184,8 +184,8 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -193,8 +193,8 @@
          fhir:compareToSourceId [ fhir:v "fixture-patient-create" ] ;
          fhir:compareToSourceExpression [ fhir:v "Patient.name.first().family" ] ;
          fhir:operator [ fhir:v "equals" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] ; # 
@@ -210,7 +210,7 @@
          ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Read the patient resource on the test server using the id from fixture-patient-create. Prevent URL encoding of the request." ] ;
-         fhir:encodeRequestUrl [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v false ] ;
          fhir:responseId [ fhir:v "fixture-patient-read" ] ;
          fhir:targetId [ fhir:v "fixture-patient-create" ]
        ]
@@ -220,8 +220,8 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -229,22 +229,22 @@
          fhir:direction [ fhir:v "response" ] ;
          fhir:headerField [ fhir:v "Last-Modified" ] ;
          fhir:operator [ fhir:v "notEmpty" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "true"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v true ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned resource type is Patient." ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned Patient conforms to the base FHIR specification." ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:validateProfileId [ fhir:v "patient-profile" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -252,9 +252,9 @@
          fhir:operator [ fhir:v "equals" ] ;
          fhir:path [ fhir:v "fhir:Patient/fhir:name/fhir:family/@value" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-read" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:value [ fhir:v "Chalmers" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -262,9 +262,9 @@
          fhir:operator [ fhir:v "equals" ] ;
          fhir:path [ fhir:v "fhir:Patient/fhir:name/fhir:given/@value" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-read" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:value [ fhir:v "Peter" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -273,8 +273,8 @@
          fhir:compareToSourcePath [ fhir:v "fhir:Patient/fhir:name/fhir:family/@value" ] ;
          fhir:operator [ fhir:v "equals" ] ;
          fhir:path [ fhir:v "fhir:Patient/fhir:name/fhir:family/@value" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -283,15 +283,15 @@
          fhir:compareToSourcePath [ fhir:v "fhir:Patient/fhir:name/fhir:given/@value" ] ;
          fhir:path [ fhir:v "fhir:Patient/fhir:name/fhir:given/@value" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-read" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned resource contains the expected retained elements and values. Warning only to provide users with reviewable results." ] ;
          fhir:minimumId [ fhir:v "fixture-patient-minimum" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "true"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v true ]
        ]
      ] )
   ] ) ; # 
@@ -304,7 +304,7 @@
          ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Delete the patient resource on the test server using the id from fixture-patient-create." ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:targetId [ fhir:v "fixture-patient-create" ]
        ]
      ] )

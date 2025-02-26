@@ -48,12 +48,12 @@
          ] ) ;
          fhir:text [ fhir:v "NC_000007.14" ]
        ] ;
-       fhir:windowStart [ fhir:v "87627610"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "87627635"^^xsd:integer ]
+       fhir:windowStart [ fhir:v 87627610 ] ;
+       fhir:windowEnd [ fhir:v 87627635 ]
      ] ;
      fhir:edit ( [
-       fhir:start [ fhir:v "87627621"^^xsd:integer ] ;
-       fhir:end [ fhir:v "87642522"^^xsd:integer ] ;
+       fhir:start [ fhir:v 87627621 ] ;
+       fhir:end [ fhir:v 87642522 ] ;
        fhir:replacementSequence [ fhir:v "T" ] ;
        fhir:replacedSequence [ fhir:v "A" ]
      ] )

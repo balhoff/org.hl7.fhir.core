@@ -25,7 +25,7 @@
   fhir:title [ fhir:v "Dead or functionally dependent at 90 days"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:description [ fhir:v "Dead or functionally dependent at 90 days"] ; # 
-  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v false] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "Dead or functionally dependent at 90 days" ] ;
      fhir:definitionByCombination [

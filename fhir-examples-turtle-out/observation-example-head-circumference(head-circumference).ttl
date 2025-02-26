@@ -53,7 +53,7 @@
   ] ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "51.2"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 51.2 ] ;
      fhir:unit [ fhir:v "cm" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "cm" ]

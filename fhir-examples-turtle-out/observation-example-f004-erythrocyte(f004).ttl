@@ -52,7 +52,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "4.12"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 4.12 ] ;
      fhir:unit [ fhir:v "10^12/L" ] ; #     Actually, 4.12E+12    
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "10*12/L" ]

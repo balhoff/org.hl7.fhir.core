@@ -131,7 +131,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -159,7 +159,7 @@
        fhir:code [ fhir:v "TAB" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "90.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 90.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:detail ( [
@@ -171,7 +171,7 @@
          ] )
        ] ; #   type=costitem  
        fhir:net [
-         fhir:value [ fhir:v "45.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 45.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -183,7 +183,7 @@
          ] )
        ] ; #   type=costitem  
        fhir:net [
-         fhir:value [ fhir:v "9.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 9.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -195,13 +195,13 @@
          ] )
        ] ; #   type=costitem  
        fhir:net [
-         fhir:value [ fhir:v "36.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 36.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
   ] ) ; # 
   fhir:total [
-     fhir:value [ fhir:v "90.00"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 90.00 ] ;
      fhir:currency [ fhir:v "USD" ]
   ] . # 
 

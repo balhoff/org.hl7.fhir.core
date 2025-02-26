@@ -50,7 +50,7 @@
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
      ] ;
-     fhir:inforce [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:inforce [ fhir:v true ] ;
      fhir:item ( [
        fhir:category [
          fhir:coding ( [

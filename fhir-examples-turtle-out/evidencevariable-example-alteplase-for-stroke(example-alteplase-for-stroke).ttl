@@ -24,7 +24,7 @@
   fhir:title [ fhir:v "Alteplase for Stroke"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:description [ fhir:v "Alteplase for Stroke"] ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "IV alteplase 0.9 mg/kg (maximum 90 mg) as 10% of dose over 1 minute and 90% over 1 hour" ] ;
      fhir:definitionCanonical [

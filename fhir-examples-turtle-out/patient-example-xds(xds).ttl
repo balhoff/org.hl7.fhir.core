@@ -31,7 +31,7 @@
      fhir:system [ fhir:v "urn:oid:1.2.3.4.5"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "89765a87b" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "Doe" ] ;
      fhir:given ( [ fhir:v "John" ] )

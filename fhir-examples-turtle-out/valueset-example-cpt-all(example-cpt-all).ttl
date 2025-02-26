@@ -30,7 +30,7 @@
   fhir:name [ fhir:v "AllCPTCodes"] ; # 
   fhir:title [ fhir:v "All CPT codes"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2015-03-12"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health Level Seven International (Vocabulary)"] ; # 
   fhir:description [ fhir:v "A value set that includes all CPT codes"] ; # 

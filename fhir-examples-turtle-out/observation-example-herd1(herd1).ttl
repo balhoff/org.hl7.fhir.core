@@ -61,7 +61,7 @@
   ] ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.2"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.2 ] ;
      fhir:unit [ fhir:v "% (sample/positive control)" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "%" ]

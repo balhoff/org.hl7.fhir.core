@@ -29,10 +29,10 @@
   fhir:name [ fhir:v "ExampleInactive"] ; # 
   fhir:title [ fhir:v "Example with inactive codes"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:description [ fhir:v "HL7 v3 ActMood Predicate codes, including inactive codes"] ; # 
   fhir:compose [
-     fhir:inactive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:inactive [ fhir:v true ] ;
      fhir:include ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActMood"^^xsd:anyURI ] ;
        fhir:filter ( [
@@ -47,7 +47,7 @@
      fhir:timestamp [ fhir:v "2017-02-26T10:00:00Z"^^xsd:dateTime ] ;
      fhir:contains ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActMood"^^xsd:anyURI ] ;
-       fhir:inactive [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:inactive [ fhir:v true ] ;
        fhir:code [ fhir:v "CRT" ] ;
        fhir:display [ fhir:v "criterion" ]
      ] [

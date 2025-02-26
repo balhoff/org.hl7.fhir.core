@@ -31,7 +31,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444222222" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Everywoman" ] ;

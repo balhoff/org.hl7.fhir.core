@@ -47,12 +47,12 @@
        ] )
      ] ;
      fhir:eye [ fhir:v "right" ] ;
-     fhir:cylinder [ fhir:v "-2.25"^^xsd:decimal ] ;
-     fhir:axis [ fhir:v "160"^^xsd:integer ] ;
-     fhir:add [ fhir:v "1.75"^^xsd:decimal ] ;
-     fhir:power [ fhir:v "-2.75"^^xsd:decimal ] ;
-     fhir:backCurve [ fhir:v "8.7"^^xsd:decimal ] ;
-     fhir:diameter [ fhir:v "14.0"^^xsd:decimal ] ;
+     fhir:cylinder [ fhir:v -2.25 ] ;
+     fhir:axis [ fhir:v 160 ] ;
+     fhir:add [ fhir:v 1.75 ] ;
+     fhir:power [ fhir:v -2.75 ] ;
+     fhir:backCurve [ fhir:v 8.7 ] ;
+     fhir:diameter [ fhir:v 14.0 ] ;
      fhir:duration [
        fhir:value [ fhir:v "1"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mo" ] ;
@@ -72,12 +72,12 @@
        ] )
      ] ;
      fhir:eye [ fhir:v "left" ] ;
-     fhir:cylinder [ fhir:v "-3.50"^^xsd:decimal ] ;
-     fhir:axis [ fhir:v "160"^^xsd:integer ] ;
-     fhir:add [ fhir:v "1.75"^^xsd:decimal ] ;
-     fhir:power [ fhir:v "-2.75"^^xsd:decimal ] ;
-     fhir:backCurve [ fhir:v "8.7"^^xsd:decimal ] ;
-     fhir:diameter [ fhir:v "14.0"^^xsd:decimal ] ;
+     fhir:cylinder [ fhir:v -3.50 ] ;
+     fhir:axis [ fhir:v 160 ] ;
+     fhir:add [ fhir:v 1.75 ] ;
+     fhir:power [ fhir:v -2.75 ] ;
+     fhir:backCurve [ fhir:v 8.7 ] ;
+     fhir:diameter [ fhir:v 14.0 ] ;
      fhir:duration [
        fhir:value [ fhir:v "1"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "month" ] ;

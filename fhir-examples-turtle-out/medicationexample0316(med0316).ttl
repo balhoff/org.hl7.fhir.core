@@ -24,7 +24,7 @@
   fhir:contained ( [
      a fhir:Substance ;
      fhir:id [ fhir:v "sub04" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [

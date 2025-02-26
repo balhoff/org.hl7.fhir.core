@@ -69,7 +69,7 @@
        ] ) ;
        fhir:text [ fhir:v "Heart Attack" ]
      ] ;
-     fhir:contributedToDeath [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:contributedToDeath [ fhir:v true ] ;
      fhir:onset [
        a fhir:Age ;
        fhir:value [ fhir:v "74"^^xsd:decimal ] ;

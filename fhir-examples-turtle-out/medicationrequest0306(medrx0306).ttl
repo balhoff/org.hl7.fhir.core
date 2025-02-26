@@ -67,7 +67,7 @@
      ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "6 mg PO daily for remission induction; adjust dosage to white blood cell (WBC) count.  With hold treatment if WBC is less than 15,000/µL; resume when WBC is greater than 50,000/µL" ] ;
      fhir:timing [
        fhir:repeat [

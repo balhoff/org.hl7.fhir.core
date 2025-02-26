@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "3"^^xsd:integer
+       fhir:v 3
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Submit Data"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,24 +52,24 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v false] ; # 
   fhir:code [ fhir:v "submit-data"] ; # 
   fhir:comment [ fhir:v "The effect of invoking this operation is that the submitted data is posted to the receiving system and can be used for subsequent calculation of the relevant quality measure. The data-of-interest for a measure can be determined by examining the measure definition, or by invoking the $data-requirements operation"] ; # 
   fhir:resource ( [ fhir:v "Measure"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v true] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "measureReport" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The measure report being submitted" ] ;
      fhir:type [ fhir:v "MeasureReport" ]
   ] [
      fhir:name [ fhir:v "resource" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "*" ] ;
      fhir:documentation [ fhir:v "The individual resources that make up the data-of-interest being submitted" ] ;
      fhir:type [ fhir:v "Resource" ]

@@ -29,8 +29,8 @@
      fhir:linkId [ fhir:v "grp1" ] ;
      fhir:text [ fhir:v "grp1" ] ;
      fhir:type [ fhir:v "group" ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-     fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
+     fhir:repeats [ fhir:v true ] ;
      fhir:item ( [
        fhir:linkId [ fhir:v "grp2" ] ;
        fhir:text [ fhir:v "grp2" ] ;
@@ -39,7 +39,7 @@
          fhir:linkId [ fhir:v "Q1" ] ;
          fhir:text [ fhir:v "Q1" ] ;
          fhir:type [ fhir:v "string" ] ;
-         fhir:repeats [ fhir:v "true"^^xsd:boolean ]
+         fhir:repeats [ fhir:v true ]
        ] [
          fhir:linkId [ fhir:v "Q2" ] ;
          fhir:text [ fhir:v "Q2" ] ;
@@ -49,8 +49,8 @@
        fhir:linkId [ fhir:v "Q3" ] ;
        fhir:text [ fhir:v "Q3" ] ;
        fhir:type [ fhir:v "string" ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:repeats [ fhir:v true ] ;
        fhir:item ( [
          fhir:linkId [ fhir:v "Q4" ] ;
          fhir:text [ fhir:v "Q4" ] ;

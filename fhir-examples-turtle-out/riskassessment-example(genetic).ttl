@@ -44,7 +44,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.000168"^^xsd:decimal
+       fhir:v 0.000168
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -61,7 +61,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.000368"^^xsd:decimal
+       fhir:v 0.000368
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -84,7 +84,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.000594"^^xsd:decimal
+       fhir:v 0.000594
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -107,7 +107,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.000838"^^xsd:decimal
+       fhir:v 0.000838
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -130,7 +130,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.001089"^^xsd:decimal
+       fhir:v 0.001089
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -153,7 +153,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.001327"^^xsd:decimal
+       fhir:v 0.001327
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -176,7 +176,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.001530"^^xsd:decimal
+       fhir:v 0.001530
      ] ;
      fhir:when [
        a fhir:Range ;
@@ -199,7 +199,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.001663"^^xsd:decimal
+       fhir:v 0.001663
      ] ;
      fhir:when [
        a fhir:Range ;

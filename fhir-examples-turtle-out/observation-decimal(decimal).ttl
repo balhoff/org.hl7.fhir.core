@@ -30,7 +30,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "1.0"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.0 ] ;
        fhir:unit [ fhir:v "g" ]
      ]
   ] [
@@ -39,7 +39,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "1.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.00 ] ;
        fhir:unit [ fhir:v "g" ]
      ]
   ] [
@@ -48,7 +48,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "1.0e0"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.0e0 ] ;
        fhir:unit [ fhir:v "g" ]
      ]
   ] [
@@ -57,7 +57,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "0.00000000000000001"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 0.00000000000000001 ] ;
        fhir:unit [ fhir:v "g" ]
      ]
   ] [
@@ -75,7 +75,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "1.00000000000000000e-24"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.00000000000000000e-24 ] ;
        fhir:unit [ fhir:v "g" ]
      ]
   ] [
@@ -84,7 +84,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "-1.00000000000000000e245"^^xsd:decimal ] ;
+       fhir:value [ fhir:v -1.00000000000000000e245 ] ;
        fhir:unit [ fhir:v "g" ]
      ]
   ] ) . # 

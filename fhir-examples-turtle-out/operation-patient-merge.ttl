@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "0"^^xsd:integer
+       fhir:v 0
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Patient Merge"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,17 +52,17 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v true] ; # 
   fhir:code [ fhir:v "merge"] ; # 
   fhir:comment [ fhir:v "There must be exactly 1 source patient, which may  be identified by either the source-patient or source-patient-identifier parameters. Similarly, there must be exactly 1 target patient, identified by either the target-patient or target-patient-identifier parameters. In both cases, either a reference to the patient or a list of identifiers that can be used to identify the patient may be provided, but not both.\r\rThe result-patient.id must be the same as the target patient reference (if the patient reference is provided as an input parameter).\r\rIf a client needs the server to create a new patient merged from the 2 patient resources, the client should create a new patient record and then call the merge operation to merge each source patient resource into the newly created patient resource.\r\rA server may decide to delete the source record, but this is not defined by the standard merge operation, and if this occurs then the target patient's link property will remain unchanged.\r"] ; # 
   fhir:resource ( [ fhir:v "Patient"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "source-patient" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "A direct resource reference to the **source** patient resource (this may include an identifier)." ] ;
      fhir:type [ fhir:v "Reference" ] ;
@@ -73,14 +73,14 @@
   ] [
      fhir:name [ fhir:v "source-patient-identifier" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "*" ] ;
      fhir:documentation [ fhir:v "When source-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the source patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user." ] ;
      fhir:type [ fhir:v "Identifier" ]
   ] [
      fhir:name [ fhir:v "target-patient" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "A direct resource reference to the **target** patient resource.\r\rThis is the surviving patient resource, the target for the merge." ] ;
      fhir:type [ fhir:v "Reference" ] ;
@@ -91,28 +91,28 @@
   ] [
      fhir:name [ fhir:v "target-patient-identifier" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "*" ] ;
      fhir:documentation [ fhir:v "When target-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the target patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user." ] ;
      fhir:type [ fhir:v "Identifier" ]
   ] [
      fhir:name [ fhir:v "result-patient" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The details of the Patient resource that is expected to be updated to complete with and must have the same patient.id and provided identifiers included.\r\rThis resource MUST have the link property included referencing the source patient resource.\r\rIt will be used to perform an update on the target patient resource.\r\rIn the absence of this parameter the servers should copy all identifiers from the source patient into the target patient, and include the link property (as shown in the example below).\r\rThis is often used when properties from the source patient are desired to be included in the target resource.\r\rThe receiving system may also apply other internal business rules onto the merge which may make the resource different from what is provided here." ] ;
      fhir:type [ fhir:v "Patient" ]
   ] [
      fhir:name [ fhir:v "preview" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "If this is set to true then the merge will not be actually performed; an OperationOutcome will be returned in the Parameters response that will indicate that no merge has occurred and may include other diagnostic info if desired, such as the scale of the merge.\r\re.g. Issue.details.text \"Preview only Patient merge - no issues detected\"\r\re.g. Issue.diagnostics \"Merge would update: 10 years of content or 120 resources\"\r\rThe resulting target patient resource will also be returned in the result." ] ;
      fhir:type [ fhir:v "boolean" ]
   ] [
      fhir:name [ fhir:v "return" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The status of the response will be one of:\r\r* 200 OK - If the merge request doesn't expect any issues (although warning may be present) for a preview, or was completed without issues if not a preview\r* 202 Accepted - The merge request has been accepted and does not expect any issues and will continue processing the merge in the background, and you can monitor the Task for completion\r* 400 Bad Request - There are errors in the input parameters that need to corrected\r* 422 Unprocessable Entity - Business rules prevent this merge from completing\r\rThe Parameters resource will include:\r\r* The Input parameters to the operation\r* An OperationOutcome containing errors, warnings, and information messages\r* The resulting merged Patient resource (or a patient reference if the patient is not committed)\r* Optionally a Task resource to track any additional processing that was required." ] ;
      fhir:type [ fhir:v "Parameters" ]

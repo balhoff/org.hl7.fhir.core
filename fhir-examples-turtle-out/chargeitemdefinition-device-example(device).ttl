@@ -89,7 +89,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "67.44"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 67.44 ] ;
          fhir:currency [ fhir:v "EUR" ]
        ]
      ] )
@@ -110,7 +110,7 @@
            fhir:display [ fhir:v "Mehrwersteuersatz" ]
          ] )
        ] ;
-       fhir:factor [ fhir:v "1.19"^^xsd:decimal ]
+       fhir:factor [ fhir:v 1.19 ]
      ] )
   ] [
      fhir:applicability ( [
@@ -129,7 +129,7 @@
            fhir:display [ fhir:v "Mehrwersteuersatz" ]
          ] )
        ] ;
-       fhir:factor [ fhir:v "1.07"^^xsd:decimal ]
+       fhir:factor [ fhir:v 1.07 ]
      ] )
   ] ) . #    the base price for this device is constant, so no additional rules apply  
 

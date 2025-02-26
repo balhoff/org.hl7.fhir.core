@@ -24,10 +24,10 @@
   fhir:title [ fhir:v "no alteplase"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:description [ fhir:v "no alteplase"] ; # 
-  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v false] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "no alteplase" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:coding ( [
          fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;

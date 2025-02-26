@@ -94,7 +94,7 @@
   ] ; # 
   fhir:referenceRange ( [
      fhir:high [
-       fhir:value [ fhir:v "38.2"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 38.2 ] ;
        fhir:unit [ fhir:v "degrees C" ]
      ] #     0..* Provides guide for interpretation    
   ] ) . # 

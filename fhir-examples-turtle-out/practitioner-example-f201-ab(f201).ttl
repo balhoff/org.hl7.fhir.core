@@ -29,7 +29,7 @@
      fhir:system [ fhir:v "urn:oid:2.16.528.1.1007.3.1"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "12345678901" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ; #   The name of the practitioner  
      fhir:text [ fhir:v "Dokter Bronsig" ] ;

@@ -41,12 +41,12 @@
        fhir:display [ fhir:v "Boston Massachesetts General Hospital" ]
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:gender [ fhir:v "female"] ; # 
   fhir:birthDate [ fhir:v "1966-04-04"^^xsd:date] ; # 
   fhir:deceased [
      a fhir:boolean ;
-     fhir:v "false"^^xsd:boolean
+     fhir:v false
   ] . # 
 
 # -------------------------------------------------------------------------------------

@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "0"^^xsd:integer
+       fhir:v 0
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Apply"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,17 +52,17 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v true] ; # 
   fhir:code [ fhir:v "apply"] ; # 
   fhir:comment [ fhir:v "The result of invoking this operation is a resource of the type specified by the activity definition, with all the definitions resolved as appropriate for the type of resource. Any dynamicValue elements will be evaluated (in the order in which they appear in the resource) and the results applied to the returned resource.  If the ChargetItemDefinition includes library references, those libraries will be available to the evaluated expressions. If those libraries have parameters, those parameters will be bound by name to the parameters given to the operation. For a more detailed description, refer to the ChargetItemDefinition resource"] ; # 
   fhir:resource ( [ fhir:v "ChargeItemDefinition"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v true] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "chargeItem" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The ChargeItem on which the definition is to ba applies" ] ;
      fhir:type [ fhir:v "Reference" ] ;
@@ -73,7 +73,7 @@
   ] [
      fhir:name [ fhir:v "account" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The account in context, if any" ] ;
      fhir:type [ fhir:v "Reference" ] ;
@@ -84,7 +84,7 @@
   ] [
      fhir:name [ fhir:v "return" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The resource that is the result of applying the definition" ] ;
      fhir:type [ fhir:v "Resource" ]

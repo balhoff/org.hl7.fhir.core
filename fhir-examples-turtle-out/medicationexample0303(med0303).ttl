@@ -63,7 +63,7 @@
          fhir:code [ fhir:v "mg" ]
        ] ;
        fhir:denominator [
-         fhir:value [ fhir:v "1.2"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1.2 ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "mL" ]
        ]

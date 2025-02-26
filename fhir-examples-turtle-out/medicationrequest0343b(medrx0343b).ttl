@@ -63,7 +63,7 @@
      fhir:display [ fhir:v "Patrick Pump" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "4mg IM twice daily as needed for nausea" ] ;
      fhir:timing [
        fhir:repeat [

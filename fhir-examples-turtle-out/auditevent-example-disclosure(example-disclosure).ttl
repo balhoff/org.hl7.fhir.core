@@ -71,7 +71,7 @@
        ] ;
        fhir:display [ fhir:v "That guy everyone wishes would be caught" ]
      ] ;
-     fhir:requestor [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:requestor [ fhir:v true ] ;
      fhir:location [
        fhir:link <http://hl7.org/fhir/Location/1> ;
        fhir:reference [ fhir:v "Location/1" ]
@@ -94,7 +94,7 @@
        fhir:reference [ fhir:v "Practitioner/example" ] ;
        fhir:display [ fhir:v "Where" ]
      ] ;
-     fhir:requestor [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:requestor [ fhir:v false ] ;
      fhir:network [
        a fhir:string ;
        fhir:v "marketing.land"

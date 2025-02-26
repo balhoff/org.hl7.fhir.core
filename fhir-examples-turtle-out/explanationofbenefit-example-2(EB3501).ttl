@@ -131,7 +131,7 @@
   ] ) ; # 
   fhir:precedence [ fhir:v "2"^^xsd:positiveInteger] ; # 
   fhir:insurance ( [
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -158,7 +158,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "2478.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 2478.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -168,7 +168,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "0.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 0.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) ; # 

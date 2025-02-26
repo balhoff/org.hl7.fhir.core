@@ -31,7 +31,7 @@
        fhir:display [ fhir:v "Monument Health Information Exchange" ] #    <reference value=\"http:\/\/hl7.org\/fhir\/ig\/vhdir\/Organization\/monumentHIE\"\/>   
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:organization [
      fhir:display [ fhir:v "Monument Health Information Exchange" ] #    Reference to the resource describing the HIE   ,    <reference value=\"http:\/\/hl7.org\/fhir\/ig\/vhdir\/Organization\/monumentHIE\"\/>   
   ] ; #    this record is active   

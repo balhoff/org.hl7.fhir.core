@@ -24,7 +24,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-extensible"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ]
   ] ) ; # 
   fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/ucum-common"^^xsd:anyURI] ; # 
@@ -36,7 +36,7 @@
   fhir:name [ fhir:v "CommonUCUMUnits"] ; # 
   fhir:title [ fhir:v "Common UCUM units"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:publisher [ fhir:v "FHIR Project"] ; # 
   fhir:description [ fhir:v "Commonly encountered UCUM units (for purposes of helping populate look ups)."] ; # 
   fhir:copyright [ fhir:v "UCUM is Copyright © 1999-2013 Regenstrief Institute, Inc. and The UCUM Organization, Indianapolis, IN. All rights reserved. See http://unitsofmeasure.org/trac//wiki/TermsOfUse for details."] ; # 

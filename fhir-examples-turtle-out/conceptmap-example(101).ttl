@@ -32,7 +32,7 @@
   fhir:name [ fhir:v "FHIRv3AddressUse"] ; # 
   fhir:title [ fhir:v "FHIR/v3 Address Use Mapping"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-06-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7, Inc"] ; # 
   fhir:contact ( [

@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Base FHIR Capability Statement (Full)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR Project Team"] ; # 
   fhir:contact ( [
@@ -37,7 +37,7 @@
      fhir:mode [ fhir:v "server" ] ;
      fhir:documentation [ fhir:v "All the functionality defined in FHIR" ] ;
      fhir:security [
-       fhir:cors [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:cors [ fhir:v true ] ;
        fhir:service ( [
          fhir:coding ( [
            fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/restful-security-service"^^xsd:anyURI ] ;
@@ -79,8 +79,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Account.owner" ] [ fhir:v "Account.patient" ] [ fhir:v "Account.subject" ] [ fhir:v "Account.guarantor" ] [ fhir:v "Account.relatedaccount" ] ) ;
@@ -197,8 +197,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ActivityDefinition.successor" ] [ fhir:v "ActivityDefinition.derived-from" ] [ fhir:v "ActivityDefinition.predecessor" ] [ fhir:v "ActivityDefinition.composed-of" ] [ fhir:v "ActivityDefinition.depends-on" ] ) ;
@@ -419,8 +419,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "Requirements.actor" ] ) ;
@@ -576,8 +576,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "AdministrableProductDefinition.manufactured-item" ] [ fhir:v "AdministrableProductDefinition.device" ] [ fhir:v "AdministrableProductDefinition.form-of" ] ) ;
@@ -686,8 +686,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "AdverseEvent.recorder" ] [ fhir:v "AdverseEvent.study" ] [ fhir:v "AdverseEvent.subject" ] [ fhir:v "AdverseEvent.substance" ] [ fhir:v "AdverseEvent.patient" ] [ fhir:v "AdverseEvent.resultingeffect" ] [ fhir:v "AdverseEvent.location" ] ) ;
@@ -835,8 +835,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "AllergyIntolerance.manifestation-reference" ] [ fhir:v "AllergyIntolerance.participant" ] [ fhir:v "AllergyIntolerance.patient" ] ) ;
@@ -993,8 +993,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Appointment.practitioner" ] [ fhir:v "Appointment.subject" ] [ fhir:v "Appointment.slot" ] [ fhir:v "Appointment.actor" ] [ fhir:v "Appointment.based-on" ] [ fhir:v "Appointment.patient" ] [ fhir:v "Appointment.reason-reference" ] [ fhir:v "Appointment.supporting-info" ] [ fhir:v "Appointment.location" ] [ fhir:v "Appointment.group" ] [ fhir:v "Appointment.service-type-reference" ] ) ;
@@ -1199,8 +1199,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "AppointmentResponse.actor" ] [ fhir:v "AppointmentResponse.practitioner" ] [ fhir:v "AppointmentResponse.patient" ] [ fhir:v "AppointmentResponse.appointment" ] [ fhir:v "AppointmentResponse.location" ] [ fhir:v "AppointmentResponse.group" ] ) ;
@@ -1301,8 +1301,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -1353,8 +1353,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "AuditEvent.agent" ] [ fhir:v "AuditEvent.encounter" ] [ fhir:v "AuditEvent.source" ] [ fhir:v "AuditEvent.based-on" ] [ fhir:v "AuditEvent.patient" ] [ fhir:v "AuditEvent.entity" ] ) ;
@@ -1510,8 +1510,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Basic.author" ] [ fhir:v "Basic.patient" ] [ fhir:v "Basic.subject" ] ) ;
@@ -1595,8 +1595,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -1630,8 +1630,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "BiologicallyDerivedProduct.request" ] [ fhir:v "BiologicallyDerivedProduct.collector" ] ) ;
@@ -1732,8 +1732,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "BiologicallyDerivedProductDispense.product" ] [ fhir:v "BiologicallyDerivedProductDispense.performer" ] [ fhir:v "BiologicallyDerivedProductDispense.patient" ] ) ;
@@ -1809,8 +1809,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "BodyStructure.patient" ] ) ;
@@ -1887,8 +1887,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Bundle.composition" ] [ fhir:v "Bundle.message" ] ) ;
@@ -1964,8 +1964,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CapabilityStatement.resource-profile" ] [ fhir:v "CapabilityStatement.supported-profile" ] [ fhir:v "CapabilityStatement.guide" ] ) ;
@@ -2194,8 +2194,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CarePlan.care-team" ] [ fhir:v "CarePlan.goal" ] [ fhir:v "CarePlan.custodian" ] [ fhir:v "CarePlan.replaces" ] [ fhir:v "CarePlan.subject" ] [ fhir:v "CarePlan.instantiates-canonical" ] [ fhir:v "CarePlan.part-of" ] [ fhir:v "CarePlan.encounter" ] [ fhir:v "CarePlan.activity-reference" ] [ fhir:v "CarePlan.condition" ] [ fhir:v "CarePlan.based-on" ] [ fhir:v "CarePlan.patient" ] ) ;
@@ -2376,8 +2376,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CareTeam.patient" ] [ fhir:v "CareTeam.subject" ] [ fhir:v "CareTeam.participant" ] ) ;
@@ -2478,8 +2478,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ChargeItem.performing-organization" ] [ fhir:v "ChargeItem.subject" ] [ fhir:v "ChargeItem.encounter" ] [ fhir:v "ChargeItem.patient" ] [ fhir:v "ChargeItem.service" ] [ fhir:v "ChargeItem.enterer" ] [ fhir:v "ChargeItem.performer-actor" ] [ fhir:v "ChargeItem.account" ] [ fhir:v "ChargeItem.requesting-organization" ] ) ;
@@ -2659,8 +2659,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -2815,8 +2815,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -3003,8 +3003,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Claim.care-team" ] [ fhir:v "Claim.encounter" ] [ fhir:v "Claim.payee" ] [ fhir:v "Claim.provider" ] [ fhir:v "Claim.insurer" ] [ fhir:v "Claim.patient" ] [ fhir:v "Claim.detail-udi" ] [ fhir:v "Claim.enterer" ] [ fhir:v "Claim.procedure-udi" ] [ fhir:v "Claim.subdetail-udi" ] [ fhir:v "Claim.facility" ] [ fhir:v "Claim.item-udi" ] ) ;
@@ -3177,8 +3177,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ClaimResponse.request" ] [ fhir:v "ClaimResponse.insurer" ] [ fhir:v "ClaimResponse.patient" ] [ fhir:v "ClaimResponse.requestor" ] ) ;
@@ -3303,8 +3303,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ClinicalImpression.performer" ] [ fhir:v "ClinicalImpression.problem" ] [ fhir:v "ClinicalImpression.previous" ] [ fhir:v "ClinicalImpression.patient" ] [ fhir:v "ClinicalImpression.subject" ] [ fhir:v "ClinicalImpression.supporting-info" ] [ fhir:v "ClinicalImpression.encounter" ] [ fhir:v "ClinicalImpression.finding-ref" ] ) ;
@@ -3437,8 +3437,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ClinicalUseDefinition.contraindication-reference" ] [ fhir:v "ClinicalUseDefinition.indication-reference" ] [ fhir:v "ClinicalUseDefinition.product" ] [ fhir:v "ClinicalUseDefinition.subject" ] [ fhir:v "ClinicalUseDefinition.effect-reference" ] ) ;
@@ -3570,8 +3570,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CodeSystem.derived-from" ] [ fhir:v "CodeSystem.predecessor" ] [ fhir:v "CodeSystem.supplements" ] ) ;
@@ -3800,8 +3800,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Communication.subject" ] [ fhir:v "Communication.instantiates-canonical" ] [ fhir:v "Communication.part-of" ] [ fhir:v "Communication.encounter" ] [ fhir:v "Communication.based-on" ] [ fhir:v "Communication.sender" ] [ fhir:v "Communication.patient" ] [ fhir:v "Communication.recipient" ] ) ;
@@ -3965,8 +3965,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CommunicationRequest.requester" ] [ fhir:v "CommunicationRequest.replaces" ] [ fhir:v "CommunicationRequest.subject" ] [ fhir:v "CommunicationRequest.encounter" ] [ fhir:v "CommunicationRequest.based-on" ] [ fhir:v "CommunicationRequest.patient" ] [ fhir:v "CommunicationRequest.recipient" ] [ fhir:v "CommunicationRequest.information-provider" ] ) ;
@@ -4131,8 +4131,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -4279,8 +4279,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Composition.author" ] [ fhir:v "Composition.subject" ] [ fhir:v "Composition.encounter" ] [ fhir:v "Composition.attester" ] [ fhir:v "Composition.event-reference" ] [ fhir:v "Composition.entry" ] [ fhir:v "Composition.related" ] [ fhir:v "Composition.patient" ] ) ;
@@ -4485,8 +4485,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ConceptMap.target-scope" ] [ fhir:v "ConceptMap.target-group-system" ] [ fhir:v "ConceptMap.derived-from" ] [ fhir:v "ConceptMap.predecessor" ] [ fhir:v "ConceptMap.source-scope" ] [ fhir:v "ConceptMap.source-group-system" ] [ fhir:v "ConceptMap.other-map" ] ) ;
@@ -4755,8 +4755,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Condition.evidence-detail" ] [ fhir:v "Condition.subject" ] [ fhir:v "Condition.participant-actor" ] [ fhir:v "Condition.encounter" ] [ fhir:v "Condition.patient" ] ) ;
@@ -4969,8 +4969,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -5125,8 +5125,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Consent.controller" ] [ fhir:v "Consent.data" ] [ fhir:v "Consent.manager" ] [ fhir:v "Consent.subject" ] [ fhir:v "Consent.grantee" ] [ fhir:v "Consent.source-reference" ] [ fhir:v "Consent.actor" ] [ fhir:v "Consent.patient" ] ) ;
@@ -5307,8 +5307,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Contract.patient" ] [ fhir:v "Contract.subject" ] [ fhir:v "Contract.authority" ] [ fhir:v "Contract.domain" ] [ fhir:v "Contract.signer" ] ) ;
@@ -5425,8 +5425,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Coverage.subscriber" ] [ fhir:v "Coverage.beneficiary" ] [ fhir:v "Coverage.patient" ] [ fhir:v "Coverage.insurer" ] [ fhir:v "Coverage.paymentby-party" ] [ fhir:v "Coverage.policy-holder" ] ) ;
@@ -5567,8 +5567,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CoverageEligibilityRequest.provider" ] [ fhir:v "CoverageEligibilityRequest.patient" ] [ fhir:v "CoverageEligibilityRequest.enterer" ] [ fhir:v "CoverageEligibilityRequest.facility" ] ) ;
@@ -5661,8 +5661,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "CoverageEligibilityResponse.request" ] [ fhir:v "CoverageEligibilityResponse.insurer" ] [ fhir:v "CoverageEligibilityResponse.patient" ] [ fhir:v "CoverageEligibilityResponse.requestor" ] ) ;
@@ -5770,8 +5770,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DetectedIssue.author" ] [ fhir:v "DetectedIssue.subject" ] [ fhir:v "DetectedIssue.patient" ] [ fhir:v "DetectedIssue.implicated" ] ) ;
@@ -5879,8 +5879,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Device.parent" ] [ fhir:v "Device.organization" ] [ fhir:v "Device.definition" ] [ fhir:v "Device.location" ] ) ;
@@ -6101,8 +6101,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DeviceAssociation.subject" ] [ fhir:v "DeviceAssociation.patient" ] [ fhir:v "DeviceAssociation.device" ] [ fhir:v "DeviceAssociation.operator" ] ) ;
@@ -6186,8 +6186,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DeviceDefinition.organization" ] [ fhir:v "DeviceDefinition.manufacturer" ] ) ;
@@ -6280,8 +6280,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DeviceDispense.subject" ] [ fhir:v "DeviceDispense.patient" ] ) ;
@@ -6357,8 +6357,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DeviceMetric.device" ] ) ;
@@ -6427,8 +6427,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DeviceRequest.insurance" ] [ fhir:v "DeviceRequest.requester" ] [ fhir:v "DeviceRequest.performer" ] [ fhir:v "DeviceRequest.subject" ] [ fhir:v "DeviceRequest.instantiates-canonical" ] [ fhir:v "DeviceRequest.encounter" ] [ fhir:v "DeviceRequest.based-on" ] [ fhir:v "DeviceRequest.patient" ] [ fhir:v "DeviceRequest.device" ] [ fhir:v "DeviceRequest.prior-request" ] ) ;
@@ -6617,8 +6617,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DeviceUsage.patient" ] ) ;
@@ -6686,8 +6686,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DiagnosticReport.study" ] [ fhir:v "DiagnosticReport.performer" ] [ fhir:v "DiagnosticReport.subject" ] [ fhir:v "DiagnosticReport.encounter" ] [ fhir:v "DiagnosticReport.media" ] [ fhir:v "DiagnosticReport.result" ] [ fhir:v "DiagnosticReport.based-on" ] [ fhir:v "DiagnosticReport.patient" ] [ fhir:v "DiagnosticReport.specimen" ] [ fhir:v "DiagnosticReport.results-interpreter" ] ) ;
@@ -6860,8 +6860,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "DocumentReference.subject" ] [ fhir:v "DocumentReference.based-on" ] [ fhir:v "DocumentReference.format-canonical" ] [ fhir:v "DocumentReference.patient" ] [ fhir:v "DocumentReference.context" ] [ fhir:v "DocumentReference.custodian" ] [ fhir:v "DocumentReference.author" ] [ fhir:v "DocumentReference.bodysite-reference" ] [ fhir:v "DocumentReference.attester" ] [ fhir:v "DocumentReference.event-reference" ] [ fhir:v "DocumentReference.relatesto" ] ) ;
@@ -7170,8 +7170,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Encounter.subject" ] [ fhir:v "Encounter.appointment" ] [ fhir:v "Encounter.part-of" ] [ fhir:v "Encounter.participant" ] [ fhir:v "Encounter.based-on" ] [ fhir:v "Encounter.patient" ] [ fhir:v "Encounter.practitioner" ] [ fhir:v "Encounter.episode-of-care" ] [ fhir:v "Encounter.careteam" ] [ fhir:v "Encounter.diagnosis-reference" ] [ fhir:v "Encounter.reason-reference" ] [ fhir:v "Encounter.location" ] [ fhir:v "Encounter.service-provider" ] [ fhir:v "Encounter.account" ] ) ;
@@ -7432,8 +7432,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "EncounterHistory.patient" ] [ fhir:v "EncounterHistory.subject" ] [ fhir:v "EncounterHistory.encounter" ] ) ;
@@ -7509,8 +7509,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Endpoint.organization" ] ) ;
@@ -7595,8 +7595,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "EnrollmentRequest.patient" ] [ fhir:v "EnrollmentRequest.subject" ] ) ;
@@ -7665,8 +7665,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "EnrollmentResponse.request" ] ) ;
@@ -7726,8 +7726,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "EpisodeOfCare.diagnosis-reference" ] [ fhir:v "EpisodeOfCare.patient" ] [ fhir:v "EpisodeOfCare.organization" ] [ fhir:v "EpisodeOfCare.reason-reference" ] [ fhir:v "EpisodeOfCare.care-manager" ] [ fhir:v "EpisodeOfCare.incoming-referral" ] ) ;
@@ -7860,8 +7860,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "EventDefinition.successor" ] [ fhir:v "EventDefinition.derived-from" ] [ fhir:v "EventDefinition.predecessor" ] [ fhir:v "EventDefinition.composed-of" ] [ fhir:v "EventDefinition.depends-on" ] ) ;
@@ -8073,8 +8073,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -8213,8 +8213,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -8321,8 +8321,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "EvidenceVariable.successor" ] [ fhir:v "EvidenceVariable.derived-from" ] [ fhir:v "EvidenceVariable.predecessor" ] [ fhir:v "EvidenceVariable.composed-of" ] [ fhir:v "EvidenceVariable.depends-on" ] ) ;
@@ -8519,8 +8519,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -8659,8 +8659,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ExplanationOfBenefit.care-team" ] [ fhir:v "ExplanationOfBenefit.coverage" ] [ fhir:v "ExplanationOfBenefit.encounter" ] [ fhir:v "ExplanationOfBenefit.payee" ] [ fhir:v "ExplanationOfBenefit.provider" ] [ fhir:v "ExplanationOfBenefit.patient" ] [ fhir:v "ExplanationOfBenefit.detail-udi" ] [ fhir:v "ExplanationOfBenefit.claim" ] [ fhir:v "ExplanationOfBenefit.enterer" ] [ fhir:v "ExplanationOfBenefit.procedure-udi" ] [ fhir:v "ExplanationOfBenefit.subdetail-udi" ] [ fhir:v "ExplanationOfBenefit.facility" ] [ fhir:v "ExplanationOfBenefit.item-udi" ] ) ;
@@ -8832,8 +8832,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "FamilyMemberHistory.patient" ] [ fhir:v "FamilyMemberHistory.instantiates-canonical" ] ) ;
@@ -8941,8 +8941,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Flag.author" ] [ fhir:v "Flag.patient" ] [ fhir:v "Flag.subject" ] [ fhir:v "Flag.encounter" ] ) ;
@@ -9042,8 +9042,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -9094,8 +9094,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "GenomicStudy.patient" ] [ fhir:v "GenomicStudy.subject" ] [ fhir:v "GenomicStudy.focus" ] ) ;
@@ -9172,8 +9172,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Goal.addresses" ] [ fhir:v "Goal.patient" ] [ fhir:v "Goal.subject" ] ) ;
@@ -9298,8 +9298,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -9454,8 +9454,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Group.managing-entity" ] [ fhir:v "Group.member" ] [ fhir:v "Group.characteristic-reference" ] ) ;
@@ -9588,8 +9588,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "GuidanceResponse.patient" ] [ fhir:v "GuidanceResponse.subject" ] ) ;
@@ -9665,8 +9665,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "HealthcareService.endpoint" ] [ fhir:v "HealthcareService.coverage-area" ] [ fhir:v "HealthcareService.organization" ] [ fhir:v "HealthcareService.offered-in" ] [ fhir:v "HealthcareService.location" ] ) ;
@@ -9823,8 +9823,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ImagingSelection.body-structure" ] [ fhir:v "ImagingSelection.based-on" ] [ fhir:v "ImagingSelection.subject" ] [ fhir:v "ImagingSelection.patient" ] [ fhir:v "ImagingSelection.derived-from" ] ) ;
@@ -9949,8 +9949,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ImagingStudy.performer" ] [ fhir:v "ImagingStudy.subject" ] [ fhir:v "ImagingStudy.encounter" ] [ fhir:v "ImagingStudy.referrer" ] [ fhir:v "ImagingStudy.body-structure" ] [ fhir:v "ImagingStudy.endpoint" ] [ fhir:v "ImagingStudy.based-on" ] [ fhir:v "ImagingStudy.patient" ] ) ;
@@ -10123,8 +10123,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Immunization.performer" ] [ fhir:v "Immunization.reaction" ] [ fhir:v "Immunization.manufacturer" ] [ fhir:v "Immunization.patient" ] [ fhir:v "Immunization.reason-reference" ] [ fhir:v "Immunization.location" ] ) ;
@@ -10289,8 +10289,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ImmunizationEvaluation.patient" ] [ fhir:v "ImmunizationEvaluation.immunization-event" ] ) ;
@@ -10383,8 +10383,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ImmunizationRecommendation.patient" ] [ fhir:v "ImmunizationRecommendation.information" ] [ fhir:v "ImmunizationRecommendation.support" ] ) ;
@@ -10485,8 +10485,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ImplementationGuide.resource" ] [ fhir:v "ImplementationGuide.global" ] [ fhir:v "ImplementationGuide.depends-on" ] ) ;
@@ -10675,8 +10675,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Ingredient.substance" ] [ fhir:v "Ingredient.for" ] [ fhir:v "Ingredient.manufacturer" ] [ fhir:v "Ingredient.substance-definition" ] ) ;
@@ -10817,8 +10817,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "InsurancePlan.owned-by" ] [ fhir:v "InsurancePlan.administered-by" ] [ fhir:v "InsurancePlan.endpoint" ] ) ;
@@ -10966,8 +10966,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "InventoryItem.subject" ] ) ;
@@ -11035,8 +11035,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "InventoryReport.item-reference" ] ) ;
@@ -11104,8 +11104,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Invoice.subject" ] [ fhir:v "Invoice.issuer" ] [ fhir:v "Invoice.participant" ] [ fhir:v "Invoice.patient" ] [ fhir:v "Invoice.recipient" ] [ fhir:v "Invoice.account" ] ) ;
@@ -11245,8 +11245,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Library.successor" ] [ fhir:v "Library.derived-from" ] [ fhir:v "Library.predecessor" ] [ fhir:v "Library.composed-of" ] [ fhir:v "Library.depends-on" ] ) ;
@@ -11475,8 +11475,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Linkage.item" ] [ fhir:v "Linkage.author" ] [ fhir:v "Linkage.source" ] ) ;
@@ -11536,8 +11536,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "List.item" ] [ fhir:v "List.patient" ] [ fhir:v "List.subject" ] [ fhir:v "List.encounter" ] [ fhir:v "List.source" ] ) ;
@@ -11669,8 +11669,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Location.partof" ] [ fhir:v "Location.endpoint" ] [ fhir:v "Location.organization" ] ) ;
@@ -11843,8 +11843,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "AdministrableProductDefinition.manufactured-item" ] [ fhir:v "Ingredient.for" ] [ fhir:v "RegulatedAuthorization.subject" ] ) ;
@@ -11920,8 +11920,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Measure.successor" ] [ fhir:v "Measure.derived-from" ] [ fhir:v "Measure.predecessor" ] [ fhir:v "Measure.composed-of" ] [ fhir:v "Measure.depends-on" ] ) ;
@@ -12134,8 +12134,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MeasureReport.measure" ] [ fhir:v "MeasureReport.patient" ] [ fhir:v "MeasureReport.subject" ] [ fhir:v "MeasureReport.reporter" ] [ fhir:v "MeasureReport.location" ] [ fhir:v "MeasureReport.evaluated-resource" ] ) ;
@@ -12251,8 +12251,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Medication.ingredient" ] [ fhir:v "Medication.marketingauthorizationholder" ] ) ;
@@ -12369,8 +12369,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MedicationAdministration.request" ] [ fhir:v "MedicationAdministration.performer" ] [ fhir:v "MedicationAdministration.subject" ] [ fhir:v "MedicationAdministration.medication" ] [ fhir:v "MedicationAdministration.reason-given" ] [ fhir:v "MedicationAdministration.encounter" ] [ fhir:v "MedicationAdministration.patient" ] [ fhir:v "MedicationAdministration.device" ] ) ;
@@ -12527,8 +12527,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MedicationDispense.performer" ] [ fhir:v "MedicationDispense.receiver" ] [ fhir:v "MedicationDispense.subject" ] [ fhir:v "MedicationDispense.destination" ] [ fhir:v "MedicationDispense.medication" ] [ fhir:v "MedicationDispense.responsibleparty" ] [ fhir:v "MedicationDispense.encounter" ] [ fhir:v "MedicationDispense.prescription" ] [ fhir:v "MedicationDispense.patient" ] [ fhir:v "MedicationDispense.location" ] ) ;
@@ -12701,8 +12701,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MedicationKnowledge.ingredient" ] [ fhir:v "MedicationKnowledge.monograph" ] ) ;
@@ -12866,8 +12866,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MedicationRequest.requester" ] [ fhir:v "MedicationRequest.intended-dispenser" ] [ fhir:v "MedicationRequest.subject" ] [ fhir:v "MedicationRequest.medication" ] [ fhir:v "MedicationRequest.encounter" ] [ fhir:v "MedicationRequest.intended-performer" ] [ fhir:v "MedicationRequest.patient" ] ) ;
@@ -13040,8 +13040,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MedicationStatement.patient" ] [ fhir:v "MedicationStatement.subject" ] [ fhir:v "MedicationStatement.medication" ] [ fhir:v "MedicationStatement.encounter" ] [ fhir:v "MedicationStatement.source" ] ) ;
@@ -13166,8 +13166,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MedicinalProductDefinition.master-file" ] [ fhir:v "MedicinalProductDefinition.contact" ] ) ;
@@ -13300,8 +13300,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MessageDefinition.parent" ] ) ;
@@ -13490,8 +13490,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MessageHeader.receiver" ] [ fhir:v "MessageHeader.sender" ] [ fhir:v "MessageHeader.author" ] [ fhir:v "MessageHeader.responsible" ] [ fhir:v "MessageHeader.focus" ] [ fhir:v "MessageHeader.target" ] ) ;
@@ -13615,8 +13615,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "MolecularSequence.subject" ] [ fhir:v "MolecularSequence.patient" ] [ fhir:v "MolecularSequence.focus" ] ) ;
@@ -13693,8 +13693,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "NamingSystem.derived-from" ] [ fhir:v "NamingSystem.predecessor" ] ) ;
@@ -13938,8 +13938,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "NutritionIntake.patient" ] [ fhir:v "NutritionIntake.subject" ] [ fhir:v "NutritionIntake.encounter" ] [ fhir:v "NutritionIntake.source" ] ) ;
@@ -14047,8 +14047,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "NutritionOrder.provider" ] [ fhir:v "NutritionOrder.subject" ] [ fhir:v "NutritionOrder.patient" ] [ fhir:v "NutritionOrder.encounter" ] ) ;
@@ -14181,8 +14181,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "ClinicalUseDefinition.product" ] [ fhir:v "ClinicalUseDefinition.subject" ] [ fhir:v "DetectedIssue.subject" ] [ fhir:v "DetectedIssue.patient" ] [ fhir:v "GenomicStudy.patient" ] [ fhir:v "GenomicStudy.subject" ] [ fhir:v "MolecularSequence.subject" ] [ fhir:v "MolecularSequence.patient" ] [ fhir:v "Observation.subject" ] [ fhir:v "Observation.patient" ] [ fhir:v "RegulatedAuthorization.subject" ] ) ;
@@ -14258,8 +14258,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Observation.subject" ] [ fhir:v "Observation.derived-from" ] [ fhir:v "Observation.focus" ] [ fhir:v "Observation.part-of" ] [ fhir:v "Observation.has-member" ] [ fhir:v "Observation.value-reference" ] [ fhir:v "Observation.based-on" ] [ fhir:v "Observation.patient" ] [ fhir:v "Observation.specimen" ] [ fhir:v "Observation.component-value-reference" ] [ fhir:v "Observation.performer" ] [ fhir:v "Observation.encounter" ] [ fhir:v "Observation.device" ] ) ;
@@ -14632,8 +14632,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "PlanDefinition.definition" ] [ fhir:v "RegulatedAuthorization.subject" ] ) ;
@@ -14733,8 +14733,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "OperationDefinition.input-profile" ] [ fhir:v "OperationDefinition.output-profile" ] [ fhir:v "OperationDefinition.base" ] ) ;
@@ -14955,8 +14955,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -14990,8 +14990,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Organization.partof" ] [ fhir:v "Organization.endpoint" ] ) ;
@@ -15132,8 +15132,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "OrganizationAffiliation.primary-organization" ] [ fhir:v "OrganizationAffiliation.network" ] [ fhir:v "OrganizationAffiliation.endpoint" ] [ fhir:v "OrganizationAffiliation.service" ] [ fhir:v "OrganizationAffiliation.participating-organization" ] [ fhir:v "OrganizationAffiliation.location" ] ) ;
@@ -15281,8 +15281,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "PackagedProductDefinition.manufactured-item" ] [ fhir:v "PackagedProductDefinition.nutrition" ] [ fhir:v "PackagedProductDefinition.package" ] [ fhir:v "PackagedProductDefinition.biological" ] [ fhir:v "PackagedProductDefinition.package-for" ] [ fhir:v "PackagedProductDefinition.contained-item" ] [ fhir:v "PackagedProductDefinition.medication" ] [ fhir:v "PackagedProductDefinition.device" ] ) ;
@@ -15407,8 +15407,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Patient.general-practitioner" ] [ fhir:v "Patient.link" ] [ fhir:v "Patient.organization" ] ) ;
@@ -15629,8 +15629,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "PaymentNotice.request" ] [ fhir:v "PaymentNotice.response" ] [ fhir:v "PaymentNotice.reporter" ] ) ;
@@ -15722,8 +15722,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "PaymentReconciliation.request" ] [ fhir:v "PaymentReconciliation.allocation-encounter" ] [ fhir:v "PaymentReconciliation.allocation-account" ] [ fhir:v "PaymentReconciliation.payment-issuer" ] [ fhir:v "PaymentReconciliation.requestor" ] ) ;
@@ -15839,8 +15839,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -15883,8 +15883,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Person.practitioner" ] [ fhir:v "Person.link" ] [ fhir:v "Person.relatedperson" ] [ fhir:v "Person.patient" ] [ fhir:v "Person.organization" ] ) ;
@@ -16105,8 +16105,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "PlanDefinition.successor" ] [ fhir:v "PlanDefinition.derived-from" ] [ fhir:v "PlanDefinition.predecessor" ] [ fhir:v "PlanDefinition.composed-of" ] [ fhir:v "PlanDefinition.depends-on" ] [ fhir:v "PlanDefinition.definition" ] ) ;
@@ -16335,8 +16335,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "Account.patient" ] [ fhir:v "Account.subject" ] [ fhir:v "AdverseEvent.recorder" ] [ fhir:v "AdverseEvent.subject" ] [ fhir:v "AdverseEvent.patient" ] [ fhir:v "AllergyIntolerance.participant" ] [ fhir:v "Appointment.practitioner" ] [ fhir:v "Appointment.actor" ] [ fhir:v "Appointment.patient" ] [ fhir:v "Appointment.location" ] [ fhir:v "Appointment.group" ] [ fhir:v "AppointmentResponse.actor" ] [ fhir:v "AppointmentResponse.practitioner" ] [ fhir:v "AppointmentResponse.patient" ] [ fhir:v "AppointmentResponse.location" ] [ fhir:v "AppointmentResponse.group" ] [ fhir:v "AuditEvent.agent" ] [ fhir:v "AuditEvent.source" ] [ fhir:v "Basic.author" ] [ fhir:v "BiologicallyDerivedProduct.collector" ] [ fhir:v "BiologicallyDerivedProductDispense.performer" ] [ fhir:v "CarePlan.custodian" ] [ fhir:v "CareTeam.participant" ] [ fhir:v "ChargeItem.enterer" ] [ fhir:v "ChargeItem.performer-actor" ] [ fhir:v "Claim.care-team" ] [ fhir:v "Claim.payee" ] [ fhir:v "Claim.provider" ] [ fhir:v "Claim.enterer" ] [ fhir:v "ClaimResponse.requestor" ] [ fhir:v "ClinicalImpression.performer" ] [ fhir:v "Communication.sender" ] [ fhir:v "Communication.recipient" ] [ fhir:v "CommunicationRequest.requester" ] [ fhir:v "CommunicationRequest.recipient" ] [ fhir:v "CommunicationRequest.information-provider" ] [ fhir:v "Composition.author" ] [ fhir:v "Composition.attester" ] [ fhir:v "Condition.participant-actor" ] [ fhir:v "Consent.controller" ] [ fhir:v "Consent.manager" ] [ fhir:v "Consent.subject" ] [ fhir:v "Consent.grantee" ] [ fhir:v "Consent.actor" ] [ fhir:v "Consent.patient" ] [ fhir:v "Contract.signer" ] [ fhir:v "CoverageEligibilityRequest.provider" ] [ fhir:v "CoverageEligibilityRequest.enterer" ] [ fhir:v "CoverageEligibilityResponse.requestor" ] [ fhir:v "DetectedIssue.author" ] [ fhir:v "DetectedIssue.subject" ] [ fhir:v "DetectedIssue.patient" ] [ fhir:v "DeviceAssociation.subject" ] [ fhir:v "DeviceAssociation.patient" ] [ fhir:v "DeviceAssociation.operator" ] [ fhir:v "DeviceDispense.subject" ] [ fhir:v "DeviceDispense.patient" ] [ fhir:v "DeviceRequest.requester" ] [ fhir:v "DiagnosticReport.performer" ] [ fhir:v "DiagnosticReport.subject" ] [ fhir:v "DiagnosticReport.patient" ] [ fhir:v "DiagnosticReport.results-interpreter" ] [ fhir:v "DocumentReference.author" ] [ fhir:v "DocumentReference.attester" ] [ fhir:v "Encounter.participant" ] [ fhir:v "Encounter.practitioner" ] [ fhir:v "EpisodeOfCare.care-manager" ] [ fhir:v "ExplanationOfBenefit.care-team" ] [ fhir:v "ExplanationOfBenefit.payee" ] [ fhir:v "ExplanationOfBenefit.provider" ] [ fhir:v "ExplanationOfBenefit.enterer" ] [ fhir:v "Flag.author" ] [ fhir:v "Flag.patient" ] [ fhir:v "Flag.subject" ] [ fhir:v "Group.managing-entity" ] [ fhir:v "Group.member" ] [ fhir:v "ImagingSelection.subject" ] [ fhir:v "ImagingSelection.patient" ] [ fhir:v "ImagingStudy.performer" ] [ fhir:v "ImagingStudy.referrer" ] [ fhir:v "Immunization.performer" ] [ fhir:v "Invoice.participant" ] [ fhir:v "Linkage.author" ] [ fhir:v "List.source" ] [ fhir:v "MeasureReport.patient" ] [ fhir:v "MeasureReport.subject" ] [ fhir:v "MeasureReport.reporter" ] [ fhir:v "MedicationDispense.performer" ] [ fhir:v "MedicationDispense.receiver" ] [ fhir:v "MedicationDispense.responsibleparty" ] [ fhir:v "MedicationRequest.requester" ] [ fhir:v "MedicationRequest.intended-performer" ] [ fhir:v "MedicationStatement.source" ] [ fhir:v "MessageHeader.receiver" ] [ fhir:v "MessageHeader.sender" ] [ fhir:v "MessageHeader.author" ] [ fhir:v "MessageHeader.responsible" ] [ fhir:v "NutritionIntake.source" ] [ fhir:v "NutritionOrder.provider" ] [ fhir:v "Observation.subject" ] [ fhir:v "Observation.patient" ] [ fhir:v "Observation.performer" ] [ fhir:v "Patient.general-practitioner" ] [ fhir:v "PaymentNotice.reporter" ] [ fhir:v "PaymentReconciliation.requestor" ] [ fhir:v "Person.practitioner" ] [ fhir:v "Person.link" ] [ fhir:v "Person.relatedperson" ] [ fhir:v "Person.patient" ] [ fhir:v "PractitionerRole.practitioner" ] [ fhir:v "Procedure.performer" ] [ fhir:v "Procedure.subject" ] [ fhir:v "Procedure.patient" ] [ fhir:v "Provenance.agent" ] [ fhir:v "QuestionnaireResponse.author" ] [ fhir:v "QuestionnaireResponse.source" ] [ fhir:v "RegulatedAuthorization.subject" ] [ fhir:v "RequestOrchestration.author" ] [ fhir:v "RequestOrchestration.subject" ] [ fhir:v "RequestOrchestration.participant" ] [ fhir:v "RequestOrchestration.patient" ] [ fhir:v "RiskAssessment.performer" ] [ fhir:v "Schedule.actor" ] [ fhir:v "ServiceRequest.requester" ] [ fhir:v "ServiceRequest.performer" ] [ fhir:v "Specimen.collector" ] [ fhir:v "Subscription.owner" ] [ fhir:v "SupplyDelivery.receiver" ] [ fhir:v "SupplyDelivery.supplier" ] [ fhir:v "SupplyRequest.requester" ] [ fhir:v "Task.owner" ] [ fhir:v "Task.requester" ] [ fhir:v "Task.actor" ] [ fhir:v "VisionPrescription.prescriber" ] ) ;
@@ -16532,8 +16532,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "PractitionerRole.practitioner" ] [ fhir:v "PractitionerRole.endpoint" ] [ fhir:v "PractitionerRole.service" ] [ fhir:v "PractitionerRole.organization" ] [ fhir:v "PractitionerRole.location" ] ) ;
@@ -16690,8 +16690,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Procedure.performer" ] [ fhir:v "Procedure.subject" ] [ fhir:v "Procedure.instantiates-canonical" ] [ fhir:v "Procedure.part-of" ] [ fhir:v "Procedure.encounter" ] [ fhir:v "Procedure.based-on" ] [ fhir:v "Procedure.patient" ] [ fhir:v "Procedure.reason-reference" ] [ fhir:v "Procedure.report" ] [ fhir:v "Procedure.location" ] ) ;
@@ -16864,8 +16864,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Provenance.agent" ] [ fhir:v "Provenance.encounter" ] [ fhir:v "Provenance.target" ] [ fhir:v "Provenance.based-on" ] [ fhir:v "Provenance.patient" ] [ fhir:v "Provenance.location" ] [ fhir:v "Provenance.entity" ] ) ;
@@ -17005,8 +17005,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "CarePlan.instantiates-canonical" ] [ fhir:v "Communication.instantiates-canonical" ] [ fhir:v "FamilyMemberHistory.instantiates-canonical" ] [ fhir:v "PlanDefinition.definition" ] [ fhir:v "Procedure.instantiates-canonical" ] [ fhir:v "QuestionnaireResponse.questionnaire" ] ) ;
@@ -17210,8 +17210,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "QuestionnaireResponse.questionnaire" ] [ fhir:v "QuestionnaireResponse.based-on" ] [ fhir:v "QuestionnaireResponse.author" ] [ fhir:v "QuestionnaireResponse.patient" ] [ fhir:v "QuestionnaireResponse.subject" ] [ fhir:v "QuestionnaireResponse.part-of" ] [ fhir:v "QuestionnaireResponse.encounter" ] [ fhir:v "QuestionnaireResponse.source" ] [ fhir:v "QuestionnaireResponse.item-subject" ] ) ;
@@ -17344,8 +17344,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "RegulatedAuthorization.subject" ] [ fhir:v "RegulatedAuthorization.holder" ] ) ;
@@ -17437,8 +17437,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "RelatedPerson.patient" ] ) ;
@@ -17627,8 +17627,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "RequestOrchestration.author" ] [ fhir:v "RequestOrchestration.subject" ] [ fhir:v "RequestOrchestration.instantiates-canonical" ] [ fhir:v "RequestOrchestration.encounter" ] [ fhir:v "RequestOrchestration.participant" ] [ fhir:v "RequestOrchestration.based-on" ] [ fhir:v "RequestOrchestration.patient" ] ) ;
@@ -17785,8 +17785,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Requirements.derived-from" ] [ fhir:v "Requirements.actor" ] ) ;
@@ -17959,8 +17959,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ResearchStudy.eligibility" ] [ fhir:v "ResearchStudy.part-of" ] [ fhir:v "ResearchStudy.protocol" ] [ fhir:v "ResearchStudy.focus-reference" ] [ fhir:v "ResearchStudy.site" ] ) ;
@@ -18197,8 +18197,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ResearchSubject.study" ] [ fhir:v "ResearchSubject.subject" ] [ fhir:v "ResearchSubject.patient" ] ) ;
@@ -18291,8 +18291,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "RiskAssessment.condition" ] [ fhir:v "RiskAssessment.performer" ] [ fhir:v "RiskAssessment.patient" ] [ fhir:v "RiskAssessment.subject" ] [ fhir:v "RiskAssessment.encounter" ] ) ;
@@ -18409,8 +18409,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Schedule.actor" ] [ fhir:v "Schedule.service-type-reference" ] ) ;
@@ -18519,8 +18519,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "SearchParameter.derived-from" ] [ fhir:v "SearchParameter.component" ] ) ;
@@ -18717,8 +18717,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ServiceRequest.requester" ] [ fhir:v "ServiceRequest.performer" ] [ fhir:v "ServiceRequest.replaces" ] [ fhir:v "ServiceRequest.subject" ] [ fhir:v "ServiceRequest.instantiates-canonical" ] [ fhir:v "ServiceRequest.encounter" ] [ fhir:v "ServiceRequest.body-structure" ] [ fhir:v "ServiceRequest.based-on" ] [ fhir:v "ServiceRequest.code-reference" ] [ fhir:v "ServiceRequest.patient" ] [ fhir:v "ServiceRequest.specimen" ] ) ;
@@ -18939,8 +18939,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Slot.schedule" ] [ fhir:v "Slot.service-type-reference" ] ) ;
@@ -19049,8 +19049,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Specimen.parent" ] [ fhir:v "Specimen.bodysite" ] [ fhir:v "Specimen.patient" ] [ fhir:v "Specimen.subject" ] [ fhir:v "Specimen.procedure" ] [ fhir:v "Specimen.collector" ] [ fhir:v "Specimen.container-device" ] ) ;
@@ -19183,8 +19183,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "PlanDefinition.definition" ] ) ;
@@ -19292,8 +19292,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "StructureDefinition.valueset" ] [ fhir:v "StructureDefinition.base" ] ) ;
@@ -19554,8 +19554,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -19710,8 +19710,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Subscription.owner" ] ) ;
@@ -19835,8 +19835,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -19870,8 +19870,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -19994,8 +19994,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Substance.code-reference" ] [ fhir:v "Substance.substance-reference" ] ) ;
@@ -20096,8 +20096,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "RegulatedAuthorization.subject" ] ) ;
@@ -20173,8 +20173,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -20208,8 +20208,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -20243,8 +20243,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -20278,8 +20278,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -20313,8 +20313,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] )
      ] [
@@ -20348,8 +20348,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "SupplyDelivery.receiver" ] [ fhir:v "SupplyDelivery.patient" ] [ fhir:v "SupplyDelivery.supplier" ] ) ;
@@ -20425,8 +20425,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "SupplyRequest.requester" ] [ fhir:v "SupplyRequest.patient" ] [ fhir:v "SupplyRequest.subject" ] [ fhir:v "SupplyRequest.supplier" ] ) ;
@@ -20527,8 +20527,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "Task.owner" ] [ fhir:v "Task.requestedperformer-reference" ] [ fhir:v "Task.requester" ] [ fhir:v "Task.subject" ] [ fhir:v "Task.focus" ] [ fhir:v "Task.part-of" ] [ fhir:v "Task.encounter" ] [ fhir:v "Task.output" ] [ fhir:v "Task.actor" ] [ fhir:v "Task.based-on" ] [ fhir:v "Task.patient" ] ) ;
@@ -20741,8 +20741,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -20897,8 +20897,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "TestPlan.scope" ] ) ;
@@ -20966,8 +20966,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "TestReport.testscript" ] ) ;
@@ -21059,8 +21059,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "TestScript.scope-artifact" ] ) ;
@@ -21249,8 +21249,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchParam ( [
@@ -21301,8 +21301,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "ValueSet.derived-from" ] [ fhir:v "ValueSet.predecessor" ] ) ;
@@ -21515,8 +21515,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "VerificationResult.primarysource-who" ] [ fhir:v "VerificationResult.validator-organization" ] [ fhir:v "VerificationResult.attestation-onbehalfof" ] [ fhir:v "VerificationResult.target" ] [ fhir:v "VerificationResult.attestation-who" ] ) ;
@@ -21632,8 +21632,8 @@
          fhir:code [ fhir:v "search-type" ] ;
          fhir:documentation [ fhir:v "Implemented per the specification (or Insert other doco here)" ]
        ] ) ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
+       fhir:conditionalUpdate [ fhir:v true ] ;
        fhir:conditionalDelete [ fhir:v "multiple" ] ;
        fhir:referencePolicy ( [ fhir:v "literal" ] [ fhir:v "logical" ] ) ;
        fhir:searchInclude ( [ fhir:v "VisionPrescription.prescriber" ] [ fhir:v "VisionPrescription.patient" ] [ fhir:v "VisionPrescription.encounter" ] ) ;

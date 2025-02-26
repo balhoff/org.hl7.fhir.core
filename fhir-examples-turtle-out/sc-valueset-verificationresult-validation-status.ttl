@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "ValidationStatusCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"validation-status\""] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2018-06-06T00:06:02+10:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [

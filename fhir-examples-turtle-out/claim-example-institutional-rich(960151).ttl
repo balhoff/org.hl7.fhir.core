@@ -88,7 +88,7 @@
        fhir:link <http://hl7.org/fhir/Practitioner/example> ;
        fhir:reference [ fhir:v "Practitioner/example" ]
      ] ;
-     fhir:responsible [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:responsible [ fhir:v true ] ;
      fhir:role [
        fhir:coding ( [
          fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/claim-careteamrole"^^xsd:anyURI ] ;
@@ -146,7 +146,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -182,16 +182,16 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "125.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 125.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "125.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 125.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) ; # 
   fhir:total [
-     fhir:value [ fhir:v "125.00"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 125.00 ] ;
      fhir:currency [ fhir:v "USD" ]
   ] . # 
 

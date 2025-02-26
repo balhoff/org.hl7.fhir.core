@@ -24,7 +24,7 @@
   fhir:contained ( [
      a fhir:Substance ;
      fhir:id [ fhir:v "sub10" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -38,7 +38,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "sub11" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -52,7 +52,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "sub12" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -66,7 +66,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "sub13" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [

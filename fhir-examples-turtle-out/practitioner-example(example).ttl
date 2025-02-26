@@ -24,7 +24,7 @@
      fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "23" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "Careful" ] ;
      fhir:given ( [ fhir:v "Adam" ] ) ;

@@ -36,7 +36,7 @@
   fhir:name [ fhir:v "LOINCCodesForCholesterolInSerumPlasma"] ; # 
   fhir:title [ fhir:v "LOINC Codes for Cholesterol in Serum/Plasma"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2015-06-22"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7 International"] ; # 
   fhir:contact ( [

@@ -120,7 +120,7 @@
      fhir:coverage [
        fhir:reference [ fhir:v "#coverage-1" ]
      ] ;
-     fhir:inforce [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:inforce [ fhir:v true ] ;
      fhir:item ( [
        fhir:category [
          fhir:coding ( [
@@ -160,7 +160,7 @@
          ] ;
          fhir:used [
            a fhir:Money ;
-           fhir:value [ fhir:v "3748.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 3748.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] [
@@ -269,7 +269,7 @@
            fhir:display [ fhir:v "Vision Coverage" ]
          ] )
        ] ;
-       fhir:excluded [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:excluded [ fhir:v true ] ;
        fhir:name [ fhir:v "Vision" ] ; #   this benefit category is not covered under the plan  
        fhir:description [ fhir:v "Vision products and services such as exams, glasses and contact lenses." ]
      ] )

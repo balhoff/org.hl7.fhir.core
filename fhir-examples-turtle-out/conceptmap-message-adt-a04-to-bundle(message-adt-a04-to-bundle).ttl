@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "MessageADT_A04toBundle"] ; # 
   fhir:title [ fhir:v "Message A D T_ A04to Bundle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2020-08-12"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7 International"] ; # 
   fhir:contact ( [

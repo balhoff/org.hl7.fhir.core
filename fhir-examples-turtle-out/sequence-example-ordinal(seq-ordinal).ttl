@@ -31,7 +31,7 @@
          fhir:display [ fhir:v "1-based character counting" ]
        ] )
      ] ;
-     fhir:ordinalPosition [ fhir:v "1"^^xsd:integer ] ;
+     fhir:ordinalPosition [ fhir:v 1 ] ;
      fhir:sequenceRange [
        fhir:low [
          fhir:value [ fhir:v "1"^^xsd:decimal ]
@@ -48,8 +48,8 @@
            fhir:code [ fhir:v "NM_000141.5" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "1"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "2194"^^xsd:integer ]
+       fhir:windowStart [ fhir:v 1 ] ;
+       fhir:windowEnd [ fhir:v 2194 ]
      ]
   ] [
      fhir:coordinateSystem [
@@ -60,7 +60,7 @@
          fhir:display [ fhir:v "1-based character counting" ]
        ] )
      ] ;
-     fhir:ordinalPosition [ fhir:v "2"^^xsd:integer ] ;
+     fhir:ordinalPosition [ fhir:v 2 ] ;
      fhir:sequenceRange [
        fhir:low [
          fhir:value [ fhir:v "2194"^^xsd:decimal ]
@@ -77,8 +77,8 @@
            fhir:code [ fhir:v "NM_000245.4" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "1923"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "6822"^^xsd:integer ]
+       fhir:windowStart [ fhir:v 1923 ] ;
+       fhir:windowEnd [ fhir:v 6822 ]
      ]
   ] ) . #    specific edits would be here   
 

@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "PATIENTLINKNOTIFICATION"] ; # 
   fhir:title [ fhir:v "Link Patients Notification"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-02-03"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health Level Seven, Int'l"] ; # 
   fhir:contact ( [

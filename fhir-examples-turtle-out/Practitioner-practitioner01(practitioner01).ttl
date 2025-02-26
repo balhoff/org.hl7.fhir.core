@@ -38,7 +38,7 @@
        fhir:display [ fhir:v "Child Hospital" ]
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "Doel" ] ;
      fhir:given ( [ fhir:v "John" ] ) ;

@@ -28,11 +28,11 @@
   fhir:name [ fhir:v "DocumentStructure"] ; # 
   fhir:title [ fhir:v "Document Structure (For testing section templates)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2018-11-05T17:47:00+11:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Document Structure (For testing section templates)"] ; # 
   fhir:kind [ fhir:v "resource"] ; # 
-  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:abstract [ fhir:v false] ; # 
   fhir:type [ fhir:v "Composition"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/Composition"^^xsd:anyURI ;
@@ -52,7 +52,7 @@
            fhir:path [ fhir:v "code" ]
          ] ) ;
          fhir:description [ fhir:v "Slice by .section.code" ] ;
-         fhir:ordered [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:ordered [ fhir:v true ] ;
          fhir:rules [ fhir:v "closed" ]
        ]
      ] [

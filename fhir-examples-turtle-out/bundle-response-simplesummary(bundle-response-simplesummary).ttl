@@ -47,7 +47,7 @@
            fhir:display [ fhir:v "Acme Healthcare" ]
          ]
        ] ) ;
-       fhir:active [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:active [ fhir:v true ] ;
        fhir:name ( [
          fhir:use [ fhir:v "official" ] ;
          fhir:family [ fhir:v "Chalmers" ] ;
@@ -96,7 +96,7 @@
        ] ;
        fhir:deceased [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ] ;
        fhir:address ( [
          fhir:use [ fhir:v "home" ] ;

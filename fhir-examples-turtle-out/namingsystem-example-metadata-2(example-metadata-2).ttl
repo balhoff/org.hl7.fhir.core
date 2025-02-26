@@ -34,7 +34,7 @@
   fhir:title [ fhir:v "Metadata Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "identifier"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2022-07-21"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "FHIR (Example)"] ; # 
   fhir:contact ( [
@@ -105,7 +105,7 @@
   ] [
      fhir:type [ fhir:v "uri" ] ;
      fhir:value [ fhir:v "http://example.com/identifiers" ] ;
-     fhir:preferred [ fhir:v "true"^^xsd:boolean ]
+     fhir:preferred [ fhir:v true ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

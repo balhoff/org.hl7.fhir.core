@@ -31,7 +31,7 @@
          fhir:display [ fhir:v "1-based character counting" ]
        ] )
      ] ;
-     fhir:ordinalPosition [ fhir:v "1"^^xsd:integer ] ;
+     fhir:ordinalPosition [ fhir:v 1 ] ;
      fhir:sequenceRange [
        fhir:low [
          fhir:value [ fhir:v "1"^^xsd:decimal ]
@@ -48,8 +48,8 @@
            fhir:code [ fhir:v "NM_004327.4" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "1"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "3234"^^xsd:integer ]
+       fhir:windowStart [ fhir:v 1 ] ;
+       fhir:windowEnd [ fhir:v 3234 ]
      ]
   ] [
      fhir:coordinateSystem [
@@ -60,7 +60,7 @@
          fhir:display [ fhir:v "1-based character counting" ]
        ] )
      ] ;
-     fhir:ordinalPosition [ fhir:v "2"^^xsd:integer ] ;
+     fhir:ordinalPosition [ fhir:v 2 ] ;
      fhir:sequenceRange [
        fhir:low [
          fhir:value [ fhir:v "3235"^^xsd:decimal ]
@@ -77,8 +77,8 @@
            fhir:code [ fhir:v "NM_005157.6" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "174"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "5306"^^xsd:integer ]
+       fhir:windowStart [ fhir:v 174 ] ;
+       fhir:windowEnd [ fhir:v 5306 ]
      ]
   ] ) . # 
 

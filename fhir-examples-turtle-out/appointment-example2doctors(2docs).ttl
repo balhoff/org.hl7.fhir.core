@@ -73,7 +73,7 @@
        fhir:reference [ fhir:v "Practitioner/example" ] ;
        fhir:display [ fhir:v "Dr Adam Careful" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "accepted" ]
   ] [
      fhir:actor [
@@ -81,7 +81,7 @@
        fhir:reference [ fhir:v "Practitioner/f202" ] ;
        fhir:display [ fhir:v "Luigi Maas" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "accepted" ]
   ] ) . # 
 

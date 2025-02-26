@@ -110,11 +110,11 @@
      fhir:display [ fhir:v "Patrick Pump" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Dopamine 4mcg/kg/min" ] ;
      fhir:timing [
        fhir:repeat [
-         fhir:duration [ fhir:v "33.33"^^xsd:decimal ] ;
+         fhir:duration [ fhir:v 33.33 ] ;
          fhir:durationUnit [ fhir:v "h" ]
        ]
      ] ;
@@ -143,7 +143,7 @@
        ] ;
        fhir:rate [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "7.5"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 7.5 ] ;
          fhir:unit [ fhir:v "ml/h" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
        ]

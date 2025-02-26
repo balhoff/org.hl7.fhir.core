@@ -54,7 +54,7 @@
      ]
   ] ; # 
   fhir:amount [
-     fhir:value [ fhir:v "12500.00"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 12500.00 ] ;
      fhir:currency [ fhir:v "USD" ]
   ] ; # 
   fhir:paymentStatus [

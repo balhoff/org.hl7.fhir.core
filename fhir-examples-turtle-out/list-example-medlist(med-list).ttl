@@ -56,7 +56,7 @@
          fhir:display [ fhir:v "Cancelled" ]
        ] )
      ] ;
-     fhir:deleted [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:deleted [ fhir:v true ] ;
      fhir:item [
        fhir:display [ fhir:v "Morphine Sulfate" ]
      ]

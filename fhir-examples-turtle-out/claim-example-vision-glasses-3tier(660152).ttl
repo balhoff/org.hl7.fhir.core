@@ -86,7 +86,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ; #   Patient's own coverage - primary  
-     fhir:focal [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v false ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -98,7 +98,7 @@
      ]
   ] [
      fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ; #   Spouses's own coverage - secondary  
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -145,11 +145,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "235.40"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 235.40 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "235.40"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 235.40 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:detail ( [
@@ -181,12 +181,12 @@
          ] )
        ] ) ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "100.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 100.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
-       fhir:factor [ fhir:v "1.1"^^xsd:decimal ] ;
+       fhir:factor [ fhir:v 1.1 ] ;
        fhir:net [
-         fhir:value [ fhir:v "110.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 110.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ; #   10% surcharge for out of hours work  
        fhir:udi ( [
@@ -224,11 +224,11 @@
          fhir:value [ fhir:v "2"^^xsd:decimal ]
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "55.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 55.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "110.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 110.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:subDetail ( [
@@ -269,12 +269,12 @@
            fhir:value [ fhir:v "2"^^xsd:decimal ]
          ] ;
          fhir:unitPrice [
-           fhir:value [ fhir:v "30.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 30.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] ;
-         fhir:factor [ fhir:v "1.1"^^xsd:decimal ] ;
+         fhir:factor [ fhir:v 1.1 ] ;
          fhir:net [
-           fhir:value [ fhir:v "66.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 66.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] ; #   10% surchage for out of hours work  
          fhir:udi ( [
@@ -312,12 +312,12 @@
            fhir:value [ fhir:v "2"^^xsd:decimal ]
          ] ;
          fhir:unitPrice [
-           fhir:value [ fhir:v "15.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 15.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] ;
-         fhir:factor [ fhir:v "1.1"^^xsd:decimal ] ;
+         fhir:factor [ fhir:v 1.1 ] ;
          fhir:net [
-           fhir:value [ fhir:v "33.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 33.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] #   10% surchage for out of hours work  
        ] [
@@ -352,12 +352,12 @@
            fhir:value [ fhir:v "2"^^xsd:decimal ]
          ] ;
          fhir:unitPrice [
-           fhir:value [ fhir:v "5.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 5.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] ;
-         fhir:factor [ fhir:v "1.1"^^xsd:decimal ] ;
+         fhir:factor [ fhir:v 1.1 ] ;
          fhir:net [
-           fhir:value [ fhir:v "11.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 11.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] #   10% surchage for out of hours work  
        ] )
@@ -384,12 +384,12 @@
          ] )
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "220.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 220.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
-       fhir:factor [ fhir:v "0.07"^^xsd:decimal ] ;
+       fhir:factor [ fhir:v 0.07 ] ;
        fhir:net [
-         fhir:value [ fhir:v "15.40"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 15.40 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )

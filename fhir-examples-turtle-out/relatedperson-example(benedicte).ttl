@@ -28,7 +28,7 @@
      fhir:system [ fhir:v "urn:oid:1.2.250.1.61"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "272117510400399" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:patient [
      fhir:link <http://hl7.org/fhir/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ]

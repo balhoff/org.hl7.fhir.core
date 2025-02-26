@@ -209,8 +209,8 @@
        fhir:country [ fhir:v "Australia" ]
      ] ;
      fhir:position [
-       fhir:longitude [ fhir:v "144.96332"^^xsd:decimal ] ;
-       fhir:latitude [ fhir:v "-37.814"^^xsd:decimal ]
+       fhir:longitude [ fhir:v 144.96332 ] ;
+       fhir:latitude [ fhir:v -37.814 ]
      ]
   ] ) ; # 
   fhir:url [ fhir:v "https://fevir.net/resources/ResearchStudy/112103"^^xsd:anyURI] ; # 
@@ -371,7 +371,7 @@
          fhir:display [ fhir:v "Overall Study" ]
        ] )
      ] ;
-     fhir:actual [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:actual [ fhir:v false ] ;
      fhir:period [
        fhir:start [ fhir:v "2022-12-06"^^xsd:date ] ;
        fhir:end [ fhir:v "2023-06"^^xsd:gYearMonth ]

@@ -27,7 +27,7 @@
   ] ; # 
   fhir:title [ fhir:v "Example Specimen Definition for Testing"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:typeCollected [
      fhir:coding ( [
        a sct:122555007 ;
@@ -48,7 +48,7 @@
   ] ) ; # 
   fhir:timeAspect [ fhir:v "preferrably morning time"] ; # 
   fhir:typeTested ( [
-     fhir:isDerived [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:isDerived [ fhir:v false ] ;
      fhir:type [
        fhir:coding ( [
          a sct:119364003 ;

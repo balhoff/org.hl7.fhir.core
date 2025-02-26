@@ -28,7 +28,7 @@
   fhir:note ( [
      fhir:text [ fhir:v "Death must be due to intracranial hemorrhage" ]
   ] ) ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "intracranial hemorrhage within 7 days" ] ;
      fhir:definitionCodeableConcept [

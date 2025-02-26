@@ -60,7 +60,7 @@
            fhir:display [ fhir:v "Initial Population" ]
          ] )
        ] ;
-       fhir:count [ fhir:v "2"^^xsd:integer ] ;
+       fhir:count [ fhir:v 2 ] ;
        fhir:subjectResults [
          fhir:reference [ fhir:v "#1" ]
        ]

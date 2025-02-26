@@ -62,7 +62,7 @@
      ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Take one tablet daily as directed" ]
   ] ) . # 
 

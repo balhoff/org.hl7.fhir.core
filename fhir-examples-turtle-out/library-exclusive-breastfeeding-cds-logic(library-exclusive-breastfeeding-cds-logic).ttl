@@ -28,7 +28,7 @@
   fhir:name [ fhir:v "ExclusiveBreastfeedingCDSLogic"] ; # 
   fhir:title [ fhir:v "Exclusive Breastfeeding CDS Logic"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:type [
      fhir:coding ( [
        fhir:code [ fhir:v "logic-library" ]

@@ -24,7 +24,7 @@
   fhir:item ( [
      fhir:linkId [ fhir:v "core-props" ] ;
      fhir:type [ fhir:v "group" ] ;
-     fhir:repeats [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v false ] ;
      fhir:item ( [
        fhir:linkId [ fhir:v "Practitioner.active" ] ;
        fhir:definition [ fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner#Practitioner.active"^^xsd:anyURI ] ;
@@ -50,7 +50,7 @@
        fhir:definition [ fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner#Practitioner.address.line"^^xsd:anyURI ] ;
        fhir:text [ fhir:v "Address" ] ;
        fhir:type [ fhir:v "string" ] ;
-       fhir:repeats [ fhir:v "true"^^xsd:boolean ]
+       fhir:repeats [ fhir:v true ]
      ] [
        fhir:linkId [ fhir:v "Practitioner.address.postalCode" ] ;
        fhir:definition [ fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner#Practitioner.address.postalCode"^^xsd:anyURI ] ;
@@ -62,7 +62,7 @@
      fhir:definition [ fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner#Practitioner.qualification"^^xsd:anyURI ] ;
      fhir:text [ fhir:v "Qualifications" ] ;
      fhir:type [ fhir:v "group" ] ;
-     fhir:repeats [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:repeats [ fhir:v true ] ;
      fhir:item ( [
        fhir:linkId [ fhir:v "Practitioner.qualification.code.coding.code" ] ;
        fhir:definition [ fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner#Practitioner.qualification.code.coding.code"^^xsd:anyURI ] ;

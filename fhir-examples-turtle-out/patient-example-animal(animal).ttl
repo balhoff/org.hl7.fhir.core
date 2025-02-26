@@ -72,7 +72,7 @@
        fhir:display [ fhir:v "Maroondah City Council" ]
      ]
   ] ) ; #     Dog tag, under Maroondah City council    
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "usual" ] ;
      fhir:given ( [ fhir:v "Kenzi" ] )

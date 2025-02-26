@@ -64,7 +64,7 @@
      fhir:who [
        fhir:display [ fhir:v "ExportToMedia.app" ]
      ] ;
-     fhir:requestor [ fhir:v "false"^^xsd:boolean ]
+     fhir:requestor [ fhir:v false ]
   ] [
      fhir:type [
        fhir:coding ( [
@@ -79,7 +79,7 @@
        ] ;
        fhir:display [ fhir:v "Grahame Grieve" ]
      ] ;
-     fhir:requestor [ fhir:v "true"^^xsd:boolean ]
+     fhir:requestor [ fhir:v true ]
   ] [
      fhir:type [
        fhir:coding ( [
@@ -91,7 +91,7 @@
      fhir:who [
        fhir:display [ fhir:v "Media title: Hello World" ]
      ] ;
-     fhir:requestor [ fhir:v "false"^^xsd:boolean ]
+     fhir:requestor [ fhir:v false ]
   ] ) ; # 
   fhir:source [
      fhir:observer [

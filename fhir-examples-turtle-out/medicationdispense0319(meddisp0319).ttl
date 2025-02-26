@@ -78,7 +78,7 @@
      fhir:text [ fhir:v "Patient told to take with food" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Two tablets at once" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [
@@ -128,7 +128,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "2"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 2 ] ;
      fhir:text [ fhir:v "One tablet daily for 4 days" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [

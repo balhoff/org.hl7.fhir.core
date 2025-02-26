@@ -132,7 +132,7 @@
        fhir:text [ fhir:v "derived proportion" ]
      ] ;
      fhir:quantity [
-       fhir:value [ fhir:v "0.0525"^^xsd:decimal ]
+       fhir:value [ fhir:v 0.0525 ]
      ] ;
      fhir:sampleSize [
        fhir:note ( [

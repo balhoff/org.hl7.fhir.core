@@ -93,7 +93,7 @@
        ] )
      ] ;
      fhir:dose [
-       fhir:value [ fhir:v "1.8"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.8 ] ;
        fhir:unit [ fhir:v "mg/kg" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mg/kg" ]

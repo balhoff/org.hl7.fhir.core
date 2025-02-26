@@ -52,7 +52,7 @@
      a fhir:dateTime ;
      fhir:v "2015-01-15"^^xsd:date
   ] ; # 
-  fhir:primarySource [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:primarySource [ fhir:v true] ; # 
   fhir:location [
      fhir:link <http://hl7.org/fhir/Location/1> ;
      fhir:reference [ fhir:v "Location/1" ]
@@ -72,7 +72,7 @@
      ] )
   ] ; # 
   fhir:doseQuantity [
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "ml" ]
   ] ; # 
@@ -102,7 +102,7 @@
   fhir:note ( [
      fhir:text [ fhir:v "Notes on adminstration of vaccine" ]
   ] ) ; # 
-  fhir:isSubpotent [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:isSubpotent [ fhir:v true] ; # 
   fhir:subpotentReason ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"^^xsd:anyURI ] ;

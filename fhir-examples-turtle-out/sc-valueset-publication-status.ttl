@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "PublicationStatusCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"PublicationStatus\""] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [

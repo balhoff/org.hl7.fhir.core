@@ -67,7 +67,7 @@
      ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "4.5 grams in D5W 250 ml. IV every 6 hours.Infuse over 30 min at 8L/min " ] ;
      fhir:timing [
        fhir:repeat [
@@ -94,7 +94,7 @@
        ] ;
        fhir:dose [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "4.5"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 4.5 ] ;
          fhir:unit [ fhir:v "g" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "g" ]

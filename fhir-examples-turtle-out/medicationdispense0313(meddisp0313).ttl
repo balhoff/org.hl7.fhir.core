@@ -69,7 +69,7 @@
        fhir:strength [
          a fhir:Ratio ;
          fhir:numerator [
-           fhir:value [ fhir:v "0.9"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 0.9 ] ;
            fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "g" ]
          ] ;
@@ -124,7 +124,7 @@
   fhir:whenPrepared [ fhir:v "2016-04-28T07:13:00+05:00"^^xsd:dateTime] ; # 
   fhir:whenHandedOver [ fhir:v "2016-04-28T07:13:00+05:00"^^xsd:dateTime] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "KCl 20 mEq in 1 L 0.9%NS IV at 100 ml/hr" ] ;
      fhir:timing [
        fhir:repeat [

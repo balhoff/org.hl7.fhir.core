@@ -39,7 +39,7 @@
      fhir:system [ fhir:v "http://www.goodhealth.org/identifiers/mrn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "123456" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "Levin" ] ;
      fhir:given ( [ fhir:v "Henry" ] ) ;

@@ -840,7 +840,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.06"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.06 ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "ug/ml" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -911,7 +911,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.05"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.05 ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "ug/ml" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -982,7 +982,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.05"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.05 ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "ug/ml" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -1053,7 +1053,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.06"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.06 ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "ug/ml" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -1124,7 +1124,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.05"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.05 ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "ug/ml" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -1185,7 +1185,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.05"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.05 ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "ug/ml" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;

@@ -86,7 +86,7 @@
      fhir:text [ fhir:v "Patient told to take with food" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "one tablet one time daily in the morning for rib pain" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [
@@ -167,7 +167,7 @@
   fhir:substitution [
      fhir:allowed [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ] ;
      fhir:reason [
        fhir:coding ( [

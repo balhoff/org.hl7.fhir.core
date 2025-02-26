@@ -73,7 +73,7 @@
      fhir:display [ fhir:v "Patrick Pump" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "1.8 mg/kg IV infusion over 20 minutes every 3 weeks for 16 cycles" ] ;
      fhir:timing [
        fhir:repeat [
@@ -101,7 +101,7 @@
        ] ;
        fhir:dose [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "1.8"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1.8 ] ;
          fhir:unit [ fhir:v "mg/kg" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "mg/kg" ]
@@ -109,7 +109,7 @@
        fhir:rate [
          a fhir:Ratio ;
          fhir:numerator [
-           fhir:value [ fhir:v "1.8"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 1.8 ] ;
            fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "mg/kg" ]
          ] ;

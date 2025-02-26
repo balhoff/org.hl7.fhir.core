@@ -57,7 +57,7 @@
      ] ;
      fhir:probability [
        a fhir:decimal ;
-       fhir:v "0.02"^^xsd:decimal
+       fhir:v 0.02
      ] ;
      fhir:when [
        a fhir:Range ;

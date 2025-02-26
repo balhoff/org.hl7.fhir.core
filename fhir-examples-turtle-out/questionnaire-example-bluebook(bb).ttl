@@ -105,7 +105,7 @@
              fhir:operator [ fhir:v "exists" ] ;
              fhir:answer [
                a fhir:boolean ;
-               fhir:v "true"^^xsd:boolean
+               fhir:v true
              ]
            ] ) ;
            fhir:item ( [

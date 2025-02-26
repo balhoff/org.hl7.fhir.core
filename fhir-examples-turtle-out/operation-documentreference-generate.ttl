@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "3"^^xsd:integer
+       fhir:v 3
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Generate a DocumentReference from a document"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,31 +52,31 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v true] ; # 
   fhir:code [ fhir:v "generate"] ; # 
   fhir:comment [ fhir:v "The server either returns a search result containing a single document reference, \nor it returns an error. \nIf the URI refers to another server, it is at the discretion of the \nserver whether to retrieve it or return an error."] ; # 
   fhir:resource ( [ fhir:v "DocumentReference"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "url" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The URL to the source document. This may be a general URL or a Binary or a Composition or a Bundle." ] ;
      fhir:type [ fhir:v "uri" ]
   ] [
      fhir:name [ fhir:v "persist" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "Whether to store the document at the document end-point (/Document) or not, once it is generated (default is for the server to decide)." ] ;
      fhir:type [ fhir:v "boolean" ]
   ] [
      fhir:name [ fhir:v "return" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The bundle type is \"searchset\"containing [DocumentReference](documentreference.html) resource and may include a Binary. If the input url refers to another server, it is at the discretion of the server whether to retrieve it or return an error." ] ;
      fhir:type [ fhir:v "Bundle" ]

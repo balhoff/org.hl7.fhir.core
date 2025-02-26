@@ -93,7 +93,7 @@
        fhir:reference [ fhir:v "Patient/example" ] ;
        fhir:display [ fhir:v "Peter James Chalmers" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "accepted" ]
   ] [
      fhir:type ( [
@@ -107,7 +107,7 @@
        fhir:reference [ fhir:v "Practitioner/example" ] ;
        fhir:display [ fhir:v "Dr Adam Careful" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "accepted" ]
   ] [
      fhir:actor [
@@ -115,7 +115,7 @@
        fhir:reference [ fhir:v "Location/1" ] ;
        fhir:display [ fhir:v "South Wing, second floor" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "accepted" ]
   ] ) . # 
 

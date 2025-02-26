@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "InventoryItemStatusCodesCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"InventoryItem Status Codes\""] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:publisher [ fhir:v "FHIR Project team"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

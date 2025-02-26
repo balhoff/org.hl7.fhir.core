@@ -46,7 +46,7 @@
          fhir:version [ fhir:v "5.0.0" ] ;
          fhir:code [ fhir:v "RiskOfBias" ] ;
          fhir:display [ fhir:v "Risk of bias" ] ;
-         fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+         fhir:userSelected [ fhir:v true ]
        ] )
      ] ;
      fhir:classifier ( [
@@ -55,13 +55,13 @@
          fhir:version [ fhir:v "5.0.0" ] ;
          fhir:code [ fhir:v "extremely-serious-concern" ] ;
          fhir:display [ fhir:v "extremely serious concern" ] ;
-         fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+         fhir:userSelected [ fhir:v true ]
        ] )
      ] ) ;
      fhir:author [
        fhir:display [ fhir:v "COVID-19 Knowledge Accelerator Evidence 7637 Authors (Brian S. Alper, Harold Lehmann, Ahmad Sofi-Mahmudi, Joanne Dehnbostel, Ilkka Kunnamo)" ]
      ] ;
-     fhir:freeToShare [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:freeToShare [ fhir:v true ] ;
      fhir:component ( [
        fhir:summary [ fhir:v "Inclusion of suspected COVID-19 in 1 of 3 trials may introduce selection bias, but the impact appears limited." ] ;
        fhir:type [
@@ -73,7 +73,7 @@
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "no-concern" ] ;
            fhir:display [ fhir:v "no serious concern" ] ;
-           fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+           fhir:userSelected [ fhir:v true ]
          ] )
        ] ) ;
        fhir:author [
@@ -93,7 +93,7 @@
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "serious-concern" ] ;
            fhir:display [ fhir:v "serious concern" ] ;
-           fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+           fhir:userSelected [ fhir:v true ]
          ] )
        ] ) ;
        fhir:author [
@@ -132,7 +132,7 @@
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "serious-concern" ] ;
              fhir:display [ fhir:v "serious concern" ] ;
-             fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+             fhir:userSelected [ fhir:v true ]
            ] )
          ] ) ;
          fhir:author [
@@ -157,7 +157,7 @@
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "very-serious-concern" ] ;
            fhir:display [ fhir:v "very serious concern" ] ;
-           fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+           fhir:userSelected [ fhir:v true ]
          ] )
        ] ) ;
        fhir:author [
@@ -176,7 +176,7 @@
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "very-serious-concern" ] ;
              fhir:display [ fhir:v "very serious concern" ] ;
-             fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+             fhir:userSelected [ fhir:v true ]
            ] )
          ] ) ;
          fhir:author [
@@ -235,7 +235,7 @@
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "no-concern" ] ;
            fhir:display [ fhir:v "no serious concern" ] ;
-           fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+           fhir:userSelected [ fhir:v true ]
          ] )
        ] ) ;
        fhir:author [
@@ -255,7 +255,7 @@
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "no-concern" ] ;
            fhir:display [ fhir:v "no serious concern" ] ;
-           fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+           fhir:userSelected [ fhir:v true ]
          ] )
        ] ) ;
        fhir:author [
@@ -275,7 +275,7 @@
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "very-serious-concern" ] ;
            fhir:display [ fhir:v "very serious concern" ] ;
-           fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+           fhir:userSelected [ fhir:v true ]
          ] )
        ] ) ;
        fhir:author [
@@ -294,7 +294,7 @@
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "very-serious-concern" ] ;
              fhir:display [ fhir:v "very serious concern" ] ;
-             fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+             fhir:userSelected [ fhir:v true ]
            ] )
          ] ) ;
          fhir:author [
@@ -318,7 +318,7 @@
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "very-serious-concern" ] ;
              fhir:display [ fhir:v "very serious concern" ] ;
-             fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+             fhir:userSelected [ fhir:v true ]
            ] )
          ] ) ;
          fhir:author [
@@ -338,7 +338,7 @@
          fhir:version [ fhir:v "5.0.0" ] ;
          fhir:code [ fhir:v "Inconsistency" ] ;
          fhir:display [ fhir:v "Inconsistency" ] ;
-         fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+         fhir:userSelected [ fhir:v true ]
        ] )
      ] ;
      fhir:author [

@@ -41,7 +41,7 @@
      ] ;
      fhir:deceased [
        a fhir:boolean ;
-       fhir:v "false"^^xsd:boolean
+       fhir:v false
      ] ;
      fhir:condition ( [
        fhir:code [
@@ -72,7 +72,7 @@
      ] ;
      fhir:deceased [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ] ;
      fhir:condition ( [
        fhir:code [

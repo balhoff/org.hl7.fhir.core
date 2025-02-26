@@ -51,10 +51,10 @@
   fhir:author ( [
      fhir:name [ fhir:v "Brian S. Alper" ]
   ] ) ; # 
-  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v false] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "Adult." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -75,7 +75,7 @@
      ]
   ] [
      fhir:description [ fhir:v "Diagnosed with type 2 diabetes." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -105,7 +105,7 @@
        fhir:code [ fhir:v "any-of" ] ;
        fhir:characteristic ( [
          fhir:description [ fhir:v "Body Mass Index (BMI) ≥ 40.0 kg/m2" ] ;
-         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v false ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -130,7 +130,7 @@
            fhir:code [ fhir:v "all-of" ] ;
            fhir:characteristic ( [
              fhir:description [ fhir:v "BMI ≥ 37.5 kg/m2" ] ;
-             fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+             fhir:exclude [ fhir:v false ] ;
              fhir:definitionByTypeAndValue [
                fhir:type [
                  fhir:coding ( [
@@ -142,7 +142,7 @@
                ] ;
                fhir:value [
                  a fhir:Quantity ;
-                 fhir:value [ fhir:v "37.5"^^xsd:decimal ] ;
+                 fhir:value [ fhir:v 37.5 ] ;
                  fhir:comparator [ fhir:v ">=" ] ;
                  fhir:unit [ fhir:v "kg/m2" ] ;
                  fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -200,7 +200,7 @@
                    fhir:code [ fhir:v "kg/m2" ]
                  ] ;
                  fhir:high [
-                   fhir:value [ fhir:v "39.9"^^xsd:decimal ] ;
+                   fhir:value [ fhir:v 39.9 ] ;
                    fhir:unit [ fhir:v "kg/m2" ] ;
                    fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
                    fhir:code [ fhir:v "kg/m2" ]
@@ -209,7 +209,7 @@
              ]
            ] [
              fhir:description [ fhir:v "who do not achieve durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods." ] ;
-             fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+             fhir:exclude [ fhir:v true ] ;
              fhir:definitionCodeableConcept [
                fhir:text [ fhir:v "achieving durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods" ]
              ]
@@ -233,13 +233,13 @@
                fhir:value [
                  a fhir:Range ;
                  fhir:low [
-                   fhir:value [ fhir:v "32.5"^^xsd:decimal ] ;
+                   fhir:value [ fhir:v 32.5 ] ;
                    fhir:unit [ fhir:v "kg/m2" ] ;
                    fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
                    fhir:code [ fhir:v "kg/m2" ]
                  ] ;
                  fhir:high [
-                   fhir:value [ fhir:v "37.4"^^xsd:decimal ] ;
+                   fhir:value [ fhir:v 37.4 ] ;
                    fhir:unit [ fhir:v "kg/m2" ] ;
                    fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
                    fhir:code [ fhir:v "kg/m2" ]
@@ -251,7 +251,7 @@
              fhir:definitionId [ fhir:v "AsianAmerican" ]
            ] [
              fhir:description [ fhir:v "who do not achieve durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods." ] ;
-             fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+             fhir:exclude [ fhir:v true ] ;
              fhir:definitionCodeableConcept [
                fhir:text [ fhir:v "achieving durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods" ]
              ]
@@ -264,7 +264,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByCombination [
        fhir:code [ fhir:v "any-of" ] ;
        fhir:characteristic ( [
@@ -369,7 +369,7 @@
      ] [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:text [ fhir:v "Current evidence of congestive heart failure, angina pectoris, or symptomatic peripheral vascular disease." ]
      ]
@@ -378,7 +378,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:text [ fhir:v "Cardiac stress test indicating that surgery or IMM would not be safe." ]
      ]
@@ -387,7 +387,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -436,7 +436,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -487,12 +487,12 @@
      ] [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByCombination [
        fhir:code [ fhir:v "all-of" ] ;
        fhir:characteristic ( [
          fhir:description [ fhir:v "Cancer of any kind" ] ;
-         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v false ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -518,7 +518,7 @@
          ]
        ] [
          fhir:description [ fhir:v "(except basal cell skin cancer)" ] ;
-         fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v true ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -544,7 +544,7 @@
          ]
        ] [
          fhir:description [ fhir:v "(except cancer in situ)" ] ;
-         fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v true ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -570,7 +570,7 @@
          ]
        ] [
          fhir:description [ fhir:v "unless documented to be disease-free for five years" ] ;
-         fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v true ] ;
          fhir:definitionCodeableConcept [
            fhir:coding ( [
              a sct:395100000 ;
@@ -606,7 +606,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:text [ fhir:v "history of coagulopathy" ]
      ]
@@ -615,7 +615,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -646,7 +646,7 @@
      fhir:note ( [
        fhir:text [ fhir:v "placeholder for now to represent 'screened surgical candidate'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -658,7 +658,7 @@
        ] ;
        fhir:value [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1.5 ] ;
          fhir:comparator [ fhir:v ">=" ] ;
          fhir:unit [ fhir:v "mg/dl" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;

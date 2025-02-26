@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Base FHIR Capability Statement (Empty)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR Project Team"] ; # 
   fhir:contact ( [
@@ -37,7 +37,7 @@
      fhir:mode [ fhir:v "server" ] ;
      fhir:documentation [ fhir:v "An empty Capability Statement" ] ;
      fhir:security [
-       fhir:cors [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:cors [ fhir:v true ] ;
        fhir:service ( [
          fhir:coding ( [
            fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/restful-security-service"^^xsd:anyURI ] ;

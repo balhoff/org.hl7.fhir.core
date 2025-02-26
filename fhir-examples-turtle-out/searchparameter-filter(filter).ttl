@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "FilterSearchParameter"] ; # 
   fhir:title [ fhir:v "Filter Search Parameter"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2018-07-26"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health Level Seven International (FHIR Infrastructure)"] ; # 
   fhir:contact ( [

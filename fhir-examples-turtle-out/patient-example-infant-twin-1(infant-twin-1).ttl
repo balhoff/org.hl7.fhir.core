@@ -59,7 +59,7 @@
   ] ; # 
   fhir:multipleBirth [
      a fhir:integer ;
-     fhir:v "1"^^xsd:integer
+     fhir:v 1
   ] ; # 
   fhir:contact ( [
      fhir:relationship ( [

@@ -25,7 +25,7 @@
      fhir:system [ fhir:v "http://goodhealth.org/bodystructure/identifiers"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "12345" ]
   ] ) ; # 
-  fhir:active [ fhir:v "false"^^xsd:boolean] ; #   	bodystructure marked as no longer active - entered in error
+  fhir:active [ fhir:v false] ; #   	bodystructure marked as no longer active - entered in error
 #  
   fhir:morphology [
      fhir:text [ fhir:v "Skin patch" ]

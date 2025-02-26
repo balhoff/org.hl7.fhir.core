@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "ExampleSearchParameterOnAnExtension"] ; # 
   fhir:title [ fhir:v "Example Search Parameter on an extension"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:publisher [ fhir:v "Health Level Seven International (FHIR Infrastructure)"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

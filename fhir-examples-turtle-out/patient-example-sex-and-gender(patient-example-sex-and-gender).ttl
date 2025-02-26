@@ -322,7 +322,7 @@
      fhir:system [ fhir:v "urn:oid:1.2.36.146.595.217.0.1"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "12345" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Roth" ] ;
@@ -339,7 +339,7 @@
   fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
   fhir:deceased [
      a fhir:boolean ;
-     fhir:v "false"^^xsd:boolean
+     fhir:v false
   ] ; # 
   fhir:managingOrganization [
      fhir:link <http://hl7.org/fhir/Organization/1> ;

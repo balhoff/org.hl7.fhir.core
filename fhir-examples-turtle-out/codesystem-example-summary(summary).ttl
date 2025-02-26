@@ -30,7 +30,7 @@
   fhir:name [ fhir:v "CodeSystemSummaryExampleACMEBodySites"] ; # 
   fhir:title [ fhir:v "Code system summary example for ACME body sites"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:publisher [ fhir:v "HL7 International"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR project team" ] ;
@@ -61,7 +61,7 @@
        fhir:code [ fhir:v "CA" ]
      ] )
   ] ) ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "not-present"] ; # 
   fhir:count [ fhir:v "92"^^xsd:nonNegativeInteger] . # 
 

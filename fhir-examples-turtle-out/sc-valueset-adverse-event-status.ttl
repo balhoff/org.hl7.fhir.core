@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "AdverseEventStatusCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"Adverse Event Status\""] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:publisher [ fhir:v "HL7 International - Patient Care WG"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

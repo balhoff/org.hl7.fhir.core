@@ -51,10 +51,10 @@
   fhir:author ( [
      fhir:name [ fhir:v "Brian S. Alper" ]
   ] ) ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "Age 30 to 67 years at eligibility visit." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -92,12 +92,12 @@
      ] )
   ] [
      fhir:description [ fhir:v "Diagnosed with T2DM at least 6 months prior to enrollment, under the active care of a doctor for at least the six months prior to enrollment, and HbA1c ≥ 8.0%." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByCombination [
        fhir:code [ fhir:v "all-of" ] ;
        fhir:characteristic ( [
          fhir:description [ fhir:v "Diagnosed with T2DM at least 6 months prior to enrollment" ] ;
-         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v false ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -140,7 +140,7 @@
          fhir:note ( [
            fhir:text [ fhir:v "assumption that active care means active care of type 2 diabetes mellitus" ]
          ] ) ;
-         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v false ] ;
          fhir:definitionCodeableConcept [
            fhir:coding ( [
              a sct:305450004 ;
@@ -184,7 +184,7 @@
          fhir:note ( [
            fhir:text [ fhir:v "assumption that this is the last recorded HbA1c before the enrollment visit, but not explicitly stated in the short-phrase Eligibility Criteria" ]
          ] ) ;
-         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v false ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -207,7 +207,7 @@
      ]
   ] [
      fhir:description [ fhir:v "Body Mass Index (BMI) ≥ 30.0 kg/m2 and ≤ 39.9 kg/m2 at eligibility visit." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -226,7 +226,7 @@
            fhir:code [ fhir:v "kg/m2" ]
          ] ;
          fhir:high [
-           fhir:value [ fhir:v "39.9"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 39.9 ] ;
            fhir:unit [ fhir:v "kg/m2" ] ;
            fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "kg/m2" ]
@@ -245,20 +245,20 @@
      ] )
   ] [
      fhir:description [ fhir:v "Willingness to accept random assignment to either treatment group." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ]
+     fhir:exclude [ fhir:v false ]
   ] [
      fhir:description [ fhir:v "Expect to live or work within approximately one hour's traveling time from the study clinic for the duration of the two-year trial." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ]
+     fhir:exclude [ fhir:v false ]
   ] [
      fhir:description [ fhir:v "Willingness to comply with the follow-up protocol and successful completion of the run-in." ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ]
+     fhir:exclude [ fhir:v false ]
   ] [
      fhir:linkId [ fhir:v "EligibilityVisit" ] ;
      fhir:description [ fhir:v "Written informed consent." ] ;
      fhir:note ( [
        fhir:text [ fhir:v "The example used here acknowledges attainment of the written informed consent at the eligibility visit (which is also the time of enrollment) so is referencing this characteristic with the linkId EligibilityVisit to be used as a reference point from timeFromEvent in the specification of other characteristics." ]
      ] ) ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:timeFromEvent ( [
        fhir:event [
          a fhir:CodeableConcept ;
@@ -272,7 +272,7 @@
      ] )
   ] [
      fhir:description [ fhir:v "Cardiovascular event (myocardial infarction, acute coronary syndrome, coronary artery angioplasty or bypass, stroke) in the past six months." ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByCombination [
        fhir:code [ fhir:v "any-of" ] ;
        fhir:characteristic ( [
@@ -402,13 +402,13 @@
      fhir:note ( [
        fhir:text [ fhir:v "This may be possible to encode as presence of Disease(disorder) without 'in remission'" ]
      ] ) ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ]
+     fhir:exclude [ fhir:v true ]
   ] [
      fhir:description [ fhir:v "Cardiac stress test indicating that surgery or IMM would not be safe." ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ]
+     fhir:exclude [ fhir:v true ]
   ] [
      fhir:description [ fhir:v "Pulmonary embolus in the past six months." ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -458,7 +458,7 @@
      ] )
   ] [
      fhir:description [ fhir:v "Thrombophlebitis in the past six months." ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -508,12 +508,12 @@
      ] )
   ] [
      fhir:description [ fhir:v "Cancer of any kind (except basal cell skin cancer or cancer in situ) unless documented to be disease-free for five years." ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByCombination [
        fhir:code [ fhir:v "all-of" ] ;
        fhir:characteristic ( [
          fhir:description [ fhir:v "Cancer of any kind" ] ;
-         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v false ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -539,7 +539,7 @@
          ]
        ] [
          fhir:description [ fhir:v "(except basal cell skin cancer)" ] ;
-         fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v true ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -565,7 +565,7 @@
          ]
        ] [
          fhir:description [ fhir:v "(except cancer in situ)" ] ;
-         fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v true ] ;
          fhir:definitionByTypeAndValue [
            fhir:type [
              fhir:coding ( [
@@ -591,7 +591,7 @@
          ]
        ] [
          fhir:description [ fhir:v "unless documented to be disease-free for five years" ] ;
-         fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:exclude [ fhir:v true ] ;
          fhir:definitionCodeableConcept [
            fhir:coding ( [
              a sct:395100000 ;
@@ -628,10 +628,10 @@
      ]
   ] [
      fhir:description [ fhir:v "History of coagulopathy" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ]
+     fhir:exclude [ fhir:v true ]
   ] [
      fhir:description [ fhir:v "Significant anemia (hemoglobin 1.0 g or more below normal range)" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -659,7 +659,7 @@
      ]
   ] [
      fhir:description [ fhir:v "Serum creatinine ≥ 1.5 mg/dl" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -671,7 +671,7 @@
        ] ;
        fhir:value [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1.5 ] ;
          fhir:comparator [ fhir:v ">=" ] ;
          fhir:unit [ fhir:v "mg/dl" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
@@ -680,7 +680,7 @@
      ]
   ] [
      fhir:description [ fhir:v "HbA1c ≥ 14.0%" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [

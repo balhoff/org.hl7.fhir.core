@@ -37,7 +37,7 @@
        fhir:display [ fhir:v "Acme Healthcare" ]
      ]
   ] ) ; #   MRN assigned by ACME healthcare on 6-May 2001  
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Chalmers" ] ;

@@ -90,7 +90,7 @@
   ] ; # 
   fhir:totalPriceComponent [
      fhir:type [ fhir:v "base" ] ;
-     fhir:factor [ fhir:v "0.8"^^xsd:decimal ] ;
+     fhir:factor [ fhir:v 0.8 ] ;
      fhir:amount [
        fhir:value [ fhir:v "40"^^xsd:decimal ] ;
        fhir:currency [ fhir:v "EUR" ]

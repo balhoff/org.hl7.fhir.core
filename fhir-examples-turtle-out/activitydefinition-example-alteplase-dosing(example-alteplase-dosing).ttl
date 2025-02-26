@@ -40,7 +40,7 @@
   ] ; # 
   fhir:intent [ fhir:v "order"] ; # 
   fhir:dosage ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "give 10% of dose over 1 minute" ] ;
      fhir:route [
        fhir:coding ( [
@@ -60,7 +60,7 @@
        ] ;
        fhir:dose [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "0.9"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 0.9 ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "mg/kg" ]
        ]
@@ -71,7 +71,7 @@
        fhir:code [ fhir:v "mg" ]
      ]
   ] [
-     fhir:sequence [ fhir:v "2"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 2 ] ;
      fhir:text [ fhir:v "give remaining 90% of dose over 1 hour" ] ;
      fhir:route [
        fhir:coding ( [
@@ -91,7 +91,7 @@
        ] ;
        fhir:dose [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "0.9"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 0.9 ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "mg/kg" ]
        ]

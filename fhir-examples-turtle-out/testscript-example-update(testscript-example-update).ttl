@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "TestScriptExampleUpdate"] ; # 
   fhir:title [ fhir:v "TestScript Example Update"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-01-18"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7"] ; # 
   fhir:contact ( [
@@ -56,8 +56,8 @@
        fhir:description [ fhir:v "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ]
      ] ) ;
      fhir:capability ( [
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:validated [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:validated [ fhir:v false ] ;
        fhir:description [ fhir:v "Patient Update and Delete Operations" ] ;
        fhir:link ( [ fhir:v "http://hl7.org/fhir/http.html#update"^^xsd:anyURI ] [ fhir:v "http://hl7.org/fhir/http.html#delete"^^xsd:anyURI ] ) ;
        fhir:capabilities [
@@ -68,8 +68,8 @@
   ] ; # 
   fhir:fixture ( [
      fhir:id [ fhir:v "fixture-patient-create" ] ;
-     fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
-     fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:autocreate [ fhir:v false ] ;
+     fhir:autodelete [ fhir:v false ] ;
      fhir:resource [
        fhir:link <http://hl7.org/fhir/Patient/example> ;
        fhir:reference [ fhir:v "Patient/example" ] ;
@@ -77,8 +77,8 @@
      ]
   ] [
      fhir:id [ fhir:v "fixture-patient-update" ] ;
-     fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
-     fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:autocreate [ fhir:v false ] ;
+     fhir:autodelete [ fhir:v false ] ;
      fhir:resource [
        fhir:link <http://hl7.org/fhir/Patient/pat1> ;
        fhir:reference [ fhir:v "Patient/pat1" ] ;
@@ -106,7 +106,7 @@
          fhir:label [ fhir:v "SetupDeletePatient" ] ;
          fhir:description [ fhir:v "Execute a delete operation to insure the patient does not exist on the server." ] ;
          fhir:accept [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ]
        ]
      ] [
@@ -115,8 +115,8 @@
          fhir:direction [ fhir:v "response" ] ;
          fhir:operator [ fhir:v "in" ] ;
          fhir:responseCode [ fhir:v "200,204" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:operation [
@@ -129,7 +129,7 @@
          fhir:description [ fhir:v "Create patient resource on test server using the contents of fixture-patient-create" ] ;
          fhir:accept [ fhir:v "xml" ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-create" ]
        ]
@@ -138,8 +138,8 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 201(Created)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:responseCode [ fhir:v "201" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] ; # 
@@ -158,7 +158,7 @@
          fhir:description [ fhir:v "Update patient resource on test server using the contents of fixture-patient-update" ] ;
          fhir:accept [ fhir:v "xml" ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-update" ]
        ]
@@ -166,23 +166,23 @@
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned format is XML." ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server might not support versioning." ] ;
          fhir:headerField [ fhir:v "Last-Modified" ] ;
          fhir:operator [ fhir:v "notEmpty" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "true"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v true ]
        ]
      ] )
   ] ) . # 

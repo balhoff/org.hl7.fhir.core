@@ -92,7 +92,7 @@
   fhir:name [ fhir:v "v2.AdministrativeGender"] ; # 
   fhir:title [ fhir:v "v2 map for AdministrativeGender"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:jurisdiction ( [
@@ -164,7 +164,7 @@
   fhir:name [ fhir:v "v3.AdministrativeGender"] ; # 
   fhir:title [ fhir:v "v3 map for AdministrativeGender"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:jurisdiction ( [
@@ -231,7 +231,7 @@
   fhir:name [ fhir:v "v3.DocumentReferenceStatus"] ; # 
   fhir:title [ fhir:v "v3 map for DocumentReferenceStatus"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:jurisdiction ( [
@@ -292,7 +292,7 @@
   fhir:name [ fhir:v "v2.NameUse"] ; # 
   fhir:title [ fhir:v "v2 map for NameUse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -391,7 +391,7 @@
   fhir:name [ fhir:v "v3.NameUse"] ; # 
   fhir:title [ fhir:v "v3 map for NameUse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -485,7 +485,7 @@
   fhir:name [ fhir:v "v2.AddressUse"] ; # 
   fhir:title [ fhir:v "v2 map for AddressUse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -568,7 +568,7 @@
   fhir:name [ fhir:v "v3.AddressUse"] ; # 
   fhir:title [ fhir:v "v3 map for AddressUse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -649,7 +649,7 @@
   fhir:name [ fhir:v "v3.AddressType"] ; # 
   fhir:title [ fhir:v "v3 map for AddressType"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -713,7 +713,7 @@
   fhir:name [ fhir:v "v2.ContactPointSystem"] ; # 
   fhir:title [ fhir:v "v2 map for ContactPointSystem"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -797,7 +797,7 @@
   fhir:name [ fhir:v "v2.ContactPointUse"] ; # 
   fhir:title [ fhir:v "v2 map for ContactPointUse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -876,7 +876,7 @@
   fhir:name [ fhir:v "v3.ContactPointUse"] ; # 
   fhir:title [ fhir:v "v3 map for ContactPointUse"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -973,7 +973,7 @@
   fhir:name [ fhir:v "V3DetectedIssueSeverity"] ; # 
   fhir:title [ fhir:v "v3 map for DetectedIssueSeverity"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2020-12-24T21:13:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:description [ fhir:v "v3 map for DetectedIssueSeverity"] ; # 
@@ -1035,7 +1035,7 @@
   fhir:name [ fhir:v "V3CompositionStatus"] ; # 
   fhir:title [ fhir:v "v3 map for CompositionStatus"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2020-12-24T21:13:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:description [ fhir:v "v3 map for CompositionStatus"] ; # 
@@ -1103,7 +1103,7 @@
   fhir:name [ fhir:v "FHIRv3AddressUse"] ; # 
   fhir:title [ fhir:v "FHIR/v3 Address Use Mapping"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-06-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7, Inc"] ; # 
   fhir:contact ( [
@@ -1212,7 +1212,7 @@
   fhir:name [ fhir:v "SNOMEDCTToICD10CMMappingsForFractureOfUlna"] ; # 
   fhir:title [ fhir:v "SNOMED CT to ICD-10-CM mappings for fracture of ulna"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-06-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7, Inc"] ; # 
   fhir:contact ( [
@@ -1281,7 +1281,7 @@
   fhir:name [ fhir:v "SpecimenMappingFromV2Table0487ToSNOMEDCT"] ; # 
   fhir:title [ fhir:v "Specimen mapping from v2 table 0487 to SNOMED CT"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2013-07-25"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "FHIR project team (original source: LabMCoP)"] ; # 
   fhir:contact ( [
@@ -1403,7 +1403,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "ASERU" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "ASP" ] ;
        fhir:target ( [
@@ -1419,13 +1419,13 @@
        ] )
      ] [
        fhir:code [ fhir:v "ATTE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "AUTOC" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "AUTP" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "BBL" ] ;
        fhir:target ( [
@@ -1434,10 +1434,10 @@
        ] )
      ] [
        fhir:code [ fhir:v "BCYST" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "BITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "BLEB" ] ;
        fhir:target ( [
@@ -1491,7 +1491,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "BOWL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "BPU" ] ;
        fhir:target ( [
@@ -1608,7 +1608,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "CBITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "CLIPP" ] ;
        fhir:target ( [
@@ -1661,10 +1661,10 @@
        ] )
      ] [
        fhir:code [ fhir:v "CSCR" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "CSERU" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "CSITE" ] ;
        fhir:target ( [
@@ -1699,7 +1699,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "CSVR" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "CTP" ] ;
        fhir:target ( [
@@ -1748,7 +1748,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "DBITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "DCS" ] ;
        fhir:target ( [
@@ -1763,7 +1763,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "DEION" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "DIA" ] ;
        fhir:target ( [
@@ -1850,10 +1850,10 @@
        ] )
      ] [
        fhir:code [ fhir:v "EEYE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "EFF" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "EFFUS" ] ;
        fhir:target ( [
@@ -1886,13 +1886,13 @@
        ] )
      ] [
        fhir:code [ fhir:v "EOTH" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "ESOI" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "ESOS" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "ETA" ] ;
        fhir:target ( [
@@ -1940,7 +1940,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "EWHI" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "EXG" ] ;
        fhir:target ( [
@@ -1949,7 +1949,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "EXS" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "EXUDTE" ] ;
        fhir:target ( [
@@ -1958,7 +1958,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "FAW" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "FBLOOD" ] ;
        fhir:target ( [
@@ -1999,7 +1999,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "FLT" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "FLU" ] ;
        fhir:target ( [
@@ -2177,7 +2177,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "GSOL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "GSPEC" ] ;
        fhir:target ( [
@@ -2199,7 +2199,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "GT" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "GTUBE" ] ;
        fhir:target ( [
@@ -2228,7 +2228,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "HBITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "HBLUD" ] ;
        fhir:target ( [
@@ -2297,7 +2297,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "IBITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "ICYST" ] ;
        fhir:target ( [
@@ -2333,7 +2333,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "ILLEG" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "IMP" ] ;
        fhir:target ( [
@@ -2348,7 +2348,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "INFIL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "INS" ] ;
        fhir:target ( [
@@ -2370,7 +2370,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "IUD" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "IVCAT" ] ;
        fhir:target ( [
@@ -2528,7 +2528,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "LENS2" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "LESN" ] ;
        fhir:target ( [
@@ -2544,7 +2544,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "LIQO" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "LSAC" ] ;
        fhir:target ( [
@@ -2626,7 +2626,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "NEDL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "NEPH" ] ;
        fhir:target ( [
@@ -2686,7 +2686,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "NODUL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "NSECR" ] ;
        fhir:target ( [
@@ -2701,7 +2701,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "ORL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "OTH" ] ;
        fhir:target ( [
@@ -2710,7 +2710,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "PACEM" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "PCFL" ] ;
        fhir:target ( [
@@ -2725,7 +2725,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "PDTS" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "PELVA" ] ;
        fhir:target ( [
@@ -2741,7 +2741,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "PENIL" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "PERIA" ] ;
        fhir:target ( [
@@ -2865,7 +2865,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "POPLV" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "PORTA" ] ;
        fhir:target ( [
@@ -2944,7 +2944,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "QC3" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "RANDU" ] ;
        fhir:target ( [
@@ -2953,7 +2953,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "RBITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "RECT" ] ;
        fhir:target ( [
@@ -3111,10 +3111,10 @@
        ] )
      ] [
        fhir:code [ fhir:v "SHUNT" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "SITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "SKBP" ] ;
        fhir:target ( [
@@ -3175,7 +3175,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "SPS" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "SPT" ] ;
        fhir:target ( [
@@ -3196,7 +3196,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "SPUT1" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "SPUTIN" ] ;
        fhir:target ( [
@@ -3211,7 +3211,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "STER" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "STL" ] ;
        fhir:target ( [
@@ -3286,7 +3286,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "SUTUR" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "SWGZ" ] ;
        fhir:target ( [
@@ -3397,7 +3397,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "TZANC" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "UDENT" ] ;
        fhir:target ( [
@@ -3475,7 +3475,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "URINP" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "URT" ] ;
        fhir:target ( [
@@ -3484,7 +3484,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "USCOP" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "USPEC" ] ;
        fhir:target ( [
@@ -3537,7 +3537,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "WB" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "WEN" ] ;
        fhir:target ( [
@@ -3546,7 +3546,7 @@
        ] )
      ] [
        fhir:code [ fhir:v "WICK" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "WND" ] ;
        fhir:target ( [
@@ -3598,19 +3598,19 @@
        ] )
      ] [
        fhir:code [ fhir:v "WWO" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "WWT" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "CSITE" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "CLIPP" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] [
        fhir:code [ fhir:v "SHU" ] ;
-       fhir:noMap [ fhir:v "true"^^xsd:boolean ]
+       fhir:noMap [ fhir:v true ]
      ] )
   ] ) . # 
 
@@ -3632,7 +3632,7 @@
   fhir:name [ fhir:v "FHIRexanple2"] ; # 
   fhir:title [ fhir:v "FHIR Example 2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-06-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7, Inc"] ; # 
   fhir:contact ( [
@@ -3711,7 +3711,7 @@
   fhir:name [ fhir:v "IndicatorToRequestPriority"] ; # 
   fhir:title [ fhir:v "Indicator To Request Priority"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:description [ fhir:v "This concept map defines a mapping from CDS Hooks indicator to request priority."] ; # 
   fhir:sourceScope [
      a fhir:canonical ;
@@ -3767,7 +3767,7 @@
   fhir:name [ fhir:v "ExampleMetadata"] ; # 
   fhir:title [ fhir:v "Metadata Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2021-07-21"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "FHIR (Example)"] ; # 
   fhir:contact ( [
@@ -3907,7 +3907,7 @@
   fhir:name [ fhir:v "ExampleMetadata"] ; # 
   fhir:title [ fhir:v "Metadata Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2022-07-21"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "FHIR (Example)"] ; # 
   fhir:contact ( [
@@ -4044,7 +4044,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:title [ fhir:v "Example map with priorities"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:description [ fhir:v "Example inspired by UK extended complex map (999002271000000101)"] ; # 
   fhir:copyright [ fhir:v "Creative Commons 0"] ; # 
   fhir:property ( [
@@ -4141,7 +4141,7 @@
   fhir:name [ fhir:v "MessageADT_A04toBundle"] ; # 
   fhir:title [ fhir:v "Message A D T_ A04to Bundle"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2020-08-12"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7 International"] ; # 
   fhir:contact ( [

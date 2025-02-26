@@ -150,7 +150,7 @@
   fhir:whenPrepared [ fhir:v "2015-01-15T10:20:00Z"^^xsd:dateTime] ; # 
   fhir:whenHandedOver [ fhir:v "2015-01-15T16:20:00Z"^^xsd:dateTime] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Apply twice daily to affected area on left arm" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Apply sparingly" ]

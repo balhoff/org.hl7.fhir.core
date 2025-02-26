@@ -77,7 +77,7 @@
        ] )
      ] ;
      fhir:dose [
-       fhir:value [ fhir:v "4.5"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 4.5 ] ;
        fhir:unit [ fhir:v "g" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "g" ]

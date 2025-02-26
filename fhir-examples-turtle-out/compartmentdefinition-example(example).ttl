@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "EXAMPLE"] ; # 
   fhir:title [ fhir:v "E X A M P L E"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-02-24"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Health Level Seven International (FHIR Infrastructure)"] ; # 
   fhir:contact ( [
@@ -50,7 +50,7 @@
   ] ) ; # 
   fhir:purpose [ fhir:v "Provides an example of a FHIR compartment definition based on the Device resource type."] ; # 
   fhir:code [ fhir:v "Device"] ; # 
-  fhir:search [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:search [ fhir:v true] ; # 
   fhir:resource ( [
      fhir:code [ fhir:v "Communication" ] ;
      fhir:param ( [ fhir:v "sender" ] [ fhir:v "recipient" ] ) ;

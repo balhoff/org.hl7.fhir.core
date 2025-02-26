@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "TransformFromAnActivityDefinitionToASupplyRequest"] ; # 
   fhir:title [ fhir:v "Transform from an ActivityDefinition to a SupplyRequest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:description [ fhir:v "Transform from an ActivityDefinition to a SupplyRequest"] ; # 
   fhir:structure ( [
      fhir:url [

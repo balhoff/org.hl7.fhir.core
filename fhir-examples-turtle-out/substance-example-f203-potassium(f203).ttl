@@ -25,7 +25,7 @@
      fhir:system [ fhir:v "http://acme.org/identifiers/substances"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "1234" ]
   ] ) ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/substance-category"^^xsd:anyURI ] ;

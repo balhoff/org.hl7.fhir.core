@@ -59,7 +59,7 @@
          fhir:periodUnit [ fhir:v "d" ]
        ]
      ] ;
-     fhir:asNeeded [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:asNeeded [ fhir:v false ] ;
      fhir:route [
        fhir:coding ( [
          a sct:260548002 ;

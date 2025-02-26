@@ -130,7 +130,7 @@
        fhir:detail [
          a fhir:Range ;
          fhir:high [
-           fhir:value [ fhir:v "24.9"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 24.9 ] ;
            fhir:unit [ fhir:v "kg/m2" ]
          ]
        ] ;

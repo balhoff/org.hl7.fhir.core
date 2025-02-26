@@ -51,9 +51,9 @@
      fhir:text [ fhir:v "Father indicates they miss the occasional dose" ]
   ] ) ; # 
   fhir:dosage ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "5ml three times daily" ] ;
-     fhir:asNeeded [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:asNeeded [ fhir:v false ] ;
      fhir:route [
        fhir:coding ( [
          a sct:260548002 ;

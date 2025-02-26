@@ -64,7 +64,7 @@
      fhir:display [ fhir:v "Patrick Pump" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "7mg once daily" ] ;
      fhir:timing [
        fhir:repeat [
@@ -112,7 +112,7 @@
   fhir:substitution [
      fhir:allowed [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ] ;
      fhir:reason [
        fhir:coding ( [

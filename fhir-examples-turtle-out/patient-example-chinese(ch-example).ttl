@@ -39,7 +39,7 @@
        fhir:display [ fhir:v "市卫生局" ]
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:text [ fhir:v "张无忌" ]
@@ -55,7 +55,7 @@
   fhir:birthDate [ fhir:v "1974-12-25"^^xsd:date] ; # 
   fhir:deceased [
      a fhir:boolean ;
-     fhir:v "false"^^xsd:boolean
+     fhir:v false
   ] ; # 
   fhir:address ( [
      fhir:use [ fhir:v "home" ] ;

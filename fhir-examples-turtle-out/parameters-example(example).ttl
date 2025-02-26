@@ -20,7 +20,7 @@
      fhir:name [ fhir:v "exact" ] ;
      fhir:value [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ]
   ] [
      fhir:name [ fhir:v "property" ] ;

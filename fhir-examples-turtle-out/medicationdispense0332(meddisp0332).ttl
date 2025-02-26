@@ -98,7 +98,7 @@
      fhir:code [ fhir:v "d" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "1000mL infused at 50ml/hour for 4 hours - hang at 2200 hours" ] ;
      fhir:timing [
        fhir:event ( [ fhir:v "2020-01-15T22:00:00+11:00"^^xsd:dateTime ] ) ;

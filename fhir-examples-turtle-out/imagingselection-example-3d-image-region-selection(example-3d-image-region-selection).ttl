@@ -53,7 +53,7 @@
      ] ;
      fhir:imageRegion3D ( [
        fhir:regionType [ fhir:v "ellipse" ] ;
-       fhir:coordinate ( [ fhir:v "-50.0"^^xsd:decimal ] [ fhir:v "-50.0"^^xsd:decimal ] [ fhir:v "-50.0"^^xsd:decimal ] [ fhir:v "50.0"^^xsd:decimal ] [ fhir:v "50.0"^^xsd:decimal ] [ fhir:v "50.0"^^xsd:decimal ] [ fhir:v "25.0"^^xsd:decimal ] [ fhir:v "-25.0"^^xsd:decimal ] [ fhir:v "0.0"^^xsd:decimal ] [ fhir:v "-25.0"^^xsd:decimal ] [ fhir:v "25.0"^^xsd:decimal ] [ fhir:v "0.0"^^xsd:decimal ] )
+       fhir:coordinate ( [ fhir:v -50.0 ] [ fhir:v -50.0 ] [ fhir:v -50.0 ] [ fhir:v 50.0 ] [ fhir:v 50.0 ] [ fhir:v 50.0 ] [ fhir:v 25.0 ] [ fhir:v -25.0 ] [ fhir:v 0.0 ] [ fhir:v -25.0 ] [ fhir:v 25.0 ] [ fhir:v 0.0 ] )
      ] )
   ] ) . # 
 

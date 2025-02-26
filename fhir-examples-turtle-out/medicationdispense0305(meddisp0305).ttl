@@ -76,7 +76,7 @@
   fhir:whenPrepared [ fhir:v "2015-01-15T10:20:00Z"^^xsd:dateTime] ; # 
   fhir:whenHandedOver [ fhir:v "2015-01-15T16:20:00Z"^^xsd:dateTime] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Take 4 tablets daily for 7 days starting January 16, 2015" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [
@@ -131,7 +131,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "2"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 2 ] ;
      fhir:text [ fhir:v "Take 2 tablets daily for 7 days starting January 23, 2015" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [
@@ -186,7 +186,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "3"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 3 ] ;
      fhir:text [ fhir:v "Take 1 tablets daily for 7 days starting January 31, 2015" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [

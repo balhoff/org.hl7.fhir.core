@@ -149,7 +149,7 @@
        ] )
      ] ;
      fhir:quantity [
-       fhir:value [ fhir:v "1.2"^^xsd:decimal ]
+       fhir:value [ fhir:v 1.2 ]
      ] ;
      fhir:sampleSize [
        fhir:numberOfStudies [ fhir:v "9"^^xsd:nonNegativeInteger ]
@@ -163,13 +163,13 @@
            fhir:display [ fhir:v "Confidence interval" ]
          ] )
        ] ;
-       fhir:level [ fhir:v "0.95"^^xsd:decimal ] ;
+       fhir:level [ fhir:v 0.95 ] ;
        fhir:range [
          fhir:low [
-           fhir:value [ fhir:v "1.06"^^xsd:decimal ]
+           fhir:value [ fhir:v 1.06 ]
          ] ;
          fhir:high [
-           fhir:value [ fhir:v "1.3"^^xsd:decimal ]
+           fhir:value [ fhir:v 1.3 ]
          ]
        ]
      ] )

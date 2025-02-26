@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "TestScriptExampleHistory"] ; # 
   fhir:title [ fhir:v "TestScript Example History"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-01-18"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7"] ; # 
   fhir:contact ( [
@@ -56,8 +56,8 @@
        fhir:description [ fhir:v "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ]
      ] ) ;
      fhir:capability ( [
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:validated [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:validated [ fhir:v false ] ;
        fhir:description [ fhir:v "Patient Update, Delete and History (Instance) Operations" ] ;
        fhir:link ( [ fhir:v "http://hl7.org/fhir/http.html#update"^^xsd:anyURI ] [ fhir:v "http://hl7.org/fhir/http.html#delete"^^xsd:anyURI ] [ fhir:v "http://hl7.org/fhir/http.html#history"^^xsd:anyURI ] ) ;
        fhir:capabilities [
@@ -68,8 +68,8 @@
   ] ; # 
   fhir:fixture ( [
      fhir:id [ fhir:v "fixture-patient-create" ] ;
-     fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
-     fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:autocreate [ fhir:v false ] ;
+     fhir:autodelete [ fhir:v false ] ;
      fhir:resource [
        fhir:link <http://hl7.org/fhir/Patient/example> ;
        fhir:reference [ fhir:v "Patient/example" ] ;
@@ -77,8 +77,8 @@
      ]
   ] [
      fhir:id [ fhir:v "fixture-patient-update" ] ;
-     fhir:autocreate [ fhir:v "false"^^xsd:boolean ] ;
-     fhir:autodelete [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:autocreate [ fhir:v false ] ;
+     fhir:autodelete [ fhir:v false ] ;
      fhir:resource [
        fhir:link <http://hl7.org/fhir/Patient/pat1> ;
        fhir:reference [ fhir:v "Patient/pat1" ] ;
@@ -106,7 +106,7 @@
          fhir:label [ fhir:v "SetupDeletePatient" ] ;
          fhir:description [ fhir:v "Execute a delete operation to insure the patient does not exist on the server." ] ;
          fhir:accept [ fhir:v "json" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ]
        ]
      ] [
@@ -115,8 +115,8 @@
          fhir:direction [ fhir:v "response" ] ;
          fhir:operator [ fhir:v "in" ] ;
          fhir:responseCode [ fhir:v "200,204" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:operation [
@@ -129,7 +129,7 @@
          fhir:description [ fhir:v "Create patient resource on test server using the contents of fixture-patient-create" ] ;
          fhir:accept [ fhir:v "json" ] ;
          fhir:contentType [ fhir:v "json" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-create" ]
        ]
@@ -138,8 +138,8 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 201(Created)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:responseCode [ fhir:v "201" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:operation [
@@ -152,7 +152,7 @@
          fhir:description [ fhir:v "Update patient resource on test server using the contents of fixture-patient-update" ] ;
          fhir:accept [ fhir:v "json" ] ;
          fhir:contentType [ fhir:v "json" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${createResourceId}" ] ;
          fhir:sourceId [ fhir:v "fixture-patient-update" ]
        ]
@@ -161,8 +161,8 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:responseCode [ fhir:v "200" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] ; # 
@@ -180,7 +180,7 @@
          fhir:description [ fhir:v "Get the Patient history on the test server using the id from fixture-patient-create." ] ;
          fhir:accept [ fhir:v "json" ] ;
          fhir:contentType [ fhir:v "json" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:targetId [ fhir:v "fixture-patient-create" ]
        ]
      ] [
@@ -188,31 +188,31 @@
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned resource type is Bundle." ] ;
          fhir:resource [ fhir:v "Bundle"^^xsd:anyURI ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned Bundle conforms to the base FHIR specification." ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:validateProfileId [ fhir:v "bundle-profile" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned Bundle type equals 'history'." ] ;
          fhir:operator [ fhir:v "equals" ] ;
          fhir:path [ fhir:v "fhir:Bundle/fhir:type/@value" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:value [ fhir:v "history" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] ) . # 

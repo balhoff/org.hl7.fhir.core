@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "ACMEEHR"] ; # 
   fhir:title [ fhir:v "ACME EHR capability statement"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-01-04"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "ACME Corporation"] ; # 
   fhir:contact ( [
@@ -84,7 +84,7 @@
      fhir:mode [ fhir:v "server" ] ;
      fhir:documentation [ fhir:v "Main FHIR endpoint for acem health" ] ;
      fhir:security [
-       fhir:cors [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:cors [ fhir:v true ] ;
        fhir:service ( [
          fhir:coding ( [
            fhir:system [ fhir:v "http://hl7.org/fhir/restful-security-service"^^xsd:anyURI ] ;
@@ -119,12 +119,12 @@
          fhir:code [ fhir:v "history-type" ]
        ] ) ;
        fhir:versioning [ fhir:v "versioned-update" ] ;
-       fhir:readHistory [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:conditionalCreate [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:readHistory [ fhir:v true ] ;
+       fhir:updateCreate [ fhir:v false ] ;
+       fhir:conditionalCreate [ fhir:v true ] ;
        fhir:conditionalRead [ fhir:v "full-support" ] ;
-       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:conditionalPatch [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalUpdate [ fhir:v false ] ;
+       fhir:conditionalPatch [ fhir:v false ] ;
        fhir:conditionalDelete [ fhir:v "not-supported" ] ;
        fhir:searchInclude ( [ fhir:v "Patient:organization" ] ) ;
        fhir:searchRevInclude ( [ fhir:v "Person:patient" ] ) ;

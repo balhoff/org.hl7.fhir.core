@@ -142,7 +142,7 @@
      fhir:text [ fhir:v "Patient indicates they miss the occasional dose" ]
   ] ) ; # 
   fhir:dosage ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "1-2 tablets once daily at bedtime as needed for restless legs" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Taking at bedtime" ]

@@ -43,12 +43,12 @@
        ] )
      ] ;
      fhir:eye [ fhir:v "right" ] ;
-     fhir:sphere [ fhir:v "-2.00"^^xsd:decimal ] ;
+     fhir:sphere [ fhir:v -2.00 ] ;
      fhir:prism ( [
-       fhir:amount [ fhir:v "0.5"^^xsd:decimal ] ;
+       fhir:amount [ fhir:v 0.5 ] ;
        fhir:base [ fhir:v "down" ]
      ] ) ;
-     fhir:add [ fhir:v "2.00"^^xsd:decimal ]
+     fhir:add [ fhir:v 2.00 ]
   ] [
      fhir:product [
        fhir:coding ( [
@@ -57,14 +57,14 @@
        ] )
      ] ;
      fhir:eye [ fhir:v "left" ] ;
-     fhir:sphere [ fhir:v "-1.00"^^xsd:decimal ] ;
-     fhir:cylinder [ fhir:v "-0.50"^^xsd:decimal ] ;
-     fhir:axis [ fhir:v "180"^^xsd:integer ] ;
+     fhir:sphere [ fhir:v -1.00 ] ;
+     fhir:cylinder [ fhir:v -0.50 ] ;
+     fhir:axis [ fhir:v 180 ] ;
      fhir:prism ( [
-       fhir:amount [ fhir:v "0.5"^^xsd:decimal ] ;
+       fhir:amount [ fhir:v 0.5 ] ;
        fhir:base [ fhir:v "up" ]
      ] ) ;
-     fhir:add [ fhir:v "2.00"^^xsd:decimal ]
+     fhir:add [ fhir:v 2.00 ]
   ] ) . # 
 
 <http://hl7.org/fhir/Patient/example> a fhir:Patient .

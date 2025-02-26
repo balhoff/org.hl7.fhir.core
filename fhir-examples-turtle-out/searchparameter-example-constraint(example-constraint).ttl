@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "Exampleconstraint"] ; # 
   fhir:title [ fhir:v "example-constraint"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:publisher [ fhir:v "Health Level Seven International (FHIR Infrastructure)"] ; # 
   fhir:description [ fhir:v "Search Composition Bundle"] ; # 
   fhir:code [ fhir:v "example-constraint"] ; # 

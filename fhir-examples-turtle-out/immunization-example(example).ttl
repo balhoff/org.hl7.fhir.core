@@ -62,7 +62,7 @@
      a fhir:dateTime ;
      fhir:v "2013-01-10"^^xsd:date
   ] ; # 
-  fhir:primarySource [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:primarySource [ fhir:v true] ; # 
   fhir:location [
      fhir:link <http://hl7.org/fhir/Location/1> ;
      fhir:reference [ fhir:v "Location/1" ]
@@ -121,7 +121,7 @@
        ] )
      ]
   ] ) ; # 
-  fhir:isSubpotent [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:isSubpotent [ fhir:v true] ; # 
   fhir:programEligibility ( [
      fhir:program [
        fhir:text [ fhir:v "VFC" ]

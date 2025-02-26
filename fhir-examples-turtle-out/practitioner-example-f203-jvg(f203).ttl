@@ -40,7 +40,7 @@
      fhir:system [ fhir:v "https://www.bigregister.nl/"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "12345678903" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ; #   The name of the practitioner  
      fhir:text [ fhir:v "Juri van Gelder" ]

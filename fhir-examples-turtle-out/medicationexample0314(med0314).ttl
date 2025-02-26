@@ -50,7 +50,7 @@
      fhir:strength [
        a fhir:Ratio ;
        fhir:numerator [
-         fhir:value [ fhir:v "0.25"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 0.25 ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "mg" ]
        ] ;

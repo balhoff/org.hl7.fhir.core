@@ -176,7 +176,7 @@
            ]
          ] )
        ] ;
-       fhir:pause [ fhir:v "true"^^xsd:boolean ]
+       fhir:pause [ fhir:v true ]
      ] [
        fhir:number [ fhir:v "2" ] ;
        fhir:process [

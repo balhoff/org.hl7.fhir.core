@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "YesNoDontKnow"] ; # 
   fhir:title [ fhir:v "Yes/No/Don't Know"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:description [ fhir:v "For Capturing simple yes-no-don't know answers"] ; # 
   fhir:compose [
      fhir:include ( [

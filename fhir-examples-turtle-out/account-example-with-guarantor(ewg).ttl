@@ -68,7 +68,7 @@
        fhir:reference [ fhir:v "RelatedPerson/benedicte" ] ;
        fhir:display [ fhir:v "Bénédicte du Marché" ]
      ] ;
-     fhir:onHold [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:onHold [ fhir:v false ] ;
      fhir:period [
        fhir:start [ fhir:v "2016-01-01"^^xsd:date ]
      ]

@@ -59,7 +59,7 @@
      fhir:author [
        fhir:display [ fhir:v "Brian S. Alper" ]
      ] ;
-     fhir:freeToShare [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:freeToShare [ fhir:v true ] ;
      fhir:component ( [
        fhir:informationType [ fhir:v "rating" ] ;
        fhir:summary [ fhir:v "risk of bias in both included trials" ] ;

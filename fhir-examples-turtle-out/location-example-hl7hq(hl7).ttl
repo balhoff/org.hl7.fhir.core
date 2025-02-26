@@ -58,8 +58,8 @@
      ] )
   ] ; # 
   fhir:position [
-     fhir:longitude [ fhir:v "42.256500"^^xsd:decimal ] ;
-     fhir:latitude [ fhir:v "-83.694710"^^xsd:decimal ]
+     fhir:longitude [ fhir:v 42.256500 ] ;
+     fhir:latitude [ fhir:v -83.694710 ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

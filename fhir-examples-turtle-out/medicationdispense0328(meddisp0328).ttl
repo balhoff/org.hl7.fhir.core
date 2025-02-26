@@ -65,7 +65,7 @@
   ] ; # 
   fhir:whenPrepared [ fhir:v "2015-01-15T10:20:00Z"^^xsd:dateTime] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Use two sprays twice daily" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Shake Well" ]

@@ -43,7 +43,7 @@
   ] ) ; #         well, actually. this isn't the patient, but it'll do for now        
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.887"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.887 ] ;
      fhir:unit [ fhir:v "g/cm²" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "g/cm-2" ]

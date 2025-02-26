@@ -67,7 +67,7 @@
        ] ; #    Zero potential   
        fhir:interval [ fhir:v "10"^^xsd:decimal ] ; #    period in ms = 1000\/frequency   
        fhir:intervalUnit [ fhir:v "ms" ] ;
-       fhir:factor [ fhir:v "1.612"^^xsd:decimal ] ; #     factor.value   
+       fhir:factor [ fhir:v 1.612 ] ; #     factor.value   
        fhir:lowerLimit [ fhir:v "-3300"^^xsd:decimal ] ; #     voltage-min   
        fhir:upperLimit [ fhir:v "3300"^^xsd:decimal ] ; #     voltage-max   
        fhir:dimensions [ fhir:v "1"^^xsd:positiveInteger ] ;
@@ -88,7 +88,7 @@
        ] ; #    Zero potential   
        fhir:interval [ fhir:v "10"^^xsd:decimal ] ; #    period in ms = 1000\/frequency   
        fhir:intervalUnit [ fhir:v "ms" ] ;
-       fhir:factor [ fhir:v "1.612"^^xsd:decimal ] ; #     factor.value   
+       fhir:factor [ fhir:v 1.612 ] ; #     factor.value   
        fhir:lowerLimit [ fhir:v "-3300"^^xsd:decimal ] ; #     voltage-min   
        fhir:upperLimit [ fhir:v "3300"^^xsd:decimal ] ; #     voltage-max   
        fhir:dimensions [ fhir:v "1"^^xsd:positiveInteger ] ;
@@ -109,7 +109,7 @@
        ] ; #    Zero potential   
        fhir:interval [ fhir:v "10"^^xsd:decimal ] ; #    period in ms = 1000\/frequency   
        fhir:intervalUnit [ fhir:v "ms" ] ;
-       fhir:factor [ fhir:v "1.612"^^xsd:decimal ] ; #     factor.value   
+       fhir:factor [ fhir:v 1.612 ] ; #     factor.value   
        fhir:lowerLimit [ fhir:v "-3300"^^xsd:decimal ] ; #     voltage-min   
        fhir:upperLimit [ fhir:v "3300"^^xsd:decimal ] ; #     voltage-max   
        fhir:dimensions [ fhir:v "1"^^xsd:positiveInteger ] ;

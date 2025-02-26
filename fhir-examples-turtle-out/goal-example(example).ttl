@@ -31,7 +31,7 @@
        fhir:code [ fhir:v "dietary" ]
      ] )
   ] ) ; # 
-  fhir:continuous [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:continuous [ fhir:v true] ; # 
   fhir:priority [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-priority"^^xsd:anyURI ] ;

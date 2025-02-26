@@ -66,7 +66,7 @@
      ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Rapid daily-dose escalation, until tolerated, from 3 mg/d, and then 10 mg/d, to the recommended maintenance dose of 30 mg IV over 120 min, 3 times per wk on alternate days for up to 12 wk" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Rapidly increase dose until tolerated" ]
@@ -115,7 +115,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "2"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 2 ] ;
      fhir:text [ fhir:v "Rapid daily-dose escalation, until tolerated, from 3 mg/d, and then 10 mg/d, to the recommended maintenance dose of 30 mg IV over 120 min, 3 times per wk on alternate days for up to 12 wk" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Rapidly increase dose until tolerated" ]
@@ -164,7 +164,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "3"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 3 ] ;
      fhir:text [ fhir:v "Rapid daily-dose escalation, until tolerated, from 3 mg/d, and then 10 mg/d, to the recommended maintenance dose of 30 mg IV over 120 min, 3 times per wk on alternate days for up to 12 wk" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Rapidly increase dose until tolerated" ]

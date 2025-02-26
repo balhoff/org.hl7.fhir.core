@@ -87,7 +87,7 @@
      fhir:system [ fhir:v "urn:oid:0.1.2.3.4.5.6.7"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "654321" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Donald" ] ;
@@ -132,7 +132,7 @@
      fhir:system [ fhir:v "urn:oid:0.1.2.3.4.5.6.7"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "123456" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Donald" ] ;

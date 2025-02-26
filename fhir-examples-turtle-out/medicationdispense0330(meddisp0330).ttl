@@ -73,7 +73,7 @@
   ] ; # 
   fhir:whenPrepared [ fhir:v "2015-01-15T10:20:00Z"^^xsd:dateTime] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "7mg (=one 5mg tablet PLUS one 2mg tablet) once daily" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Take along with one 5mg Coumadin tablet for a total daily dose of 7mg as prescribed by physician" ]

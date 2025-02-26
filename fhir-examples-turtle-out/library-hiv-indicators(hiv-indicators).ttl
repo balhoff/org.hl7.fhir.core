@@ -28,7 +28,7 @@
   fhir:name [ fhir:v "HIVIndicators"] ; # 
   fhir:title [ fhir:v "HIV Indicators"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:type [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/library-type"^^xsd:anyURI ] ;

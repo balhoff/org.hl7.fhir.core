@@ -58,7 +58,7 @@
      fhir:display [ fhir:v "Patrick Pump" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Administer in 100cc NS as follows: First treatment infuse over 90 minutes, if no reaction then second treatment infuse over 60 minutes, if no reaction then on third and following treatments give over 30 minutes." ] ;
      fhir:timing [
        fhir:event ( [ fhir:v "2023-01-18T00:00:00.000Z"^^xsd:dateTime ] )

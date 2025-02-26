@@ -52,7 +52,7 @@
      a fhir:dateTime ;
      fhir:v "2021-09-12"^^xsd:date
   ] ; # 
-  fhir:primarySource [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:primarySource [ fhir:v true] ; # 
   fhir:location [
      fhir:link <http://hl7.org/fhir/Location/1> ;
      fhir:reference [ fhir:v "Location/1" ]
@@ -108,7 +108,7 @@
        fhir:reference [ fhir:v "Observation/example" ]
      ]
   ] ) ; # 
-  fhir:isSubpotent [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:isSubpotent [ fhir:v false] ; # 
   fhir:reaction ( [
      fhir:date [ fhir:v "2021-09-12"^^xsd:date ] ;
      fhir:manifestation [
@@ -117,7 +117,7 @@
          fhir:reference [ fhir:v "Observation/example2" ]
        ]
      ] ;
-     fhir:reported [ fhir:v "false"^^xsd:boolean ]
+     fhir:reported [ fhir:v false ]
   ] ) . # 
 
 <http://hl7.org/fhir/Organization/hl7> a fhir:Organization .

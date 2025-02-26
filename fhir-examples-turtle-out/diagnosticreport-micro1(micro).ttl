@@ -323,7 +323,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:comparator [ fhir:v ">=" ]
   ] ; # 
   fhir:interpretation ( [
@@ -389,7 +389,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:comparator [ fhir:v "<=" ]
   ] ; # 
   fhir:interpretation ( [
@@ -488,7 +488,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:comparator [ fhir:v "<=" ]
   ] ; # 
   fhir:interpretation ( [
@@ -553,7 +553,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:comparator [ fhir:v "<=" ]
   ] ; # 
   fhir:interpretation ( [
@@ -586,7 +586,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ]
+     fhir:value [ fhir:v 0.5 ]
   ] ; # 
   fhir:interpretation ( [
      fhir:coding ( [
@@ -651,7 +651,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ]
+     fhir:value [ fhir:v 0.5 ]
   ] ; # 
   fhir:interpretation ( [
      fhir:coding ( [
@@ -683,7 +683,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:comparator [ fhir:v "<=" ]
   ] ; # 
   fhir:interpretation ( [
@@ -716,7 +716,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.5"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.5 ] ;
      fhir:comparator [ fhir:v "<=" ]
   ] ; # 
   fhir:interpretation ( [
@@ -749,7 +749,7 @@
   ] ) ; #      of course, in practive, this would be a real reference     
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "0.0526"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 0.0526 ] ;
      fhir:comparator [ fhir:v "<=" ] #      not sure what to do with <=1\/19     
   ] ; # 
   fhir:interpretation ( [

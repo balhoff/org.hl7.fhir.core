@@ -714,7 +714,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577390" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fletcher" ] ;
@@ -748,7 +748,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577391" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Powell" ] ;
@@ -780,7 +780,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577392" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Cooper" ] ;
@@ -812,7 +812,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577393" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Knight" ] ;
@@ -844,7 +844,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577394" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Ward" ] ;
@@ -876,7 +876,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577395" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mckinney" ] ;
@@ -908,7 +908,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577396" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Meyer" ] ;
@@ -940,7 +940,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577397" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Greene" ] ;
@@ -972,7 +972,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577398" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fields" ] ;
@@ -1004,7 +1004,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577399" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lee" ] ;
@@ -1036,7 +1036,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577400" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Peters" ] ;
@@ -1068,7 +1068,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577401" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Rivera" ] ;
@@ -1100,7 +1100,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577402" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Ryan" ] ;
@@ -1132,7 +1132,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577403" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Price" ] ;
@@ -1164,7 +1164,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577404" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Collier" ] ;
@@ -1196,7 +1196,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577405" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Perry" ] ;
@@ -1228,7 +1228,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577406" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "May" ] ;
@@ -1260,7 +1260,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577407" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Becker" ] ;
@@ -1292,7 +1292,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577408" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Rodgers" ] ;
@@ -1324,7 +1324,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577409" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Rodriguez" ] ;
@@ -1356,7 +1356,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577410" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Spencer" ] ;
@@ -1388,7 +1388,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577411" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Cooper" ] ;
@@ -1420,7 +1420,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577412" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Martin" ] ;
@@ -1452,7 +1452,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577413" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Holt" ] ;
@@ -1484,7 +1484,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577414" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "May" ] ;
@@ -1516,7 +1516,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577415" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hawkins" ] ;
@@ -1548,7 +1548,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577416" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "George" ] ;
@@ -1580,7 +1580,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577417" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Jordan" ] ;
@@ -1612,7 +1612,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577418" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bridges" ] ;
@@ -1644,7 +1644,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577419" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Garrett" ] ;
@@ -1676,7 +1676,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577420" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lamb" ] ;
@@ -1708,7 +1708,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577421" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Garcia" ] ;
@@ -1740,7 +1740,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577422" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Christensen" ] ;
@@ -1772,7 +1772,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577423" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hughes" ] ;
@@ -1804,7 +1804,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577424" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Houston" ] ;
@@ -1836,7 +1836,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577425" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "West" ] ;
@@ -1868,7 +1868,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577426" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Nguyen" ] ;
@@ -1900,7 +1900,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577427" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Swanson" ] ;
@@ -1932,7 +1932,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577428" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Powers" ] ;
@@ -1964,7 +1964,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577429" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Chandler" ] ;
@@ -1996,7 +1996,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577430" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carroll" ] ;
@@ -2028,7 +2028,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577431" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Matthews" ] ;
@@ -2060,7 +2060,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577432" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Frazier" ] ;
@@ -2092,7 +2092,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577433" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Patrick" ] ;
@@ -2124,7 +2124,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577434" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fleming" ] ;
@@ -2156,7 +2156,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577435" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Marshall" ] ;
@@ -2188,7 +2188,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577436" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Larson" ] ;
@@ -2220,7 +2220,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577437" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Day" ] ;
@@ -2252,7 +2252,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577438" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Strickland" ] ;
@@ -2284,7 +2284,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577439" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mckinney" ] ;
@@ -2316,7 +2316,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577440" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Ortiz" ] ;
@@ -2348,7 +2348,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577441" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Alvarez" ] ;
@@ -2380,7 +2380,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577442" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Dennis" ] ;
@@ -2412,7 +2412,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577443" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Schmidt" ] ;
@@ -2444,7 +2444,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577444" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carr" ] ;
@@ -2476,7 +2476,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577445" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Greer" ] ;
@@ -2508,7 +2508,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577446" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Phillips" ] ;
@@ -2540,7 +2540,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577447" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Sparks" ] ;
@@ -2572,7 +2572,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577448" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Holloway" ] ;
@@ -2604,7 +2604,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577449" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Foster" ] ;
@@ -2636,7 +2636,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577450" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hodges" ] ;
@@ -2668,7 +2668,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577451" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "White" ] ;
@@ -2700,7 +2700,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577452" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Drake" ] ;
@@ -2732,7 +2732,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577453" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Phillips" ] ;
@@ -2764,7 +2764,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577454" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hansen" ] ;
@@ -2796,7 +2796,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577455" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Reynolds" ] ;
@@ -2828,7 +2828,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577456" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Roberson" ] ;
@@ -2860,7 +2860,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577457" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Crawford" ] ;
@@ -2892,7 +2892,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577458" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hicks" ] ;
@@ -2924,7 +2924,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577459" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hughes" ] ;
@@ -2956,7 +2956,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577460" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Rice" ] ;
@@ -2988,7 +2988,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577461" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Reese" ] ;
@@ -3020,7 +3020,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577462" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Cox" ] ;
@@ -3052,7 +3052,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577463" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mccoy" ] ;
@@ -3084,7 +3084,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577464" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lane" ] ;
@@ -3116,7 +3116,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577465" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Harrison" ] ;
@@ -3148,7 +3148,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577466" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Palmer" ] ;
@@ -3180,7 +3180,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577467" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "May" ] ;
@@ -3212,7 +3212,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577468" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Glover" ] ;
@@ -3244,7 +3244,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577469" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Austin" ] ;
@@ -3276,7 +3276,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577470" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Phelps" ] ;
@@ -3308,7 +3308,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577471" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Floyd" ] ;
@@ -3340,7 +3340,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577472" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Chambers" ] ;
@@ -3372,7 +3372,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577473" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Walsh" ] ;
@@ -3404,7 +3404,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577474" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Simon" ] ;
@@ -3436,7 +3436,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577475" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Johnson" ] ;
@@ -3468,7 +3468,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577476" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Burton" ] ;
@@ -3500,7 +3500,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577477" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Swanson" ] ;
@@ -3532,7 +3532,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577478" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Roberts" ] ;
@@ -3564,7 +3564,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577479" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Little" ] ;
@@ -3596,7 +3596,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577480" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hunt" ] ;
@@ -3628,7 +3628,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577481" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Palmer" ] ;
@@ -3660,7 +3660,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577482" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Marshall" ] ;
@@ -3692,7 +3692,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577483" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mccarthy" ] ;
@@ -3724,7 +3724,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577484" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Ortega" ] ;
@@ -3756,7 +3756,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577485" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Harvey" ] ;
@@ -3788,7 +3788,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577486" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bailey" ] ;
@@ -3820,7 +3820,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577487" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Walker" ] ;
@@ -3852,7 +3852,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577488" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Brock" ] ;
@@ -3884,7 +3884,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577489" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Dennis" ] ;
@@ -3916,7 +3916,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577490" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Brady" ] ;
@@ -3948,7 +3948,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577491" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hall" ] ;
@@ -3980,7 +3980,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577492" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Copeland" ] ;
@@ -4012,7 +4012,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577493" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Graham" ] ;
@@ -4044,7 +4044,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577494" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Curtis" ] ;
@@ -4076,7 +4076,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577495" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hines" ] ;
@@ -4108,7 +4108,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577496" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Robbins" ] ;
@@ -4140,7 +4140,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577497" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Stewart" ] ;
@@ -4172,7 +4172,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577498" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Gilbert" ] ;
@@ -4204,7 +4204,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577499" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Schwartz" ] ;
@@ -4236,7 +4236,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577500" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Doyle" ] ;
@@ -4268,7 +4268,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577501" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Wilson" ] ;
@@ -4300,7 +4300,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577502" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Doyle" ] ;
@@ -4332,7 +4332,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577503" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hunter" ] ;
@@ -4364,7 +4364,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577504" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Black" ] ;
@@ -4396,7 +4396,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577505" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Cruz" ] ;
@@ -4428,7 +4428,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577506" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hubbard" ] ;
@@ -4460,7 +4460,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577507" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lawrence" ] ;
@@ -4492,7 +4492,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577508" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Torres" ] ;
@@ -4524,7 +4524,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577509" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Malone" ] ;
@@ -4556,7 +4556,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577510" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Boone" ] ;
@@ -4588,7 +4588,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577511" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Valdez" ] ;
@@ -4620,7 +4620,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577512" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Drake" ] ;
@@ -4652,7 +4652,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577513" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Perkins" ] ;
@@ -4684,7 +4684,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577514" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Watts" ] ;
@@ -4716,7 +4716,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577515" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hansen" ] ;
@@ -4748,7 +4748,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577516" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Moran" ] ;
@@ -4780,7 +4780,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577517" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Williams" ] ;
@@ -4812,7 +4812,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577518" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Schneider" ] ;
@@ -4844,7 +4844,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577519" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Guerrero" ] ;
@@ -4876,7 +4876,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577520" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Wright" ] ;
@@ -4908,7 +4908,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577521" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carpenter" ] ;
@@ -4940,7 +4940,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577522" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Brown" ] ;
@@ -4972,7 +4972,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577523" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fields" ] ;
@@ -5004,7 +5004,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577524" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Greer" ] ;
@@ -5036,7 +5036,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577525" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Jones" ] ;
@@ -5068,7 +5068,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577526" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Terry" ] ;
@@ -5100,7 +5100,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577527" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "White" ] ;
@@ -5132,7 +5132,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577528" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Richardson" ] ;
@@ -5164,7 +5164,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577529" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bates" ] ;
@@ -5196,7 +5196,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577530" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carpenter" ] ;
@@ -5228,7 +5228,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577531" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Vaughn" ] ;
@@ -5260,7 +5260,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577532" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lane" ] ;
@@ -5292,7 +5292,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577533" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Porter" ] ;
@@ -5324,7 +5324,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577534" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fernandez" ] ;
@@ -5356,7 +5356,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577535" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mcdaniel" ] ;
@@ -5388,7 +5388,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577536" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Barnes" ] ;
@@ -5420,7 +5420,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577537" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carter" ] ;
@@ -5452,7 +5452,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577538" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Moore" ] ;
@@ -5484,7 +5484,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577539" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bass" ] ;
@@ -5516,7 +5516,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577540" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Thomas" ] ;
@@ -5548,7 +5548,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577541" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Oliver" ] ;
@@ -5580,7 +5580,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577542" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Goodman" ] ;
@@ -5612,7 +5612,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577543" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mack" ] ;
@@ -5644,7 +5644,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577544" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Campbell" ] ;
@@ -5676,7 +5676,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577545" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Blake" ] ;
@@ -5708,7 +5708,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577546" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Malone" ] ;
@@ -5740,7 +5740,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577547" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Clarke" ] ;
@@ -5772,7 +5772,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577548" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Kennedy" ] ;
@@ -5804,7 +5804,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577549" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Edwards" ] ;
@@ -5836,7 +5836,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577550" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Dennis" ] ;
@@ -5868,7 +5868,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577551" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "James" ] ;
@@ -5900,7 +5900,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577552" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Manning" ] ;
@@ -5932,7 +5932,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577553" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Vaughn" ] ;
@@ -5964,7 +5964,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577554" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bryan" ] ;
@@ -5996,7 +5996,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577555" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bridges" ] ;
@@ -6028,7 +6028,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577556" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carr" ] ;
@@ -6060,7 +6060,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577557" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Watson" ] ;
@@ -6092,7 +6092,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577558" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hoffman" ] ;
@@ -6124,7 +6124,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577559" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Chandler" ] ;
@@ -6156,7 +6156,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577560" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Gonzalez" ] ;
@@ -6188,7 +6188,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577561" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hamilton" ] ;
@@ -6220,7 +6220,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577562" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Sanders" ] ;
@@ -6252,7 +6252,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577563" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Blair" ] ;
@@ -6284,7 +6284,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577564" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Maldonado" ] ;
@@ -6316,7 +6316,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577565" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hammond" ] ;
@@ -6348,7 +6348,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577566" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Copeland" ] ;
@@ -6380,7 +6380,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577567" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mills" ] ;
@@ -6412,7 +6412,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577568" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Henry" ] ;
@@ -6444,7 +6444,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577569" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Byrd" ] ;
@@ -6476,7 +6476,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577570" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Gilbert" ] ;
@@ -6508,7 +6508,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577571" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Stevens" ] ;
@@ -6540,7 +6540,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577572" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mendoza" ] ;
@@ -6572,7 +6572,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577573" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Craig" ] ;
@@ -6604,7 +6604,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577574" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fleming" ] ;
@@ -6636,7 +6636,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577575" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Smith" ] ;
@@ -6668,7 +6668,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577576" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "King" ] ;
@@ -6700,7 +6700,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577577" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Phillips" ] ;
@@ -6732,7 +6732,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577578" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Boyd" ] ;
@@ -6764,7 +6764,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577579" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Carpenter" ] ;
@@ -6796,7 +6796,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577580" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hayes" ] ;
@@ -6828,7 +6828,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577581" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fleming" ] ;
@@ -6860,7 +6860,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577582" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lambert" ] ;
@@ -6892,7 +6892,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577583" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Pena" ] ;
@@ -6924,7 +6924,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577584" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Jefferson" ] ;
@@ -6956,7 +6956,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577585" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Pittman" ] ;
@@ -6988,7 +6988,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577586" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Holland" ] ;
@@ -7020,7 +7020,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577587" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Stone" ] ;
@@ -7052,7 +7052,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577588" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hopkins" ] ;
@@ -7084,7 +7084,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577589" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Stevens" ] ;
@@ -7116,7 +7116,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577590" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Singleton" ] ;
@@ -7148,7 +7148,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577591" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Wilson" ] ;
@@ -7180,7 +7180,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577592" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hernandez" ] ;
@@ -7212,7 +7212,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577593" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Griffith" ] ;
@@ -7244,7 +7244,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577594" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Payne" ] ;
@@ -7276,7 +7276,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577595" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Morrison" ] ;
@@ -7308,7 +7308,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577596" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Parker" ] ;
@@ -7340,7 +7340,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577597" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Bennett" ] ;
@@ -7372,7 +7372,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577598" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hammond" ] ;
@@ -7404,7 +7404,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577599" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hunt" ] ;
@@ -7436,7 +7436,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577600" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Gray" ] ;
@@ -7468,7 +7468,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577601" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Butler" ] ;
@@ -7500,7 +7500,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577602" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Spencer" ] ;
@@ -7532,7 +7532,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577603" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "White" ] ;
@@ -7564,7 +7564,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577604" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Colon" ] ;
@@ -7596,7 +7596,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577605" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Cunningham" ] ;
@@ -7628,7 +7628,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577606" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hart" ] ;
@@ -7660,7 +7660,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577607" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Curry" ] ;
@@ -7692,7 +7692,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577608" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Hawkins" ] ;
@@ -7724,7 +7724,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577609" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lyons" ] ;
@@ -7756,7 +7756,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577610" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Lewis" ] ;
@@ -7788,7 +7788,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577611" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Castro" ] ;
@@ -7820,7 +7820,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577612" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Williams" ] ;
@@ -7852,7 +7852,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577613" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Fuller" ] ;
@@ -7884,7 +7884,7 @@
      fhir:system [ fhir:v "https://github.com/projectcypress/cypress/patient"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "577614" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Wheeler" ] ;

@@ -36,7 +36,7 @@
   fhir:name [ fhir:v "ACMECholCodesBlood"] ; # 
   fhir:title [ fhir:v "ACME Codes for Cholesterol in Serum/Plasma"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2016-01-28"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "Acme Co"] ; # 
   fhir:contact ( [
@@ -47,7 +47,7 @@
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "This is an example code system that includes all the ACME codes for serum/plasma cholesterol from v2.36."] ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:filter ( [
      fhir:code [ fhir:v "acme-plasma" ] ;

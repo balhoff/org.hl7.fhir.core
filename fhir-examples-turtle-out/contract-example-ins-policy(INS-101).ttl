@@ -70,13 +70,13 @@
            fhir:value [ fhir:v "1"^^xsd:decimal ]
          ] ;
          fhir:unitPrice [
-           fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 200.00 ] ;
            fhir:currency [ fhir:v "CAD" ]
          ] ;
-         fhir:factor [ fhir:v "1.0"^^xsd:decimal ] ;
-         fhir:points [ fhir:v "1.0"^^xsd:decimal ] ;
+         fhir:factor [ fhir:v 1.0 ] ;
+         fhir:points [ fhir:v 1.0 ] ;
          fhir:net [
-           fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 200.00 ] ;
            fhir:currency [ fhir:v "CAD" ]
          ]
        ] )

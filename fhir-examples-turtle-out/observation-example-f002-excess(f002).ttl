@@ -52,7 +52,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "12.6"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 12.6 ] ;
      fhir:unit [ fhir:v "mmol/l" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "mmol/L" ]
@@ -66,13 +66,13 @@
   ] ) ; # 
   fhir:referenceRange ( [
      fhir:low [
-       fhir:value [ fhir:v "7.1"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 7.1 ] ;
        fhir:unit [ fhir:v "mmol/l" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mmol/L" ]
      ] ;
      fhir:high [
-       fhir:value [ fhir:v "11.2"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 11.2 ] ;
        fhir:unit [ fhir:v "mmol/l" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "mmol/L" ]

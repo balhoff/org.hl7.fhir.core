@@ -83,7 +83,7 @@
        fhir:reference [ fhir:v "Patient/example" ] ;
        fhir:display [ fhir:v "Peter James Chalmers" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "needs-action" ]
   ] [
      fhir:type ( [
@@ -92,7 +92,7 @@
          fhir:code [ fhir:v "ATND" ]
        ] )
      ] ) ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:required [ fhir:v true ] ;
      fhir:status [ fhir:v "needs-action" ]
   ] [
      fhir:actor [
@@ -100,7 +100,7 @@
        fhir:reference [ fhir:v "Location/1" ] ;
        fhir:display [ fhir:v "South Wing, second floor" ]
      ] ;
-     fhir:required [ fhir:v "true"^^xsd:boolean ] ; #   This resource auto accepts, so doesn't need negotiation  
+     fhir:required [ fhir:v true ] ; #   This resource auto accepts, so doesn't need negotiation  
      fhir:status [ fhir:v "accepted" ]
   ] ) . # 
 

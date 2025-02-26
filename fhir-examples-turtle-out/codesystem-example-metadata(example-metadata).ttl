@@ -33,7 +33,7 @@
   fhir:name [ fhir:v "ExampleMetadata"] ; # 
   fhir:title [ fhir:v "Metadata Example"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2021-07-21"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "FHIR (Example)"] ; # 
   fhir:contact ( [
@@ -92,7 +92,7 @@
        fhir:link <http://hl7.org/fhir/CodeSystem/example>
      ]
   ] ) ; # 
-  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "A" ] ;

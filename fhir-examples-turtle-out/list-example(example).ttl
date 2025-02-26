@@ -47,7 +47,7 @@
      fhir:flag [
        fhir:text [ fhir:v "Deleted due to error" ]
      ] ;
-     fhir:deleted [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:deleted [ fhir:v true ] ;
      fhir:item [
        fhir:link <http://hl7.org/fhir/Condition/example> ;
        fhir:reference [ fhir:v "Condition/example" ]

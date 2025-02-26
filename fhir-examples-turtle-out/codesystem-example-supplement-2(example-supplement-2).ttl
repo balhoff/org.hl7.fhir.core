@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "BundleTypeGerman"] ; # 
   fhir:title [ fhir:v "Bundle Type German"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-12-21T16:40:38+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:description [ fhir:v "German Translations for Bundle Type"] ; # 

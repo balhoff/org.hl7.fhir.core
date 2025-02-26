@@ -31,14 +31,14 @@
      fhir:url [ fhir:v "http://nema.org/fhir/extensions#0010:1020"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "1.83"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.83 ] ;
        fhir:unit [ fhir:v "m" ]
      ]
   ] [
      fhir:url [ fhir:v "http://nema.org/fhir/extensions#0010:1030"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "72.58"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 72.58 ] ;
        fhir:unit [ fhir:v "kg" ]
      ]
   ] ) ; # 
@@ -46,7 +46,7 @@
      fhir:system [ fhir:v "http://nema.org/examples/patients"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "MINT1234" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:family [ fhir:v "MINT_TEST" ]
   ] ) ; # 

@@ -36,7 +36,7 @@
      fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "123456789" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; #    Indicates that the patient is not part of a multiple birth    
+  fhir:active [ fhir:v true] ; #    Indicates that the patient is not part of a multiple birth    
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ; #    The name associated with the individual (fictive)   
      fhir:text [ fhir:v "Roel" ] ;
@@ -58,7 +58,7 @@
   fhir:birthDate [ fhir:v "1960-03-13"^^xsd:date] ; # 
   fhir:deceased [
      a fhir:boolean ;
-     fhir:v "false"^^xsd:boolean
+     fhir:v false
   ] ; #    The date and time of birth for the individual    
   fhir:address ( [
      fhir:use [ fhir:v "home" ] ; #    Home address for the individual   
@@ -80,7 +80,7 @@
   ] ; # 
   fhir:multipleBirth [
      a fhir:boolean ;
-     fhir:v "false"^^xsd:boolean
+     fhir:v false
   ] ; # 
   fhir:photo ( [
      fhir:contentType [ fhir:v "image/jpeg" ] ;
@@ -119,7 +119,7 @@
          fhir:display [ fhir:v "Dutch" ]
        ] )
      ] ;
-     fhir:preferred [ fhir:v "true"^^xsd:boolean ]
+     fhir:preferred [ fhir:v true ]
   ] ) ; # 
   fhir:managingOrganization [
      fhir:link <http://hl7.org/fhir/Organization/f201> ;

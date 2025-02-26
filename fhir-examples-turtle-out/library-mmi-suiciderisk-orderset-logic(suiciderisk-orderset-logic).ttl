@@ -34,7 +34,7 @@
   fhir:name [ fhir:v "SuicideRiskOrderSetLogic"] ; # 
   fhir:title [ fhir:v "Suicide Risk Order Set Logic"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:type [
      fhir:coding ( [
        fhir:code [ fhir:v "logic-library" ]
@@ -202,19 +202,19 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "Patient" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:type [ fhir:v "Patient" ]
   ] [
      fhir:name [ fhir:v "Encounter" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:type [ fhir:v "Encounter" ]
   ] [
      fhir:name [ fhir:v "Practitioner" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:type [ fhir:v "Practitioner" ]
   ] ) ; # 

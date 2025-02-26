@@ -65,7 +65,7 @@
      ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "500mg daily for 5 days" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [

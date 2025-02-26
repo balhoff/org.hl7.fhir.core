@@ -57,7 +57,7 @@
          fhir:value [ fhir:v "Org1" ]
        ]
      ] ;
-     fhir:requestor [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:requestor [ fhir:v true ] ;
      fhir:authorization ( [
        fhir:coding ( [
          fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;

@@ -39,7 +39,7 @@
        a fhir:CodeableConcept ;
        fhir:text [ fhir:v "mixed" ]
      ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ]
+     fhir:exclude [ fhir:v false ]
   ] [
      fhir:code [
        fhir:text [ fhir:v "owner" ]
@@ -48,7 +48,7 @@
        a fhir:CodeableConcept ;
        fhir:text [ fhir:v "John Smith" ]
      ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ]
+     fhir:exclude [ fhir:v false ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

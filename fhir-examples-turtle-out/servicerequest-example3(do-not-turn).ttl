@@ -28,7 +28,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "order"] ; # 
   fhir:priority [ fhir:v "stat"] ; # 
-  fhir:doNotPerform [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:doNotPerform [ fhir:v true] ; # 
   fhir:code [
      fhir:concept [
        fhir:coding ( [

@@ -65,27 +65,27 @@
      fhir:link <http://hl7.org/fhir/OperationDefinition/Questionnaire-populate>
   ] ; # 
   fhir:resource ( [ fhir:v "Questionnaire"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v true] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "subject" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The resource that is to be the *QuestionnaireResponse.subject*. The [[[QuestionnaireResponse]]]      instance will reference the provided subject.  In addition, if the *local* parameter is      set to true, server information about the specified subject will be used to populate the      instance." ] ;
      fhir:type [ fhir:v "Reference" ]
   ] [
      fhir:name [ fhir:v "local" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "If the *local* parameter is set to true, server information about the specified subject will be used to populate the instance." ] ;
      fhir:type [ fhir:v "Reference" ]
   ] [
      fhir:name [ fhir:v "return" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The partially (or fully)-populated set of answers for the specified Questionnaire" ] ;
      fhir:type [ fhir:v "QuestionnaireResponse" ]

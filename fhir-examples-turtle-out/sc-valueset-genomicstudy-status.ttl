@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "GenomicStudyStatusCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"Genomic Study Status\""] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2020-12-28T16:55:11+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [

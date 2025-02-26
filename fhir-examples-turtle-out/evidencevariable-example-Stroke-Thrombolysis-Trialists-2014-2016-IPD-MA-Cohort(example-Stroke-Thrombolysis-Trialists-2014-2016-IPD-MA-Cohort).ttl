@@ -41,7 +41,7 @@
        fhir:url [ fhir:v "https://doi.org/10.1161/STROKEAHA.116.013644"^^xsd:anyURI ]
      ]
   ] ) ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "Stroke Thrombolysis Trialists’ Collaborators Group collection used for individual patient data meta-analysis" ] ;
      fhir:definitionByCombination [

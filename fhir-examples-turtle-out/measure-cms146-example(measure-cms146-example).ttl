@@ -38,7 +38,7 @@
   fhir:name [ fhir:v "CMS146"] ; # 
   fhir:title [ fhir:v "Appropriate Testing for Children with Pharyngitis"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-03-10"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "National Committee for Quality Assurance"] ; # 
   fhir:contact ( [

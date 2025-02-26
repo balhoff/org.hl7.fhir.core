@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Base FHIR compartment definition for Patient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR Project Team"] ; # 
   fhir:contact ( [
@@ -28,7 +28,7 @@
   ] ) ; # 
   fhir:description [ fhir:v "There is an instance of the patient compartment for each patient resource, and the identity of the compartment is the same as the patient. When a patient is linked to another patient resource, the records associated with the linked patient resource will not be returned as part of the compartment search. Those records will be returned only with another compartment search using the \"id\" for the linked patient resource.\n \nIn cases where two patients have been merged rather than linked, associated resources should be moved to the target patient as part of the merge process, so the patient compartment for the target patient would include all relevant data, and the patient compartment for the source patient would include only the linked Patient and possibly remnant resources like AuditEvent.. The set of resources associated with a particular patient"] ; # 
   fhir:code [ fhir:v "Patient"] ; # 
-  fhir:search [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:search [ fhir:v true] ; # 
   fhir:resource ( [
      fhir:code [ fhir:v "Account" ] ;
      fhir:param ( [ fhir:v "subject" ] )

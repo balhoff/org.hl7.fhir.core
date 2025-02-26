@@ -81,7 +81,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -102,11 +102,11 @@
        fhir:v "2015-05-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "9000.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 9000.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ; #   Start Date  
      fhir:net [
-       fhir:value [ fhir:v "9000.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 9000.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:detail ( [
@@ -118,11 +118,11 @@
          ] )
        ] ; #   Exam Fee  
        fhir:unitPrice [
-         fhir:value [ fhir:v "1000.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1000.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "1000.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1000.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -134,11 +134,11 @@
          ] )
        ] ; #   Diagnostic Fee  
        fhir:unitPrice [
-         fhir:value [ fhir:v "1500.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1500.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "1500.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1500.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -150,11 +150,11 @@
          ] )
        ] ; #   Initial Payment  
        fhir:unitPrice [
-         fhir:value [ fhir:v "500.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 500.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "500.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 500.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -180,11 +180,11 @@
          fhir:value [ fhir:v "24"^^xsd:decimal ]
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "250.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 250.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "250.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 250.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -202,11 +202,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "105.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 105.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "105.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 105.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:bodySite ( [
@@ -239,11 +239,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "1100.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1100.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "1100.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1100.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:bodySite ( [
@@ -265,11 +265,11 @@
          ] )
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "750.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 750.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "750.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 750.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -281,11 +281,11 @@
          ] )
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "350.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 350.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "350.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 350.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )

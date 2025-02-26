@@ -77,7 +77,7 @@
   fhir:whenPrepared [ fhir:v "2015-01-15"^^xsd:date] ; # 
   fhir:whenHandedOver [ fhir:v "2016-01-15"^^xsd:date] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "10 drops four times daily - apply in mouth using cotton swab or finger" ] ;
      fhir:timing [
        fhir:repeat [

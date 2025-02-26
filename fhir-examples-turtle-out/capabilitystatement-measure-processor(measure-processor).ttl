@@ -44,7 +44,7 @@
      fhir:mode [ fhir:v "server" ] ;
      fhir:documentation [ fhir:v "RESTful Measure Processor Service" ] ;
      fhir:security [
-       fhir:cors [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:cors [ fhir:v true ] ;
        fhir:service ( [
          fhir:coding ( [
            fhir:system [ fhir:v "http://hl7.org/fhir/restful-security-service"^^xsd:anyURI ] ;

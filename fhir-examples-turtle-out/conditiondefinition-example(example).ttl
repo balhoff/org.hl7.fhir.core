@@ -40,9 +40,9 @@
        fhir:display [ fhir:v "Hyperlipidemia (disorder)" ]
      ] )
   ] ; # 
-  fhir:hasSeverity [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:hasBodySite [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:hasStage [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:hasSeverity [ fhir:v false] ; # 
+  fhir:hasBodySite [ fhir:v false] ; # 
+  fhir:hasStage [ fhir:v false] ; # 
   fhir:definition ( [ fhir:v "https://med.stanford.edu/content/dam/sm/cerc/documents/Hyperlipidemia%20Management%20Protocol.pdf"^^xsd:anyURI] ) ; # 
   fhir:observation ( [
      fhir:code [

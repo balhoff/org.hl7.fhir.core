@@ -40,7 +40,7 @@
      a fhir:string ;
      fhir:v "January 2012"
   ] ; # 
-  fhir:primarySource [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:primarySource [ fhir:v false] ; # 
   fhir:informationSource [
      fhir:concept [
        fhir:coding ( [

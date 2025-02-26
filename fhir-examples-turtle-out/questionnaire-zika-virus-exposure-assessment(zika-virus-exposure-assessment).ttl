@@ -71,7 +71,7 @@
        fhir:operator [ fhir:v "=" ] ;
        fhir:answer [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] )
   ] [
@@ -87,7 +87,7 @@
        fhir:operator [ fhir:v "=" ] ;
        fhir:answer [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] )
   ] [
@@ -111,7 +111,7 @@
        fhir:operator [ fhir:v "=" ] ;
        fhir:answer [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] )
   ] [
@@ -127,7 +127,7 @@
        fhir:operator [ fhir:v "=" ] ;
        fhir:answer [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] )
   ] [
@@ -151,7 +151,7 @@
        fhir:operator [ fhir:v "=" ] ;
        fhir:answer [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] )
   ] ) . # 

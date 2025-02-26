@@ -90,7 +90,7 @@
        fhir:productName [ fhir:v "Acme Lipid Additive" ]
      ] ) ;
      fhir:caloricDensity [
-       fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1.5 ] ;
        fhir:unit [ fhir:v "calories per milliliter" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "cal/mL" ]

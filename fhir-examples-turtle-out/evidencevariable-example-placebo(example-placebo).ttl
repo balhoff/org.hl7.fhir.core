@@ -25,7 +25,7 @@
   fhir:title [ fhir:v "placebo"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:description [ fhir:v "placebo"] ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "placebo" ] ;
      fhir:definitionCodeableConcept [

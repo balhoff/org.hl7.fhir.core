@@ -45,7 +45,7 @@
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "8306-3" ] ;
        fhir:display [ fhir:v "Body height --lying" ] ;
-       fhir:userSelected [ fhir:v "true"^^xsd:boolean ]
+       fhir:userSelected [ fhir:v true ]
      ] ) ;
      fhir:text [ fhir:v "Body Length" ]
   ] ; #     This example demonstrates the use of a code translation to allow the observation to be interpreted as Body Length  ( typically used for infants)    

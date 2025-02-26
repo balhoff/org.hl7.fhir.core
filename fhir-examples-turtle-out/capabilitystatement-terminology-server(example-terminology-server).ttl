@@ -25,7 +25,7 @@
   fhir:name [ fhir:v "ACMETerminologyServiceCapabilityStatement"] ; # 
   fhir:title [ fhir:v "ACME Terminology Service — Capability Statement"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2022-09-01"^^xsd:date] ; # 
   fhir:description [ fhir:v "Example capability statement for a Terminology Server. A server can support more fucntionality than defined here, but this is the minimum amount"] ; # 
   fhir:kind [ fhir:v "instance"] ; # 

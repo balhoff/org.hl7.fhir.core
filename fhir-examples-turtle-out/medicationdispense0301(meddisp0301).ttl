@@ -93,7 +93,7 @@
      fhir:display [ fhir:v "Donald Duck" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "500mg IV q6h x 3 days" ] ;
      fhir:timing [
        fhir:repeat [

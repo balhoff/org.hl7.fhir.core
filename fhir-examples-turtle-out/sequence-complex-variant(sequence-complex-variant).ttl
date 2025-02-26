@@ -55,13 +55,13 @@
            fhir:code [ fhir:v "NC_000002.12" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "128273724"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "128273754"^^xsd:integer ] ;
+       fhir:windowStart [ fhir:v 128273724 ] ;
+       fhir:windowEnd [ fhir:v 128273754 ] ;
        fhir:strand [ fhir:v "watson" ]
      ] ;
      fhir:edit ( [
-       fhir:start [ fhir:v "128273724"^^xsd:integer ] ;
-       fhir:end [ fhir:v "128273736"^^xsd:integer ] ;
+       fhir:start [ fhir:v 128273724 ] ;
+       fhir:end [ fhir:v 128273736 ] ;
        fhir:replacementSequence [ fhir:v "CTCATTGT" ] ;
        fhir:replacedSequence [ fhir:v "CTCCATTGCATGCGTT" ]
      ] )

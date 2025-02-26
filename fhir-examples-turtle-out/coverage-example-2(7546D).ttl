@@ -103,7 +103,7 @@
      ] ;
      fhir:value [
        a fhir:Money ;
-       fhir:value [ fhir:v "20.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 20.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:exception ( [

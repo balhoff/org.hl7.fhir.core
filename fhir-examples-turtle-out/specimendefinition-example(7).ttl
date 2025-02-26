@@ -27,7 +27,7 @@
   ] ; # 
   fhir:title [ fhir:v "Venous blood specimen"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:typeCollected [
      fhir:coding ( [
        a sct:122555007 ;
@@ -40,7 +40,7 @@
      fhir:text [ fhir:v "no strict fasting" ]
   ] ) ; # 
   fhir:typeTested ( [
-     fhir:isDerived [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:isDerived [ fhir:v true ] ;
      fhir:type [
        fhir:coding ( [
          a sct:119364003 ;

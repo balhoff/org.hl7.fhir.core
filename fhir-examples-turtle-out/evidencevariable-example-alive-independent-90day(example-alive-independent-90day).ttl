@@ -25,10 +25,10 @@
   fhir:title [ fhir:v "Alive and not functionally dependent at 90 days"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:description [ fhir:v "Alive and not functionally dependent at 90 days"] ; # 
-  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v false] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "not functionally dependent at 90 days" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:coding ( [
          a sct:718705001 ;
@@ -55,7 +55,7 @@
      ] )
   ] [
      fhir:description [ fhir:v "alive at 90 days" ] ;
-     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:coding ( [
          a sct:419099009 ;

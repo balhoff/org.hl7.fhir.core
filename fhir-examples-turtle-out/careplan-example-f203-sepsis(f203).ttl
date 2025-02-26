@@ -70,7 +70,7 @@
      fhir:id [ fhir:v "activity" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:intent [ fhir:v "order" ] ;
-     fhir:doNotPerform [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:doNotPerform [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [

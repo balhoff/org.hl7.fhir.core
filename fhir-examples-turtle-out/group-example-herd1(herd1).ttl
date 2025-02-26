@@ -34,7 +34,7 @@
      fhir:system [ fhir:v "https://vetmed.iastate.edu/vdl"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "20171120-1234" ]
   ] ) ; #    diagnostic lab's identifier   
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:type [ fhir:v "animal"] ; # 
   fhir:membership [ fhir:v "enumerated"] ; # 
   fhir:code [
@@ -60,7 +60,7 @@
        a fhir:CodeableConcept ;
        fhir:text [ fhir:v "female" ]
      ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] #    required element - false means they are all sows   
+     fhir:exclude [ fhir:v false ] #    required element - false means they are all sows   
   ] ) . #    the share the common charasteristic of being sows   
 
 <http://hl7.org/fhir/RelatedPerson/peter> a fhir:RelatedPerson .

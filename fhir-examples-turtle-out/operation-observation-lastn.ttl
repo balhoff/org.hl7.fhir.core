@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "3"^^xsd:integer
+       fhir:v 3
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Last N Observations Query"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,24 +52,24 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v false] ; # 
   fhir:code [ fhir:v "lastn"] ; # 
   fhir:comment [ fhir:v "The key differences between this query operation and simply searching Observation using the combination of `_count` and `_sort` parameters are:\r\r* The *lastn* query returns **only** the last N resource grouped by code.  Using the _count query method doesn't restrict the total matches so you may need to page through several \"A\" Observations  before getting to Observation \"B\".\r* The server is responsible for grouping the observations by codes.  This frees the client from needing to determine which codes she should ask for.\r\rThis operation cannot be performed on observations that the user is not authorized to see.  It is assumed that the server has identified and secured the context appropriately, and can either associate the authorization context with a single patient, or determine whether the context has the rights to the nominated patient, if there is one. If there is no nominated patient (e.g. the operation is invoked at the system level) and the context is not associated with a single patient record, then the server should return an error. Specifying the relationship between the context, a user and patient records is outside the scope of this specification."] ; # 
   fhir:resource ( [ fhir:v "Observation"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "max" ] ;
      fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "`max` is  an optional input parameter to the *lastn* query operation.  It is used to specify the maximum number of Observations to return from each group. For example for the query \"Fetch the last 3 results for all vitals for a patient\" `max` = 3." ] ;
      fhir:type [ fhir:v "positiveInt" ]
   ] [
      fhir:name [ fhir:v "return" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The set of most recent N Observations that match the *lastn* query search criteria." ] ;
      fhir:type [ fhir:v "Bundle" ]

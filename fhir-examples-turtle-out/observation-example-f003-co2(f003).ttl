@@ -52,7 +52,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "6.2"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 6.2 ] ;
      fhir:unit [ fhir:v "kPa" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "kPa" ]
@@ -66,13 +66,13 @@
   ] ) ; # 
   fhir:referenceRange ( [
      fhir:low [
-       fhir:value [ fhir:v "4.8"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 4.8 ] ;
        fhir:unit [ fhir:v "kPa" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "kPa" ]
      ] ;
      fhir:high [
-       fhir:value [ fhir:v "6.0"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 6.0 ] ;
        fhir:unit [ fhir:v "kPa" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "kPa" ]

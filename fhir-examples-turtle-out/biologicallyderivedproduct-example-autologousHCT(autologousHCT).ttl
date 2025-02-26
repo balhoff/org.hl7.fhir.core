@@ -115,7 +115,7 @@
      ] ;
      fhir:value [
        a fhir:Quantity ;
-       fhir:value [ fhir:v "2.6"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 2.6 ] ;
        fhir:unit [ fhir:v "10*6/mL" ] ;
        fhir:system [ fhir:v "https://ucum.org/"^^xsd:anyURI ]
      ]

@@ -75,7 +75,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:identifier [
        fhir:system [ fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "12345" ]
@@ -98,11 +98,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) . # 

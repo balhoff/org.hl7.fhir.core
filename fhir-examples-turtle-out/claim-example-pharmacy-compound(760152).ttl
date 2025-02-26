@@ -136,7 +136,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -164,7 +164,7 @@
        fhir:code [ fhir:v "TAB" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "155.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 155.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:detail ( [
@@ -181,7 +181,7 @@
          fhir:unit [ fhir:v "mg" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "20.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 20.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:subDetail ( [
@@ -193,7 +193,7 @@
            ] )
          ] ; #   type=costitem  
          fhir:net [
-           fhir:value [ fhir:v "20.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 20.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] )
@@ -211,7 +211,7 @@
          fhir:unit [ fhir:v "mg" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "25.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 25.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:subDetail ( [
@@ -223,7 +223,7 @@
            ] )
          ] ; #   type=costitem  
          fhir:net [
-           fhir:value [ fhir:v "25.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 25.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] )
@@ -241,7 +241,7 @@
          fhir:unit [ fhir:v "mg" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "28.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 28.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:subDetail ( [
@@ -253,7 +253,7 @@
            ] )
          ] ; #   type=costitem  
          fhir:net [
-           fhir:value [ fhir:v "28.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 28.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] )
@@ -266,7 +266,7 @@
          ] )
        ] ; #   type=costitem  
        fhir:net [
-         fhir:value [ fhir:v "22.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 22.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -278,13 +278,13 @@
          ] )
        ] ; #   type=costitem  
        fhir:net [
-         fhir:value [ fhir:v "60.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 60.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
   ] ) ; # 
   fhir:total [
-     fhir:value [ fhir:v "155.00"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 155.00 ] ;
      fhir:currency [ fhir:v "USD" ]
   ] . # 
 

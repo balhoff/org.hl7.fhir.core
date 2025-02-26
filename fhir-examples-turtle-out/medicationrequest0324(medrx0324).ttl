@@ -60,7 +60,7 @@
      ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Insert one suppository rectally twice daily as needed for fever to a maximim of 3 per day" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [
@@ -136,7 +136,7 @@
   fhir:substitution [
      fhir:allowed [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ] ;
      fhir:reason [
        fhir:coding ( [

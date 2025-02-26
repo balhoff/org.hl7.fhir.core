@@ -52,7 +52,7 @@
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "7.2"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 7.2 ] ;
      fhir:unit [ fhir:v "g/dl" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
      fhir:code [ fhir:v "g/dL" ]
@@ -66,7 +66,7 @@
   ] ) ; # 
   fhir:referenceRange ( [
      fhir:low [
-       fhir:value [ fhir:v "7.5"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 7.5 ] ;
        fhir:unit [ fhir:v "g/dl" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "g/dL" ]

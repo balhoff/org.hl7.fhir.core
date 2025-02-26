@@ -80,7 +80,7 @@
      fhir:text [ fhir:v "Chlorthalidone increases urniation so take it in the morning" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "One tablet daily" ] ;
      fhir:additionalInstruction ( [
        fhir:coding ( [
@@ -154,7 +154,7 @@
   fhir:substitution [
      fhir:allowed [
        a fhir:boolean ;
-       fhir:v "true"^^xsd:boolean
+       fhir:v true
      ] ;
      fhir:reason [
        fhir:coding ( [

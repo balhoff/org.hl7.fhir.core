@@ -230,7 +230,7 @@
   fhir:availability ( [
      fhir:availableTime ( [
        fhir:daysOfWeek ( [ fhir:v "sat" ] [ fhir:v "sun" ] ) ;
-       fhir:allDay [ fhir:v "true"^^xsd:boolean ]
+       fhir:allDay [ fhir:v true ]
      ] ) ;
      fhir:notAvailableTime ( [
        fhir:description [ fhir:v "Public Holidays" ]

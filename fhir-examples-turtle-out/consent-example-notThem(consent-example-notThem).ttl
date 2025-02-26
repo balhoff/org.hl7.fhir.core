@@ -49,7 +49,7 @@
      ] )
   ] ) ; #   this is opt-in - e.g. everything approved unless otherwise stated  
   fhir:verification ( [
-     fhir:verified [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:verified [ fhir:v true ] ;
      fhir:verifiedBy [
        fhir:link <http://hl7.org/fhir/Organization/f001> ;
        fhir:reference [ fhir:v "Organization/f001" ]

@@ -32,7 +32,7 @@
   fhir:name [ fhir:v "SNOMEDCTToICD10CMMappingsForFractureOfUlna"] ; # 
   fhir:title [ fhir:v "SNOMED CT to ICD-10-CM mappings for fracture of ulna"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-06-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7, Inc"] ; # 
   fhir:contact ( [

@@ -188,7 +188,7 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n            <h1>Eve Everywoman</h1>\n\n          </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:text [ fhir:v "Eve Everywoman" ] ;
      fhir:family [ fhir:v "Everywoman1" ] ;

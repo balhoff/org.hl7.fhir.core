@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "FHIRexanple2"] ; # 
   fhir:title [ fhir:v "FHIR Example 2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-06-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7, Inc"] ; # 
   fhir:contact ( [

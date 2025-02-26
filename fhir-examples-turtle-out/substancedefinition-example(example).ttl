@@ -62,7 +62,7 @@
          fhir:display [ fhir:v "Current" ]
        ] )
      ] ;
-     fhir:preferred [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:preferred [ fhir:v true ] ;
      fhir:language ( [
        fhir:coding ( [
          fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
@@ -79,7 +79,7 @@
          fhir:display [ fhir:v "Current" ]
        ] )
      ] ;
-     fhir:preferred [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:preferred [ fhir:v false ] ;
      fhir:language ( [
        fhir:coding ( [
          fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
@@ -96,7 +96,7 @@
          fhir:display [ fhir:v "Current" ]
        ] )
      ] ;
-     fhir:preferred [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:preferred [ fhir:v false ] ;
      fhir:language ( [
        fhir:coding ( [
          fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
@@ -113,7 +113,7 @@
          fhir:display [ fhir:v "Current" ]
        ] )
      ] ;
-     fhir:preferred [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:preferred [ fhir:v false ] ;
      fhir:language ( [
        fhir:coding ( [
          fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;

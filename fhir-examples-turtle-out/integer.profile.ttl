@@ -42,7 +42,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "integer"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 FHIR Standard"] ; # 
   fhir:contact ( [
@@ -61,7 +61,7 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:kind [ fhir:v "primitive-type"] ; # 
-  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:abstract [ fhir:v false] ; # 
   fhir:type [ fhir:v "integer"^^xsd:anyURI] ; # 
   fhir:baseDefinition [
      fhir:v "http://hl7.org/fhir/StructureDefinition/PrimitiveType"^^xsd:anyURI ;
@@ -92,8 +92,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "integer.id" ] ;
        fhir:path [ fhir:v "integer.id" ] ;
@@ -117,8 +117,8 @@
          ] ) ;
          fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "integer.extension" ] ;
        fhir:path [ fhir:v "integer.extension" ] ;
@@ -155,8 +155,8 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
          ]
        ] ) ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] [
        fhir:id [ fhir:v "integer.value" ] ;
        fhir:path [ fhir:v "integer.value" ] ;
@@ -188,14 +188,14 @@
        ] ) ; #  Note: special primitive values have a FHIRPath system type. e.g. this is compiler magic (c) 
        fhir:minValue [
          a fhir:integer ;
-         fhir:v "-2147483648"^^xsd:integer
+         fhir:v -2147483648
        ] ;
        fhir:maxValue [
          a fhir:integer ;
-         fhir:v "2147483647"^^xsd:integer
+         fhir:v 2147483647
        ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ]
      ] )
   ] ; # 
   fhir:differential [
@@ -233,11 +233,11 @@
        ] ) ; #  Note: special primitive values have a FHIRPath system type. e.g. this is compiler magic (a) ,  Note: special primitive values have a FHIRPath system type. e.g. this is compiler magic (b) 
        fhir:minValue [
          a fhir:integer ;
-         fhir:v "-2147483648"^^xsd:integer
+         fhir:v -2147483648
        ] ;
        fhir:maxValue [
          a fhir:integer ;
-         fhir:v "2147483647"^^xsd:integer
+         fhir:v 2147483647
        ]
      ] )
   ] . # 

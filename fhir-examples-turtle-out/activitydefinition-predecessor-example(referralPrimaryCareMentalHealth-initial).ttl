@@ -34,7 +34,7 @@
   fhir:name [ fhir:v "ReferralPrimaryCareMentalHealth"] ; # 
   fhir:title [ fhir:v "Referral to Primary Care Mental Health"] ; # 
   fhir:status [ fhir:v "retired"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-03-03T14:06:00Z"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Motive Medical Intelligence"] ; # 
   fhir:contact ( [

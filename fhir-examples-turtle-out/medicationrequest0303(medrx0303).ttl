@@ -74,7 +74,7 @@
      fhir:text [ fhir:v "Patient told to take with food" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Take 4 tablets daily for 7 days starting January 16, 2015" ] ;
      fhir:timing [
        fhir:repeat [
@@ -121,7 +121,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "2"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 2 ] ;
      fhir:text [ fhir:v "Take 2 tablets daily for 7 days starting January 23, 2015" ] ;
      fhir:timing [
        fhir:repeat [
@@ -168,7 +168,7 @@
        ]
      ] )
   ] [
-     fhir:sequence [ fhir:v "3"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 3 ] ;
      fhir:text [ fhir:v "Take 1 tablets daily for 7 days starting January 30, 2015" ] ;
      fhir:timing [
        fhir:repeat [

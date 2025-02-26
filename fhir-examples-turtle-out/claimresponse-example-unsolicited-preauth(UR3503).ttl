@@ -72,7 +72,7 @@
        ] )
      ] ) ;
      fhir:net [
-       fhir:value [ fhir:v "250.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 250.00 ] ;
        fhir:currency [ fhir:v "USD" ] #   net set to same value as the eligible amount. Providers will only be reimbursed to the net\/eligible amount less the co-pay.  
      ] ;
      fhir:noteNumber ( [ fhir:v "101"^^xsd:positiveInteger ] ) ;
@@ -83,7 +83,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "250.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 250.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -93,7 +93,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "10.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 10.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -103,7 +103,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "100.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 100.00 ]
        ]
      ] [
        fhir:category [
@@ -112,7 +112,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "240.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 240.00 ] ;
          fhir:currency [ fhir:v "USD" ] #   insurer will pay up to this amount.  
        ]
      ] )
@@ -126,7 +126,7 @@
        ] )
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "800.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 800.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:adjudication ( [
@@ -136,7 +136,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "800.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 800.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -146,7 +146,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "100.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 100.00 ]
        ]
      ] [
        fhir:category [
@@ -155,7 +155,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "800.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 800.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -167,7 +167,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "1050.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1050.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -177,7 +177,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "1040.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1040.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) ; # 
@@ -199,7 +199,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]

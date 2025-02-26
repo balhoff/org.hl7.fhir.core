@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "ACMECholCodesPlasma"] ; # 
   fhir:title [ fhir:v "ACME Codes for Cholesterol: Plasma only"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2018-11-01"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7 International"] ; # 
   fhir:contact ( [

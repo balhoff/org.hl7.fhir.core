@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "CholCodeLegacyStatus"] ; # 
   fhir:title [ fhir:v "Cholesterol Code Legacy Status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2016-01-28"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "ACME Co"] ; # 
   fhir:contact ( [
@@ -56,7 +56,7 @@
        fhir:code [ fhir:v "legacy" ] ;
        fhir:value [
          a fhir:boolean ;
-         fhir:v "false"^^xsd:boolean
+         fhir:v false
        ]
      ] )
   ] [
@@ -65,7 +65,7 @@
        fhir:code [ fhir:v "legacy" ] ;
        fhir:value [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] )
   ] [
@@ -74,7 +74,7 @@
        fhir:code [ fhir:v "legacy" ] ;
        fhir:value [
          a fhir:boolean ;
-         fhir:v "true"^^xsd:boolean
+         fhir:v true
        ]
      ] )
   ] ) . # 

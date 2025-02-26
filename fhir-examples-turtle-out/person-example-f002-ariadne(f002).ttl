@@ -20,7 +20,7 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n     Ariadne Bor-Jansma\n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "usual" ] ; #  The name of the contact 
      fhir:text [ fhir:v "Ariadne Bor-Jansma" ]

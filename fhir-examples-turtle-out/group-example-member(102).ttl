@@ -38,7 +38,7 @@
      fhir:period [
        fhir:start [ fhir:v "2015-04-02"^^xsd:date ]
      ] ;
-     fhir:inactive [ fhir:v "true"^^xsd:boolean ]
+     fhir:inactive [ fhir:v true ]
   ] [
      fhir:entity [
        fhir:link <http://hl7.org/fhir/Patient/pat3> ;

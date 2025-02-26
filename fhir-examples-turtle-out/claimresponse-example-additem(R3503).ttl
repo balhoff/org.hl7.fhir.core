@@ -70,7 +70,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "0.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 0.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -80,7 +80,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "0.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 0.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -93,7 +93,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "105.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 105.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -103,7 +103,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "80.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 80.00 ]
        ]
      ] [
        fhir:category [
@@ -112,7 +112,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "84.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 84.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -125,7 +125,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "750.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 750.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -135,7 +135,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "80.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 80.00 ]
        ]
      ] [
        fhir:category [
@@ -144,7 +144,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "600.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 600.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] ) ;
@@ -157,7 +157,7 @@
            ] )
          ] ;
          fhir:amount [
-           fhir:value [ fhir:v "750.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 750.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] [
@@ -167,7 +167,7 @@
            ] )
          ] ;
          fhir:quantity [
-           fhir:value [ fhir:v "80.00"^^xsd:decimal ]
+           fhir:value [ fhir:v 80.00 ]
          ]
        ] [
          fhir:category [
@@ -176,7 +176,7 @@
            ] )
          ] ;
          fhir:amount [
-           fhir:value [ fhir:v "600.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 600.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] )
@@ -189,7 +189,7 @@
            ] )
          ] ;
          fhir:amount [
-           fhir:value [ fhir:v "0.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 0.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] [
@@ -199,7 +199,7 @@
            ] )
          ] ;
          fhir:amount [
-           fhir:value [ fhir:v "0.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 0.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] )
@@ -221,7 +221,7 @@
        ] )
      ] ) ;
      fhir:net [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:noteNumber ( [ fhir:v "101"^^xsd:positiveInteger ] ) ;
@@ -232,7 +232,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "100.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 100.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -242,7 +242,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "10.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 10.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -252,7 +252,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "80.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 80.00 ]
        ]
      ] [
        fhir:category [
@@ -268,7 +268,7 @@
          ] ) #   should have paid 100.47  
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "72.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 72.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -282,7 +282,7 @@
        ] )
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "35.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 35.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:adjudication ( [
@@ -292,7 +292,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "35.57"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 35.57 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -302,7 +302,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "80.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 80.00 ]
        ]
      ] [
        fhir:category [
@@ -311,7 +311,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "28.47"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 28.47 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -332,7 +332,7 @@
        ] )
      ] ) ;
      fhir:net [
-       fhir:value [ fhir:v "350.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 350.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:noteNumber ( [ fhir:v "101"^^xsd:positiveInteger ] ) ;
@@ -343,7 +343,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "350.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 350.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -353,7 +353,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "80.00"^^xsd:decimal ]
+         fhir:value [ fhir:v 80.00 ]
        ]
      ] [
        fhir:category [
@@ -362,7 +362,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "270.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 270.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -374,7 +374,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "1340.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1340.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -384,7 +384,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "1054.47"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1054.47 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) ; # 
@@ -397,7 +397,7 @@
      ] ;
      fhir:date [ fhir:v "2014-08-31"^^xsd:date ] ;
      fhir:amount [
-       fhir:value [ fhir:v "100.47"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 100.47 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:identifier [

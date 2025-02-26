@@ -17,7 +17,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:integer ;
-       fhir:v "2"^^xsd:integer
+       fhir:v 2
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
@@ -32,7 +32,7 @@
   fhir:title [ fhir:v "Get a binding token for use in a websocket connection"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
   fhir:contact ( [
@@ -52,45 +52,45 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:affectsState [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:affectsState [ fhir:v true] ; # 
   fhir:code [ fhir:v "get-ws-binding-token"] ; # 
   fhir:resource ( [ fhir:v "Subscription"] ) ; # 
-  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v true] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "id" ] ;
      fhir:use [ fhir:v "in" ] ;
      fhir:scope ( [ fhir:v "type" ] ) ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "*" ] ;
      fhir:documentation [ fhir:v "At the Instance level, this parameter is ignored. At the Resource level, one or more parameters containing a FHIR id for a Subscription to get a token for. In the absence of any specified ids, the server may either return a token for all Subscriptions available to the caller with a channel-type of websocket or fail the request." ] ;
      fhir:type [ fhir:v "id" ]
   ] [
      fhir:name [ fhir:v "token" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "An access token that a client may use to show authorization during a websocket connection. The security details of the token are implementation-dependent and beyond the scope of this operation definition." ] ;
      fhir:type [ fhir:v "string" ]
   ] [
      fhir:name [ fhir:v "expiration" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The date and time this token is valid until." ] ;
      fhir:type [ fhir:v "dateTime" ]
   ] [
      fhir:name [ fhir:v "subscription" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "*" ] ;
      fhir:documentation [ fhir:v "The subscriptions this token is valid for." ] ;
      fhir:type [ fhir:v "string" ]
   ] [
      fhir:name [ fhir:v "websocket-url" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The URL the client should use to connect to Websockets." ] ;
      fhir:type [ fhir:v "url" ]

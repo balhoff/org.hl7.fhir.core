@@ -31,7 +31,7 @@
      fhir:link <http://example.com/TestScript/testscript-example>
   ] ; # 
   fhir:result [ fhir:v "pass"] ; # 
-  fhir:score [ fhir:v "100.0"^^xsd:decimal] ; # 
+  fhir:score [ fhir:v 100.0] ; # 
   fhir:tester [ fhir:v "HL7 Execution Engine"] ; # 
   fhir:issued [ fhir:v "2016-10-07T08:25:34-05:00"^^xsd:dateTime] ; # 
   fhir:participant ( [

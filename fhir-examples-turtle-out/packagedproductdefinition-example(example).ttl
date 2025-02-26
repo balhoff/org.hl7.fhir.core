@@ -32,7 +32,7 @@
          fhir:code [ fhir:v "Carton" ]
        ] )
      ] ;
-     fhir:quantity [ fhir:v "1"^^xsd:integer ] ; #    top level, so this can only ever be 1, but it is optional   
+     fhir:quantity [ fhir:v 1 ] ; #    top level, so this can only ever be 1, but it is optional   
      fhir:material ( [
        fhir:coding ( [
          fhir:system [ fhir:v "http://ema.europa.eu/example/packageItemContainerMaterial"^^xsd:anyURI ] ;
@@ -77,7 +77,7 @@
        ] ;
        fhir:value [
          a fhir:Quantity ;
-         fhir:value [ fhir:v "23.5"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 23.5 ] ;
          fhir:unit [ fhir:v "mm" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "mm" ]
@@ -90,7 +90,7 @@
            fhir:code [ fhir:v "Blister" ]
          ] )
        ] ;
-       fhir:quantity [ fhir:v "1"^^xsd:integer ] ;
+       fhir:quantity [ fhir:v 1 ] ;
        fhir:material ( [
          fhir:coding ( [
            fhir:system [ fhir:v "http://ema.europa.eu/example/packageItemContainerMaterial"^^xsd:anyURI ] ;

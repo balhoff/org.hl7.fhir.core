@@ -25,7 +25,7 @@
      fhir:system [ fhir:v "http://acme.org/identifiers/substances/lot"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "AB94687" ]
   ] ) ; # 
-  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v true] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/substance-category"^^xsd:anyURI ] ;

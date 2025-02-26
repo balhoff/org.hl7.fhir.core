@@ -122,7 +122,7 @@
        ] )
      ] ;
      fhir:quantity [
-       fhir:value [ fhir:v "0.026835741669"^^xsd:decimal ]
+       fhir:value [ fhir:v 0.026835741669 ]
      ] ;
      fhir:numberOfEvents [ fhir:v "91"^^xsd:nonNegativeInteger ] ;
      fhir:sampleSize [

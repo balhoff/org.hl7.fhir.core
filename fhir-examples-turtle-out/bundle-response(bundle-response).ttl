@@ -99,7 +99,7 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Some narrative</div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Chalmers" ] ;

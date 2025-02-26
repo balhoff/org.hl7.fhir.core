@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "ContractResourceStatusCodesCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"Contract Resource Status Codes\""] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:publisher [ fhir:v "Financial Management"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

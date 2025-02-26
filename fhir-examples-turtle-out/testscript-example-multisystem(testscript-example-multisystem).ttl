@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "Testscriptexamplemultisystem"] ; # 
   fhir:title [ fhir:v "Multisystem Test Script"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-01-18"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7"] ; # 
   fhir:contact ( [
@@ -51,19 +51,19 @@
   fhir:purpose [ fhir:v "Patient Read Operation"] ; # 
   fhir:copyright [ fhir:v "© HL7.org 2011+"] ; # 
   fhir:origin ( [
-     fhir:index [ fhir:v "1"^^xsd:integer ] ;
+     fhir:index [ fhir:v 1 ] ;
      fhir:profile [
        fhir:code [ fhir:v "FHIR-Client" ]
      ]
   ] ) ; # 
   fhir:destination ( [
-     fhir:index [ fhir:v "1"^^xsd:integer ] ;
+     fhir:index [ fhir:v 1 ] ;
      fhir:profile [
        fhir:code [ fhir:v "FHIR-Server" ]
      ] ;
      fhir:url [ fhir:v "http://acme.com/fhir/test"^^xsd:anyURI ]
   ] [
-     fhir:index [ fhir:v "2"^^xsd:integer ] ;
+     fhir:index [ fhir:v 2 ] ;
      fhir:profile [
        fhir:code [ fhir:v "FHIR-Server" ]
      ]
@@ -74,22 +74,22 @@
        fhir:description [ fhir:v "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ]
      ] ) ;
      fhir:capability ( [
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:validated [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:validated [ fhir:v false ] ;
        fhir:description [ fhir:v "Patient Read Operation" ] ;
-       fhir:origin ( [ fhir:v "1"^^xsd:integer ] ) ;
-       fhir:destination [ fhir:v "1"^^xsd:integer ] ;
+       fhir:origin ( [ fhir:v 1 ] ) ;
+       fhir:destination [ fhir:v 1 ] ;
        fhir:link ( [ fhir:v "http://hl7.org/fhir/http.html#read"^^xsd:anyURI ] ) ;
        fhir:capabilities [
          fhir:v "http://hl7.org/fhir/CapabilityStatement/example"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/CapabilityStatement/example>
        ]
      ] [
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:validated [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:validated [ fhir:v false ] ;
        fhir:description [ fhir:v "Patient Read Operation" ] ;
-       fhir:origin ( [ fhir:v "1"^^xsd:integer ] ) ;
-       fhir:destination [ fhir:v "2"^^xsd:integer ] ;
+       fhir:origin ( [ fhir:v 1 ] ) ;
+       fhir:destination [ fhir:v 2 ] ;
        fhir:link ( [ fhir:v "http://hl7.org/fhir/http.html#read"^^xsd:anyURI ] ) ;
        fhir:capabilities [
          fhir:v "http://hl7.org/fhir/CapabilityStatement/example"^^xsd:anyURI ;
@@ -118,9 +118,9 @@
          fhir:description [ fhir:v "Read a Patient from the first destination test system and perform basic validation." ] ;
          fhir:accept [ fhir:v "xml" ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:destination [ fhir:v "1"^^xsd:integer ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
-         fhir:origin [ fhir:v "1"^^xsd:integer ] ;
+         fhir:destination [ fhir:v 1 ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
+         fhir:origin [ fhir:v 1 ] ;
          fhir:params [ fhir:v "/${Dest1PatientResourceId}" ] ;
          fhir:requestId [ fhir:v "request-read-patient-01" ]
        ]
@@ -128,8 +128,8 @@
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the request method GET was sent by the client system under test." ] ;
          fhir:requestMethod [ fhir:v "get" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
@@ -137,33 +137,33 @@
          fhir:direction [ fhir:v "request" ] ;
          fhir:headerField [ fhir:v "Accept" ] ;
          fhir:operator [ fhir:v "contains" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:value [ fhir:v "xml" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned format is XML." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned resource type is Patient." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] [
@@ -180,9 +180,9 @@
          fhir:description [ fhir:v "Read a Patient from the second destination test system and perform basic validation." ] ;
          fhir:accept [ fhir:v "xml" ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:destination [ fhir:v "2"^^xsd:integer ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
-         fhir:origin [ fhir:v "1"^^xsd:integer ] ;
+         fhir:destination [ fhir:v 2 ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
+         fhir:origin [ fhir:v 1 ] ;
          fhir:params [ fhir:v "/${Dest2PatientResourceId}" ] ;
          fhir:requestHeader ( [
            fhir:field [ fhir:v "Accept-Charset" ] ;
@@ -195,33 +195,33 @@
          fhir:direction [ fhir:v "request" ] ;
          fhir:headerField [ fhir:v "Accept" ] ;
          fhir:operator [ fhir:v "contains" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:value [ fhir:v "xml" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned format is XML." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned resource type is Patient." ] ;
          fhir:direction [ fhir:v "response" ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] ) . # 

@@ -29,7 +29,7 @@
        fhir:system [ fhir:v "http://acmehealthcare/org/mrns"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "12345" ]
      ] ) ; #      MRN assigned by ACME healthcare on     
-     fhir:active [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:active [ fhir:v true ] ;
      fhir:name ( [
        fhir:family [ fhir:v "Chalmers" ] ;
        fhir:given ( [ fhir:v "Peter" ] [ fhir:v "James" ] )

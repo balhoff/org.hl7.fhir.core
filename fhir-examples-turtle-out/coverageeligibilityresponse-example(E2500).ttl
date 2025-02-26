@@ -46,7 +46,7 @@
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
      ] ;
-     fhir:inforce [ fhir:v "true"^^xsd:boolean ]
+     fhir:inforce [ fhir:v true ]
   ] ) . # 
 
 <http://hl7.org/fhir/Patient/pat1> a fhir:Patient .

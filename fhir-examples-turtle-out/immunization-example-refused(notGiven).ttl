@@ -43,7 +43,7 @@
      a fhir:dateTime ;
      fhir:v "2013-01-10"^^xsd:date
   ] ; # 
-  fhir:primarySource [ fhir:v "true"^^xsd:boolean] . # 
+  fhir:primarySource [ fhir:v true] . # 
 
 <http://hl7.org/fhir/Patient/example> a fhir:Patient .
 

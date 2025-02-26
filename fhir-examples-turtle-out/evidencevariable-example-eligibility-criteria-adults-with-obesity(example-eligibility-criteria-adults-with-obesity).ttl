@@ -68,10 +68,10 @@
        fhir:display [ fhir:v "StudyCitation: 2022 Systematic Review of bariatric surgery mortality effect 35243488" ]
      ]
   ] ) ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "adult (age ≥18 years old)" ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [
@@ -92,7 +92,7 @@
      ]
   ] [
      fhir:description [ fhir:v "obese (Body mass index >= 30 kg/m2)" ] ;
-     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:exclude [ fhir:v false ] ;
      fhir:definitionByTypeAndValue [
        fhir:type [
          fhir:coding ( [

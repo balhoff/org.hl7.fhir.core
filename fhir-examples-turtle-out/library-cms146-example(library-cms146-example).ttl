@@ -32,7 +32,7 @@
   fhir:name [ fhir:v "CMS146"] ; # 
   fhir:title [ fhir:v "CMS146: Appropriate Testing for Children with Pharyngitis"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:type [
      fhir:coding ( [
        fhir:code [ fhir:v "logic-library" ]

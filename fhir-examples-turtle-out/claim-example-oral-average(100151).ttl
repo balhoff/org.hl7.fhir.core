@@ -118,7 +118,7 @@
   ] ) ; # 
   fhir:insurance ( [
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -138,11 +138,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -159,11 +159,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "105.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 105.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "105.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 105.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:bodySite ( [
@@ -196,11 +196,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "1100.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1100.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "1100.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 1100.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:bodySite ( [
@@ -222,12 +222,12 @@
          ] )
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "1000.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 1000.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
-       fhir:factor [ fhir:v "0.75"^^xsd:decimal ] ;
+       fhir:factor [ fhir:v 0.75 ] ;
        fhir:net [
-         fhir:value [ fhir:v "750.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 750.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] #   Student discount  
      ] [
@@ -239,11 +239,11 @@
          ] )
        ] ;
        fhir:unitPrice [
-         fhir:value [ fhir:v "350.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 350.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "350.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 350.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )

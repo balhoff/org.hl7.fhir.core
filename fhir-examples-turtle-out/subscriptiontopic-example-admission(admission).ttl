@@ -37,7 +37,7 @@
        fhir:resultForCreate [ fhir:v "test-passes" ] ;
        fhir:current [ fhir:v "status=in-progress" ] ;
        fhir:resultForDelete [ fhir:v "test-fails" ] ;
-       fhir:requireBoth [ fhir:v "true"^^xsd:boolean ]
+       fhir:requireBoth [ fhir:v true ]
      ] ;
      fhir:fhirPathCriteria [ fhir:v "%previous.status!='in-progress' and %current.status='in-progress'" ]
   ] ) ; # 

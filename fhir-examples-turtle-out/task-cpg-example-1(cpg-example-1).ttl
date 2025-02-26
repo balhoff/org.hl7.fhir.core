@@ -22,7 +22,7 @@
   ] ; # 
   fhir:status [ fhir:v "ready"] ; # 
   fhir:intent [ fhir:v "order"] ; # 
-  fhir:doNotPerform [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:doNotPerform [ fhir:v true] ; # 
   fhir:code [
      fhir:text [ fhir:v "Collect information" ] #   \n    <coding>\n      <system value=\"http:\/\/hl7.org\/fhir\/uv\/cpg\/CodeSystem\/cpg-activity-type\"\/>\n      <code value=\"collect-information\"\/>\n      <display value=\"Collect information\"\/>\n    <\/coding>\n      
   ] ; # 

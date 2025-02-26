@@ -45,7 +45,7 @@
      fhir:reference [ fhir:v "Organization/2" ]
   ] ; # 
   fhir:insurance ( [
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]

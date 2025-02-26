@@ -36,23 +36,23 @@
          a fhir:string ;
          fhir:v "ACGTAGTC"
        ] ;
-       fhir:windowStart [ fhir:v "0"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "8"^^xsd:integer ] ;
+       fhir:windowStart [ fhir:v 0 ] ;
+       fhir:windowEnd [ fhir:v 8 ] ;
        fhir:strand [ fhir:v "watson" ]
      ] ;
      fhir:edit ( [
-       fhir:start [ fhir:v "2"^^xsd:integer ] ;
-       fhir:end [ fhir:v "2"^^xsd:integer ] ;
+       fhir:start [ fhir:v 2 ] ;
+       fhir:end [ fhir:v 2 ] ;
        fhir:replacementSequence [ fhir:v "ATG" ] ;
        fhir:replacedSequence [ fhir:v "-" ]
      ] [
-       fhir:start [ fhir:v "4"^^xsd:integer ] ;
-       fhir:end [ fhir:v "5"^^xsd:integer ] ;
+       fhir:start [ fhir:v 4 ] ;
+       fhir:end [ fhir:v 5 ] ;
        fhir:replacementSequence [ fhir:v "T" ] ;
        fhir:replacedSequence [ fhir:v "A" ]
      ] [
-       fhir:start [ fhir:v "6"^^xsd:integer ] ;
-       fhir:end [ fhir:v "7"^^xsd:integer ] ;
+       fhir:start [ fhir:v 6 ] ;
+       fhir:end [ fhir:v 7 ] ;
        fhir:replacementSequence [ fhir:v "-" ] ;
        fhir:replacedSequence [ fhir:v "T" ]
      ] )

@@ -83,7 +83,7 @@
      ]
   ] ) ; # 
   fhir:insurance ( [
-     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:focal [ fhir:v true ] ;
      fhir:coverage [
        fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
        fhir:reference [ fhir:v "Coverage/9876B1" ]
@@ -103,11 +103,11 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:unitPrice [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:udi ( [
@@ -125,7 +125,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "120.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 120.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] [
@@ -135,7 +135,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "0.80"^^xsd:decimal ]
+         fhir:value [ fhir:v 0.80 ]
        ]
      ] [
        fhir:category [
@@ -144,7 +144,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "96.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 96.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] )
@@ -161,7 +161,7 @@
        fhir:v "2014-08-16"^^xsd:date
      ] ;
      fhir:net [
-       fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 200.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ] ;
      fhir:adjudication ( [
@@ -171,7 +171,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "180.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 180.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ]
      ] ) ;
@@ -183,7 +183,7 @@
          ] )
        ] ;
        fhir:net [
-         fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 200.00 ] ;
          fhir:currency [ fhir:v "USD" ]
        ] ;
        fhir:udi ( [
@@ -197,7 +197,7 @@
            ] )
          ] ;
          fhir:amount [
-           fhir:value [ fhir:v "180.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 180.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ]
        ] ) ;
@@ -210,11 +210,11 @@
            ] )
          ] ;
          fhir:unitPrice [
-           fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 200.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] ;
          fhir:net [
-           fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+           fhir:value [ fhir:v 200.00 ] ;
            fhir:currency [ fhir:v "USD" ]
          ] ;
          fhir:udi ( [
@@ -228,7 +228,7 @@
              ] )
            ] ;
            fhir:amount [
-             fhir:value [ fhir:v "200.00"^^xsd:decimal ] ;
+             fhir:value [ fhir:v 200.00 ] ;
              fhir:currency [ fhir:v "USD" ]
            ]
          ] [
@@ -238,7 +238,7 @@
              ] )
            ] ;
            fhir:quantity [
-             fhir:value [ fhir:v "0.90"^^xsd:decimal ]
+             fhir:value [ fhir:v 0.90 ]
            ]
          ] [
            fhir:category [
@@ -247,7 +247,7 @@
              ] )
            ] ;
            fhir:amount [
-             fhir:value [ fhir:v "180.00"^^xsd:decimal ] ;
+             fhir:value [ fhir:v 180.00 ] ;
              fhir:currency [ fhir:v "USD" ]
            ]
          ] )
@@ -261,7 +261,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "135.57"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 135.57 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -271,7 +271,7 @@
        ] )
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "96.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 96.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) . # 

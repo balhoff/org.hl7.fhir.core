@@ -29,7 +29,7 @@
   fhir:name [ fhir:v "IndicatorToRequestPriority"] ; # 
   fhir:title [ fhir:v "Indicator To Request Priority"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:description [ fhir:v "This concept map defines a mapping from CDS Hooks indicator to request priority."] ; # 
   fhir:sourceScope [
      a fhir:canonical ;

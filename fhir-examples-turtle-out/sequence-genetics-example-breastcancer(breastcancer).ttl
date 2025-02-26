@@ -44,12 +44,12 @@
            fhir:display [ fhir:v "Homo sapiens BRCA2, DNA repair associated (BRCA2), mRNA" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "101488058"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "101499444"^^xsd:integer ]
+       fhir:windowStart [ fhir:v 101488058 ] ;
+       fhir:windowEnd [ fhir:v 101499444 ]
      ] ;
      fhir:edit ( [
-       fhir:start [ fhir:v "32316186"^^xsd:integer ] ;
-       fhir:end [ fhir:v "32316187"^^xsd:integer ] ;
+       fhir:start [ fhir:v 32316186 ] ;
+       fhir:end [ fhir:v 32316187 ] ;
        fhir:replacementSequence [ fhir:v "A" ] ;
        fhir:replacedSequence [ fhir:v "C" ]
      ] )

@@ -58,7 +58,7 @@
          ] )
        ]
      ] ;
-     fhir:isActive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:isActive [ fhir:v true ] ;
      fhir:strength [
        a fhir:Ratio ;
        fhir:numerator [

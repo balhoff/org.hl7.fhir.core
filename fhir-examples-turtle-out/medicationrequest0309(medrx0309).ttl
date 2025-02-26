@@ -62,7 +62,7 @@
      fhir:display [ fhir:v "Patrick Pump" ]
   ] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "1000 mg/m2 orally twice daily from days 1-14 of cycle" ] ;
      fhir:timing [
        fhir:repeat [

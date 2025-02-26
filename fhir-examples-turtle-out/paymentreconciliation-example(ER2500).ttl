@@ -52,7 +52,7 @@
   fhir:disposition [ fhir:v "2014 August mid-month settlement."] ; # 
   fhir:date [ fhir:v "2014-08-01"^^xsd:date] ; # 
   fhir:amount [
-     fhir:value [ fhir:v "7000.00"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 7000.00 ] ;
      fhir:currency [ fhir:v "USD" ]
   ] ; # 
   fhir:paymentIdentifier [
@@ -92,7 +92,7 @@
        fhir:reference [ fhir:v "Organization/1" ]
      ] ;
      fhir:amount [
-       fhir:value [ fhir:v "3500.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 3500.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -112,7 +112,7 @@
      ] ;
      fhir:date [ fhir:v "2014-08-12"^^xsd:date ] ;
      fhir:amount [
-       fhir:value [ fhir:v "4000.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v 4000.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] [
@@ -128,7 +128,7 @@
      ] ;
      fhir:date [ fhir:v "2014-08-16"^^xsd:date ] ;
      fhir:amount [
-       fhir:value [ fhir:v "-1500.00"^^xsd:decimal ] ;
+       fhir:value [ fhir:v -1500.00 ] ;
        fhir:currency [ fhir:v "USD" ]
      ]
   ] ) ; # 

@@ -37,7 +37,7 @@
      fhir:system [ fhir:v "http://example.org/shared-ids"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "HS-12" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:providedBy [
      fhir:link <http://hl7.org/fhir/Organization/f001> ;
      fhir:reference [ fhir:v "Organization/f001" ] ;
@@ -140,11 +140,11 @@
        fhir:display [ fhir:v "Secure Email" ]
      ] )
   ] ) ; # 
-  fhir:appointmentRequired [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:appointmentRequired [ fhir:v false] ; # 
   fhir:availability ( [
      fhir:availableTime ( [
        fhir:daysOfWeek ( [ fhir:v "wed" ] ) ; #   This is a 24 hour service on wednesdays (due to weekly local service needs)  
-       fhir:allDay [ fhir:v "true"^^xsd:boolean ]
+       fhir:allDay [ fhir:v true ]
      ] [
        fhir:daysOfWeek ( [ fhir:v "mon" ] [ fhir:v "tue" ] [ fhir:v "thu" ] [ fhir:v "fri" ] ) ;
        fhir:availableStartTime [ fhir:v "08:30:00"^^xsd:time ] ;

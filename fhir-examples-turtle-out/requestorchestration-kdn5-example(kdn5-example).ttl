@@ -109,7 +109,7 @@
              fhir:url [ fhir:v "http://example.org/fhir/AUC-dose"^^xsd:anyURI ] ;
              fhir:value [
                a fhir:integer ;
-               fhir:v "5"^^xsd:integer
+               fhir:v 5
              ]
            ] ) #   AUC as dose unit or as an extension?  
          ] #   <value value=\"5\" \/>\n          <unit value=\"AUC\" \/>\n          <system value=\"http:\/\/snomed.info\/sct\" \/>\n          <code value=\"413573002\" \/>  
@@ -165,13 +165,13 @@
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [
                    a fhir:integer ;
-                   fhir:v "1"^^xsd:integer
+                   fhir:v 1
                  ]
                ] [
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [
                    a fhir:integer ;
-                   fhir:v "8"^^xsd:integer
+                   fhir:v 8
                  ]
                ] )
              ] ) ;
@@ -187,7 +187,7 @@
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [
                    a fhir:integer ;
-                   fhir:v "1"^^xsd:integer
+                   fhir:v 1
                  ]
                ] )
              ] ) ;

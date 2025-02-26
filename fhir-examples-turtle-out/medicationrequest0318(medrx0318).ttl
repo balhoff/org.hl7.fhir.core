@@ -74,7 +74,7 @@
      fhir:text [ fhir:v "culture expected back in 12 hours - may switch depending on results" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "500mg IV q6h x 3 days" ] ;
      fhir:timing [
        fhir:event ( [ fhir:v "2020-01-01"^^xsd:date ] ) ;

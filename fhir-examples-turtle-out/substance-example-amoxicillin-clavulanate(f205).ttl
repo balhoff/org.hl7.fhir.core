@@ -24,7 +24,7 @@
   fhir:contained ( [
      a fhir:Substance ;
      fhir:id [ fhir:v "ingr1" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -38,7 +38,7 @@
   ] [
      a fhir:Substance ;
      fhir:id [ fhir:v "ingr2" ] ;
-     fhir:instance [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:instance [ fhir:v false ] ;
      fhir:code [
        fhir:concept [
          fhir:coding ( [
@@ -50,7 +50,7 @@
        ]
      ]
   ] ) ; # 
-  fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v false] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/substance-category"^^xsd:anyURI ] ;

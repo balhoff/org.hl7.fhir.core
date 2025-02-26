@@ -38,7 +38,7 @@
      ] )
   ] ; # 
   fhir:permittedDataType ( [ fhir:v "Quantity"] ) ; # 
-  fhir:multipleResultsAllowed [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:multipleResultsAllowed [ fhir:v false] ; # 
   fhir:method [
      fhir:coding ( [
        a sct:115341008 ;

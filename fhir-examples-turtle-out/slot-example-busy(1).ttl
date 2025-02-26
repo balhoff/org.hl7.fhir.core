@@ -37,7 +37,7 @@
   fhir:status [ fhir:v "busy"] ; # 
   fhir:start [ fhir:v "2013-12-25T09:00:00Z"^^xsd:dateTime] ; # 
   fhir:end [ fhir:v "2013-12-25T09:15:00Z"^^xsd:dateTime] ; # 
-  fhir:overbooked [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:overbooked [ fhir:v true] ; # 
   fhir:comment [ fhir:v "Assessments should be performed before requesting appointments in this slot."] . # 
 
 <http://hl7.org/fhir/Schedule/example> a fhir:Schedule .

@@ -46,7 +46,7 @@
   ] [
      fhir:type [ fhir:v "uri" ] ;
      fhir:value [ fhir:v "http://snomed.info/sct" ] ;
-     fhir:preferred [ fhir:v "true"^^xsd:boolean ]
+     fhir:preferred [ fhir:v true ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

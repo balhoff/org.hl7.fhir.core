@@ -36,7 +36,7 @@
   fhir:name [ fhir:v "LOINCCodesForCholesterolInSerumPlasma"] ; # 
   fhir:title [ fhir:v "LOINC Codes for Cholesterol in Serum/Plasma"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2015-06-22"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7 International"] ; # 
   fhir:contact ( [
@@ -71,7 +71,7 @@
   fhir:copyright [ fhir:v "This content from LOINC ® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use."] ; # 
   fhir:compose [
      fhir:lockedDate [ fhir:v "2012-06-13"^^xsd:date ] ;
-     fhir:inactive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:inactive [ fhir:v true ] ;
      fhir:include ( [
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:version [ fhir:v "2.36" ] ;

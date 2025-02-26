@@ -67,7 +67,7 @@
          ] )
        ] ;
        fhir:amount [
-         fhir:value [ fhir:v "67.44"^^xsd:decimal ] ;
+         fhir:value [ fhir:v 67.44 ] ;
          fhir:currency [ fhir:v "EUR" ]
        ]
      ] [

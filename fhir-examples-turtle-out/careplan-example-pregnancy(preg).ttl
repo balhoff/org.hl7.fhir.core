@@ -119,7 +119,7 @@
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:display [ fhir:v "Eve Everywoman" ]
        ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
        fhir:status [ fhir:v "accepted" ]
      ] [
        fhir:type ( [
@@ -132,7 +132,7 @@
          fhir:reference [ fhir:v "#pr1" ] ;
          fhir:display [ fhir:v "Mavis Midwife" ]
        ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
        fhir:status [ fhir:v "accepted" ]
      ] )
   ] [
@@ -155,7 +155,7 @@
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:display [ fhir:v "Eve Everywoman" ]
        ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
        fhir:status [ fhir:v "accepted" ]
      ] [
        fhir:type ( [
@@ -168,7 +168,7 @@
          fhir:reference [ fhir:v "#pr1" ] ;
          fhir:display [ fhir:v "Mavis Midwife" ]
        ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
        fhir:status [ fhir:v "accepted" ]
      ] )
   ] [
@@ -191,7 +191,7 @@
          fhir:reference [ fhir:v "Patient/1" ] ;
          fhir:display [ fhir:v "Eve Everywoman" ]
        ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
        fhir:status [ fhir:v "accepted" ]
      ] [
        fhir:type ( [
@@ -204,7 +204,7 @@
          fhir:reference [ fhir:v "#pr1" ] ;
          fhir:display [ fhir:v "Mavis Midwife" ]
        ] ;
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
        fhir:status [ fhir:v "accepted" ]
      ] )
   ] ) ; # 

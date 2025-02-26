@@ -188,7 +188,7 @@
            fhir:instanceReference [ fhir:v "iherx001bundle" ]
          ]
        ] ;
-       fhir:pause [ fhir:v "true"^^xsd:boolean ]
+       fhir:pause [ fhir:v true ]
      ] [
        fhir:number [ fhir:v "3" ] ;
        fhir:operation [
@@ -203,7 +203,7 @@
          fhir:initiator [ fhir:v "Nurse" ] ;
          fhir:receiver [ fhir:v "MAP" ]
        ] ;
-       fhir:pause [ fhir:v "true"^^xsd:boolean ]
+       fhir:pause [ fhir:v true ]
      ] [
        fhir:number [ fhir:v "5" ] ;
        fhir:operation [
@@ -221,7 +221,7 @@
              fhir:title [ fhir:v "Register meds taken" ] ;
              fhir:initiator [ fhir:v "Nurse" ] ;
              fhir:receiver [ fhir:v "MAP" ] ;
-             fhir:initiatorActive [ fhir:v "true"^^xsd:boolean ]
+             fhir:initiatorActive [ fhir:v true ]
            ]
          ] )
        ] [
@@ -233,14 +233,14 @@
              fhir:title [ fhir:v "Register meds NOT taken" ] ;
              fhir:initiator [ fhir:v "Nurse" ] ;
              fhir:receiver [ fhir:v "MAP" ] ;
-             fhir:initiatorActive [ fhir:v "true"^^xsd:boolean ]
+             fhir:initiatorActive [ fhir:v true ]
            ]
          ] )
        ] [
          fhir:title [ fhir:v "Not clear" ] ;
          fhir:description [ fhir:v "Unknown whether patient took medications or not" ]
        ] ) ;
-       fhir:pause [ fhir:v "true"^^xsd:boolean ]
+       fhir:pause [ fhir:v true ]
      ] [
        fhir:number [ fhir:v "7" ] ;
        fhir:operation [
@@ -254,22 +254,22 @@
          fhir:title [ fhir:v "Record administration" ] ;
          fhir:initiator [ fhir:v "Nurse" ] ;
          fhir:receiver [ fhir:v "MAP" ] ;
-         fhir:initiatorActive [ fhir:v "true"^^xsd:boolean ]
+         fhir:initiatorActive [ fhir:v true ]
        ] ;
-       fhir:pause [ fhir:v "true"^^xsd:boolean ]
+       fhir:pause [ fhir:v true ]
      ] [
        fhir:number [ fhir:v "9" ] ;
        fhir:operation [
          fhir:title [ fhir:v "Upload administration reports" ] ;
          fhir:initiator [ fhir:v "Nurse" ] ;
          fhir:receiver [ fhir:v "MAP" ] ;
-         fhir:initiatorActive [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:initiatorActive [ fhir:v true ] ;
          fhir:request [
            fhir:instanceReference [ fhir:v "iheadm002" ] ;
            fhir:versionReference [ fhir:v "iheadm002v1" ]
          ]
        ] ;
-       fhir:pause [ fhir:v "true"^^xsd:boolean ]
+       fhir:pause [ fhir:v true ]
      ] [
        fhir:number [ fhir:v "10" ] ;
        fhir:operation [

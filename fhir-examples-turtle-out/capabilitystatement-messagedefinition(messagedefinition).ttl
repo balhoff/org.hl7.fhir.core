@@ -17,7 +17,7 @@
      ] )
   ] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2012-01-04"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "ACME Corporation"] ; # 
   fhir:contact ( [

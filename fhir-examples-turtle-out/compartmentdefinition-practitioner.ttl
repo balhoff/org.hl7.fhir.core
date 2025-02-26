@@ -17,7 +17,7 @@
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Base FHIR compartment definition for Practitioner"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR Project Team"] ; # 
   fhir:contact ( [
@@ -28,7 +28,7 @@
   ] ) ; # 
   fhir:description [ fhir:v "There is an instance of the practitioner compartment for each Practitioner resource, and the identity of the compartment is the same as the Practitioner. The set of resources associated with a particular practitioner"] ; # 
   fhir:code [ fhir:v "Practitioner"] ; # 
-  fhir:search [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:search [ fhir:v true] ; # 
   fhir:resource ( [
      fhir:code [ fhir:v "Account" ] ;
      fhir:param ( [ fhir:v "subject" ] )

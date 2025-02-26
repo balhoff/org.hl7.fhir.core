@@ -38,7 +38,7 @@
        fhir:display [ fhir:v "Ohio Bureau of Motor Vehicles" ]
      ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Everywoman" ] ;

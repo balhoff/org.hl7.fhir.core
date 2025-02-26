@@ -75,7 +75,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444222222" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Everywoman" ] ;
@@ -118,7 +118,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444333333" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Everyman" ] ;
@@ -158,7 +158,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444555555" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Kidd" ] ;
@@ -198,7 +198,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444114567" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Nuclear" ] ;
@@ -238,7 +238,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444111234" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Nuclear" ] ;
@@ -278,7 +278,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444113456" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Nuclear" ] ;
@@ -318,7 +318,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444112345" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Nuclear" ] ;
@@ -358,7 +358,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444666666" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Mum" ] ;
@@ -398,7 +398,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444777777" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Sons" ] ;
@@ -455,7 +455,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444888888" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Betterhalf" ] ;
@@ -495,7 +495,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "444999999" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Relative" ] ;
@@ -535,7 +535,7 @@
      fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-ssn"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "555222222" ]
   ] ) ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:name ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:family [ fhir:v "Contact" ] ;

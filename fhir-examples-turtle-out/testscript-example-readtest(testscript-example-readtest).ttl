@@ -28,7 +28,7 @@
   fhir:version [ fhir:v "1.0"] ; # 
   fhir:name [ fhir:v "TestScript Example Read Test"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:experimental [ fhir:v true] ; # 
   fhir:date [ fhir:v "2017-01-18"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7"] ; # 
   fhir:contact ( [
@@ -55,8 +55,8 @@
        fhir:description [ fhir:v "Demographics and other administrative information about an individual or animal receiving care or other health-related services." ]
      ] ) ;
      fhir:capability ( [
-       fhir:required [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:validated [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:required [ fhir:v true ] ;
+       fhir:validated [ fhir:v false ] ;
        fhir:description [ fhir:v "Patient Read Operation" ] ;
        fhir:link ( [ fhir:v "http://hl7.org/fhir/http.html#read"^^xsd:anyURI ] ) ;
        fhir:capabilities [
@@ -108,44 +108,44 @@
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Read the known Patient resource on the destination test system using the user defined dynamic variable ${KnownPatientResourceId}." ] ;
          fhir:accept [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${KnownPatientResourceId}" ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
          fhir:response [ fhir:v "okay" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned format is XML." ] ;
          fhir:contentType [ fhir:v "xml" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server might not support versioning." ] ;
          fhir:headerField [ fhir:v "Last-Modified" ] ;
          fhir:operator [ fhir:v "notEmpty" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "true"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v true ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned resource type is Patient." ] ;
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned Patient conforms to the base FHIR specification." ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:stopTestOnFail [ fhir:v false ] ;
          fhir:validateProfileId [ fhir:v "patient-profile" ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] [
@@ -161,15 +161,15 @@
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Attempt to read the Parameters resource type. What we really want here is an illegal type but the build process won't allow that. Parameters is a valid resource which doesn't have an end-point so, this should fail." ] ;
          fhir:accept [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/1" ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 404(Not Found)." ] ;
          fhir:response [ fhir:v "notFound" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] [
@@ -185,15 +185,15 @@
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Attempt to read the non-existing Patient resource on the destination test system using the user defined dynamic variable ${NonExistsPatientResourceId}." ] ;
          fhir:accept [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/${NonExistsPatientResourceId}" ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 404(Not Found)." ] ;
          fhir:response [ fhir:v "notFound" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] [
@@ -209,15 +209,15 @@
          fhir:resource [ fhir:v "Patient"^^xsd:anyURI ] ;
          fhir:description [ fhir:v "Attempt to read a Patient resource on the destination test system using known bad formatted resource id." ] ;
          fhir:accept [ fhir:v "xml" ] ;
-         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:encodeRequestUrl [ fhir:v true ] ;
          fhir:params [ fhir:v "/ID-may-not-contain-CAPITALS" ]
        ]
      ] [
        fhir:assert [
          fhir:description [ fhir:v "Confirm that the returned HTTP status is 400(Bad Request)." ] ;
          fhir:response [ fhir:v "badRequest" ] ;
-         fhir:stopTestOnFail [ fhir:v "false"^^xsd:boolean ] ;
-         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
+         fhir:stopTestOnFail [ fhir:v false ] ;
+         fhir:warningOnly [ fhir:v false ]
        ]
      ] )
   ] ) . # 

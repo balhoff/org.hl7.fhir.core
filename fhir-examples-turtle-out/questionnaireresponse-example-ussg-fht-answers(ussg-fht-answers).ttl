@@ -175,7 +175,7 @@
          fhir:answer ( [
            fhir:value [
              a fhir:decimal ;
-             fhir:v "22.5"^^xsd:decimal
+             fhir:v 22.5
            ]
          ] )
        ] [

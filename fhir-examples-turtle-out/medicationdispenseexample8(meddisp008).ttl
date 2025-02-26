@@ -54,7 +54,7 @@
      fhir:reference [ fhir:v "MedicationRequest/medrx0309" ]
   ] ) ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:timing [
        fhir:repeat [
          fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;

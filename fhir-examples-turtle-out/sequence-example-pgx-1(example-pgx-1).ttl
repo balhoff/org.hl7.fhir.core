@@ -43,14 +43,14 @@
            fhir:code [ fhir:v "NG_007726.3" ]
          ] )
        ] ;
-       fhir:windowStart [ fhir:v "55227970"^^xsd:integer ] ;
-       fhir:windowEnd [ fhir:v "55227980"^^xsd:integer ] ;
+       fhir:windowStart [ fhir:v 55227970 ] ;
+       fhir:windowEnd [ fhir:v 55227980 ] ;
        fhir:orientation [ fhir:v "sense" ] ;
        fhir:strand [ fhir:v "watson" ]
      ] ;
      fhir:edit ( [
-       fhir:start [ fhir:v "55227976"^^xsd:integer ] ;
-       fhir:end [ fhir:v "55227977"^^xsd:integer ] ;
+       fhir:start [ fhir:v 55227976 ] ;
+       fhir:end [ fhir:v 55227977 ] ;
        fhir:replacementSequence [ fhir:v "G" ] ;
        fhir:replacedSequence [ fhir:v "T" ]
      ] )

@@ -67,7 +67,7 @@
          fhir:value [ fhir:v "2.16.840.1.113883.4.2" ]
        ]
      ] ;
-     fhir:requestor [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:requestor [ fhir:v false ] ;
      fhir:network [
        a fhir:string ;
        fhir:v "Workstation1.ehr.familyclinic.com"
@@ -86,7 +86,7 @@
        ] ;
        fhir:display [ fhir:v "Grahame Grieve" ]
      ] ;
-     fhir:requestor [ fhir:v "true"^^xsd:boolean ]
+     fhir:requestor [ fhir:v true ]
   ] ) ; # 
   fhir:source [
      fhir:observer [

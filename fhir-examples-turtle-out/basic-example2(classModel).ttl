@@ -40,7 +40,7 @@
          fhir:url [ fhir:v "minOccurs"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:integer ;
-           fhir:v "1"^^xsd:integer
+           fhir:v 1
          ]
        ] [
          fhir:url [ fhir:v "maxOccurs"^^xsd:anyURI ] ;
@@ -61,13 +61,13 @@
          fhir:url [ fhir:v "minOccurs"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:integer ;
-           fhir:v "0"^^xsd:integer
+           fhir:v 0
          ]
        ] [
          fhir:url [ fhir:v "maxOccurs"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:integer ;
-           fhir:v "1"^^xsd:integer
+           fhir:v 1
          ]
        ] )
      ] )

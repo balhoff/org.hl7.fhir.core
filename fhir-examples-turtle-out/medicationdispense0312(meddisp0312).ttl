@@ -75,7 +75,7 @@
   fhir:whenPrepared [ fhir:v "2015-01-15T10:20:00Z"^^xsd:dateTime] ; # 
   fhir:whenHandedOver [ fhir:v "2015-01-15T16:20:00Z"^^xsd:dateTime] ; # 
   fhir:dosageInstruction ( [
-     fhir:sequence [ fhir:v "1"^^xsd:integer ] ;
+     fhir:sequence [ fhir:v 1 ] ;
      fhir:text [ fhir:v "Take 1-2 tablets once daily at bedtime as needed for restless legs" ] ;
      fhir:additionalInstruction ( [
        fhir:text [ fhir:v "Take at bedtime" ]

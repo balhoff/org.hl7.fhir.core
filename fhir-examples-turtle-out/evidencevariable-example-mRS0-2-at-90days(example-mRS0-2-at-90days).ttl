@@ -24,7 +24,7 @@
   fhir:title [ fhir:v "Modified Rankin Scale score 0-2 at 90 days after treatment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:description [ fhir:v "Modified Rankin Scale score 0-2 at 90 days after treatment"] ; # 
-  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:actual [ fhir:v true] ; # 
   fhir:characteristic ( [
      fhir:description [ fhir:v "mRS 0-2 at 90 days" ] ;
      fhir:definitionExpression [

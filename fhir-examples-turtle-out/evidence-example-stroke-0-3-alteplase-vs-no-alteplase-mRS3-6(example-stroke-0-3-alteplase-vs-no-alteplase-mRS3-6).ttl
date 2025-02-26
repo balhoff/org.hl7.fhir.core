@@ -142,7 +142,7 @@
        ] )
      ] ;
      fhir:quantity [
-       fhir:value [ fhir:v "0.65"^^xsd:decimal ]
+       fhir:value [ fhir:v 0.65 ]
      ] ;
      fhir:numberOfEvents [ fhir:v "1137"^^xsd:nonNegativeInteger ] ;
      fhir:sampleSize [
@@ -158,13 +158,13 @@
            fhir:display [ fhir:v "Confidence interval" ]
          ] )
        ] ;
-       fhir:level [ fhir:v "0.95"^^xsd:decimal ] ;
+       fhir:level [ fhir:v 0.95 ] ;
        fhir:range [
          fhir:low [
-           fhir:value [ fhir:v "0.54"^^xsd:decimal ]
+           fhir:value [ fhir:v 0.54 ]
          ] ;
          fhir:high [
-           fhir:value [ fhir:v "0.8"^^xsd:decimal ]
+           fhir:value [ fhir:v 0.8 ]
          ]
        ]
      ] [
@@ -177,7 +177,7 @@
          ] )
        ] ;
        fhir:quantity [
-         fhir:value [ fhir:v "0.000023"^^xsd:decimal ]
+         fhir:value [ fhir:v 0.000023 ]
        ]
      ] [
        fhir:description [ fhir:v "Heterogeneity I-sq = 0.0%" ] ;
