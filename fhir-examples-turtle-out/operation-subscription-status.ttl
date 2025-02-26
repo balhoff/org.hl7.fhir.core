@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/OperationDefinition/Subscription-status> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Subscription-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>URL: [base]/Subscription/$status</p>\n      <p>URL: [base]/Subscription/[id]/$status</p>\n      <p>Parameters</p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Use</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Scope</b>\n          </td>\n          <td>\n            <b>Cardinality</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Binding</b>\n          </td>\n          <td>\n            <b>Documentation</b>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>id</td>\n          <td>type</td>\n          <td>0..*</td>\n          <td>\n            <a href=\"datatypes.html#id\">id</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>At the Instance level, this parameter is ignored. At the Resource level, one or more FHIR ids to Subscription resources to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., &quot;id1&quot; OR &quot;id2&quot;).</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>status</td>\n          <td>type</td>\n          <td>0..*</td>\n          <td>\n            <a href=\"datatypes.html#code\">code</a>\n          </td>\n          <td>\n            <a href=\"valueset-subscription-status.html\">Subscription Status</a> (Required)\n          </td>\n          <td>\n            <div>\n              <p>At the Instance level, this parameter is ignored. At the Resource level, a Subscription status code to filter by (e.g., &quot;active&quot;). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., &quot;error&quot; OR &quot;off&quot;).</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>return</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"bundle.html\">Bundle</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The operation returns a bundle containing zero or more SubscriptionStatus resources, one per Subscription in the request that was found. The Bundle type is &quot;searchset&quot;.</p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n    </div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v "2"^^xsd:integer
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use"
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "5.0.0"] ; # 
+  fhir:name [ fhir:v "Status"] ; # 
+  fhir:title [ fhir:v "Get Current Subscription Status for One or More Subscriptions"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-26T15:21:02+11:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 (FHIR Project)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@lists.hl7.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This operation is used to return the current status information about one or more topic-based Subscriptions."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:code [ fhir:v "status"] ; # 
+  fhir:resource ( [ fhir:v "Subscription"] ) ; # 
+  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "id" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:scope ( [ fhir:v "type" ] ) ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "At the Instance level, this parameter is ignored. At the Resource level, one or more FHIR ids to Subscription resources to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., \"id1\" OR \"id2\")." ] ;
+     fhir:type [ fhir:v "id" ]
+  ] [
+     fhir:name [ fhir:v "status" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:scope ( [ fhir:v "type" ] ) ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "At the Instance level, this parameter is ignored. At the Resource level, a Subscription status code to filter by (e.g., \"active\"). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., \"error\" OR \"off\")." ] ;
+     fhir:type [ fhir:v "code" ] ;
+     fhir:binding [
+       fhir:strength [ fhir:v "required" ] ;
+       fhir:valueSet [
+         fhir:v "http://hl7.org/fhir/ValueSet/subscription-status|5.0.0"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/ValueSet/subscription-status|5.0.0>
+       ]
+     ]
+  ] [
+     fhir:name [ fhir:v "return" ] ;
+     fhir:use [ fhir:v "out" ] ;
+     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "The operation returns a bundle containing zero or more SubscriptionStatus resources, one per Subscription in the request that was found. The Bundle type is \"searchset\"." ] ;
+     fhir:type [ fhir:v "Bundle" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
