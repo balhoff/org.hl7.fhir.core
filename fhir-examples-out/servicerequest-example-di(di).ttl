@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ServiceRequest/di> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "di"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
+     ] )
+  ] ; #   	<extension url="http://hl7.org/fhir/StructureDefinition/bodysitecode">
+#		<valueCodeableConcept>
+#			<coding>
+#				<system value="http://snomed.info/sct"/>
+#				<code value="51185008"/>
+#				<display value="Thoracic structure"/>
+#			</coding>
+#		</valueCodeableConcept>
+#</extension>
+#	  
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"di\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest \"di\" </p></div><p><b>status</b>: <span title=\" #x9;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/bodysitecode&quot;>#xA;#x9;#x9;&lt;valueCodeableConcept>#xA;#x9;#x9;#x9;&lt;coding>#xA;#x9;#x9;#x9;#x9;&lt;system value=&quot;http://snomed.info/sct&quot;/>#xA;#x9;#x9;#x9;#x9;&lt;code value=&quot;51185008&quot;/>#xA;#x9;#x9;#x9;#x9;&lt;display value=&quot;Thoracic structure&quot;/>#xA;#x9;#x9;#x9;&lt;/coding>#xA;#x9;#x9;&lt;/valueCodeableConcept>#xA;&lt;/extension>#xA;#x9; \">active</span></p><p><b>intent</b>: original-order</p><h3>Codes</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Chest CT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#24627-2)</span></td></tr></table><p><b>subject</b>: <a href=\"patient-example-dicom.html\">Patient/dicom</a> \" MINT_TEST\"</p><p><b>occurrence</b>: 2013-05-08T09:33:27+07:00</p><p><b>requester</b>: <a href=\"practitioner-example.html\">Practitioner/example: Dr. Adam Careful</a> \"Adam CAREFUL\"</p><h3>Reasons</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Check for metastatic disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "original-order"] ; # 
+  fhir:code [
+     fhir:concept [
+       fhir:coding ( [
+         a loinc:24627-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "24627-2" ]
+       ] ) ;
+       fhir:text [ fhir:v "Chest CT" ]
+     ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/Patient/dicom> ;
+     fhir:reference [ fhir:v "Patient/dicom" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2013-05-08T09:33:27+07:00"^^xsd:dateTime
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+     fhir:reference [ fhir:v "Practitioner/example" ] ;
+     fhir:display [ fhir:v "Dr. Adam Careful" ]
+  ] ; # 
+  fhir:reason ( [
+     fhir:concept [
+       fhir:text [ fhir:v "Check for metastatic disease" ]
+     ]
+  ] ) . # 
+
+<http://hl7.org/fhir/Patient/dicom> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
+
+# -------------------------------------------------------------------------------------
+
