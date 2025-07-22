@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,7 +27,10 @@
   fhir:code [
      fhir:coding ( [
        a sct:227507002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "227507002" ]
      ] )
   ] ; # 
@@ -32,13 +38,19 @@
   fhir:category ( [
      fhir:coding ( [
        a sct:227313005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "227313005" ]
      ] )
   ] ) ; # 
   fhir:instance ( [
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://example.org/foodserials"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/foodserials"^^xsd:anyURI ;
+         fhir:link <http://example.org/foodserials>
+       ] ;
        fhir:value [ fhir:v "77239487" ]
      ] )
   ] ) . # 

@@ -14,19 +14,28 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>URL: [base]/Subscription/[id]/$events</p>\n      <p>Parameters</p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Use</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Scope</b>\n          </td>\n          <td>\n            <b>Cardinality</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Binding</b>\n          </td>\n          <td>\n            <b>Documentation</b>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>eventsSinceNumber</td>\n          <td/>\n          <td>0..1</td>\n          <td>\n            <a href=\"datatypes.html#integer64\">integer64</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The starting event number, inclusive of this event (lower bound).</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>eventsUntilNumber</td>\n          <td/>\n          <td>0..1</td>\n          <td>\n            <a href=\"datatypes.html#integer64\">integer64</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The ending event number, inclusive of this event (upper bound).</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>content</td>\n          <td/>\n          <td>0..1</td>\n          <td>\n            <a href=\"datatypes.html#code\">code</a>\n          </td>\n          <td>\n            <a href=\"valueset-subscription-payload-content.html\">Subscription Payload Content</a> (Required)\n          </td>\n          <td>\n            <div>\n              <p>Requested content style of returned data. Codes from backport-content-value-set (e.g., empty, id-only, full-resource). This is a hint to the server what a client would prefer, and MAY be ignored.</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>return</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"bundle.html\">Bundle</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The operation returns a valid notification bundle, with the first entry being a SubscriptionStatus resource. The bundle type is \"subscription-notification\".</p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
      fhir:value [
        a fhir:integer ;
        fhir:v 0
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
      fhir:value [
        a fhir:code ;
        fhir:v "trial-use"
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-events"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-events"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/OperationDefinition/Subscription-events>
+  ] ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Events"] ; # 
   fhir:title [ fhir:v "Search and retrieve prior events for a Subscription"] ; # 
@@ -47,7 +56,10 @@
   fhir:description [ fhir:v "This operation is used to search for and return notifications that have been previously triggered by a topic-based Subscription."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:link <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
        fhir:code [ fhir:v "001" ] ;
        fhir:display [ fhir:v "World" ]
      ] )
@@ -83,7 +95,7 @@
        fhir:strength [ fhir:v "required" ] ;
        fhir:valueSet [
          fhir:v "http://hl7.org/fhir/ValueSet/subscription-payload-content|5.0.0"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/ValueSet/subscription-payload-content|5.0.0>
+         fhir:link <http://hl7.org/fhir/ValueSet/subscription-payload-content?version=5.0.0>
        ]
      ]
   ] [

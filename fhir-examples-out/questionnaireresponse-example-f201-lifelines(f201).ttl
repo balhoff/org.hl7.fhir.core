@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "f201"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
   ] ; # 
   fhir:questionnaire [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/display"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/display"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/display>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "Lifelines"

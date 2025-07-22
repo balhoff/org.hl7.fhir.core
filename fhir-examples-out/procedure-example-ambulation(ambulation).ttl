@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "ambulation"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,7 +27,10 @@
   fhir:identifier ( [
      fhir:value [ fhir:v "12345" ]
   ] ) ; # 
-  fhir:instantiatesUri ( [ fhir:v "http://example.org/protocol-for-hypertension-during-pregnancy"^^xsd:anyURI] ) ; # 
+  fhir:instantiatesUri ( [
+     fhir:v "http://example.org/protocol-for-hypertension-during-pregnancy"^^xsd:anyURI ;
+     fhir:link <http://example.org/protocol-for-hypertension-during-pregnancy>
+  ] ) ; # 
   fhir:basedOn ( [
      fhir:link <http://hl7.org/fhir/CarePlan/preg> ;
      fhir:reference [ fhir:v "CarePlan/preg" ] ;
@@ -34,7 +40,10 @@
   fhir:statusReason [
      fhir:coding ( [
        a sct:398254007 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "398254007" ] ;
        fhir:display [ fhir:v "  Pre-eclampsia (disorder)" ]
      ] ) ;
@@ -43,7 +52,10 @@
   fhir:code [
      fhir:coding ( [
        a sct:62013009 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "62013009" ] ;
        fhir:display [ fhir:v "Ambulating patient (procedure)" ]
      ] ) ;

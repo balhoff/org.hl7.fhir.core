@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "patient-link-response"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -20,7 +23,10 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Link Patients Response</div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/MessageDefinition/patient-link-response"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/MessageDefinition/patient-link-response"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/MessageDefinition/patient-link-response>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.15.1" ]
@@ -41,13 +47,19 @@
   fhir:description [ fhir:v "Optional response to a patient link notification."] ; # 
   fhir:useContext ( [
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "focus" ]
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variant-state"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/variant-state"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/variant-state>
+         ] ;
          fhir:code [ fhir:v "positive" ]
        ] )
      ]
@@ -67,7 +79,10 @@
   ] ; # 
   fhir:event [
      a fhir:Coding ;
-     fhir:system [ fhir:v "http://example.org/fhir/message-events"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/fhir/message-events"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/message-events>
+     ] ;
      fhir:code [ fhir:v "admin-notify" ]
   ] ; # 
   fhir:category [ fhir:v "consequence"] ; # 

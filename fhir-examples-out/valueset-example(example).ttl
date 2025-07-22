@@ -15,7 +15,10 @@
        fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
      ] ) ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,12 +27,18 @@
      fhir:status [ fhir:v "additional" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			\n      <p>Value set \"LOINC Codes for Cholesterol\": This is an example value set that includes \n        all the  codes for serum cholesterol from LOINC v2.36.</p>\n			\n      <p>Developed by: FHIR project team (example)</p>\n			\n      <p>Published for testing on 13-June 2012</p>\n			\n      <p>This value set includes the following LOINC codes:</p>\n			\n      <ul>\n				\n        <li>14647-2: Cholesterol [Moles/Volume]</li>\n				\n        <li>2093-3: Cholesterol [Mass/Volume]</li>\n				\n        <li>35200-5: Cholesterol [Mass Or Moles/Volume] </li>\n				\n        <li>9342-7: Cholesterol [Percentile]</li>\n			\n      </ul>\n			\n      <p>This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.</p>\n		\n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/example"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/ValueSet/example"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/example>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.3292" ]
   ] [
-     fhir:system [ fhir:v "http://acme.com/identifiers/valuesets"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://acme.com/identifiers/valuesets"^^xsd:anyURI ;
+       fhir:link <http://acme.com/identifiers/valuesets>
+     ] ;
      fhir:value [ fhir:v "loinc-cholesterol-int" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -49,7 +58,10 @@
   fhir:description [ fhir:v "This is an example value set that includes all the LOINC codes for serum/plasma cholesterol from v2.36."] ; # 
   fhir:useContext ( [
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "age" ]
      ] ;
      fhir:value [
@@ -57,7 +69,10 @@
        fhir:value [ fhir:v "18"^^xsd:decimal ] ;
        fhir:comparator [ fhir:v ">" ] ;
        fhir:unit [ fhir:v "yrs" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "a" ]
      ]
   ] ) ; # 
@@ -73,7 +88,10 @@
      fhir:lockedDate [ fhir:v "2012-06-13"^^xsd:date ] ;
      fhir:inactive [ fhir:v true ] ;
      fhir:include ( [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:version [ fhir:v "2.36" ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "14647-2" ] ;

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "medrx0303"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
      fhir:code [
        fhir:coding ( [
          a sct:373994007 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "373994007" ] ;
          fhir:display [ fhir:v "Prednisone 5mg tablet (Product)" ]
        ] )
@@ -35,7 +41,10 @@
   ] ) ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://www.bmc.nl/portal/prescriptions"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.bmc.nl/portal/prescriptions"^^xsd:anyURI ;
+       fhir:link <http://www.bmc.nl/portal/prescriptions>
+     ] ;
      fhir:value [ fhir:v "12345689" ]
   ] ) ; # 
   fhir:basedOn ( [
@@ -44,7 +53,10 @@
   ] ) ; # 
   fhir:groupIdentifier [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://www.bmc.nl/portal/prescriptions"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.bmc.nl/portal/prescriptions"^^xsd:anyURI ;
+       fhir:link <http://www.bmc.nl/portal/prescriptions>
+     ] ;
      fhir:value [ fhir:v "983939393" ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -91,7 +103,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:26643006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "26643006" ] ;
          fhir:display [ fhir:v "Oral Route" ]
        ] )
@@ -99,7 +114,10 @@
      fhir:method [
        fhir:coding ( [
          a sct:421521009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "421521009" ] ;
          fhir:display [ fhir:v "Swallow - dosing instruction imperative (qualifier value)" ]
        ] )
@@ -107,7 +125,10 @@
      fhir:doseAndRate ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+           ] ;
            fhir:code [ fhir:v "ordered" ] ;
            fhir:display [ fhir:v "Ordered" ]
          ] )
@@ -116,7 +137,10 @@
          a fhir:Quantity ;
          fhir:value [ fhir:v "4"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "TAB" ] ;
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm>
+         ] ;
          fhir:code [ fhir:v "TAB" ]
        ]
      ] )
@@ -138,7 +162,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:26643006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "26643006" ] ;
          fhir:display [ fhir:v "Oral Route" ]
        ] )
@@ -146,7 +173,10 @@
      fhir:method [
        fhir:coding ( [
          a sct:421521009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "421521009" ] ;
          fhir:display [ fhir:v "Swallow - dosing instruction imperative (qualifier value)" ]
        ] )
@@ -154,7 +184,10 @@
      fhir:doseAndRate ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+           ] ;
            fhir:code [ fhir:v "ordered" ] ;
            fhir:display [ fhir:v "Ordered" ]
          ] )
@@ -163,7 +196,10 @@
          a fhir:Quantity ;
          fhir:value [ fhir:v "2"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "TAB" ] ;
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm>
+         ] ;
          fhir:code [ fhir:v "TAB" ]
        ]
      ] )
@@ -185,7 +221,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:26643006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "26643006" ] ;
          fhir:display [ fhir:v "Oral Route" ]
        ] )
@@ -193,7 +232,10 @@
      fhir:method [
        fhir:coding ( [
          a sct:421521009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "421521009" ] ;
          fhir:display [ fhir:v "Swallow - dosing instruction imperative (qualifier value)" ]
        ] )
@@ -201,7 +243,10 @@
      fhir:doseAndRate ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+           ] ;
            fhir:code [ fhir:v "ordered" ] ;
            fhir:display [ fhir:v "Ordered" ]
          ] )
@@ -210,7 +255,10 @@
          a fhir:Quantity ;
          fhir:value [ fhir:v "1"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "TAB" ] ;
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm>
+         ] ;
          fhir:code [ fhir:v "TAB" ]
        ]
      ] )
@@ -224,13 +272,19 @@
      fhir:quantity [
        fhir:value [ fhir:v "51"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "TAB" ] ;
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm>
+       ] ;
        fhir:code [ fhir:v "TAB" ]
      ] ;
      fhir:expectedSupplyDuration [
        fhir:value [ fhir:v "21"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "days" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "d" ]
      ] ;
      fhir:dispenser [
@@ -242,14 +296,20 @@
      fhir:allowed [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution>
+         ] ;
          fhir:code [ fhir:v "TB" ] ;
          fhir:display [ fhir:v "Therapeutic Brand" ]
        ] )
      ] ;
      fhir:reason [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+         ] ;
          fhir:code [ fhir:v "FP" ] ;
          fhir:display [ fhir:v "formulary policy" ]
        ] )

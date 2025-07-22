@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -38,7 +41,10 @@
      fhir:vaccineCode ( [
        fhir:coding ( [
          a sct:14745005 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "14745005" ] ;
          fhir:display [ fhir:v "Hepatitis A vaccine" ]
        ] )
@@ -49,7 +55,10 @@
      fhir:dateCriterion ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion>
+           ] ;
            fhir:code [ fhir:v "earliest" ] ;
            fhir:display [ fhir:v "Earliest Date" ]
          ] )
@@ -58,7 +67,10 @@
      ] [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion>
+           ] ;
            fhir:code [ fhir:v "recommended" ] ;
            fhir:display [ fhir:v "Recommended" ]
          ] )
@@ -67,7 +79,10 @@
      ] [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/immunization-recommendation-date-criterion>
+           ] ;
            fhir:code [ fhir:v "overdue" ] ;
            fhir:display [ fhir:v "Past Due Date" ]
          ] )

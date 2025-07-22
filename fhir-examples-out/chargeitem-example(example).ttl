@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,10 +25,16 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example of ChargeItem Usage in Context of the German EBM Billing code system</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://myHospital.org/ChargeItems"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://myHospital.org/ChargeItems"^^xsd:anyURI ;
+       fhir:link <http://myHospital.org/ChargeItems>
+     ] ;
      fhir:value [ fhir:v "654321" ]
   ] ) ; # 
-  fhir:definitionUri ( [ fhir:v "http://www.kbv.de/tools/ebm/html/01520_2904360860826220813632.html"^^xsd:anyURI] ) ; # 
+  fhir:definitionUri ( [
+     fhir:v "http://www.kbv.de/tools/ebm/html/01520_2904360860826220813632.html"^^xsd:anyURI ;
+     fhir:link <http://www.kbv.de/tools/ebm/html/01520_2904360860826220813632.html>
+  ] ) ; # 
   fhir:status [ fhir:v "billable"] ; # 
   fhir:code [
      fhir:coding ( [
@@ -50,7 +59,10 @@
      fhir:function [
        fhir:coding ( [
          a sct:17561000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "17561000" ] ;
          fhir:display [ fhir:v "Cardiologist" ]
        ] )
@@ -63,7 +75,10 @@
      fhir:function [
        fhir:coding ( [
          a sct:224542009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "224542009" ] ;
          fhir:display [ fhir:v "Coronary Care Nurse" ]
        ] )
@@ -75,13 +90,19 @@
   ] ) ; # 
   fhir:performingOrganization [
      fhir:identifier [
-       fhir:system [ fhir:v "http://myhospital/NamingSystem/departments"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://myhospital/NamingSystem/departments"^^xsd:anyURI ;
+         fhir:link <http://myhospital/NamingSystem/departments>
+       ] ;
        fhir:value [ fhir:v "CARD_INTERMEDIATE_CARE" ]
      ]
   ] ; # 
   fhir:requestingOrganization [
      fhir:identifier [
-       fhir:system [ fhir:v "http://myhospital/NamingSystem/departments"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://myhospital/NamingSystem/departments"^^xsd:anyURI ;
+         fhir:link <http://myhospital/NamingSystem/departments>
+       ] ;
        fhir:value [ fhir:v "CARD_U1" ]
      ]
   ] ; # 
@@ -106,7 +127,10 @@
   fhir:enteredDate [ fhir:v "2017-01-25T23:55:04+01:00"^^xsd:dateTime] ; # 
   fhir:reason ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/sid/icd-10>
+       ] ;
        fhir:code [ fhir:v "I51.6" ] ; #  \n				<code value= \"123456\"\/>\n				<display value=\"DIAG-1\"\/>\n				 
        fhir:display [ fhir:v "Cardiovascular disease, unspecified" ]
      ] )

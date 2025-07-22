@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-laborder"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -54,7 +57,10 @@
   fhir:instance ( [
      fhir:key [ fhir:v "req1" ] ;
      fhir:structureType [
-       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/fhir-types>
+       ] ;
        fhir:code [ fhir:v "ServiceRequest" ]
      ] ;
      fhir:title [ fhir:v "Request for a lab procedure" ] ;
@@ -75,7 +81,10 @@
   ] [
      fhir:key [ fhir:v "task1" ] ;
      fhir:structureType [
-       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/fhir-types>
+       ] ;
        fhir:code [ fhir:v "Task" ]
      ] ;
      fhir:title [ fhir:v "Task" ] ;
@@ -100,7 +109,10 @@
   ] [
      fhir:key [ fhir:v "req.lab1" ] ;
      fhir:structureType [
-       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/fhir-types>
+       ] ;
        fhir:code [ fhir:v "ServiceRequest" ]
      ] ;
      fhir:title [ fhir:v "Internal lab request" ] ;

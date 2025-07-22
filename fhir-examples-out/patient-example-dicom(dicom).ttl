@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "dicom"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,21 +24,30 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Patient MINT_TEST, ID = MINT1234. Age = 56y, Size =\n      1.83m, Weight = 72.58kg </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://nema.org/fhir/extensions#0010:1010"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://nema.org/fhir/extensions#0010:1010"^^xsd:anyURI ;
+       fhir:link <http://nema.org/fhir/extensions#0010:1010>
+     ] ;
      fhir:value [
        a fhir:Quantity ;
        fhir:value [ fhir:v "56"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "Y" ]
      ]
   ] [
-     fhir:url [ fhir:v "http://nema.org/fhir/extensions#0010:1020"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://nema.org/fhir/extensions#0010:1020"^^xsd:anyURI ;
+       fhir:link <http://nema.org/fhir/extensions#0010:1020>
+     ] ;
      fhir:value [
        a fhir:Quantity ;
        fhir:value [ fhir:v 1.83 ] ;
        fhir:unit [ fhir:v "m" ]
      ]
   ] [
-     fhir:url [ fhir:v "http://nema.org/fhir/extensions#0010:1030"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://nema.org/fhir/extensions#0010:1030"^^xsd:anyURI ;
+       fhir:link <http://nema.org/fhir/extensions#0010:1030>
+     ] ;
      fhir:value [
        a fhir:Quantity ;
        fhir:value [ fhir:v 72.58 ] ;
@@ -43,7 +55,10 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://nema.org/examples/patients"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://nema.org/examples/patients"^^xsd:anyURI ;
+       fhir:link <http://nema.org/examples/patients>
+     ] ;
      fhir:value [ fhir:v "MINT1234" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 
@@ -53,10 +68,16 @@
   fhir:gender [
      fhir:v "male" ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://nema.org/examples/extensions#gender"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://nema.org/examples/extensions#gender"^^xsd:anyURI ;
+         fhir:link <http://nema.org/examples/extensions#gender>
+       ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "http://nema.org/examples/gender"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://nema.org/examples/gender"^^xsd:anyURI ;
+           fhir:link <http://nema.org/examples/gender>
+         ] ;
          fhir:code [ fhir:v "M" ]
        ]
      ] )

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "hl7"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,7 +27,10 @@
   fhir:alias ( [ fhir:v "HL7 International"] ) ; # 
   fhir:contact ( [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/extended-contact-availability"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/extended-contact-availability"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/extended-contact-availability>
+       ] ;
        fhir:value [
          a fhir:Availability ;
          fhir:availableTime ( [
@@ -32,7 +38,10 @@
            fhir:availableStartTime [
              fhir:v "09:00:00"^^xsd:time ;
              fhir:extension ( [
-               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/timezone"^^xsd:anyURI ] ;
+               fhir:url [
+                 fhir:v "http://hl7.org/fhir/StructureDefinition/timezone"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/StructureDefinition/timezone>
+               ] ;
                fhir:value [
                  a fhir:code ;
                  fhir:v "America/New_York"
@@ -42,7 +51,10 @@
            fhir:availableEndTime [
              fhir:v "07:00:00"^^xsd:time ;
              fhir:extension ( [
-               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/timezone"^^xsd:anyURI ] ;
+               fhir:url [
+                 fhir:v "http://hl7.org/fhir/StructureDefinition/timezone"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/StructureDefinition/timezone>
+               ] ;
                fhir:value [
                  a fhir:code ;
                  fhir:v "America/New_York"

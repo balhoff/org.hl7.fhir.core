@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "protocol"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,7 +31,10 @@
   fhir:status [ fhir:v "completed"] ; # 
   fhir:vaccineCode [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/sid/cvx>
+       ] ;
        fhir:code [ fhir:v "104" ]
      ] ) ;
      fhir:text [ fhir:v "Twinrix (HepA/HepB)" ]
@@ -60,27 +66,39 @@
   ] ; # 
   fhir:site [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActSite"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActSite"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActSite>
+       ] ;
        fhir:code [ fhir:v "LA" ] ;
        fhir:display [ fhir:v "left arm" ]
      ] )
   ] ; # 
   fhir:route [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration>
+       ] ;
        fhir:code [ fhir:v "IM" ] ;
        fhir:display [ fhir:v "Injection, intramuscular" ]
      ] )
   ] ; # 
   fhir:doseQuantity [
      fhir:value [ fhir:v "5"^^xsd:decimal ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "mg" ]
   ] ; # 
   fhir:performer ( [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0443>
+         ] ;
          fhir:code [ fhir:v "OP" ]
        ] )
      ] ;
@@ -91,7 +109,10 @@
   ] [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0443>
+         ] ;
          fhir:code [ fhir:v "AP" ]
        ] )
      ] ;
@@ -107,14 +128,20 @@
      ] ;
      fhir:programStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/immunization-program-eligibility>
+         ] ;
          fhir:code [ fhir:v "ineligible" ]
        ] )
      ]
   ] ) ; # 
   fhir:fundingSource [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-funding-source"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/immunization-funding-source"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/immunization-funding-source>
+       ] ;
        fhir:code [ fhir:v "private" ]
      ] )
   ] ; # 
@@ -123,7 +150,10 @@
      fhir:targetDisease ( [
        fhir:coding ( [
          a sct:40468003 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "40468003" ]
        ] )
      ] ) ;
@@ -133,7 +163,10 @@
      fhir:targetDisease ( [
        fhir:coding ( [
          a sct:66071002 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "66071002" ]
        ] )
      ] ) ;

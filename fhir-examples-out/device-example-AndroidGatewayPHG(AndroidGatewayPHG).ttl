@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "AndroidGatewayPHG"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,7 +26,10 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers>
+         ] ;
          fhir:code [ fhir:v "SYSID" ] ;
          fhir:display [ fhir:v "System Identifier" ]
        ] )
@@ -60,7 +66,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaPAN"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaPAN"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaPAN>
+         ] ;
          fhir:code [ fhir:v "4" ]
        ] )
      ]
@@ -75,7 +84,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaHFS>
+         ] ;
          fhir:code [ fhir:v "0" ]
        ] )
      ]
@@ -90,7 +102,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaHFS>
+         ] ;
          fhir:code [ fhir:v "3" ]
        ] )
      ]
@@ -105,7 +120,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaHFS>
+         ] ;
          fhir:code [ fhir:v "7" ]
        ] )
      ]
@@ -120,7 +138,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaHFS>
+         ] ;
          fhir:code [ fhir:v "2" ]
        ] )
      ]
@@ -135,14 +156,20 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaHFS"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaHFS>
+         ] ;
          fhir:code [ fhir:v "6" ]
        ] )
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ASN1ToHL7>
+         ] ;
          fhir:code [ fhir:v "532354.0" ] ;
          fhir:display [ fhir:v "regulation-status" ]
        ] )
@@ -150,7 +177,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0136>
+         ] ;
          fhir:code [ fhir:v "Y" ]
        ] ) ;
        fhir:text [ fhir:v "Device is Unregulated" ]
@@ -182,7 +212,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "us" ]
        ] ) ;
        fhir:text [ fhir:v "120000000" ]

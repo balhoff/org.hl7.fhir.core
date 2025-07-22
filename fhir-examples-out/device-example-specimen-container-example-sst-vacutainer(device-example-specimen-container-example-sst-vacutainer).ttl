@@ -16,7 +16,10 @@
 #  </text  
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,14 +29,20 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"device-example-specimen-container-example-sst-vacutainer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device \"device-example-specimen-container-example-sst-vacutainer\" </p></div><p><b>identifier</b>: id: 345679</p><p><b>displayName</b>: SST Tube</p><blockquote><p><b>property</b></p><p><b>type</b>: Container Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (codes#container-type)</span></p><p><b>value</b>: SST Tube <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (types#SST)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (codes#amount)</span></p><p><b>value</b>: 4.5 mL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (capacities#4.5mL)</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: Additive <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (codes#additive)</span></p><p><b>value</b>: gel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (additive#gel)</span></p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://acme.com/containers/id"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://acme.com/containers/id"^^xsd:anyURI ;
+       fhir:link <http://acme.com/containers/id>
+     ] ;
      fhir:value [ fhir:v "345679" ]
   ] ) ; # 
   fhir:displayName [ fhir:v "SST Tube"] ; # 
   fhir:property ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.com/containers/codes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/containers/codes"^^xsd:anyURI ;
+           fhir:link <http://acme.com/containers/codes>
+         ] ;
          fhir:code [ fhir:v "container-type" ] ;
          fhir:display [ fhir:v "Container Type" ]
        ] )
@@ -41,7 +50,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.com/containers/types"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/containers/types"^^xsd:anyURI ;
+           fhir:link <http://acme.com/containers/types>
+         ] ;
          fhir:code [ fhir:v "SST" ] ;
          fhir:display [ fhir:v "SST Tube" ]
        ] )
@@ -49,7 +61,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.com/containers/codes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/containers/codes"^^xsd:anyURI ;
+           fhir:link <http://acme.com/containers/codes>
+         ] ;
          fhir:code [ fhir:v "amount" ] ;
          fhir:display [ fhir:v "Amount" ]
        ] )
@@ -57,7 +72,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.com/containers/capacities"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/containers/capacities"^^xsd:anyURI ;
+           fhir:link <http://acme.com/containers/capacities>
+         ] ;
          fhir:code [ fhir:v "4.5mL" ] ;
          fhir:display [ fhir:v "4.5 mL" ]
        ] )
@@ -65,7 +83,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.com/containers/codes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/containers/codes"^^xsd:anyURI ;
+           fhir:link <http://acme.com/containers/codes>
+         ] ;
          fhir:code [ fhir:v "additive" ] ;
          fhir:display [ fhir:v "Additive" ]
        ] )
@@ -73,7 +94,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.com/containers/additive"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/containers/additive"^^xsd:anyURI ;
+           fhir:link <http://acme.com/containers/additive>
+         ] ;
          fhir:code [ fhir:v "gel" ] ;
          fhir:display [ fhir:v "gel" ]
        ] )

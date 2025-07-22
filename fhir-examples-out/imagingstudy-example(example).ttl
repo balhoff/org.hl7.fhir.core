@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -38,7 +41,10 @@
      fhir:number [ fhir:v "3"^^xsd:nonNegativeInteger ] ;
      fhir:modality [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ;
+           fhir:link <http://dicom.nema.org/resources/ontology/DCM>
+         ] ;
          fhir:code [ fhir:v "CT" ]
        ] )
      ] ;
@@ -48,7 +54,10 @@
        fhir:concept [
          fhir:coding ( [
            a sct:67734004 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ; #   Added body site to support duplicate checking example  
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ; #   Added body site to support duplicate checking example  
            fhir:code [ fhir:v "67734004" ] ;
            fhir:display [ fhir:v "Upper Trunk Structure" ]
          ] )

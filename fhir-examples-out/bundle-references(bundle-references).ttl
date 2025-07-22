@@ -12,44 +12,77 @@
   fhir:id [ fhir:v "bundle-references"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/23"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Patient/23"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Patient/23>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Patient/23> )
   ] [
      fhir:fullUrl [ fhir:v "urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/123"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Observation/123"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Observation/123>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Observation/123> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/124"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Observation/124"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Observation/124>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Observation/124> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/12"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Observation/12"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Observation/12>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Observation/12> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/14"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Observation/14"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Observation/14>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Observation/14> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir-2/Observation/14"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir-2/Observation/14"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir-2/Observation/14>
+     ] ;
      fhir:resource ( <http://example.org/fhir-2/Observation/14> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/45"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Patient/45"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Patient/45>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Patient/45> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/45"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Patient/45"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Patient/45>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Patient/45> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/47"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Observation/47"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Observation/47>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Observation/47> )
   ] [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Observation/48"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Observation/48"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Observation/48>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Observation/48> )
   ] ) . #    A patient that already has an id on a server   
 
@@ -60,7 +93,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( id: 1234567)</p><hr/></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/ids"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/ids"^^xsd:anyURI ;
+       fhir:link <http://example.org/ids>
+     ] ;
      fhir:value [ fhir:v "1234567" ]
   ] ) . # 
 
@@ -81,7 +117,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
@@ -103,7 +142,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
@@ -123,7 +165,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
@@ -142,7 +187,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
@@ -162,7 +210,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
@@ -202,7 +253,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
@@ -224,14 +278,20 @@
   fhir:code [
      fhir:coding ( [
        a loinc:15074-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "15074-8" ] ;
        fhir:display [ fhir:v "Glucose [Moles/volume] in Blood" ]
      ] )
   ] ; # 
   fhir:subject [
      fhir:identifier [
-       fhir:system [ fhir:v "http://example.org/ids"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/ids"^^xsd:anyURI ;
+         fhir:link <http://example.org/ids>
+       ] ;
        fhir:value [ fhir:v "1234567" ]
      ]
   ] . # 

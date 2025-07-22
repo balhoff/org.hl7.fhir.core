@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "52346"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the CoverageEligibilityRequest</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happyvalley.com/coverageelegibilityrequest"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happyvalley.com/coverageelegibilityrequest"^^xsd:anyURI ;
+       fhir:link <http://happyvalley.com/coverageelegibilityrequest>
+     ] ;
      fhir:value [ fhir:v "52346" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -42,7 +48,10 @@
   fhir:created [ fhir:v "2014-08-16"^^xsd:date] ; #   Anticipated service date  
   fhir:enterer [
      fhir:identifier [
-       fhir:system [ fhir:v "http://happyvalleyclinic.com/staff"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://happyvalleyclinic.com/staff"^^xsd:anyURI ;
+         fhir:link <http://happyvalleyclinic.com/staff>
+       ] ;
        fhir:value [ fhir:v "14" ]
      ]
   ] ; # 
@@ -56,7 +65,10 @@
   ] ; # 
   fhir:facility [
      fhir:identifier [
-       fhir:system [ fhir:v "http://statecliniclicensor.com/clinicid"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://statecliniclicensor.com/clinicid"^^xsd:anyURI ;
+         fhir:link <http://statecliniclicensor.com/clinicid>
+       ] ;
        fhir:value [ fhir:v "G35B9" ]
      ]
   ] ; # 
@@ -70,7 +82,10 @@
   fhir:item ( [
      fhir:category [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ex-benefitcategory"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ex-benefitcategory>
+         ] ;
          fhir:code [ fhir:v "69" ] ;
          fhir:display [ fhir:v "Maternity" ]
        ] )

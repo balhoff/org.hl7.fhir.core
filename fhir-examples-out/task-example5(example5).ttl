@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example5"] ; #   This is an example to demonstrate using task for actioning a servicerequest and to illustrate how to populate many of the task elements this is the first in a series of related Task examples:  example1 action lipid panel -in progress =>. example2 specimen collection subtask -accepted => example4  specimen collection subtask - completed  with output Specimen=>example 5 action lipid panel -in progress specimen collected with output Specimen => example 6 action lipid panel - completed with output Specimen and DiagnosticReport   
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http:/goodhealth.org/identifiers"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http:/goodhealth.org/identifiers"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/http:/goodhealth.org/identifiers>
+     ] ;
      fhir:value [ fhir:v "20170201-001" ]
   ] ) ; # 
   fhir:basedOn ( [
@@ -30,7 +36,10 @@
   ] ) ; # 
   fhir:groupIdentifier [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http:/goodhealth.org/accession/identifiers"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http:/goodhealth.org/accession/identifiers"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/http:/goodhealth.org/accession/identifiers>
+     ] ;
      fhir:value [ fhir:v "G20170201-001" ]
   ] ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
@@ -41,7 +50,10 @@
   fhir:priority [ fhir:v "routine"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/task-code"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/CodeSystem/task-code"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/CodeSystem/task-code>
+       ] ;
        fhir:code [ fhir:v "fulfill" ]
      ] )
   ] ; #   fictive code and description elements populated for this example   

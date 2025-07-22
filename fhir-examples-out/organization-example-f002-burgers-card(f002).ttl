@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "f002"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,7 +26,10 @@
   fhir:active [ fhir:v true] ; # 
   fhir:type ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/organization-type>
+       ] ;
        fhir:code [ fhir:v "dept" ] ;
        fhir:display [ fhir:v "Hospital Department" ]
      ] )
@@ -32,7 +38,10 @@
   fhir:contact ( [
      fhir:purpose [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/contactentity-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/contactentity-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/contactentity-type>
+         ] ;
          fhir:code [ fhir:v "ADMIN" ]
        ] )
      ] ;

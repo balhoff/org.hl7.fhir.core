@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "nhin-purposeofuse"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -157,13 +160,19 @@
      ] )
   ] ) ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-map"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-map"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/valueset-map>
+     ] ;
      fhir:value [
        a fhir:canonical ;
        fhir:v "#map"^^xsd:anyURI
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/nhin-purposeofuse"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/ValueSet/nhin-purposeofuse"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/nhin-purposeofuse>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.3142" ]
@@ -184,7 +193,10 @@
   fhir:description [ fhir:v "This value set is suitable for use with the provenance resource. It is derived from, but not compatible with, the HL7 v3 Purpose of use Code system."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://healthit.gov/nhin/purposeofuse"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "http://healthit.gov/nhin/purposeofuse"^^xsd:anyURI ;
+         fhir:link <http://healthit.gov/nhin/purposeofuse>
+       ]
      ] )
   ] . # 
 

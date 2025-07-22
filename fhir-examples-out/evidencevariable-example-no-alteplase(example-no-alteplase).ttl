@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-no-alteplase"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -30,7 +33,10 @@
      fhir:exclude [ fhir:v true ] ;
      fhir:definitionCodeableConcept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "8410" ] ;
          fhir:display [ fhir:v "alteplase" ]
        ] )

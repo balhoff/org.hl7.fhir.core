@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "gcs-qa"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:9269-2 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "9269-2" ] ;
        fhir:display [ fhir:v "Glasgow coma score total" ]
      ] ) ; #     LOINC - always recommended to have a LOINC code    
@@ -49,7 +55,10 @@
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "13"^^xsd:decimal ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "{score}" ]
   ] ; #     In FHIR, units may be represented twice. Once in the
 #    agreed human representation, and once in a coded form.
@@ -58,7 +67,10 @@
   fhir:referenceRange ( [
      fhir:high [
        fhir:value [ fhir:v "8"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "{score}" ]
      ] ;
      fhir:type [
@@ -67,12 +79,18 @@
   ] [
      fhir:low [
        fhir:value [ fhir:v "9"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "{score}" ]
      ] ;
      fhir:high [
        fhir:value [ fhir:v "12"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "{score}" ]
      ] ;
      fhir:type [
@@ -81,7 +99,10 @@
   ] [
      fhir:low [
        fhir:value [ fhir:v "13"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "{score}" ]
      ] ;
      fhir:type [

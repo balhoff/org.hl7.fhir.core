@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "duplicate"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,13 +25,19 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "12345" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "DUPTHPY" ] ;
        fhir:display [ fhir:v "Duplicate Therapy Alert" ]
      ] )
@@ -55,7 +64,10 @@
      fhir:display [ fhir:v "Image 1 from Series 3: CT Images on Patient MINT (MINT1234) taken at 1-Jan 2011 01:20 AM" ]
   ] ) ; #   test 1  
   fhir:detail [ fhir:v "Similar test was performed within the past 14 days"] ; # 
-  fhir:reference [ fhir:v "http://www.tmhp.com/RadiologyClinicalDecisionSupport/2011/CHEST%20IMAGING%20GUIDELINES%202011.pdf"^^xsd:anyURI] . # 
+  fhir:reference [
+     fhir:v "http://www.tmhp.com/RadiologyClinicalDecisionSupport/2011/CHEST%20IMAGING%20GUIDELINES%202011.pdf"^^xsd:anyURI ;
+     fhir:link <http://www.tmhp.com/RadiologyClinicalDecisionSupport/2011/CHEST%20IMAGING%20GUIDELINES%202011.pdf>
+  ] . # 
 
 <http://hl7.org/fhir/Patient/dicom> a fhir:Patient .
 

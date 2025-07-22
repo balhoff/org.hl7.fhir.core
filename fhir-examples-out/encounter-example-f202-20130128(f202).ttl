@@ -14,7 +14,10 @@
   fhir:id [ fhir:v "f202"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -30,7 +33,10 @@
   fhir:status [ fhir:v "completed"] ; # 
   fhir:class ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "AMB" ] ;
        fhir:display [ fhir:v "ambulatory" ] #    outpatient encounter for chemotherapy   
      ] )
@@ -38,7 +44,10 @@
   fhir:priority [
      fhir:coding ( [
        a sct:103391001 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "103391001" ] ;
        fhir:display [ fhir:v "Urgent" ]
      ] ) #   Urgent priority, because of complications  
@@ -46,7 +55,10 @@
   fhir:type ( [
      fhir:coding ( [
        a sct:367336001 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "367336001" ] ;
        fhir:display [ fhir:v "Chemotherapy" ]
      ] )
@@ -69,7 +81,10 @@
   fhir:length [
      fhir:value [ fhir:v "56"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "minutes" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "min" ]
   ] ; # 
   fhir:reason ( [
@@ -87,7 +102,10 @@
      ] ) ;
      fhir:use ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/diagnosis-role>
+         ] ;
          fhir:code [ fhir:v "AD" ] ;
          fhir:display [ fhir:v "Admission diagnosis" ]
        ] )
@@ -100,7 +118,10 @@
      ] ) ;
      fhir:use ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/diagnosis-role>
+         ] ;
          fhir:code [ fhir:v "CC" ] ;
          fhir:display [ fhir:v "Chief complaint" ]
        ] )

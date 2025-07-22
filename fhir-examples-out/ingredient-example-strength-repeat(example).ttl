@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,7 +26,10 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:role [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ema.europa.eu/example/ingredientRole"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ema.europa.eu/example/ingredientRole"^^xsd:anyURI ;
+         fhir:link <http://ema.europa.eu/example/ingredientRole>
+       ] ;
        fhir:code [ fhir:v "ActiveBase" ]
      ] )
   ] ; # 
@@ -37,7 +43,10 @@
      fhir:code [
        fhir:concept [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://ema.europa.eu/example/substance"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://ema.europa.eu/example/substance"^^xsd:anyURI ;
+             fhir:link <http://ema.europa.eu/example/substance>
+           ] ;
            fhir:code [ fhir:v "Wizzohaler" ]
          ] )
        ]
@@ -48,13 +57,19 @@
          fhir:numerator [
            fhir:value [ fhir:v "730"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "mcg" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "ug" ]
          ] ;
          fhir:denominator [
            fhir:value [ fhir:v "1"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "delivered dose" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "{delivered dose}" ]
          ]
        ] ;
@@ -65,13 +80,19 @@
          fhir:numerator [
            fhir:value [ fhir:v "460"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "mcg" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "ug" ]
          ] ;
          fhir:denominator [
            fhir:value [ fhir:v "1"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "delivered dose" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "{delivered dose}" ]
          ]
        ] ;

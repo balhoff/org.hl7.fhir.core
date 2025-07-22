@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example-cpt-all"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <ul>\n        <li>Include all codes defined in \n          <a href=\"http://terminology.hl7.org/5.1.0/CodeSystem-CPT.html\">\n            <code>http://www.ama-assn.org/go/cpt</code>\n          </a>\n        </li>\n      </ul>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/example-cpt-all"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/ValueSet/example-cpt-all"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/example-cpt-all>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.3138" ]
@@ -36,14 +42,20 @@
   fhir:description [ fhir:v "A value set that includes all CPT codes"] ; # 
   fhir:useContext ( [
      fhir:code [
-       fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/use-contexts"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/use-contexts"^^xsd:anyURI ;
+         fhir:link <http://example.org/fhir/CodeSystem/use-contexts>
+       ] ;
        fhir:code [ fhir:v "species" ]
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:337915000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "337915000" ] ;
          fhir:display [ fhir:v "Homo sapiens (organism)" ]
        ] )
@@ -58,7 +70,10 @@
   fhir:copyright [ fhir:v "CPT Copyright © 2014 American Medical Association. All rights reserved."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ;
+         fhir:link <http://www.ama-assn.org/go/cpt>
+       ]
      ] )
   ] . # 
 

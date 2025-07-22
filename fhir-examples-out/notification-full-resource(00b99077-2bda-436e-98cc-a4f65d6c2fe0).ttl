@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "00b99077-2bda-436e-98cc-a4f65d6c2fe0"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,11 +25,17 @@
      fhir:fullUrl [ fhir:v "urn:uuid:d195d9b8-6f78-4d71-9d22-3c1a923bfea5"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:d195d9b8-6f78-4d71-9d22-3c1a923bfea5> )
   ] [
-     fhir:fullUrl [ fhir:v "https://example.org/FHIR/R5/Encounter/2"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "https://example.org/FHIR/R5/Encounter/2"^^xsd:anyURI ;
+       fhir:link <https://example.org/FHIR/R5/Encounter/2>
+     ] ;
      fhir:resource ( <https://example.org/FHIR/R5/Encounter/2> ) ;
      fhir:request [
        fhir:method [ fhir:v "PUT" ] ;
-       fhir:url [ fhir:v "Encounter/2"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "Encounter/2"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/Encounter/2>
+       ]
      ] ;
      fhir:response [
        fhir:status [ fhir:v "201" ]
@@ -71,7 +80,10 @@
   fhir:status [ fhir:v "in-progress"] ; # 
   fhir:class ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "VR" ] ;
        fhir:display [ fhir:v "virtual" ]
      ] )

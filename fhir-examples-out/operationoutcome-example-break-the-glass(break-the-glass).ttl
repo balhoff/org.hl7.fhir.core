@@ -16,7 +16,10 @@
 # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -30,7 +33,10 @@
      fhir:code [ fhir:v "suppressed" ] ;
      fhir:details [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+         ] ;
          fhir:code [ fhir:v "BTG" ] ;
          fhir:display [ fhir:v "Break the glass" ]
        ] ) ; #   this is not really the right code; it's being used at cross -purposes to its definition.\n        todo: get a more correct concept defined  

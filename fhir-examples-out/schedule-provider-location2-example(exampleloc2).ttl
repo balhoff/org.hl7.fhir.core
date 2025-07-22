@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "exampleloc2"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,13 +26,19 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "usual" ] ;
-     fhir:system [ fhir:v "http://example.org/scheduleid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/scheduleid"^^xsd:anyURI ;
+       fhir:link <http://example.org/scheduleid>
+     ] ;
      fhir:value [ fhir:v "47" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 
   fhir:serviceCategory ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/service-category>
+       ] ;
        fhir:code [ fhir:v "31" ] ;
        fhir:display [ fhir:v "Specialist Surgical" ]
      ] )
@@ -37,7 +46,10 @@
   fhir:serviceType ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/service-type>
+         ] ;
          fhir:code [ fhir:v "221" ] ;
          fhir:display [ fhir:v "Surgery - General" ]
        ] )
@@ -46,7 +58,10 @@
   fhir:specialty ( [
      fhir:coding ( [
        a sct:394610002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "394610002" ] ;
        fhir:display [ fhir:v "Surgery-Neurosurgery" ]
      ] )

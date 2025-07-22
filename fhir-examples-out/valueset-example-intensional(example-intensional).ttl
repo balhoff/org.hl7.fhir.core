@@ -15,7 +15,10 @@
        fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
      ] ) ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,12 +27,18 @@
      fhir:status [ fhir:v "additional" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Value set \"LOINC Codes for Cholesterol\": This is an example value set that includes \n        all the  codes for serum cholesterol from LOINC v2.36.</p>\n      \n      <p>Developed by: FHIR project team (example)</p>\n      \n      <p>Published for testing on 13-June 2012</p>\n      \n      <p>This value set includes all the LOINC codes in LOINC Part Concept Cholesterol | Bld-Ser-Plas (LP43571-6), except for 5932-9 Cholesterol [Presence] in Blood by Test strip</p>\n      \n      <p>This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p>\n    \n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/example-intensional"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/ValueSet/example-intensional"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/example-intensional>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.3145" ]
   ] [
-     fhir:system [ fhir:v "http://acme.com/identifiers/valuesets"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://acme.com/identifiers/valuesets"^^xsd:anyURI ;
+       fhir:link <http://acme.com/identifiers/valuesets>
+     ] ;
      fhir:value [ fhir:v "loinc-cholesterol-ext" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -50,7 +59,10 @@
   fhir:copyright [ fhir:v "This content from LOINCÂ® is copyright Â© 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "parent" ] ;
          fhir:op [ fhir:v "=" ] ;
@@ -58,7 +70,10 @@
        ] )
      ] ) ;
      fhir:exclude ( [
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "5932-9" ] ;
          fhir:display [ fhir:v "Cholesterol [Presence] in Blood by Test strip" ]

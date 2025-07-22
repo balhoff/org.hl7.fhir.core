@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "meddisp0322"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
   fhir:medication [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/ndc>
+         ] ;
          fhir:code [ fhir:v "0071-2214-20" ] ;
          fhir:display [ fhir:v "Dilantin 125mg/5ml Oral Suspension" ]
        ] )
@@ -48,20 +54,29 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "RFP" ] ;
        fhir:display [ fhir:v "Refill - Part Fill" ]
      ] )
   ] ; # 
   fhir:quantity [
      fhir:value [ fhir:v "360"^^xsd:decimal ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "ml" ]
   ] ; # 
   fhir:daysSupply [
      fhir:value [ fhir:v "30"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "Day" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "d" ]
   ] ; # 
   fhir:whenPrepared [ fhir:v "2015-01-16T07:13:00+05:00"^^xsd:dateTime] ; # 
@@ -79,7 +94,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:26643006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "26643006" ] ;
          fhir:display [ fhir:v "Oral Route (qualifier value)" ]
        ] )
@@ -87,7 +105,10 @@
      fhir:doseAndRate ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+           ] ;
            fhir:code [ fhir:v "ordered" ] ;
            fhir:display [ fhir:v "Ordered" ]
          ] )
@@ -96,7 +117,10 @@
          a fhir:Quantity ;
          fhir:value [ fhir:v "4"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "ml" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "ml" ]
        ]
      ] )

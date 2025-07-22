@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "medadmin0313"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:322254008 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "322254008" ] ;
          fhir:display [ fhir:v "Paracetamol 240mg suppository (product)" ]
        ] )
@@ -54,7 +60,10 @@
   fhir:reason ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/reason-medication-given"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/reason-medication-given"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/reason-medication-given>
+         ] ;
          fhir:code [ fhir:v "c" ] ;
          fhir:display [ fhir:v "Emergency" ]
        ] )
@@ -69,7 +78,10 @@
      fhir:site [
        fhir:coding ( [
          a sct:34402009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "34402009" ] ;
          fhir:display [ fhir:v "Rectum structure" ]
        ] )
@@ -77,7 +89,10 @@
      fhir:dose [
        fhir:value [ fhir:v "240"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mg" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mg" ]
      ]
   ] . # 

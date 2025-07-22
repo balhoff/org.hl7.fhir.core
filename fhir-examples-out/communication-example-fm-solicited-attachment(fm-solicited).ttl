@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "fm-solicited"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,21 +27,30 @@
      a fhir:Organization ;
      fhir:id [ fhir:v "provider" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/provideroffices"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/provideroffices"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/provideroffices>
+       ] ;
        fhir:value [ fhir:v "3456" ]
      ] )
   ] [
      a fhir:Organization ;
      fhir:id [ fhir:v "payor" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/insurer"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/insurer"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/insurer>
+       ] ;
        fhir:value [ fhir:v "123456" ]
      ] )
   ] [
      a fhir:CommunicationRequest ;
      fhir:id [ fhir:v "request" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/insurer/123456"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/insurer/123456"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/insurer/123456>
+       ] ;
        fhir:value [ fhir:v "ABC123" ]
      ] ) ;
      fhir:status [ fhir:v "completed" ] ;
@@ -49,7 +61,10 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://www.providerco.com/communication"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.providerco.com/communication"^^xsd:anyURI ;
+       fhir:link <http://www.providerco.com/communication>
+     ] ;
      fhir:value [ fhir:v "12345" ]
   ] ) ; #   body of the resource  
   fhir:basedOn ( [
@@ -58,7 +73,10 @@
   fhir:status [ fhir:v "completed"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://acme.org/messagetypes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://acme.org/messagetypes"^^xsd:anyURI ;
+         fhir:link <http://acme.org/messagetypes>
+       ] ;
        fhir:code [ fhir:v "SolicitedAttachment" ]
      ] )
   ] ) ; # 
@@ -85,7 +103,10 @@
      fhir:content [
        a fhir:Attachment ;
        fhir:contentType [ fhir:v "application/pdf" ] ;
-       fhir:url [ fhir:v "http://happyvalley.com/docs/AB12345"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://happyvalley.com/docs/AB12345"^^xsd:anyURI ;
+         fhir:link <http://happyvalley.com/docs/AB12345>
+       ] ;
        fhir:size [ fhir:v "104274"^^xsd:long ] ;
        fhir:hash [ fhir:v "SGVsbG8gdGhlcmU="^^xsd:base64Binary ] ;
        fhir:creation [ fhir:v "2010-02-01T10:57:34+01:00"^^xsd:dateTime ]

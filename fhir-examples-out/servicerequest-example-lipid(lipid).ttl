@@ -13,7 +13,10 @@
   fhir:id [ fhir:v "lipid"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -29,7 +32,10 @@
      fhir:code [
        fhir:coding ( [
          a loinc:49541-6 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "49541-6" ] ;
          fhir:display [ fhir:v "Fasting status - Reported" ]
        ] )
@@ -41,7 +47,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0136>
+         ] ;
          fhir:code [ fhir:v "Y" ] ;
          fhir:display [ fhir:v "Yes" ]
        ] )
@@ -50,13 +59,19 @@
      a fhir:Specimen ;
      fhir:id [ fhir:v "serum" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://acme.org/specimens"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://acme.org/specimens"^^xsd:anyURI ;
+         fhir:link <http://acme.org/specimens>
+       ] ;
        fhir:value [ fhir:v "20150107-0012" ]
      ] ) ;
      fhir:type [
        fhir:coding ( [
          a sct:119364003 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "119364003" ] ;
          fhir:display [ fhir:v "Serum sample" ]
        ] )
@@ -75,7 +90,10 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
          fhir:code [ fhir:v "PLAC" ]
        ] ) ;
        fhir:text [ fhir:v "Placer" ]
@@ -88,7 +106,10 @@
   fhir:code [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme.org/tests"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.org/tests"^^xsd:anyURI ;
+           fhir:link <http://acme.org/tests>
+         ] ;
          fhir:code [ fhir:v "LIPID" ]
        ] ) ;
        fhir:text [ fhir:v "Lipid Panel" ]
@@ -117,7 +138,10 @@
   fhir:reason ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-9"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-9"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/icd-9>
+         ] ;
          fhir:code [ fhir:v "V173" ] ;
          fhir:display [ fhir:v "Fam hx-ischem heart dis" ]
        ] )

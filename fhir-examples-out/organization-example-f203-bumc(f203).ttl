@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "f203"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
      fhir:type [
        fhir:text [ fhir:v "Zorginstelling naam" ]
      ] ;
-     fhir:system [ fhir:v "http://www.zorgkaartnederland.nl/"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.zorgkaartnederland.nl/"^^xsd:anyURI ;
+       fhir:link <http://www.zorgkaartnederland.nl/>
+     ] ;
      fhir:value [ fhir:v "Blijdorp MC" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; #       <accreditation>
@@ -44,11 +50,17 @@
   fhir:type ( [
      fhir:coding ( [
        a sct:405608006 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "405608006" ] ;
        fhir:display [ fhir:v "Academic Medical Center" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/organization-type>
+       ] ;
        fhir:code [ fhir:v "prov" ]
      ] ) #    BMC is an Academic Medical Center   
   ] ) ; # 

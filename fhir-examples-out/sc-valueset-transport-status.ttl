@@ -13,7 +13,10 @@
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <h2>TransportStatusCanonicalMap (http://hl7.org/fhir/ConceptMap/sc-transport-status)</h2>\n      <p>Mapping from \n        <a href=\"valueset-transport-status.html\">Transport Status</a> to \n        <a href=\"valueset-resource-status.html\">Canonical Status Codes for FHIR Resources</a>\n      </p>\n      <p>DRAFT. Published on 2020-12-28T16:55:11+11:00 by HL7 (FHIR Project) (\n        <a href=\"http://hl7.org/fhir\">http://hl7.org/fhir</a>, \n        <a href=\"mailto:fhir@lists.hl7.org\">fhir@lists.hl7.org</a>). \n      </p>\n      <div>\n        <p>Canonical Mapping for \"Status of the transport\"</p>\n\n      </div>\n      <br/>\n      <p>\n        <b>Group 1</b>Mapping from \n        <a href=\"codesystem-transport-status.html\">Transport Status</a> to \n        <a href=\"codesystem-resource-status.html\">Canonical Status Codes for FHIR Resources</a>\n      </p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Source Code</b>\n          </td>\n          <td>\n            <b>Relationship</b>\n          </td>\n          <td>\n            <b>Target Code</b>\n          </td>\n        </tr>\n        <tr>\n          <td>entered-in-error</td>\n          <td>\n            <a href=\"codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a>\n          </td>\n          <td>error</td>\n        </tr>\n        <tr>\n          <td>planned</td>\n          <td>\n            <a href=\"codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a>\n          </td>\n          <td>draft</td>\n        </tr>\n        <tr>\n          <td>in-progress</td>\n          <td>\n            <a href=\"codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a>\n          </td>\n          <td>active</td>\n        </tr>\n        <tr>\n          <td>abandoned</td>\n          <td>\n            <a href=\"codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a>\n          </td>\n          <td>failed</td>\n        </tr>\n        <tr>\n          <td>completed</td>\n          <td>\n            <a href=\"codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a>\n          </td>\n          <td>complete</td>\n        </tr>\n        <tr>\n          <td>cancelled</td>\n          <td>\n            <a href=\"codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a>\n          </td>\n          <td>abandoned</td>\n        </tr>\n      </table>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/ConceptMap/sc-transport-status"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/ConceptMap/sc-transport-status"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ConceptMap/sc-transport-status>
+  ] ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "TransportStatusCanonicalMap"] ; # 
   fhir:title [ fhir:v "Canonical Mapping for \"Transport Status\""] ; # 
@@ -33,7 +36,10 @@
   fhir:description [ fhir:v "Canonical Mapping for \"Status of the transport\""] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:link <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
        fhir:code [ fhir:v "001" ] ;
        fhir:display [ fhir:v "World" ]
      ] )

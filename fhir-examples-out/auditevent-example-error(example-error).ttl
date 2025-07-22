@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-error"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -33,14 +36,20 @@
   ] ) ; #   contained OperationOutcome from failed transaction  
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/audit-event-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/audit-event-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/audit-event-type>
+       ] ;
        fhir:code [ fhir:v "rest" ] ;
        fhir:display [ fhir:v "Restful Operation" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/restful-interaction"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/restful-interaction"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/restful-interaction>
+       ] ;
        fhir:code [ fhir:v "create" ] ;
        fhir:display [ fhir:v "create" ]
      ] )
@@ -49,7 +58,10 @@
   fhir:recorded [ fhir:v "2017-09-07T23:42:24Z"^^xsd:dateTime] ; # 
   fhir:outcome [
      fhir:code [
-       fhir:system [ fhir:v "http://hl7.org/fhir/issue-severity"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/issue-severity"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/issue-severity>
+       ] ;
        fhir:code [ fhir:v "error" ] ;
        fhir:display [ fhir:v "Error" ]
      ] ;
@@ -60,7 +72,10 @@
   fhir:agent ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/extra-security-role-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/extra-security-role-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/extra-security-role-type>
+         ] ;
          fhir:code [ fhir:v "humanuser" ] ;
          fhir:display [ fhir:v "human user" ]
        ] )
@@ -74,7 +89,10 @@
      fhir:requestor [ fhir:v true ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/auditevent-AlternativeUserID>
+       ] ;
        fhir:value [
          a fhir:Identifier ;
          fhir:type [
@@ -85,7 +103,10 @@
      ] ) ; #   Source active participant, the software making the . AlternativeUserId - Process ID  
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ;
+           fhir:link <http://dicom.nema.org/resources/ontology/DCM>
+         ] ;
          fhir:code [ fhir:v "110153" ] ;
          fhir:display [ fhir:v "Source Role ID" ]
        ] )
@@ -111,7 +132,10 @@
      ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/security-source-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/security-source-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/security-source-type>
+         ] ;
          fhir:code [ fhir:v "3" ] ;
          fhir:display [ fhir:v "Web Server" ]
        ] )

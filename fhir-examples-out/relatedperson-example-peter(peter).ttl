@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "peter"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
   ] ; # 
   fhir:relationship ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v2-0131>
+       ] ;
        fhir:code [ fhir:v "C" ]
      ] )
   ] ) ; # 
@@ -50,7 +56,10 @@
   ] ) ; # 
   fhir:photo ( [
      fhir:contentType [ fhir:v "image/jpeg" ] ;
-     fhir:url [ fhir:v "Binary/f012"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "Binary/f012"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/Binary/f012>
+     ]
   ] ) ; # 
   fhir:period [
      fhir:start [ fhir:v "2012-03-11"^^xsd:date ]

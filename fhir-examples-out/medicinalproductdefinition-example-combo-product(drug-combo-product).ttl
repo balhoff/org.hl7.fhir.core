@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "drug-combo-product"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -63,7 +66,10 @@
            fhir:amount [
              fhir:value [ fhir:v "20"^^xsd:decimal ] ;
              fhir:unit [ fhir:v "g" ] ;
-             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:link <http://unitsofmeasure.org>
+             ] ;
              fhir:code [ fhir:v "g" ]
            ]
          ] ) ;
@@ -82,7 +88,10 @@
      fhir:status [ fhir:v "active" ] ;
      fhir:manufacturedDoseForm [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org.uk/fhir/doseform"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org.uk/fhir/doseform"^^xsd:anyURI ;
+           fhir:link <http://example.org.uk/fhir/doseform>
+         ] ;
          fhir:code [ fhir:v "tablet" ]
        ] )
      ]
@@ -92,18 +101,27 @@
      fhir:status [ fhir:v "active" ] ;
      fhir:manufacturedDoseForm [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org.uk/fhir/doseform"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org.uk/fhir/doseform"^^xsd:anyURI ;
+           fhir:link <http://example.org.uk/fhir/doseform>
+         ] ;
          fhir:code [ fhir:v "Cream for topical application" ]
        ] )
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org.uk/fhir/product"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org.uk/fhir/product"^^xsd:anyURI ;
+       fhir:link <http://example.org.uk/fhir/product>
+     ] ;
      fhir:value [ fhir:v "ThrushTreatCombo" ]
   ] ) ; # 
   fhir:combinedPharmaceuticalDoseForm [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://example.org.uk/fhir/doseform"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org.uk/fhir/doseform"^^xsd:anyURI ;
+         fhir:link <http://example.org.uk/fhir/doseform>
+       ] ;
        fhir:code [ fhir:v "Tablet and Cream for topical application" ]
      ] )
   ] ; # 

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "101"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Herd of 25 horses</p>\n      <p>Gender: mixed</p>\n      <p>Owner: John Smith</p>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://someveterinarianclinic.org/fhir/NamingSystem/herds"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://someveterinarianclinic.org/fhir/NamingSystem/herds"^^xsd:anyURI ;
+       fhir:link <http://someveterinarianclinic.org/fhir/NamingSystem/herds>
+     ] ;
      fhir:value [ fhir:v "12345" ]
   ] ) ; # 
   fhir:type [ fhir:v "animal"] ; # 

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "consent-example-notOrg"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
   fhir:category ( [
      fhir:coding ( [
        a loinc:59284-0 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "59284-0" ]
      ] )
   ] ) ; # 
@@ -44,7 +50,10 @@
   ] ) ; #   the text terms of the consent in lawyer speak  ,   likely use url pointer to common text  
   fhir:regulatoryBasis ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "INFA" ]
      ] )
   ] ) ; #   this is opt-in - e.g. everything approved unless otherwise stated  
@@ -53,7 +62,10 @@
      fhir:actor ( [
        fhir:role [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+           ] ;
            fhir:code [ fhir:v "PRCP" ]
          ] ) #   PRCP: recipient of the information  
        ] ;
@@ -64,12 +76,18 @@
      ] ) ; #   no read or write access for this org  
      fhir:action ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/consentaction>
+         ] ;
          fhir:code [ fhir:v "access" ]
        ] )
      ] [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/consentaction>
+         ] ;
          fhir:code [ fhir:v "correct" ]
        ] )
      ] )

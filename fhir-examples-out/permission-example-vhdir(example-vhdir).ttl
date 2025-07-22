@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-vhdir"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
      fhir:type [ fhir:v "permit" ] ;
      fhir:data ( [
        fhir:security ( [
-         fhir:system [ fhir:v "https://example.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://example.org"^^xsd:anyURI ;
+           fhir:link <https://example.org>
+         ] ;
          fhir:code [ fhir:v "WSHELTER" ]
        ] )
      ] ) ;
@@ -38,13 +44,19 @@
        ] ) ;
        fhir:action ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/consentaction>
+           ] ;
            fhir:code [ fhir:v "access" ]
          ] )
        ] ) ;
        fhir:purpose ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+           ] ;
            fhir:code [ fhir:v "HOPERAT" ]
          ] )
        ] )

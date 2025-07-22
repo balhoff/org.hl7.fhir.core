@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "C-123"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the contract</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happyvalley.com/contract"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happyvalley.com/contract"^^xsd:anyURI ;
+       fhir:link <http://happyvalley.com/contract>
+     ] ;
      fhir:value [ fhir:v "12347" ]
   ] ) ; # 
   fhir:term ( [
@@ -48,7 +54,10 @@
            fhir:text [ fhir:v "Ford Bobcat" ]
          ] ;
          fhir:identifier [
-           fhir:system [ fhir:v "http://somewhere.motor-vehicle.com/vin"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://somewhere.motor-vehicle.com/vin"^^xsd:anyURI ;
+             fhir:link <http://somewhere.motor-vehicle.com/vin>
+           ] ;
            fhir:value [ fhir:v "XXSVT34-7665t952236" ]
          ] ;
          fhir:effectiveTime [ fhir:v "1995"^^xsd:gYear ] ;
@@ -72,7 +81,10 @@
      fhir:content [
        a fhir:Attachment ;
        fhir:contentType [ fhir:v "application/txt" ] ;
-       fhir:url [ fhir:v "http://www.rfc-editor.org/bcp/bcp13.txt"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://www.rfc-editor.org/bcp/bcp13.txt"^^xsd:anyURI ;
+         fhir:link <http://www.rfc-editor.org/bcp/bcp13.txt>
+       ]
      ]
   ] ) ; #  
 #  <issued value="2014-08-17"/>
@@ -98,7 +110,10 @@
   fhir:legallyBinding [
      a fhir:Attachment ;
      fhir:contentType [ fhir:v "application/pdf" ] ;
-     fhir:url [ fhir:v "http://www.aws3.com/storage/doc.pdf"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://www.aws3.com/storage/doc.pdf"^^xsd:anyURI ;
+       fhir:link <http://www.aws3.com/storage/doc.pdf>
+     ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

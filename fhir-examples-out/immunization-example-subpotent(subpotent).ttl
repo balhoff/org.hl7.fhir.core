@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "subpotent"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -59,27 +62,39 @@
   ] ; # 
   fhir:site [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActSite"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActSite"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActSite>
+       ] ;
        fhir:code [ fhir:v "LT" ] ;
        fhir:display [ fhir:v "left thigh" ]
      ] )
   ] ; # 
   fhir:route [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration>
+       ] ;
        fhir:code [ fhir:v "IM" ] ;
        fhir:display [ fhir:v "Injection, intramuscular" ]
      ] )
   ] ; # 
   fhir:doseQuantity [
      fhir:value [ fhir:v 0.5 ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "ml" ]
   ] ; # 
   fhir:performer ( [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0443>
+         ] ;
          fhir:code [ fhir:v "OP" ]
        ] )
      ] ;
@@ -90,7 +105,10 @@
   ] [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0443>
+         ] ;
          fhir:code [ fhir:v "AP" ]
        ] )
      ] ;
@@ -105,7 +123,10 @@
   fhir:isSubpotent [ fhir:v true] ; # 
   fhir:subpotentReason ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason>
+       ] ;
        fhir:code [ fhir:v "partialdose" ]
      ] )
   ] ) ; # 
@@ -115,14 +136,20 @@
      ] ;
      fhir:programStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/immunization-program-eligibility>
+         ] ;
          fhir:code [ fhir:v "uninsured" ]
        ] )
      ]
   ] ) ; # 
   fhir:fundingSource [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-funding-source"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/immunization-funding-source"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/immunization-funding-source>
+       ] ;
        fhir:code [ fhir:v "private" ]
      ] )
   ] . # 

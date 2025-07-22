@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "med0314"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,7 +26,10 @@
   ] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
        fhir:code [ fhir:v "308047" ] ;
        fhir:display [ fhir:v "Alprazolam 0.25mg Oral Tablet" ]
      ] )
@@ -31,7 +37,10 @@
   fhir:doseForm [
      fhir:coding ( [
        a sct:385055001 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "385055001" ] ;
        fhir:display [ fhir:v "Tablet dose form (qualifier value)" ]
      ] )
@@ -41,7 +50,10 @@
        fhir:concept [
          fhir:coding ( [
            a sct:386983007 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "386983007" ] ;
            fhir:display [ fhir:v "Alprazolam (substance)" ]
          ] )
@@ -51,13 +63,19 @@
        a fhir:Ratio ;
        fhir:numerator [
          fhir:value [ fhir:v 0.25 ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "mg" ]
        ] ;
        fhir:denominator [
          fhir:value [ fhir:v "1"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "Tablet" ] ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "385055001" ]
        ]
      ]

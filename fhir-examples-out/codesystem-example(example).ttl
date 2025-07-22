@@ -15,7 +15,10 @@
        fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
      ] ) ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,12 +27,18 @@
      fhir:status [ fhir:v "additional" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>CodeSystem \"ACME Codes for Cholesterol\": This is an example code system that includes \n        all the codes for serum cholesterol defined by ACME inc.</p>\n      \n      <p>Developed by: FHIR project team (example)</p>\n      \n      <p>Published for testing on 28-Jan 2016</p>\n      \n      <p>This code system defines all the ACME codes for serum cholesterol:</p>\n      \n      <table class=\"grid\">\n        \n        <tr>\n          \n          <td>\n            \n            <b>Code</b>\n          \n          </td>\n          \n          <td>\n            \n            <b>Display</b>\n          \n          </td>\n          \n          <td>\n            \n            <b>Definition</b>\n          \n          </td>\n        \n        </tr>\n        \n        <tr>\n          \n          <td>chol-mmol</td>\n          \n          <td>SChol (mmol/L)</td>\n          \n          <td>Serum Cholesterol, in mmol/L</td>\n        \n        </tr>\n        \n        <tr>\n          \n          <td>chol-mass</td>\n          \n          <td>SChol (mg/L)</td>\n          \n          <td>Serum Cholesterol, in mg/L</td>\n        \n        </tr>\n        \n        <tr>\n          \n          <td>chol</td>\n          \n          <td>SChol</td>\n          \n          <td>Serum Cholesterol</td>\n        \n        </tr>\n      \n      </table>\n    \n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/CodeSystem/example"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/CodeSystem/example"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/CodeSystem/example>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.4.1827" ]
   ] [
-     fhir:system [ fhir:v "http://acme.com/identifiers/codesystems"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://acme.com/identifiers/codesystems"^^xsd:anyURI ;
+       fhir:link <http://acme.com/identifiers/codesystems>
+     ] ;
      fhir:value [ fhir:v "internal-cholesterol-inl" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -61,7 +70,10 @@
      fhir:definition [ fhir:v "Serum Cholesterol, in mmol/L" ] ;
      fhir:designation ( [
        fhir:use [
-         fhir:system [ fhir:v "http://acme.com/config/fhir/codesystems/internal"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/config/fhir/codesystems/internal"^^xsd:anyURI ;
+           fhir:link <http://acme.com/config/fhir/codesystems/internal>
+         ] ;
          fhir:code [ fhir:v "internal-label" ]
        ] ;
        fhir:value [ fhir:v "From ACME POC Testing" ]
@@ -72,7 +84,10 @@
      fhir:definition [ fhir:v "Serum Cholesterol, in mg/L" ] ;
      fhir:designation ( [
        fhir:use [
-         fhir:system [ fhir:v "http://acme.com/config/fhir/codesystems/internal"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/config/fhir/codesystems/internal"^^xsd:anyURI ;
+           fhir:link <http://acme.com/config/fhir/codesystems/internal>
+         ] ;
          fhir:code [ fhir:v "internal-label" ]
        ] ;
        fhir:value [ fhir:v "From Paragon Labs" ]
@@ -83,7 +98,10 @@
      fhir:definition [ fhir:v "Serum Cholesterol" ] ;
      fhir:designation ( [
        fhir:use [
-         fhir:system [ fhir:v "http://acme.com/config/fhir/codesystems/internal"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.com/config/fhir/codesystems/internal"^^xsd:anyURI ;
+           fhir:link <http://acme.com/config/fhir/codesystems/internal>
+         ] ;
          fhir:code [ fhir:v "internal-label" ]
        ] ;
        fhir:value [ fhir:v "Obdurate Labs uses this with both kinds of units..." ]

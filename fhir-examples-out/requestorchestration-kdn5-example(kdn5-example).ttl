@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "kdn5-example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,7 +31,10 @@
      fhir:medication [
        fhir:concept [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+             fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+           ] ;
            fhir:code [ fhir:v "12574" ] ;
            fhir:display [ fhir:v "gemcitabine" ]
          ] ) ;
@@ -53,7 +59,10 @@
        fhir:doseAndRate ( [
          fhir:type [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+             ] ;
              fhir:code [ fhir:v "ordered" ] ;
              fhir:display [ fhir:v "Ordered" ]
            ] )
@@ -73,7 +82,10 @@
      fhir:medication [
        fhir:concept [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+             fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+           ] ;
            fhir:code [ fhir:v "40048" ] ;
            fhir:display [ fhir:v "Carboplatin" ]
          ] ) ;
@@ -98,7 +110,10 @@
        fhir:doseAndRate ( [
          fhir:type [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+             ] ;
              fhir:code [ fhir:v "ordered" ] ;
              fhir:display [ fhir:v "Ordered" ]
            ] )
@@ -106,7 +121,10 @@
          fhir:dose [
            a fhir:Quantity ;
            fhir:extension ( [
-             fhir:url [ fhir:v "http://example.org/fhir/AUC-dose"^^xsd:anyURI ] ;
+             fhir:url [
+               fhir:v "http://example.org/fhir/AUC-dose"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/AUC-dose>
+             ] ;
              fhir:value [
                a fhir:integer ;
                fhir:v 5
@@ -160,7 +178,10 @@
            fhir:action ( [
              fhir:id [ fhir:v "action-1" ] ;
              fhir:extension ( [
-               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ] ;
+               fhir:url [
+                 fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle>
+               ] ;
                fhir:extension ( [
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [
@@ -182,7 +203,10 @@
            ] [
              fhir:id [ fhir:v "action-2" ] ;
              fhir:extension ( [
-               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ] ;
+               fhir:url [
+                 fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle>
+               ] ;
                fhir:extension ( [
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [

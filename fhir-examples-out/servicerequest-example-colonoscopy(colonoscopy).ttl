@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "colonoscopy"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
      fhir:value [ fhir:v "45678" ]
   ] ) ; # 
   fhir:requisition [
-     fhir:system [ fhir:v "http://bumc.org/requisitions"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://bumc.org/requisitions"^^xsd:anyURI ;
+       fhir:link <http://bumc.org/requisitions>
+     ] ;
      fhir:value [ fhir:v "req12345" ]
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
@@ -34,7 +40,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:73761001 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "73761001" ] ;
          fhir:display [ fhir:v "Colonoscopy (procedure)" ]
        ] ) ;

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -53,7 +56,10 @@
      fhir:value [ fhir:v "requestorchestration-1" ]
   ] ) ; # 
   fhir:groupIdentifier [
-     fhir:system [ fhir:v "http://example.org/treatment-group"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/treatment-group"^^xsd:anyURI ;
+       fhir:link <http://example.org/treatment-group>
+     ] ;
      fhir:value [ fhir:v "00001" ]
   ] ; # 
   fhir:status [ fhir:v "draft"] ; # 

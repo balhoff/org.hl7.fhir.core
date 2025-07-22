@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-mRS3-6-at-90days"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -36,7 +39,10 @@
        fhir:event [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/evidence-variable-event"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/evidence-variable-event"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/evidence-variable-event>
+           ] ;
            fhir:code [ fhir:v "study-start" ] ;
            fhir:display [ fhir:v "Study Start" ]
          ] )
@@ -44,7 +50,10 @@
        fhir:quantity [
          fhir:value [ fhir:v "90"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "day" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "d" ]
        ]
      ] )

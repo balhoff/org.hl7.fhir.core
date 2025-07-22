@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,14 +30,20 @@
   fhir:lifecycleStatus [ fhir:v "on-hold"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/goal-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/goal-category>
+       ] ;
        fhir:code [ fhir:v "dietary" ]
      ] )
   ] ) ; # 
   fhir:continuous [ fhir:v true] ; # 
   fhir:priority [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-priority"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/goal-priority"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/goal-priority>
+       ] ;
        fhir:code [ fhir:v "high-priority" ] ;
        fhir:display [ fhir:v "High Priority" ]
      ] ) ;
@@ -56,7 +65,10 @@
      fhir:measure [
        fhir:coding ( [
          a loinc:3141-9 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "3141-9" ] ;
          fhir:display [ fhir:v "Weight Measured" ]
        ] )
@@ -66,13 +78,19 @@
        fhir:low [
          fhir:value [ fhir:v "160"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "lbs" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "[lb_av]" ]
        ] ;
        fhir:high [
          fhir:value [ fhir:v "180"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "lbs" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "[lb_av]" ]
        ]
      ] ;

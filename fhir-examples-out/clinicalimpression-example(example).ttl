@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -69,7 +72,10 @@
      fhir:item [
        fhir:concept [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-9"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/sid/icd-9"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/sid/icd-9>
+           ] ;
            fhir:code [ fhir:v "850.0" ]
          ] )
        ]

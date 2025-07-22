@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example-xr"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -36,7 +39,10 @@
   fhir:status [ fhir:v "available"] ; # 
   fhir:modality ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ;
+         fhir:link <http://dicom.nema.org/resources/ontology/DCM>
+       ] ;
        fhir:code [ fhir:v "DX" ]
      ] )
   ] ) ; # 
@@ -54,7 +60,10 @@
      fhir:identifier [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v2-0203>
+           ] ;
            fhir:code [ fhir:v "ACSN" ]
          ] )
        ] ;
@@ -86,7 +95,10 @@
   ] [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.radlex.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.radlex.org"^^xsd:anyURI ;
+           fhir:link <http://www.radlex.org>
+         ] ;
          fhir:code [ fhir:v "RPID2589" ] ;
          fhir:display [ fhir:v "XR Wrist 3+ Views" ]
        ] ) ;
@@ -97,7 +109,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:357009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "357009" ] ;
          fhir:display [ fhir:v "Closed fracture of trapezoidal bone of wrist" ]
        ] )
@@ -111,7 +126,10 @@
      fhir:number [ fhir:v "3"^^xsd:nonNegativeInteger ] ;
      fhir:modality [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ;
+           fhir:link <http://dicom.nema.org/resources/ontology/DCM>
+         ] ;
          fhir:code [ fhir:v "DX" ]
        ] )
      ] ;
@@ -125,7 +143,10 @@
        fhir:concept [
          fhir:coding ( [
            a sct:T-15460 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ; #       Added body site to support duplicate checking example      
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ; #       Added body site to support duplicate checking example      
            fhir:code [ fhir:v "T-15460" ] ;
            fhir:display [ fhir:v "Wrist Joint" ]
          ] )
@@ -134,7 +155,10 @@
      fhir:laterality [
        fhir:coding ( [
          a sct:419161000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "419161000" ] ;
          fhir:display [ fhir:v "Unilateral left" ]
        ] )
@@ -143,7 +167,10 @@
      fhir:performer ( [
        fhir:function [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+           ] ;
            fhir:code [ fhir:v "PRF" ]
          ] )
        ] ;

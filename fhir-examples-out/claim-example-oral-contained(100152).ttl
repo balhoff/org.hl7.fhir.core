@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "100152"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,21 +27,30 @@
      a fhir:Organization ;
      fhir:id [ fhir:v "org-insurer" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ;
+         fhir:link <http://www.bindb.com/bin>
+       ] ;
        fhir:value [ fhir:v "123456" ]
      ] )
   ] [
      a fhir:Organization ;
      fhir:id [ fhir:v "org-org" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/oralhealthoffices"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/oralhealthoffices"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/oralhealthoffices>
+       ] ;
        fhir:value [ fhir:v "3456" ]
      ] )
   ] [
      a fhir:Practitioner ;
      fhir:id [ fhir:v "provider-1" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/oralhealthproviders"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/oralhealthproviders"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/oralhealthproviders>
+       ] ;
        fhir:value [ fhir:v "123456789" ]
      ] )
   ] [
@@ -62,14 +74,20 @@
      a fhir:Coverage ;
      fhir:id [ fhir:v "coverage-1" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://benefitsinc.com/certificate"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://benefitsinc.com/certificate"^^xsd:anyURI ;
+         fhir:link <http://benefitsinc.com/certificate>
+       ] ;
        fhir:value [ fhir:v "12345" ]
      ] ) ;
      fhir:status [ fhir:v "active" ] ;
      fhir:kind [ fhir:v "insurance" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
          fhir:code [ fhir:v "EHCPOL" ]
        ] )
      ] ;
@@ -87,14 +105,20 @@
      ] ;
      fhir:insurer [
        fhir:identifier [
-         fhir:system [ fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ;
+           fhir:link <http://www.bindb.com/bin>
+         ] ;
          fhir:value [ fhir:v "123456" ]
        ]
      ] ;
      fhir:class ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/coverage-class>
+           ] ;
            fhir:code [ fhir:v "plan" ]
          ] )
        ] ;
@@ -105,7 +129,10 @@
      ] [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/coverage-class>
+           ] ;
            fhir:code [ fhir:v "subplan" ]
          ] )
        ] ;
@@ -116,7 +143,10 @@
      ] [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/coverage-class>
+           ] ;
            fhir:code [ fhir:v "sequence" ]
          ] )
        ] ;
@@ -126,13 +156,19 @@
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ;
+       fhir:link <http://happyvalley.com/claim>
+     ] ;
      fhir:value [ fhir:v "12347" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "oral" ]
      ] )
   ] ; # 

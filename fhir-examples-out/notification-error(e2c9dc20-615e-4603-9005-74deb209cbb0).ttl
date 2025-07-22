@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "e2c9dc20-615e-4603-9005-74deb209cbb0"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -46,7 +49,10 @@
   ] ; # 
   fhir:error ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/subscription-error"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/subscription-error"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/subscription-error>
+       ] ;
        fhir:code [ fhir:v "no-response" ]
      ] )
   ] ) . # 

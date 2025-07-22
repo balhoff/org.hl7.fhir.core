@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "22345"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the EnrollmentRequest.</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happyvalley.com/enrollmentrequest"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happyvalley.com/enrollmentrequest"^^xsd:anyURI ;
+       fhir:link <http://happyvalley.com/enrollmentrequest>
+     ] ;
      fhir:value [ fhir:v "EN22345" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 

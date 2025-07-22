@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "med0305"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,7 +31,10 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/sid/ndc>
+       ] ;
        fhir:code [ fhir:v "24208-813-10" ] ;
        fhir:display [ fhir:v "Timoptic 5mg/ml solution" ]
      ] )
@@ -39,7 +45,10 @@
   fhir:doseForm [
      fhir:coding ( [
        a sct:75359005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "75359005" ] ;
        fhir:display [ fhir:v "Opthalmic Solution (qualifier value)" ]
      ] )
@@ -49,7 +58,10 @@
        fhir:concept [
          fhir:coding ( [
            a sct:75359005 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "75359005" ] ;
            fhir:display [ fhir:v "Timolol Maleate (substance)" ]
          ] )
@@ -59,12 +71,18 @@
        a fhir:Ratio ;
        fhir:numerator [
          fhir:value [ fhir:v "5"^^xsd:decimal ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "mg" ]
        ] ;
        fhir:denominator [
          fhir:value [ fhir:v "1"^^xsd:decimal ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "mL" ]
        ]
      ]

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "Acetamin-500-20-generic"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -54,7 +57,10 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.nation.org/drugs"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.nation.org/drugs"^^xsd:anyURI ;
+       fhir:link <http://example.nation.org/drugs>
+     ] ;
      fhir:value [ fhir:v "12345" ]
   ] ) ; #   contained>
 #		<Ingredient>

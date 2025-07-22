@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "opioidcds-recommendation-07"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,7 +31,10 @@
   fhir:experimental [ fhir:v false] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/library-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/library-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/library-type>
+       ] ;
        fhir:code [ fhir:v "logic-library" ] ;
        fhir:display [ fhir:v "Logic Library" ]
      ] )
@@ -38,7 +44,10 @@
   fhir:description [ fhir:v "Opioid decision support logic to evaluate benefits and harms with patients within 1 to 4 weeks of starting opioid therapy and harms of continued therapy with patients every 3 months or more frequently."] ; # 
   fhir:useContext ( [
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "focus" ] ;
        fhir:display [ fhir:v "Clinical Focus" ]
      ] ;
@@ -46,14 +55,20 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:182888003 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "182888003" ] ;
          fhir:display [ fhir:v "Medication requested (situation)" ]
        ] )
      ]
   ] [
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "focus" ] ;
        fhir:display [ fhir:v "Clinical Focus" ]
      ] ;
@@ -61,7 +76,10 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:82423001 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "82423001" ] ;
          fhir:display [ fhir:v "Chronic pain (finding)" ]
        ] )
@@ -93,7 +111,10 @@
      fhir:type [ fhir:v "documentation" ] ;
      fhir:display [ fhir:v "CDC guideline for prescribing opioids for chronic pain" ] ;
      fhir:document [
-       fhir:url [ fhir:v "https://guidelines.gov/summaries/summary/50153/cdc-guideline-for-prescribing-opioids-for-chronic-pain---united-states-2016#420"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://guidelines.gov/summaries/summary/50153/cdc-guideline-for-prescribing-opioids-for-chronic-pain---united-states-2016#420"^^xsd:anyURI ;
+         fhir:link <https://guidelines.gov/summaries/summary/50153/cdc-guideline-for-prescribing-opioids-for-chronic-pain---united-states-2016#420>
+       ]
      ]
   ] [
      fhir:type [ fhir:v "depends-on" ] ;

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-advanced"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -31,7 +34,10 @@
      fhir:v "2020-04-29T09:49:00.000Z"^^xsd:dateTime
   ] ; # 
   fhir:recorded [ fhir:v "2020-04-29T09:49:00.000Z"^^xsd:dateTime] ; # 
-  fhir:policy ( [ fhir:v "http://example.org/policy/1234"^^xsd:anyURI] ) ; # 
+  fhir:policy ( [
+     fhir:v "http://example.org/policy/1234"^^xsd:anyURI ;
+     fhir:link <http://example.org/policy/1234>
+  ] ) ; # 
   fhir:location [
      fhir:link <http://hl7.org/fhir/Location/1/_history/1> ;
      fhir:reference [ fhir:v "Location/1/_history/1" ]
@@ -39,14 +45,20 @@
   fhir:authorization ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+         ] ;
          fhir:code [ fhir:v "TREAT" ]
        ] )
      ]
   ] ) ; # 
   fhir:activity [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle>
+       ] ;
        fhir:code [ fhir:v "originate" ]
      ] )
   ] ; # 
@@ -65,7 +77,10 @@
   fhir:agent ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ;
+           fhir:link <http://dicom.nema.org/resources/ontology/DCM>
+         ] ;
          fhir:code [ fhir:v "110153" ] ;
          fhir:display [ fhir:v "Source Role ID" ]
        ] )
@@ -76,7 +91,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ;
+           fhir:link <http://dicom.nema.org/resources/ontology/DCM>
+         ] ;
          fhir:code [ fhir:v "110152" ] ;
          fhir:display [ fhir:v "Destination Role ID" ]
        ] )
@@ -88,7 +106,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+         ] ;
          fhir:code [ fhir:v "INF" ] ;
          fhir:display [ fhir:v "Informant" ]
        ] )

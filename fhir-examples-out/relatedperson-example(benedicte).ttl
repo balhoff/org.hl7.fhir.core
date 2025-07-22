@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "benedicte"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -35,10 +38,16 @@
   ] ; # 
   fhir:relationship ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v2-0131>
+       ] ;
        fhir:code [ fhir:v "N" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+       ] ;
        fhir:code [ fhir:v "WIFE" ]
      ] )
   ] ) ; # 
@@ -46,7 +55,10 @@
      fhir:family [
        fhir:v "du Marché" ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/humanname-own-prefix>
+         ] ;
          fhir:value [
            a fhir:string ;
            fhir:v "VV"
@@ -68,7 +80,10 @@
   ] ) ; # 
   fhir:photo ( [
      fhir:contentType [ fhir:v "image/jpeg" ] ;
-     fhir:url [ fhir:v "Binary/f016"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "Binary/f016"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/Binary/f016>
+     ]
   ] ) . # 
 
 <http://hl7.org/fhir/Patient/example> a fhir:Patient .

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "mother"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -29,7 +32,10 @@
   ] ; # 
   fhir:relationship [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+       ] ;
        fhir:code [ fhir:v "MTH" ] ;
        fhir:display [ fhir:v "mother" ]
      ] )
@@ -38,7 +44,10 @@
      fhir:code [
        fhir:coding ( [
          a sct:371041009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "371041009" ] ;
          fhir:display [ fhir:v "Embolic Stroke" ]
        ] ) ;
@@ -48,7 +57,10 @@
        a fhir:Age ;
        fhir:value [ fhir:v "56"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "yr" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "a" ]
      ]
   ] ) . # 

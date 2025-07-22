@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "fm-example4"] ; #     This is an example to demonstrate using task for actioning a reprocessing of several lines on a preauthorization 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http:/happyvalley.com/task"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http:/happyvalley.com/task"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/http:/happyvalley.com/task>
+     ] ;
      fhir:value [ fhir:v "20181012-006" ]
   ] ) ; # 
   fhir:status [ fhir:v "requested"] ; # 
@@ -30,13 +36,19 @@
   fhir:priority [ fhir:v "stat"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskcode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskcode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/financialtaskcode>
+       ] ;
        fhir:code [ fhir:v "reprocess" ]
      ] )
   ] ; #   real time request and response required  ,     fictive code and description elements populated for this example     
   fhir:focus [
      fhir:identifier [
-       fhir:system [ fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ;
+         fhir:link <http://happyvalley.com/claim>
+       ] ;
        fhir:value [ fhir:v "1501" ]
      ]
   ] ; # 
@@ -49,28 +61,40 @@
   ] ; # 
   fhir:owner [
      fhir:identifier [
-       fhir:system [ fhir:v "http://nationalinsurers.com/identifiers"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://nationalinsurers.com/identifiers"^^xsd:anyURI ;
+         fhir:link <http://nationalinsurers.com/identifiers>
+       ] ;
        fhir:value [ fhir:v "12345" ]
      ]
   ] ; # 
   fhir:input ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/financialtaskinputtype>
+         ] ;
          fhir:code [ fhir:v "origresponse" ]
        ] ) #   identifier of the insurer's response to the preauthorization  
      ] ;
      fhir:value [
        a fhir:Reference ;
        fhir:identifier [
-         fhir:system [ fhir:v "http://nationalinsurers.com/claimresponse"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://nationalinsurers.com/claimresponse"^^xsd:anyURI ;
+           fhir:link <http://nationalinsurers.com/claimresponse>
+         ] ;
          fhir:value [ fhir:v "CR201810040001234" ]
        ]
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/financialtaskinputtype>
+         ] ;
          fhir:code [ fhir:v "reference" ]
        ] ) #   authorization reference  
      ] ;
@@ -81,7 +105,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/financialtaskinputtype>
+         ] ;
          fhir:code [ fhir:v "item" ]
        ] ) #   line item sequence number to reprocess  
      ] ;
@@ -92,7 +119,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskinputtype"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/financialtaskinputtype>
+         ] ;
          fhir:code [ fhir:v "item" ]
        ] ) #   line item sequence number to reprocess  
      ] ;

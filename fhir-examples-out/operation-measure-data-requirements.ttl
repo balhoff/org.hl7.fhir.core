@@ -14,19 +14,28 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>URL: [base]/Measure/[id]/$data-requirements</p>\n      <p>Parameters</p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Use</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Scope</b>\n          </td>\n          <td>\n            <b>Cardinality</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Binding</b>\n          </td>\n          <td>\n            <b>Documentation</b>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>periodStart</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"datatypes.html#date\">date</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The start of the measurement period. In keeping with the semantics of the date parameter used in the FHIR search operation, the period will start at the beginning of the period implied by the supplied timestamp. E.g. a value of 2014 would set the period start to be 2014-01-01T00:00:00 inclusive</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>periodEnd</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"datatypes.html#date\">date</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The end of the measurement period. The period will end at the end of the period implied by the supplied timestamp. E.g. a value of 2014 would set the period end to be 2014-12-31T23:59:59 inclusive</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>return</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"library.html\">Library</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The result of the requirements gathering is a module-definition Library that describes the aggregate parameters, data requirements, and dependencies of the measure</p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div>\n        <p>The effect of invoking this operation is to determine the aggregate set of data requirements and dependencies for the measure. The result is a Library resource with a type of module-definition that contains all the parameter definitions and data requirements of the libraries referenced by the measures. Implementations SHOULD aggregate data requirements intelligently (i.e. by collapsing overlapping data requirements). This operation defines what resources are subsequently referenced in the evaluatedResources element of the MeasureReport when submitting measure data</p>\n\n      </div>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
      fhir:value [
        a fhir:integer ;
        fhir:v 3
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
      fhir:value [
        a fhir:code ;
        fhir:v "trial-use"
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/OperationDefinition/Measure-data-requirements"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/OperationDefinition/Measure-data-requirements"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/OperationDefinition/Measure-data-requirements>
+  ] ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "DataRequirements"] ; # 
   fhir:title [ fhir:v "Data Requirements"] ; # 
@@ -47,7 +56,10 @@
   fhir:description [ fhir:v "The data-requirements operation aggregates and returns the parameters and data requirements for the measure and all its dependencies as a single module definition"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:link <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
        fhir:code [ fhir:v "001" ] ;
        fhir:display [ fhir:v "World" ]
      ] )

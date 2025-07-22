@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "MED-00050"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -42,14 +45,20 @@
      a fhir:Coverage ;
      fhir:id [ fhir:v "coverage-1" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://benefitsinc.com/certificate"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://benefitsinc.com/certificate"^^xsd:anyURI ;
+         fhir:link <http://benefitsinc.com/certificate>
+       ] ;
        fhir:value [ fhir:v "10138556" ]
      ] ) ;
      fhir:status [ fhir:v "active" ] ;
      fhir:kind [ fhir:v "insurance" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
          fhir:code [ fhir:v "HIP" ] ;
          fhir:display [ fhir:v "health insurance plan policy" ]
        ] )
@@ -71,7 +80,10 @@
      ] ;
      fhir:insurer [
        fhir:identifier [
-         fhir:system [ fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ;
+           fhir:link <http://www.bindb.com/bin>
+         ] ;
          fhir:value [ fhir:v "123456" ]
        ] ;
        fhir:display [ fhir:v "Humana Inc." ]
@@ -79,7 +91,10 @@
      fhir:class ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/coverage-class"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/coverage-class>
+           ] ;
            fhir:code [ fhir:v "group" ]
          ] )
        ] ;
@@ -89,19 +104,28 @@
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://CedarArmsMedicalCenter.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://CedarArmsMedicalCenter.com/claim"^^xsd:anyURI ;
+       fhir:link <http://CedarArmsMedicalCenter.com/claim>
+     ] ;
      fhir:value [ fhir:v "MED-00050" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "institutional" ]
      ] )
   ] ; # 
   fhir:subType [
      fhir:coding ( [
-       fhir:system [ fhir:v "https://www.cms.gov/codes/billtype"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://www.cms.gov/codes/billtype"^^xsd:anyURI ;
+         fhir:link <https://www.cms.gov/codes/billtype>
+       ] ;
        fhir:code [ fhir:v "831" ] ;
        fhir:display [ fhir:v "Hospital Outpatient Surgery performed in an Ambulatory ​Surgical Center" ]
      ] )
@@ -113,7 +137,10 @@
   fhir:created [ fhir:v "2015-10-16T00:00:00-07:00"^^xsd:dateTime] ; # 
   fhir:insurer [
      fhir:identifier [
-       fhir:system [ fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.bindb.com/bin"^^xsd:anyURI ;
+         fhir:link <http://www.bindb.com/bin>
+       ] ;
        fhir:value [ fhir:v "123456" ]
      ] ;
      fhir:display [ fhir:v "Humana Inc." ]
@@ -130,7 +157,10 @@
   fhir:payee [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/payeetype"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/payeetype"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/payeetype>
+         ] ;
          fhir:code [ fhir:v "provider" ]
        ] )
      ] ;
@@ -150,7 +180,10 @@
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
      fhir:category [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claiminformationcategory"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/claiminformationcategory"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/claiminformationcategory>
+         ] ;
          fhir:code [ fhir:v "hospitalized" ]
        ] )
      ] ;
@@ -163,13 +196,19 @@
      fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
      fhir:category [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claiminformationcategory"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/claiminformationcategory"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/claiminformationcategory>
+         ] ;
          fhir:code [ fhir:v "discharge" ]
        ] )
      ] ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/SE0801.pdf"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/SE0801.pdf"^^xsd:anyURI ;
+           fhir:link <https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/SE0801.pdf>
+         ] ;
          fhir:code [ fhir:v "01" ] ;
          fhir:display [ fhir:v "Discharge to Home or Self Care" ]
        ] )
@@ -180,7 +219,10 @@
      fhir:diagnosis [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/icd-10-cm>
+         ] ;
          fhir:code [ fhir:v "M96.1" ] ;
          fhir:display [ fhir:v "Postlaminectomy syndrome, not elsewhere classified" ]
        ] )
@@ -190,7 +232,10 @@
      fhir:diagnosis [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/icd-10-cm>
+         ] ;
          fhir:code [ fhir:v "G89.4" ] ;
          fhir:display [ fhir:v "Chronic pain syndrome" ]
        ] )
@@ -200,7 +245,10 @@
      fhir:diagnosis [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/icd-10-cm>
+         ] ;
          fhir:code [ fhir:v "M53.88" ] ;
          fhir:display [ fhir:v "Other specified dorsopathies, sacral and sacrococcygeal region" ]
        ] )
@@ -210,7 +258,10 @@
      fhir:diagnosis [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/icd-10-cm>
+         ] ;
          fhir:code [ fhir:v "M47.816" ] ;
          fhir:display [ fhir:v "Spondylosis without myelopathy or radiculopathy, lumbar region" ]
        ] )
@@ -220,7 +271,10 @@
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
      fhir:focal [ fhir:v true ] ;
      fhir:identifier [
-       fhir:system [ fhir:v "http://CedarArmsMedicalCenter.com/claim"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://CedarArmsMedicalCenter.com/claim"^^xsd:anyURI ;
+         fhir:link <http://CedarArmsMedicalCenter.com/claim>
+       ] ;
        fhir:value [ fhir:v "MED-00050" ]
      ] ;
      fhir:coverage [
@@ -234,7 +288,10 @@
      fhir:informationSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ;
+           fhir:link <http://www.ama-assn.org/go/cpt>
+         ] ;
          fhir:code [ fhir:v "62264" ] ;
          fhir:display [ fhir:v "Surgical Procedures on the Spine and Spinal Cord" ]
        ] )
@@ -246,7 +303,10 @@
      fhir:location [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "https://www.cms.gov/medicare/coding/place-of-service-codes/place_of_service_code_set.html"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://www.cms.gov/medicare/coding/place-of-service-codes/place_of_service_code_set.html"^^xsd:anyURI ;
+           fhir:link <https://www.cms.gov/medicare/coding/place-of-service-codes/place_of_service_code_set.html>
+         ] ;
          fhir:code [ fhir:v "24" ] ;
          fhir:display [ fhir:v "Ambulatory Surgical Center" ]
        ] )

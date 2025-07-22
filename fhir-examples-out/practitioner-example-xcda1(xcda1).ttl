@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "xcda1"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://healthcare.example.org/identifiers/staff"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://healthcare.example.org/identifiers/staff"^^xsd:anyURI ;
+       fhir:link <http://healthcare.example.org/identifiers/staff>
+     ] ;
      fhir:value [ fhir:v "D234123" ]
   ] ) ; # 
   fhir:name ( [

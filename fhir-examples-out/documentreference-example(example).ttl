@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -31,7 +34,10 @@
      ] )
   ] ) ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo>
+     ] ;
      fhir:value [
        a fhir:Reference ;
        fhir:link <http://hl7.org/fhir/Patient/xcda> ;
@@ -42,7 +48,10 @@
        ]
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/documentreference-sourcepatient"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/documentreference-sourcepatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/documentreference-sourcepatient>
+     ] ;
      fhir:value [
        a fhir:Reference ;
        fhir:link <http://hl7.org/fhir/Patient/xcda> ;
@@ -67,14 +76,20 @@
   fhir:type [
      fhir:coding ( [
        a loinc:34108-1 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "34108-1" ] ;
        fhir:display [ fhir:v "Outpatient Note" ]
      ] )
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ihe.net/xds/connectathon/classCodes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ihe.net/xds/connectathon/classCodes"^^xsd:anyURI ;
+         fhir:link <http://ihe.net/xds/connectathon/classCodes>
+       ] ;
        fhir:code [ fhir:v "History and Physical" ] ;
        fhir:display [ fhir:v "History and Physical" ]
      ] )
@@ -90,7 +105,10 @@
   fhir:event ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://ihe.net/xds/connectathon/eventCodes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://ihe.net/xds/connectathon/eventCodes"^^xsd:anyURI ;
+           fhir:link <http://ihe.net/xds/connectathon/eventCodes>
+         ] ;
          fhir:code [ fhir:v "T-D8200" ] ;
          fhir:display [ fhir:v "Arm" ]
        ] )
@@ -98,14 +116,20 @@
   ] ) ; # 
   fhir:facilityType [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://www.ihe.net/xds/connectathon/healthcareFacilityTypeCodes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.ihe.net/xds/connectathon/healthcareFacilityTypeCodes"^^xsd:anyURI ;
+         fhir:link <http://www.ihe.net/xds/connectathon/healthcareFacilityTypeCodes>
+       ] ;
        fhir:code [ fhir:v "Outpatient" ] ;
        fhir:display [ fhir:v "Outpatient" ]
      ] )
   ] ; # 
   fhir:practiceSetting [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://www.ihe.net/xds/connectathon/practiceSettingCodes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.ihe.net/xds/connectathon/practiceSettingCodes"^^xsd:anyURI ;
+         fhir:link <http://www.ihe.net/xds/connectathon/practiceSettingCodes>
+       ] ;
        fhir:code [ fhir:v "General Medicine" ] ;
        fhir:display [ fhir:v "General Medicine" ]
      ] )
@@ -124,7 +148,10 @@
   fhir:attester ( [
      fhir:mode [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/composition-attestation-mode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/composition-attestation-mode"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/composition-attestation-mode>
+         ] ;
          fhir:code [ fhir:v "official" ]
        ] )
      ] ;
@@ -140,7 +167,10 @@
   fhir:relatesTo ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/document-relationship-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/document-relationship-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/document-relationship-type>
+         ] ;
          fhir:code [ fhir:v "appends" ]
        ] )
      ] ;
@@ -152,7 +182,10 @@
   fhir:description [ fhir:v "Physical"] ; # 
   fhir:securityLabel ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-Confidentiality>
+       ] ;
        fhir:code [ fhir:v "V" ] ;
        fhir:display [ fhir:v "very restricted" ]
      ] )
@@ -161,7 +194,10 @@
      fhir:attachment [
        fhir:contentType [ fhir:v "application/hl7-v3+xml" ] ;
        fhir:language [ fhir:v "en-US" ] ;
-       fhir:url [ fhir:v "http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510"^^xsd:anyURI ;
+         fhir:link <http://example.org/xds/mhd/Binary/07a6483f-732b-461e-86b6-edb665c45510>
+       ] ;
        fhir:size [ fhir:v "3654"^^xsd:long ] ;
        fhir:hash [ fhir:v "2jmj7l5rSw0yVb/vlWAYkK/YBwk="^^xsd:base64Binary ] ;
        fhir:title [ fhir:v "Physical" ] ;

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "medadmin0301"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
      fhir:id [ fhir:v "med0301" ] ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/ndc>
+         ] ;
          fhir:code [ fhir:v "0409-6531-02" ] ;
          fhir:display [ fhir:v "Vancomycin Hydrochloride (VANCOMYCIN HYDROCHLORIDE)" ]
        ] )
@@ -42,7 +48,10 @@
      fhir:agent ( [
        fhir:role ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+           ] ;
            fhir:code [ fhir:v "AUT" ]
          ] )
        ] ) ;
@@ -101,7 +110,10 @@
   fhir:reason ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/reason-medication-given"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/reason-medication-given"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/reason-medication-given>
+         ] ;
          fhir:code [ fhir:v "b" ] ;
          fhir:display [ fhir:v "Given as Ordered" ]
        ] )
@@ -116,7 +128,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:47625008 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "47625008" ] ;
          fhir:display [ fhir:v "Intravenous route (qualifier value)" ]
        ] )
@@ -127,7 +142,10 @@
      fhir:dose [
        fhir:value [ fhir:v "500"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mg" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mg" ]
      ]
   ] ; # 

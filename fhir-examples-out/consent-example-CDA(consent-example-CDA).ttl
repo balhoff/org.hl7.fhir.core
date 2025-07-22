@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "consent-example-CDA"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,7 +31,10 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
+       ] ;
        fhir:code [ fhir:v "npp" ]
      ] )
   ] ) ; # 
@@ -51,7 +57,10 @@
   ] ) ; # 
   fhir:regulatoryBasis ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "INFA" ]
      ] )
   ] ) ; # 
@@ -64,7 +73,10 @@
      fhir:actor ( [
        fhir:role [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+           ] ;
            fhir:code [ fhir:v "PRCP" ]
          ] )
        ] ;
@@ -77,7 +89,10 @@
        fhir:actor ( [
          fhir:role [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+             ] ;
              fhir:code [ fhir:v "AUT" ]
            ] )
          ] ;
@@ -93,13 +108,19 @@
        fhir:code ( [
          fhir:coding ( [
            a loinc:34133-9 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:link <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "34133-9" ]
          ] )
        ] [
          fhir:coding ( [
            a loinc:18842-5 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:link <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "18842-5" ]
          ] )
        ] ) #    code rules   

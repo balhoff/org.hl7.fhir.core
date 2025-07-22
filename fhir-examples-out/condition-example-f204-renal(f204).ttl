@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "f204"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,31 +26,46 @@
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/condition-clinical>
+       ] ;
        fhir:code [ fhir:v "inactive" ]
      ] )
   ] ; # 
   fhir:verificationStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+       ] ;
        fhir:code [ fhir:v "differential" ]
      ] )
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
        a sct:55607006 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "55607006" ] ;
        fhir:display [ fhir:v "Problem" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/condition-category>
+       ] ;
        fhir:code [ fhir:v "problem-list-item" ]
      ] ) #   Renal insufficiency could become a severe problem  
   ] ) ; # 
   fhir:severity [
      fhir:coding ( [
        a sct:24484000 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "24484000" ] ;
        fhir:display [ fhir:v "Severe" ]
      ] )
@@ -55,7 +73,10 @@
   fhir:code [
      fhir:coding ( [
        a sct:36225005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "36225005" ] ;
        fhir:display [ fhir:v "Acute renal insufficiency specified as due to procedure" ]
      ] )
@@ -63,7 +84,10 @@
   fhir:bodySite ( [
      fhir:coding ( [
        a sct:181414000 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "181414000" ] ;
        fhir:display [ fhir:v "Kidney" ]
      ] )
@@ -90,7 +114,10 @@
   fhir:participant ( [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/provenance-participant-type>
+         ] ;
          fhir:code [ fhir:v "author" ] ;
          fhir:display [ fhir:v "Author" ]
        ] )
@@ -104,7 +131,10 @@
      fhir:summary [
        fhir:coding ( [
          a sct:14803004 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "14803004" ] ;
          fhir:display [ fhir:v "Temporary" ]
        ] )

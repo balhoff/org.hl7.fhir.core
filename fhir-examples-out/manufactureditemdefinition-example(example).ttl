@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,13 +26,19 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:manufacturedDoseForm [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ema.europa.eu/example/manufactureddoseform"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ema.europa.eu/example/manufactureddoseform"^^xsd:anyURI ;
+         fhir:link <http://ema.europa.eu/example/manufactureddoseform>
+       ] ;
        fhir:code [ fhir:v "Film-coatedtablet" ]
      ] )
   ] ; # 
   fhir:unitOfPresentation [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ema.europa.eu/example/unitofpresentation"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ema.europa.eu/example/unitofpresentation"^^xsd:anyURI ;
+         fhir:link <http://ema.europa.eu/example/unitofpresentation>
+       ] ;
        fhir:code [ fhir:v "Tablet" ]
      ] )
   ] ; # 

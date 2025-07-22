@@ -13,7 +13,10 @@
   fhir:id [ fhir:v "f201"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -34,7 +37,10 @@
      fhir:relationship [
        fhir:coding ( [
          a sct:72705000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "72705000" ] ;
          fhir:display [ fhir:v "Mother" ]
        ] )
@@ -47,7 +53,10 @@
        fhir:code [
          fhir:coding ( [
            a sct:39839004 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "39839004" ] ;
            fhir:display [ fhir:v "Diaphragmatic hernia" ]
          ] )
@@ -65,7 +74,10 @@
      fhir:relationship [
        fhir:coding ( [
          a sct:38048003 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "38048003" ] ;
          fhir:display [ fhir:v "Uncle" ]
        ] )
@@ -78,7 +90,10 @@
        fhir:code [
          fhir:coding ( [
            a sct:115665000 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "115665000" ] ;
            fhir:display [ fhir:v "Atopy" ]
          ] )
@@ -86,7 +101,10 @@
        fhir:outcome [
          fhir:coding ( [
            a sct:419099009 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "419099009" ] ;
            fhir:display [ fhir:v "Died" ]
          ] )
@@ -98,7 +116,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:8670-2 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "8670-2" ] ;
        fhir:display [ fhir:v "History of family member diseases" ]
      ] )

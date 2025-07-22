@@ -13,7 +13,10 @@
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2013-07-01T13:11:33Z"^^xsd:dateTime ] ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
        fhir:url [ fhir:v "DocumentReference"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "http://localhost:9556/svc/fhir/Patient/a2"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://localhost:9556/svc/fhir/Patient/a2"^^xsd:anyURI ;
+       fhir:link <http://localhost:9556/svc/fhir/Patient/a2>
+     ] ;
      fhir:resource ( <http://localhost:9556/svc/fhir/Patient/a2> ) ; #    if the server can find a matching resource, use that, else create a new \n      resource with these details   
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
@@ -35,21 +41,30 @@
        fhir:ifNoneExist [ fhir:v "Patient?identifier=http://acme.org/xds/patients!89765a87b" ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "http://localhost:9556/svc/fhir/Practitioner/a3"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://localhost:9556/svc/fhir/Practitioner/a3"^^xsd:anyURI ;
+       fhir:link <http://localhost:9556/svc/fhir/Practitioner/a3>
+     ] ;
      fhir:resource ( <http://localhost:9556/svc/fhir/Practitioner/a3> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Practitioner"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "http://localhost:9556/svc/fhir/Practitioner/a4"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://localhost:9556/svc/fhir/Practitioner/a4"^^xsd:anyURI ;
+       fhir:link <http://localhost:9556/svc/fhir/Practitioner/a4>
+     ] ;
      fhir:resource ( <http://localhost:9556/svc/fhir/Practitioner/a4> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
        fhir:url [ fhir:v "Practitioner"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"^^xsd:anyURI ;
+       fhir:link <http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32>
+     ] ;
      fhir:resource ( <http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32> ) ;
      fhir:request [
        fhir:method [ fhir:v "POST" ] ;
@@ -75,7 +90,10 @@
   fhir:status [ fhir:v "current"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ihe.net/connectathon/classCodes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ihe.net/connectathon/classCodes"^^xsd:anyURI ;
+         fhir:link <http://ihe.net/connectathon/classCodes>
+       ] ;
        fhir:code [ fhir:v "History and Physical" ] ;
        fhir:display [ fhir:v "History and Physical" ]
      ] )
@@ -83,7 +101,10 @@
   fhir:category ( [
      fhir:coding ( [
        a loinc:47039-3 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "47039-3" ] ;
        fhir:display [ fhir:v "Inpatient Admission history and physical note" ]
      ] )
@@ -94,7 +115,10 @@
   ] ; # 
   fhir:practiceSetting [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ihe.net/connectathon/practiceSettingCodes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ihe.net/connectathon/practiceSettingCodes"^^xsd:anyURI ;
+         fhir:link <http://ihe.net/connectathon/practiceSettingCodes>
+       ] ;
        fhir:code [ fhir:v "General Medicine" ] ;
        fhir:display [ fhir:v "General Medicine" ]
      ] )
@@ -114,7 +138,10 @@
   fhir:description [ fhir:v "Physical"] ; # 
   fhir:securityLabel ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-Confidentiality>
+       ] ;
        fhir:code [ fhir:v "N" ] ;
        fhir:display [ fhir:v "normal" ]
      ] )
@@ -123,7 +150,10 @@
      fhir:attachment [
        fhir:contentType [ fhir:v "text/plain" ] ;
        fhir:language [ fhir:v "en-US" ] ;
-       fhir:url [ fhir:v "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"^^xsd:anyURI ;
+         fhir:link <http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32>
+       ] ;
        fhir:title [ fhir:v "Physical" ] ;
        fhir:creation [ fhir:v "2005-12-24"^^xsd:date ]
      ] ;

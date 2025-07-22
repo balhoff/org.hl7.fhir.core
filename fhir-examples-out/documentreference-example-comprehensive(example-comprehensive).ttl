@@ -13,10 +13,16 @@
   fhir:id [ fhir:v "example-comprehensive"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -37,7 +43,10 @@
      fhir:id [ fhir:v "in-patient" ]
   ] ) ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/documentreference-sourcepatient"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/documentreference-sourcepatient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/documentreference-sourcepatient>
+     ] ;
      fhir:value [
        a fhir:Reference ;
        fhir:reference [ fhir:v "#in-patient" ]
@@ -55,14 +64,20 @@
   fhir:type [
      fhir:coding ( [
        a loinc:55107-7 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "55107-7" ]
      ] )
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
        a loinc:11369-6 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "11369-6" ]
      ] )
   ] ) ; # 
@@ -73,7 +88,10 @@
   fhir:event ( [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+         ] ;
          fhir:code [ fhir:v "ACCTRECEIVABLE" ]
        ] )
      ]
@@ -92,14 +110,20 @@
   fhir:facilityType [
      fhir:coding ( [
        a sct:82242000 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "82242000" ]
      ] )
   ] ; # 
   fhir:practiceSetting [
      fhir:coding ( [
        a sct:408467006 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "408467006" ]
      ] )
   ] ; # 
@@ -114,7 +138,10 @@
   fhir:attester ( [
      fhir:mode [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/composition-attestation-mode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/composition-attestation-mode"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/composition-attestation-mode>
+         ] ;
          fhir:code [ fhir:v "professional" ]
        ] )
      ] ;
@@ -125,7 +152,10 @@
   fhir:relatesTo ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/document-relationship-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/document-relationship-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/document-relationship-type>
+         ] ;
          fhir:code [ fhir:v "appends" ]
        ] )
      ] ;
@@ -137,7 +167,10 @@
   fhir:description [ fhir:v "Example of a Comprehensive DocumentReference resource. This is fully filled for all mandatory elements and all optional elements."] ; # 
   fhir:securityLabel ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-Confidentiality>
+       ] ;
        fhir:code [ fhir:v "N" ]
      ] )
   ] ) ; # 
@@ -145,7 +178,10 @@
      fhir:attachment [
        fhir:contentType [ fhir:v "text/plain" ] ;
        fhir:language [ fhir:v "en" ] ;
-       fhir:url [ fhir:v "http://example.com/nowhere.txt"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://example.com/nowhere.txt"^^xsd:anyURI ;
+         fhir:link <http://example.com/nowhere.txt>
+       ] ;
        fhir:size [ fhir:v "190"^^xsd:long ] ;
        fhir:hash [ fhir:v "OGEzOGYyNjMzMDA2ZmQ1MzUxNDljNDRhM2E3M2YzMTI0MzdiMzQ3OA=="^^xsd:base64Binary ] ;
        fhir:title [ fhir:v "DocumentReference for Comprehensive fully filled metadata" ] ;
@@ -154,7 +190,10 @@
      fhir:profile ( [
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"^^xsd:anyURI ;
+           fhir:link <http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode>
+         ] ;
          fhir:code [ fhir:v "urn:ihe:iti:xds-sd:text:2008" ]
        ]
      ] )

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "760151"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,13 +24,19 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Pharmacy Claim</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happypharma.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happypharma.com/claim"^^xsd:anyURI ;
+       fhir:link <http://happypharma.com/claim>
+     ] ;
      fhir:value [ fhir:v "7612345" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "pharmacy" ]
      ] )
   ] ; # 
@@ -81,7 +90,10 @@
      ] ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/pharmacy-refill"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/pharmacy-refill"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/pharmacy-refill>
+         ] ;
          fhir:code [ fhir:v "new" ]
        ] )
      ]
@@ -94,7 +106,10 @@
      ] ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/pharmacy-information"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/pharmacy-information"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/pharmacy-information>
+         ] ;
          fhir:code [ fhir:v "refillsremaining" ]
        ] )
      ] ;
@@ -111,7 +126,10 @@
      ] ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/pharmacy-information"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/pharmacy-information"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/pharmacy-information>
+         ] ;
          fhir:code [ fhir:v "dayssupply" ]
        ] )
      ] ;
@@ -143,7 +161,10 @@
      fhir:informationSequence ( [ fhir:v "1"^^xsd:positiveInteger ] [ fhir:v "2"^^xsd:positiveInteger ] [ fhir:v "3"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "562721" ] ;
          fhir:display [ fhir:v "Alprazolam 0.25mg (Xanax)" ]
        ] )
@@ -155,7 +176,10 @@
      fhir:quantity [
        fhir:value [ fhir:v "90"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "TAB" ] ;
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm>
+       ] ;
        fhir:code [ fhir:v "TAB" ]
      ] ;
      fhir:net [
@@ -166,7 +190,10 @@
        fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/ex-pharmaservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/ex-pharmaservice"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ex-pharmaservice>
+           ] ;
            fhir:code [ fhir:v "drugcost" ]
          ] )
        ] ; #   type=costitem  
@@ -178,7 +205,10 @@
        fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/ex-pharmaservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/ex-pharmaservice"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ex-pharmaservice>
+           ] ;
            fhir:code [ fhir:v "markup" ]
          ] )
        ] ; #   type=costitem  
@@ -190,7 +220,10 @@
        fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/ex-pharmaservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/ex-pharmaservice"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/ex-pharmaservice>
+           ] ;
            fhir:code [ fhir:v "dispensefee" ]
          ] )
        ] ; #   type=costitem  

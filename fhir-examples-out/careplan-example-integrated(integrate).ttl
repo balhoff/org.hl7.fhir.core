@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "integrate"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,13 +28,19 @@
      fhir:id [ fhir:v "p1" ] ;
      fhir:clinicalStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/condition-clinical>
+         ] ;
          fhir:code [ fhir:v "active" ]
        ] )
      ] ;
      fhir:verificationStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+         ] ;
          fhir:code [ fhir:v "confirmed" ]
        ] )
      ] ;
@@ -48,13 +57,19 @@
      fhir:id [ fhir:v "p2" ] ;
      fhir:clinicalStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/condition-clinical>
+         ] ;
          fhir:code [ fhir:v "active" ]
        ] )
      ] ;
      fhir:verificationStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+         ] ;
          fhir:code [ fhir:v "confirmed" ]
        ] )
      ] ;
@@ -71,13 +86,19 @@
      fhir:id [ fhir:v "p3" ] ;
      fhir:clinicalStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/condition-clinical>
+         ] ;
          fhir:code [ fhir:v "active" ]
        ] )
      ] ;
      fhir:verificationStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+         ] ;
          fhir:code [ fhir:v "confirmed" ]
        ] )
      ] ;

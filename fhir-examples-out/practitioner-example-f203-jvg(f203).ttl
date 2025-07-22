@@ -16,7 +16,10 @@
   fhir:id [ fhir:v "f203"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -37,7 +40,10 @@
      fhir:type [
        fhir:text [ fhir:v "BIG-nummer" ]
      ] ;
-     fhir:system [ fhir:v "https://www.bigregister.nl/"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://www.bigregister.nl/"^^xsd:anyURI ;
+       fhir:link <https://www.bigregister.nl/>
+     ] ;
      fhir:value [ fhir:v "12345678903" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 

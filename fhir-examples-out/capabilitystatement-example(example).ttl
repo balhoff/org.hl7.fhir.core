@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -38,13 +41,19 @@
   fhir:description [ fhir:v "This is the FHIR capability statement for the main EHR at ACME for the private interface - it does not describe the public interface"] ; # 
   fhir:useContext ( [
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "focus" ]
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/variant-state"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/variant-state"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/variant-state>
+         ] ;
          fhir:code [ fhir:v "positive" ]
        ] )
      ]
@@ -70,7 +79,10 @@
   ] ; # 
   fhir:implementation [
      fhir:description [ fhir:v "main EHR at ACME" ] ;
-     fhir:url [ fhir:v "http://10.2.3.4/fhir"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://10.2.3.4/fhir"^^xsd:anyURI ;
+       fhir:link <http://10.2.3.4/fhir>
+     ]
   ] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
@@ -87,7 +99,10 @@
        fhir:cors [ fhir:v true ] ;
        fhir:service ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/restful-security-service"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/restful-security-service"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/restful-security-service>
+           ] ;
            fhir:code [ fhir:v "SMART-on-FHIR" ]
          ] )
        ] ) ;
@@ -158,7 +173,10 @@
   fhir:messaging ( [
      fhir:endpoint ( [
        fhir:protocol [
-         fhir:system [ fhir:v "http://hl7.org/fhir/message-transport"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/message-transport"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/message-transport>
+         ] ;
          fhir:code [ fhir:v "mllp" ]
        ] ;
        fhir:address [ fhir:v "mllp:10.1.1.10:9234"^^xsd:anyURI ]

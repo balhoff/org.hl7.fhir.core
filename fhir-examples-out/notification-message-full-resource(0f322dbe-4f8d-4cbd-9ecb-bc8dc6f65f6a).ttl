@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "0f322dbe-4f8d-4cbd-9ecb-bc8dc6f65f6a"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -34,13 +37,17 @@
   ] ; # 
   fhir:event [
      a fhir:Coding ;
-     fhir:system [ fhir:v "http://example.org/fhir/message-events"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/fhir/message-events"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/message-events>
+     ] ;
      fhir:code [ fhir:v "subscription-notification" ]
   ] ; # 
   fhir:source [
      fhir:endpoint [
        a fhir:url ;
-       fhir:v "http://example.org/FHIR/R5"^^xsd:anyURI
+       fhir:v "http://example.org/FHIR/R5"^^xsd:anyURI ;
+       fhir:link <http://example.org/FHIR/R5>
      ]
   ] ; # 
   fhir:focus ( [
@@ -55,11 +62,17 @@
      fhir:fullUrl [ fhir:v "urn:uuid:bef7e5fb-b5ad-4b59-a618-1bace2bbf5c0"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:bef7e5fb-b5ad-4b59-a618-1bace2bbf5c0> )
   ] [
-     fhir:fullUrl [ fhir:v "https://example.org/FHIR/R5/Encounter/2"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "https://example.org/FHIR/R5/Encounter/2"^^xsd:anyURI ;
+       fhir:link <https://example.org/FHIR/R5/Encounter/2>
+     ] ;
      fhir:resource ( <https://example.org/FHIR/R5/Encounter/2> ) ;
      fhir:request [
        fhir:method [ fhir:v "PUT" ] ;
-       fhir:url [ fhir:v "Encounter/2"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "Encounter/2"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/Encounter/2>
+       ]
      ] ;
      fhir:response [
        fhir:status [ fhir:v "201" ]
@@ -96,7 +109,10 @@
   fhir:status [ fhir:v "in-progress"] ; # 
   fhir:class ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
        fhir:code [ fhir:v "VR" ] ;
        fhir:display [ fhir:v "virtual" ]
      ] )

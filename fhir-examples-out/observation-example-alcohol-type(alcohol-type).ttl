@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "alcohol-type"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,7 +27,10 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "social-history" ] ;
        fhir:display [ fhir:v "Social History" ]
      ] ) ;
@@ -38,7 +44,10 @@
 #     
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://acme-rehab.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://acme-rehab.org"^^xsd:anyURI ;
+         fhir:link <http://acme-rehab.org>
+       ] ;
        fhir:code [ fhir:v "alcohol-type" ] ;
        fhir:display [ fhir:v "Type of alcohol consumed" ]
      ] ) ; #     Local - unable to identify a proper LOINC code    
@@ -56,7 +65,10 @@
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme-rehab.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme-rehab.org"^^xsd:anyURI ;
+           fhir:link <http://acme-rehab.org>
+         ] ;
          fhir:code [ fhir:v "alcohol-type" ]
        ] ) #     Local - unable to identify a proper LOINC code    
      ] ; #    component.code is same as code   
@@ -64,7 +76,10 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:35748005 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "35748005" ] ;
          fhir:display [ fhir:v "Wine (substance)" ]
        ] ) ;
@@ -73,7 +88,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme-rehab.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme-rehab.org"^^xsd:anyURI ;
+           fhir:link <http://acme-rehab.org>
+         ] ;
          fhir:code [ fhir:v "alcohol-type" ]
        ] ) #     Local - unable to identify a proper LOINC code    
      ] ; #    component.code is same as code   
@@ -81,7 +99,10 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:53410008 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "53410008" ] ;
          fhir:display [ fhir:v "Beer (substance)" ]
        ] ) ;
@@ -90,7 +111,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://acme-rehab.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme-rehab.org"^^xsd:anyURI ;
+           fhir:link <http://acme-rehab.org>
+         ] ;
          fhir:code [ fhir:v "alcohol-type" ]
        ] ) #     Local - unable to identify a proper LOINC code    
      ] ; #    component.code is same as code   
@@ -98,7 +122,10 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:6524003 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "6524003" ] ;
          fhir:display [ fhir:v "Distilled spirits (substance)" ]
        ] ) ;

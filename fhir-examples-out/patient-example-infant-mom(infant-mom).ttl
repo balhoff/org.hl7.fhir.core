@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "infant-mom"] ; #    mother of infant twins and fetal patient   
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -33,7 +36,10 @@
   fhir:birthDate [ fhir:v "1995-10-12"^^xsd:date] ; # 
   fhir:maritalStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-MaritalStatus>
+       ] ;
        fhir:code [ fhir:v "M" ] ;
        fhir:display [ fhir:v "Married" ]
      ] )

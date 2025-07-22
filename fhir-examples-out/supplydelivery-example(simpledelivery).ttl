@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "simpledelivery"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -35,7 +38,10 @@
   fhir:status [ fhir:v "completed"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/supplydelivery-supplyitemtype"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/supplydelivery-supplyitemtype"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/supplydelivery-supplyitemtype>
+       ] ;
        fhir:code [ fhir:v "device" ]
      ] ) ;
      fhir:text [ fhir:v "Blood collect tubes blue cap" ]

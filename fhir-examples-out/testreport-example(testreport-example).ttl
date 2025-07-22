@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "testreport-example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -36,11 +39,17 @@
   fhir:issued [ fhir:v "2016-10-07T08:25:34-05:00"^^xsd:dateTime] ; # 
   fhir:participant ( [
      fhir:type [ fhir:v "test-engine" ] ;
-     fhir:uri [ fhir:v "http://projectcrucible.org"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://projectcrucible.org"^^xsd:anyURI ;
+       fhir:link <http://projectcrucible.org>
+     ] ;
      fhir:display [ fhir:v "Crucible" ]
   ] [
      fhir:type [ fhir:v "server" ] ;
-     fhir:uri [ fhir:v "http://fhir3.healthintersections.com.au/open"^^xsd:anyURI ] ;
+     fhir:uri [
+       fhir:v "http://fhir3.healthintersections.com.au/open"^^xsd:anyURI ;
+       fhir:link <http://fhir3.healthintersections.com.au/open>
+     ] ;
      fhir:display [ fhir:v "HealthIntersections STU3" ]
   ] ) ; # 
   fhir:setup [
@@ -48,7 +57,10 @@
        fhir:operation [
          fhir:result [ fhir:v "pass" ] ;
          fhir:message [ fhir:v "DELETE Patient" ] ;
-         fhir:detail [ fhir:v "http://projectcrucible.org/permalink/1"^^xsd:anyURI ]
+         fhir:detail [
+           fhir:v "http://projectcrucible.org/permalink/1"^^xsd:anyURI ;
+           fhir:link <http://projectcrucible.org/permalink/1>
+         ]
        ]
      ] [
        fhir:assert [
@@ -60,7 +72,10 @@
        fhir:operation [
          fhir:result [ fhir:v "pass" ] ;
          fhir:message [ fhir:v "POST Patient/fixture-patient-create" ] ;
-         fhir:detail [ fhir:v "http://projectcrucible.org/permalink/1"^^xsd:anyURI ]
+         fhir:detail [
+           fhir:v "http://projectcrucible.org/permalink/1"^^xsd:anyURI ;
+           fhir:link <http://projectcrucible.org/permalink/1>
+         ]
        ]
      ] [
        fhir:assert [
@@ -78,7 +93,10 @@
        fhir:operation [
          fhir:result [ fhir:v "pass" ] ;
          fhir:message [ fhir:v "GET Patient/fixture-patient-create" ] ;
-         fhir:detail [ fhir:v "http://projectcrucible.org/permalink/2"^^xsd:anyURI ]
+         fhir:detail [
+           fhir:v "http://projectcrucible.org/permalink/2"^^xsd:anyURI ;
+           fhir:link <http://projectcrucible.org/permalink/2>
+         ]
        ]
      ] [
        fhir:assert [
@@ -141,7 +159,10 @@
        fhir:operation [
          fhir:result [ fhir:v "pass" ] ;
          fhir:message [ fhir:v "DELETE Patient/fixture-patient-create." ] ;
-         fhir:detail [ fhir:v "http://projectcrucible.org/permalink/3"^^xsd:anyURI ]
+         fhir:detail [
+           fhir:v "http://projectcrucible.org/permalink/3"^^xsd:anyURI ;
+           fhir:link <http://projectcrucible.org/permalink/3>
+         ]
        ]
      ] )
   ] . # 

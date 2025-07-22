@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "composition-example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "Zika Artifacts" ]
   ] ) ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
@@ -78,7 +84,10 @@
   ] [
      fhir:type [ fhir:v "derived-from" ] ;
      fhir:document [
-       fhir:url [ fhir:v "https://www.cdc.gov/mmwr/volumes/65/wr/mm6539e1.htm?s_cid=mm6539e1_w"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://www.cdc.gov/mmwr/volumes/65/wr/mm6539e1.htm?s_cid=mm6539e1_w"^^xsd:anyURI ;
+         fhir:link <https://www.cdc.gov/mmwr/volumes/65/wr/mm6539e1.htm?s_cid=mm6539e1_w>
+       ]
      ]
   ] ) . # 
 

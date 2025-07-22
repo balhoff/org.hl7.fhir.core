@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "100153"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,13 +24,19 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Oral Health Claim</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ;
+       fhir:link <http://happyvalley.com/claim>
+     ] ;
      fhir:value [ fhir:v "12355" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "oral" ]
      ] )
   ] ; # 
@@ -74,7 +83,10 @@
      fhir:diagnosis [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/sid/icd-10>
+         ] ;
          fhir:code [ fhir:v "K07.3" ] #   <code value=\"123457\"\/>  
        ] )
      ]
@@ -93,7 +105,10 @@
      fhir:diagnosisSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/oralservicecodes>
+         ] ;
          fhir:code [ fhir:v "ORTHPLAN" ]
        ] )
      ] ;
@@ -113,7 +128,10 @@
        fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "ORTHOEXAM" ]
          ] )
        ] ; #   Exam Fee  
@@ -129,7 +147,10 @@
        fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "ORTHODIAG" ]
          ] )
        ] ; #   Diagnostic Fee  
@@ -145,7 +166,10 @@
        fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "ORTHOINITIAL" ]
          ] )
        ] ; #   Initial Payment  
@@ -161,7 +185,10 @@
        fhir:sequence [ fhir:v "4"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "ORTHOMONTHS" ]
          ] )
        ] ; #   Duration in Months  
@@ -172,7 +199,10 @@
        fhir:sequence [ fhir:v "5"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "ORTHOPERIODIC" ]
          ] )
        ] ; #   Periodic Payments  
@@ -193,7 +223,10 @@
      fhir:careTeamSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/oralservicecodes>
+         ] ;
          fhir:code [ fhir:v "21211" ]
        ] )
      ] ;
@@ -213,14 +246,20 @@
        fhir:site ( [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://fdi.org/fhir/oraltoothcodes"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://fdi.org/fhir/oraltoothcodes"^^xsd:anyURI ;
+               fhir:link <http://fdi.org/fhir/oraltoothcodes>
+             ] ;
              fhir:code [ fhir:v "21" ]
            ] )
          ]
        ] ) ;
        fhir:subSite ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://fdi.org/fhir/oralsurfacecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://fdi.org/fhir/oralsurfacecodes"^^xsd:anyURI ;
+             fhir:link <http://fdi.org/fhir/oralsurfacecodes>
+           ] ;
            fhir:code [ fhir:v "L" ]
          ] )
        ] )
@@ -230,7 +269,10 @@
      fhir:careTeamSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/oralservicecodes>
+         ] ;
          fhir:code [ fhir:v "27211" ]
        ] )
      ] ;
@@ -250,7 +292,10 @@
        fhir:site ( [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://fdi.org/fhir/oraltoothcodes"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://fdi.org/fhir/oraltoothcodes"^^xsd:anyURI ;
+               fhir:link <http://fdi.org/fhir/oraltoothcodes>
+             ] ;
              fhir:code [ fhir:v "36" ]
            ] )
          ]
@@ -260,7 +305,10 @@
        fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "27211" ]
          ] )
        ] ;
@@ -276,7 +324,10 @@
        fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/oralservicecodes"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/oralservicecodes>
+           ] ;
            fhir:code [ fhir:v "lab" ]
          ] )
        ] ;

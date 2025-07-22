@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "2"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
   ] ) ; # 
   fhir:status [ fhir:v "suspended"] ; # 
   fhir:operationalStatus [
-     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0116"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://terminology.hl7.org/CodeSystem/v2-0116"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/CodeSystem/v2-0116>
+     ] ;
      fhir:code [ fhir:v "H" ] ;
      fhir:display [ fhir:v "Housekeeping" ]
   ] ; # 
@@ -35,7 +41,10 @@
   fhir:mode [ fhir:v "instance"] ; # 
   fhir:type ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+       ] ;
        fhir:code [ fhir:v "RNEU" ] ;
        fhir:display [ fhir:v "Neuroradiology unit" ]
      ] )
@@ -48,7 +57,10 @@
   ] ) ; # 
   fhir:form [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/location-physical-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/location-physical-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/location-physical-type>
+       ] ;
        fhir:code [ fhir:v "ro" ] ;
        fhir:display [ fhir:v "Room" ]
      ] )

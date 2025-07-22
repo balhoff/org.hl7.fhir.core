@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "3a0707d3-549e-4467-b8b8-5a2ab3800efe"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -29,10 +32,16 @@
      fhir:fullUrl [ fhir:v "urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3"^^xsd:anyURI ] ;
      fhir:resource ( <urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Patient/pat1"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://acme.com/ehr/fhir/Patient/pat1"^^xsd:anyURI ;
+       fhir:link <http://acme.com/ehr/fhir/Patient/pat1>
+     ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/Patient/pat1> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Patient/pat12"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://acme.com/ehr/fhir/Patient/pat12"^^xsd:anyURI ;
+       fhir:link <http://acme.com/ehr/fhir/Patient/pat12>
+     ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/Patient/pat12> )
   ] ) . # 
 
@@ -44,13 +53,17 @@
   ] ; # 
   fhir:event [
      a fhir:Coding ;
-     fhir:system [ fhir:v "http://example.org/fhir/message-events"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/fhir/message-events"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/message-events>
+     ] ;
      fhir:code [ fhir:v "patient-link" ]
   ] ; # 
   fhir:source [
      fhir:endpoint [
        a fhir:url ;
-       fhir:v "http://acme.com/ehr/fhir"^^xsd:anyURI
+       fhir:v "http://acme.com/ehr/fhir"^^xsd:anyURI ;
+       fhir:link <http://acme.com/ehr/fhir>
      ]
   ] ; # 
   fhir:response [
@@ -100,7 +113,10 @@
      fhir:use [ fhir:v "usual" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
          fhir:code [ fhir:v "MR" ]
        ] )
      ] ;
@@ -117,7 +133,10 @@
   fhir:contact ( [
      fhir:relationship ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/patient-contact-relationship"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/patient-contact-relationship"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/patient-contact-relationship>
+         ] ;
          fhir:code [ fhir:v "E" ]
        ] )
      ] ) ;
@@ -154,7 +173,10 @@
      fhir:use [ fhir:v "usual" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
          fhir:code [ fhir:v "MR" ]
        ] )
      ] ;
@@ -170,11 +192,17 @@
   fhir:gender [
      fhir:v "other" ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://example.org/Profile/administrative-status"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://example.org/Profile/administrative-status"^^xsd:anyURI ;
+         fhir:link <http://example.org/Profile/administrative-status>
+       ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0001"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v2-0001"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v2-0001>
+           ] ;
            fhir:code [ fhir:v "A" ] ;
            fhir:display [ fhir:v "Ambiguous" ]
          ] )

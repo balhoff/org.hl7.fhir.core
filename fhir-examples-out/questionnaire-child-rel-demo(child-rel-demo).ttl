@@ -13,7 +13,10 @@
      fhir:versionId [ fhir:v "1" ] ;
      fhir:lastUpdated [ fhir:v "2023-03-03T03:05:07.9531803+00:00"^^xsd:dateTime ] ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Questionnaire</b><a name=\"child-rel-demo\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Questionnaire \"child-rel-demo\" Version \"1\" Updated \"2023-03-03T03:05:07.9531803Z\" </p></div><p><b>url</b>: <code>http://example.org/Questionnaire/child-rel-demo</code></p><p><b>title</b>: Demo form on R5 spec QR page</p><p><b>status</b>: draft</p><blockquote><p><b>item</b></p><p><b>linkId</b>: grp1</p><p><b>text</b>: grp1</p><p><b>type</b>: group</p><p><b>required</b>: true</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p><p><b>linkId</b>: grp2</p><p><b>text</b>: grp2</p><p><b>type</b>: group</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: Q3</p><p><b>text</b>: Q3</p><p><b>type</b>: string</p><p><b>required</b>: true</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://example.org/Questionnaire/child-rel-demo"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://example.org/Questionnaire/child-rel-demo"^^xsd:anyURI ;
+     fhir:link <http://example.org/Questionnaire/child-rel-demo>
+  ] ; # 
   fhir:title [ fhir:v "Demo form on R5 spec QR page"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:item ( [

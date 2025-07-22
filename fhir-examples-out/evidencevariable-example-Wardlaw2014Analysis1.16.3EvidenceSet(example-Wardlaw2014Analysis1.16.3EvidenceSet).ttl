@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-Wardlaw2014Analysis1.16.3EvidenceSet"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -33,7 +36,10 @@
      fhir:display [ fhir:v "Analysis 1.16.3 from Wardlaw 2014" ] ;
      fhir:citation [ fhir:v "Wardlaw JM, Murray V, Berge E, del Zoppo GJ. Thrombolysis for acute ischaemic stroke. Cochrane Database Syst Rev. 2014 Jul 29(7):CD000213. PMID 25072528" ] ;
      fhir:document [
-       fhir:url [ fhir:v "https://doi.org/10.1002/14651858.CD000213.pub3"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://doi.org/10.1002/14651858.CD000213.pub3"^^xsd:anyURI ;
+         fhir:link <https://doi.org/10.1002/14651858.CD000213.pub3>
+       ]
      ]
   ] ) ; # 
   fhir:actual [ fhir:v true] ; # 

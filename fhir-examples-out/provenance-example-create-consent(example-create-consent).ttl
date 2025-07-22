@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-create-consent"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
   fhir:recorded [ fhir:v "2021-09-10T07:08:21.722+00:00"^^xsd:dateTime] ; # 
   fhir:activity [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-DataOperation"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-DataOperation"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-DataOperation>
+       ] ;
        fhir:code [ fhir:v "CREATE" ] ;
        fhir:display [ fhir:v "create" ]
      ] )
@@ -39,7 +45,10 @@
   fhir:agent ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/provenance-participant-type>
+         ] ;
          fhir:code [ fhir:v "assembler" ] ;
          fhir:display [ fhir:v "Assembler" ]
        ] )

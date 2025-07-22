@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example-pgx-1"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -30,7 +33,10 @@
      fhir:coordinateSystem [
        fhir:coding ( [
          a loinc:LA30100-4 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "LA30100-4" ] ;
          fhir:display [ fhir:v "0-based interval counting" ]
        ] )
@@ -39,7 +45,10 @@
        fhir:sequence [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "http://www.ncbi.nlm.nih.gov/nuccore"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://www.ncbi.nlm.nih.gov/nuccore"^^xsd:anyURI ;
+             fhir:link <http://www.ncbi.nlm.nih.gov/nuccore>
+           ] ;
            fhir:code [ fhir:v "NG_007726.3" ]
          ] )
        ] ;

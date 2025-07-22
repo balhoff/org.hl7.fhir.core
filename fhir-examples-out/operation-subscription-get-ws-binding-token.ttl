@@ -14,19 +14,28 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>URL: [base]/Subscription/$get-ws-binding-token</p>\n      <p>URL: [base]/Subscription/[id]/$get-ws-binding-token</p>\n      <p>Parameters</p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Use</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Scope</b>\n          </td>\n          <td>\n            <b>Cardinality</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Binding</b>\n          </td>\n          <td>\n            <b>Documentation</b>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>id</td>\n          <td>type</td>\n          <td>0..*</td>\n          <td>\n            <a href=\"datatypes.html#id\">id</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>At the Instance level, this parameter is ignored. At the Resource level, one or more parameters containing a FHIR id for a Subscription to get a token for. In the absence of any specified ids, the server may either return a token for all Subscriptions available to the caller with a channel-type of websocket or fail the request.</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>token</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"datatypes.html#string\">string</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>An access token that a client may use to show authorization during a websocket connection. The security details of the token are implementation-dependent and beyond the scope of this operation definition.</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>expiration</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"datatypes.html#dateTime\">dateTime</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The date and time this token is valid until.</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>subscription</td>\n          <td/>\n          <td>0..*</td>\n          <td>\n            <a href=\"datatypes.html#string\">string</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The subscriptions this token is valid for.</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>websocket-url</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"datatypes.html#url\">url</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The URL the client should use to connect to Websockets.</p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
      fhir:value [
        a fhir:integer ;
        fhir:v 2
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
      fhir:value [
        a fhir:code ;
        fhir:v "trial-use"
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-get-ws-binding-token"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-get-ws-binding-token"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/OperationDefinition/Subscription-get-ws-binding-token>
+  ] ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "GetWsBindingToken"] ; # 
   fhir:title [ fhir:v "Get a binding token for use in a websocket connection"] ; # 
@@ -47,7 +56,10 @@
   fhir:description [ fhir:v "This operation is used to get a token for a websocket client to use in order to bind to one or more subscriptions."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:link <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
        fhir:code [ fhir:v "001" ] ;
        fhir:display [ fhir:v "World" ]
      ] )

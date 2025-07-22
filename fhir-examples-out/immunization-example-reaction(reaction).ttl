@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "reaction"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
   fhir:status [ fhir:v "completed"] ; # 
   fhir:vaccineCode [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/sid/cvx>
+       ] ;
        fhir:code [ fhir:v "175" ]
      ] ) ;
      fhir:text [ fhir:v "Rabies - IM Diploid cell culture" ]
@@ -59,27 +65,39 @@
   ] ; # 
   fhir:site [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActSite"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActSite"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActSite>
+       ] ;
        fhir:code [ fhir:v "LA" ] ;
        fhir:display [ fhir:v "left arm" ]
      ] )
   ] ; # 
   fhir:route [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration>
+       ] ;
        fhir:code [ fhir:v "IM" ] ;
        fhir:display [ fhir:v "Injection, intramuscular" ]
      ] )
   ] ; # 
   fhir:doseQuantity [
      fhir:value [ fhir:v "5"^^xsd:decimal ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "mg" ]
   ] ; # 
   fhir:performer ( [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0443>
+         ] ;
          fhir:code [ fhir:v "OP" ]
        ] )
      ] ;
@@ -90,7 +108,10 @@
   ] [
      fhir:function [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0443>
+         ] ;
          fhir:code [ fhir:v "AP" ]
        ] )
      ] ;

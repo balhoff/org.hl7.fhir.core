@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "stop-smoking"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
   fhir:lifecycleStatus [ fhir:v "completed"] ; # 
   fhir:achievementStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-achievement"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/goal-achievement"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/goal-achievement>
+       ] ;
        fhir:code [ fhir:v "achieved" ] ;
        fhir:display [ fhir:v "Achieved" ]
      ] ) ;
@@ -49,7 +55,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:8517006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "8517006" ] ;
          fhir:display [ fhir:v "Ex-smoker (finding)" ]
        ] ) ;

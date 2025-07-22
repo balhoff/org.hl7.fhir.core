@@ -14,19 +14,28 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>URL: [base]/DocumentReference/$generate</p>\n      <p>Parameters</p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Use</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Scope</b>\n          </td>\n          <td>\n            <b>Cardinality</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Binding</b>\n          </td>\n          <td>\n            <b>Documentation</b>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>url</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"datatypes.html#uri\">uri</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The URL to the source document. This may be a general URL or a Binary or a Composition or a Bundle.</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>persist</td>\n          <td/>\n          <td>0..1</td>\n          <td>\n            <a href=\"datatypes.html#boolean\">boolean</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>Whether to store the document at the document end-point (/Document) or not, once it is generated (default is for the server to decide).</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>return</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"bundle.html\">Bundle</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The bundle type is \"searchset\"containing \n                <a href=\"documentreference.html\">DocumentReference</a> resource and may include a Binary. If the input url refers to another server, it is at the discretion of the server whether to retrieve it or return an error.\n              </p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div>\n        <p>The server either returns a search result containing a single document reference,\nor it returns an error.\nIf the URI refers to another server, it is at the discretion of the\nserver whether to retrieve it or return an error.</p>\n\n      </div>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
      fhir:value [
        a fhir:integer ;
        fhir:v 3
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
      fhir:value [
        a fhir:code ;
        fhir:v "trial-use"
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/OperationDefinition/DocumentReference-generate"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/OperationDefinition/DocumentReference-generate"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/OperationDefinition/DocumentReference-generate>
+  ] ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Generate"] ; # 
   fhir:title [ fhir:v "Generate a DocumentReference from a document"] ; # 
@@ -47,7 +56,10 @@
   fhir:description [ fhir:v "A client can ask a server to generate a document reference from a document.\nThe server reads the existing document and generates a matching DocumentReference\nresource, or returns one it has previously generated. Servers may be able to \nreturn or generate document references for the following types of content:"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:link <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
        fhir:code [ fhir:v "001" ] ;
        fhir:display [ fhir:v "World" ]
      ] )

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,7 +26,10 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:role [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://ema.europa.eu/example/ingredientRole"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://ema.europa.eu/example/ingredientRole"^^xsd:anyURI ;
+         fhir:link <http://ema.europa.eu/example/ingredientRole>
+       ] ;
        fhir:code [ fhir:v "ActiveBase" ]
      ] )
   ] ; # 
@@ -37,7 +43,10 @@
      fhir:code [
        fhir:concept [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://ema.europa.eu/example/substance"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://ema.europa.eu/example/substance"^^xsd:anyURI ;
+             fhir:link <http://ema.europa.eu/example/substance>
+           ] ;
            fhir:code [ fhir:v "EQUIXABAN" ]
          ] )
        ]
@@ -48,13 +57,19 @@
          fhir:numerator [
            fhir:value [ fhir:v "50"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "mg" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "mg" ]
          ] ;
          fhir:denominator [
            fhir:value [ fhir:v "1"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "tablet" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "{tablet}" ]
          ]
        ] ; #    a single strength is commonly expressed in two ways: \n				 presentation - per item (e.g. per tablet), \n				 and concentration - per unit of measure (usually with a unitary demoninator)   ,    these are not different strengths - and have the same real value - but are different ways of expressing the same single strength   ,    presentation is meant for humans\/consumers, concentration is meant for calculations\/experts   
@@ -63,13 +78,19 @@
          fhir:numerator [
            fhir:value [ fhir:v "5"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "mg" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "mg" ]
          ] ; #    5mg\/1mg (which means - because the presentation is 50mg\/tablet - it must be a 10mg tablet)   
          fhir:denominator [
            fhir:value [ fhir:v "1"^^xsd:decimal ] ; #    since this is for caculations, this is normally \"1\", a unitary ratio   
            fhir:unit [ fhir:v "mg" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "mg" ]
          ]
        ] ;
@@ -77,7 +98,10 @@
          fhir:substance [
            fhir:concept [
              fhir:coding ( [
-               fhir:system [ fhir:v "http://ema.europa.eu/example/substance"^^xsd:anyURI ] ;
+               fhir:system [
+                 fhir:v "http://ema.europa.eu/example/substance"^^xsd:anyURI ;
+                 fhir:link <http://ema.europa.eu/example/substance>
+               ] ;
                fhir:code [ fhir:v "EQUIXABAN-SULPHATE" ]
              ] )
            ]
@@ -87,13 +111,19 @@
            fhir:numerator [
              fhir:value [ fhir:v 5.03 ] ;
              fhir:unit [ fhir:v "mg" ] ;
-             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:link <http://unitsofmeasure.org>
+             ] ;
              fhir:code [ fhir:v "mg" ]
            ] ;
            fhir:denominator [
              fhir:value [ fhir:v "1"^^xsd:decimal ] ;
              fhir:unit [ fhir:v "mg" ] ;
-             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:link <http://unitsofmeasure.org>
+             ] ;
              fhir:code [ fhir:v "mg" ]
            ]
          ]

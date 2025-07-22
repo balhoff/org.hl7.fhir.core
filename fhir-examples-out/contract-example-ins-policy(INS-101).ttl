@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "INS-101"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n         <p>Plan: Your Choice Split Copay (Non-Grandfathered)</p>\n         <p>Certificate Form Number: YCSCWLN (01-2017)</p>\n      </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://xyz-insurance.com/forms"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://xyz-insurance.com/forms"^^xsd:anyURI ;
+       fhir:link <http://xyz-insurance.com/forms>
+     ] ;
      fhir:value [ fhir:v "YCSCWLN(01-2017)" ]
   ] ) ; # 
   fhir:applies [
@@ -33,7 +39,10 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/contract-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/contract-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/contract-type>
+       ] ;
        fhir:code [ fhir:v "healthinsurance" ] ;
        fhir:display [ fhir:v "Health Insurance" ]
      ] )
@@ -62,7 +71,10 @@
            fhir:text [ fhir:v "Ford Bobcat" ]
          ] ;
          fhir:identifier [
-           fhir:system [ fhir:v "http://somewhere.motor-vehicle.com/vin"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://somewhere.motor-vehicle.com/vin"^^xsd:anyURI ;
+             fhir:link <http://somewhere.motor-vehicle.com/vin>
+           ] ;
            fhir:value [ fhir:v "XXSVT34-7665t952236" ]
          ] ;
          fhir:effectiveTime [ fhir:v "1995"^^xsd:gYear ] ;

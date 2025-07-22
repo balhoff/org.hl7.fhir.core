@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "EB3500"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,13 +24,19 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the ExplanationOfBenefit</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://www.BenefitsInc.com/fhir/explanationofbenefit"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.BenefitsInc.com/fhir/explanationofbenefit"^^xsd:anyURI ;
+       fhir:link <http://www.BenefitsInc.com/fhir/explanationofbenefit>
+     ] ;
      fhir:value [ fhir:v "987654321" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "oral" ]
      ] )
   ] ; # 
@@ -52,7 +61,10 @@
   fhir:payee [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/payeetype"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/payeetype"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/payeetype>
+         ] ;
          fhir:code [ fhir:v "provider" ]
        ] )
      ] ;
@@ -94,7 +106,10 @@
      fhir:careTeamSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-USCLS"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ex-USCLS"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ex-USCLS>
+         ] ;
          fhir:code [ fhir:v "1205" ]
        ] )
      ] ;
@@ -205,7 +220,10 @@
          fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
          fhir:productOrService [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-USCLS"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/ex-USCLS"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/ex-USCLS>
+             ] ;
              fhir:code [ fhir:v "1205" ]
            ] )
          ] ;

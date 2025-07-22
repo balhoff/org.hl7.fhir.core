@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "788ca455-e11b1a59"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -55,7 +58,10 @@
      fhir:population ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/measure-population"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/measure-population>
+           ] ;
            fhir:code [ fhir:v "initial-population" ] ;
            fhir:display [ fhir:v "Initial Population" ]
          ] )

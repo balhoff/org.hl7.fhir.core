@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "examplereq"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,13 +25,19 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Brian MRI results discussion</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/sampleappointment-identifier"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/sampleappointment-identifier"^^xsd:anyURI ;
+       fhir:link <http://example.org/sampleappointment-identifier>
+     ] ;
      fhir:value [ fhir:v "123" ]
   ] ) ; # 
   fhir:status [ fhir:v "proposed"] ; # 
   fhir:serviceCategory ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://example.org/service-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/service-category"^^xsd:anyURI ;
+         fhir:link <http://example.org/service-category>
+       ] ;
        fhir:code [ fhir:v "gp" ] ;
        fhir:display [ fhir:v "General Practice" ]
      ] )
@@ -36,14 +45,20 @@
   fhir:specialty ( [
      fhir:coding ( [
        a sct:394814009 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "394814009" ] ;
        fhir:display [ fhir:v "General practice" ]
      ] )
   ] ) ; # 
   fhir:appointmentType [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0276"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0276"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v2-0276>
+       ] ;
        fhir:code [ fhir:v "WALKIN" ] ;
        fhir:display [ fhir:v "A previously unscheduled walk-in visit" ]
      ] )
@@ -52,7 +67,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:413095006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "413095006" ]
        ] ) ;
        fhir:text [ fhir:v "Clinical Review" ]
@@ -88,7 +106,10 @@
   ] [
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
+         ] ;
          fhir:code [ fhir:v "ATND" ]
        ] )
      ] ) ;

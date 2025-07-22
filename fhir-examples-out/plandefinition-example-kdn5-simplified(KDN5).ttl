@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "KDN5"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
      fhir:product [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "12574" ] ;
          fhir:display [ fhir:v "gemcitabine" ]
        ] ) ;
@@ -47,7 +53,10 @@
        fhir:doseAndRate ( [
          fhir:type [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+             ] ;
              fhir:code [ fhir:v "ordered" ] ;
              fhir:display [ fhir:v "Ordered" ]
            ] )
@@ -66,7 +75,10 @@
      fhir:product [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+           fhir:link <http://www.nlm.nih.gov/research/umls/rxnorm>
+         ] ;
          fhir:code [ fhir:v "40048" ] ;
          fhir:display [ fhir:v "Carboplatin" ]
        ] ) ;
@@ -86,7 +98,10 @@
        fhir:doseAndRate ( [
          fhir:type [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+             ] ;
              fhir:code [ fhir:v "ordered" ] ;
              fhir:display [ fhir:v "Ordered" ]
            ] )
@@ -94,7 +109,10 @@
          fhir:dose [
            a fhir:Quantity ;
            fhir:extension ( [
-             fhir:url [ fhir:v "http://example.org/fhir/AUC-dose"^^xsd:anyURI ] ;
+             fhir:url [
+               fhir:v "http://example.org/fhir/AUC-dose"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/AUC-dose>
+             ] ;
              fhir:value [
                a fhir:integer ;
                fhir:v 5
@@ -105,7 +123,10 @@
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/ordertemplates"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/ordertemplates"^^xsd:anyURI ;
+       fhir:link <http://example.org/ordertemplates>
+     ] ;
      fhir:value [ fhir:v "KDN5" ]
   ] ) ; # 
   fhir:version [ fhir:v "1"] ; # 
@@ -120,14 +141,20 @@
   fhir:description [ fhir:v "Gemcitabine/CARBOplatin"] ; # 
   fhir:useContext ( [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/usagecontext-group>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "A"
        ]
      ] ) ;
      fhir:code [
-       fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ;
+         fhir:link <http://example.org/fhir/CodeSystem/indications>
+       ] ;
        fhir:code [ fhir:v "treamentSetting-or-diseaseStatus" ]
      ] ;
      fhir:value [
@@ -136,14 +163,20 @@
      ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/usagecontext-group>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "A"
        ]
      ] ) ;
      fhir:code [
-       fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ;
+         fhir:link <http://example.org/fhir/CodeSystem/indications>
+       ] ;
        fhir:code [ fhir:v "disease-or-histology" ]
      ] ;
      fhir:value [
@@ -152,14 +185,20 @@
      ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/usagecontext-group>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "A"
        ]
      ] ) ;
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "focus" ]
      ] ;
      fhir:value [
@@ -168,14 +207,20 @@
      ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/usagecontext-group>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "B"
        ]
      ] ) ;
      fhir:code [
-       fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ;
+         fhir:link <http://example.org/fhir/CodeSystem/indications>
+       ] ;
        fhir:code [ fhir:v "treatmentSetting-or-diseaseStatus" ]
      ] ;
      fhir:value [
@@ -184,14 +229,20 @@
      ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/usagecontext-group>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "B"
        ]
      ] ) ;
      fhir:code [
-       fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/fhir/CodeSystem/indications"^^xsd:anyURI ;
+         fhir:link <http://example.org/fhir/CodeSystem/indications>
+       ] ;
        fhir:code [ fhir:v "disease-or-histology" ]
      ] ;
      fhir:value [
@@ -200,14 +251,20 @@
      ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/usagecontext-group"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/usagecontext-group>
+       ] ;
        fhir:value [
          a fhir:string ;
          fhir:v "B"
        ]
      ] ) ;
      fhir:code [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/usage-context-type>
+       ] ;
        fhir:code [ fhir:v "focus" ]
      ] ;
      fhir:value [
@@ -225,13 +282,19 @@
      fhir:type [ fhir:v "derived-from" ] ;
      fhir:display [ fhir:v "NCCN Guidelines for Kidney Cancer. V.2.2016" ] ;
      fhir:document [
-       fhir:url [ fhir:v "http://www.example.org/professionals/physician_gls/PDF/kidney.pdf"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://www.example.org/professionals/physician_gls/PDF/kidney.pdf"^^xsd:anyURI ;
+         fhir:link <http://www.example.org/professionals/physician_gls/PDF/kidney.pdf>
+       ]
      ]
   ] [
      fhir:type [
        fhir:v "citation" ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://example.org/fhir/regimenReferenceType"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://example.org/fhir/regimenReferenceType"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/regimenReferenceType>
+         ] ;
          fhir:value [
            a fhir:code ;
            fhir:v "a"
@@ -240,7 +303,10 @@
      ] ;
      fhir:citation [ fhir:v "Oudard S, et al. J Urol. 2007;177(5):1698-702" ] ;
      fhir:document [
-       fhir:url [ fhir:v "http://www.ncbi.nlm.nih.gov/pubmed/17437788"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://www.ncbi.nlm.nih.gov/pubmed/17437788"^^xsd:anyURI ;
+         fhir:link <http://www.ncbi.nlm.nih.gov/pubmed/17437788>
+       ]
      ]
   ] ) ; # 
   fhir:action ( [
@@ -264,7 +330,10 @@
            fhir:action ( [
              fhir:id [ fhir:v "action-1" ] ;
              fhir:extension ( [
-               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ] ;
+               fhir:url [
+                 fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle>
+               ] ;
                fhir:extension ( [
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [
@@ -287,7 +356,10 @@
            ] [
              fhir:id [ fhir:v "action-2" ] ;
              fhir:extension ( [
-               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ] ;
+               fhir:url [
+                 fhir:v "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"^^xsd:anyURI ;
+                 fhir:link <http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle>
+               ] ;
                fhir:extension ( [
                  fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
                  fhir:value [

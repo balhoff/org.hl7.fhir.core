@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "yesnodontknow"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -20,7 +23,10 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>This value set contains 3 concepts</p>\n      <table class=\"codes\">\n        <tr>\n          <td style=\"white-space:nowrap\">\n            <b>Code</b>\n          </td>\n          <td>\n            <b>System</b>\n          </td>\n          <td>\n            <b>Display</b>\n          </td>\n          <td>\n            <b>Definition</b>\n          </td>\n        </tr>\n        <tr>\n          <td style=\"white-space:nowrap\">\n            <a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-Y\"> </a>  \n            <a href=\"http://terminology.hl7.org/5.1.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a>\n          </td>\n          <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>\n          <td>Yes</td>\n          <td>\n            <div>\n              <p>Yes</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td style=\"white-space:nowrap\">\n            <a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-N\"> </a>  \n            <a href=\"http://terminology.hl7.org/5.1.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a>\n          </td>\n          <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>\n          <td>No</td>\n          <td>\n            <div>\n              <p>No</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td style=\"white-space:nowrap\">\n            <a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-unknown\"> </a>  \n            <a href=\"http://terminology.hl7.org/5.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-unknown\">asked-unknown</a>\n          </td>\n          <td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td>\n          <td>Don't know</td>\n          <td>\n            <div>\n              <p>The source was asked but does not know the value.</p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/ValueSet/yesnodontknow"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/ValueSet/yesnodontknow"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/yesnodontknow>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.3149" ]
@@ -38,7 +44,10 @@
          fhir:link <http://terminology.hl7.org/ValueSet/v2-0136>
        ] )
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/data-absent-reason>
+       ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "asked-unknown" ] ;
          fhir:display [ fhir:v "Don't know" ]
@@ -49,15 +58,24 @@
      fhir:identifier [ fhir:v "urn:uuid:bf99fe50-2c2b-41ad-bd63-bee6919810b4"^^xsd:anyURI ] ;
      fhir:timestamp [ fhir:v "2015-07-14T10:00:00Z"^^xsd:dateTime ] ;
      fhir:contains ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v2-0532>
+       ] ;
        fhir:code [ fhir:v "Y" ] ;
        fhir:display [ fhir:v "Yes" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v2-0532>
+       ] ;
        fhir:code [ fhir:v "N" ] ;
        fhir:display [ fhir:v "No" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/data-absent-reason>
+       ] ;
        fhir:code [ fhir:v "asked-unknown" ] ;
        fhir:display [ fhir:v "Don't know" ]
      ] )

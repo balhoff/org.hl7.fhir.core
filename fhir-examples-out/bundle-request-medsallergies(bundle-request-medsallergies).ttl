@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "bundle-request-medsallergies"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -20,27 +23,42 @@
   fhir:entry ( [
      fhir:request [
        fhir:method [ fhir:v "GET" ] ;
-       fhir:url [ fhir:v "/Patient/example"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "/Patient/example"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir//Patient/example>
+       ]
      ]
   ] [
      fhir:request [
        fhir:method [ fhir:v "GET" ] ;
-       fhir:url [ fhir:v "/MedicationStatement?patient=example&_list=$current-medications"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "/MedicationStatement?patient=example&_list=$current-medications"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir//MedicationStatement?patient=example&_list=$current-medications>
+       ]
      ]
   ] [
      fhir:request [
        fhir:method [ fhir:v "GET" ] ;
-       fhir:url [ fhir:v "/AllergyIntolerance?patient=example&_list=$current-allergies"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "/AllergyIntolerance?patient=example&_list=$current-allergies"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir//AllergyIntolerance?patient=example&_list=$current-allergies>
+       ]
      ]
   ] [
      fhir:request [
        fhir:method [ fhir:v "GET" ] ;
-       fhir:url [ fhir:v "/Condition?patient=example&_list=$current-problems"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "/Condition?patient=example&_list=$current-problems"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir//Condition?patient=example&_list=$current-problems>
+       ]
      ]
   ] [
      fhir:request [
        fhir:method [ fhir:v "GET" ] ;
-       fhir:url [ fhir:v "/MedicationStatement?patient=example&notgiven:not=true"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "/MedicationStatement?patient=example&notgiven:not=true"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir//MedicationStatement?patient=example&notgiven:not=true>
+       ]
      ]
   ] ) . #   Each entry is used to represent a RESTful API request
 #       This request retrieves a single Patient resource  

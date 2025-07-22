@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "Nonin20601PulseOx"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,7 +26,10 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers>
+         ] ;
          fhir:code [ fhir:v "SYSID" ] ;
          fhir:display [ fhir:v "System Identifier" ]
        ] )
@@ -33,18 +39,30 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaDeviceIdentifiers>
+         ] ;
          fhir:code [ fhir:v "BTMAC" ] ;
          fhir:display [ fhir:v "Bluetooth Address" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "http://hl7.org/fhir/sid/eui-48"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://hl7.org/fhir/sid/eui-48"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/sid/eui-48>
+     ] ;
      fhir:value [ fhir:v "00-1C-05-00-78-25" ]
   ] ) ; # 
   fhir:udiCarrier ( [
      fhir:deviceIdentifier [ fhir:v "120343001125" ] ;
-     fhir:issuer [ fhir:v "http://hl7.org/fhir/NamingSystem/gs1-di"^^xsd:anyURI ] ;
-     fhir:jurisdiction [ fhir:v "http://hl7.org/fhir/NamingSystem/fda-udi"^^xsd:anyURI ] ;
+     fhir:issuer [
+       fhir:v "http://hl7.org/fhir/NamingSystem/gs1-di"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/NamingSystem/gs1-di>
+     ] ;
+     fhir:jurisdiction [
+       fhir:v "http://hl7.org/fhir/NamingSystem/fda-udi"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/NamingSystem/fda-udi>
+     ] ;
      fhir:carrierHRF [ fhir:v "(01)120343001125(21)0400007825" ] ;
      fhir:entryType [ fhir:v "unknown" ]
   ] ) ; # 
@@ -103,14 +121,20 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaPAN"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ContinuaPAN"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ContinuaPAN>
+         ] ;
          fhir:code [ fhir:v "4" ]
        ] )
      ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ASN1ToHL7>
+         ] ;
          fhir:code [ fhir:v "532354.0" ]
        ] ) ;
        fhir:text [ fhir:v "regulation-status" ]
@@ -118,7 +142,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0136>
+         ] ;
          fhir:code [ fhir:v "N" ]
        ] ) ;
        fhir:text [ fhir:v "Device is Regulated" ]
@@ -142,7 +169,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ASN1ToHL7>
+         ] ;
          fhir:code [ fhir:v "68219.0" ]
        ] ) ;
        fhir:text [ fhir:v "mds-time-capab-real-time-clock" ]
@@ -150,7 +180,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0136>
+         ] ;
          fhir:code [ fhir:v "Y" ]
        ] ) ;
        fhir:text [ fhir:v "real time clock supported" ]
@@ -158,7 +191,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ASN1ToHL7>
+         ] ;
          fhir:code [ fhir:v "68219.2" ]
        ] ) ;
        fhir:text [ fhir:v "mds-time-capab-set-clock" ]
@@ -166,7 +202,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0136>
+         ] ;
          fhir:code [ fhir:v "Y" ]
        ] ) ;
        fhir:text [ fhir:v "setting the time supported" ]
@@ -174,7 +213,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ASN1ToHL7"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ASN1ToHL7>
+         ] ;
          fhir:code [ fhir:v "68219.2" ]
        ] ) ;
        fhir:text [ fhir:v "mds-time-capab-relative-time" ]
@@ -182,7 +224,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0136"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0136>
+         ] ;
          fhir:code [ fhir:v "Y" ]
        ] ) ;
        fhir:text [ fhir:v "relative time supported" ]
@@ -198,7 +243,10 @@
      fhir:value [
        a fhir:Quantity ;
        fhir:value [ fhir:v "1000000"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "us" ]
      ]
   ] [
@@ -212,7 +260,10 @@
      fhir:value [
        a fhir:Quantity ;
        fhir:value [ fhir:v "1000000"^^xsd:decimal ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "us" ]
      ]
   ] ) . # 

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example004"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:27658006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "27658006" ] ;
          fhir:display [ fhir:v "Amoxicillin (product)" ]
        ] )
@@ -63,7 +69,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:260548002 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "260548002" ] ;
          fhir:display [ fhir:v "Oral" ]
        ] )
@@ -72,12 +81,18 @@
        fhir:numerator [
          fhir:value [ fhir:v "3"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "capsules" ] ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "385055001" ]
        ] ;
        fhir:denominator [
          fhir:value [ fhir:v "1"^^xsd:decimal ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "d" ]
        ]
      ] )
@@ -85,7 +100,10 @@
   fhir:adherence [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/CodeSystem/medication-statement-adherence"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/CodeSystem/medication-statement-adherence>
+         ] ;
          fhir:code [ fhir:v "not-taking" ] ;
          fhir:display [ fhir:v "Not Taking" ]
        ] )
@@ -93,7 +111,10 @@
      fhir:reason [
        fhir:coding ( [
          a sct:266710000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "266710000" ] ;
          fhir:display [ fhir:v "Drugs not taken/completed" ]
        ] )

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "77654"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the PaymentNotice</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://benefitsinc.com/paymentnotice"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://benefitsinc.com/paymentnotice"^^xsd:anyURI ;
+       fhir:link <http://benefitsinc.com/paymentnotice>
+     ] ;
      fhir:value [ fhir:v "776543" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -49,7 +55,10 @@
   ] ; # 
   fhir:recipient [
      fhir:identifier [
-       fhir:system [ fhir:v "http://regulators.gov"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://regulators.gov"^^xsd:anyURI ;
+         fhir:link <http://regulators.gov>
+       ] ;
        fhir:value [ fhir:v "AB123" ]
      ]
   ] ; # 
@@ -59,7 +68,10 @@
   ] ; # 
   fhir:paymentStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/paymentstatus"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/paymentstatus"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/paymentstatus>
+       ] ;
        fhir:code [ fhir:v "paid" ]
      ] )
   ] . # 

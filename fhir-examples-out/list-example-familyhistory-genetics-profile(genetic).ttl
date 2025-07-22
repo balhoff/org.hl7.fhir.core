@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "genetic"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,13 +31,19 @@
      a fhir:FamilyMemberHistory ;
      fhir:id [ fhir:v "1" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent>
+       ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:CodeableConcept ;
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+             ] ;
              fhir:code [ fhir:v "FTH" ] ;
              fhir:display [ fhir:v "father" ]
            ] )
@@ -57,7 +66,10 @@
      fhir:name [ fhir:v "Dave" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "FTH" ] ;
          fhir:display [ fhir:v "father" ]
        ] )
@@ -73,7 +85,10 @@
      ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MGRFTH" ] ;
          fhir:display [ fhir:v "maternal grandfather" ]
        ] )
@@ -82,13 +97,19 @@
      a fhir:FamilyMemberHistory ;
      fhir:id [ fhir:v "3" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent>
+       ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:CodeableConcept ;
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+             ] ;
              fhir:code [ fhir:v "MTH" ] ;
              fhir:display [ fhir:v "mother" ]
            ] )
@@ -110,7 +131,10 @@
      ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MTH" ] ;
          fhir:display [ fhir:v "mother" ]
        ] )
@@ -126,7 +150,10 @@
      ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "PGRMTH" ] ;
          fhir:display [ fhir:v "paternal grandmother" ]
        ] )
@@ -143,7 +170,10 @@
      fhir:name [ fhir:v "Eve" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "PAUNT" ] ;
          fhir:display [ fhir:v "paternal aunt" ]
        ] )
@@ -159,7 +189,10 @@
      ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MUNCLE" ] ;
          fhir:display [ fhir:v "maternal uncle" ]
        ] )
@@ -175,7 +208,10 @@
      ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "NSIS" ] ;
          fhir:display [ fhir:v "natural sister" ]
        ] )
@@ -184,13 +220,19 @@
      a fhir:FamilyMemberHistory ;
      fhir:id [ fhir:v "8" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent>
+       ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:CodeableConcept ;
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+             ] ;
              fhir:code [ fhir:v "MTH" ] ;
              fhir:display [ fhir:v "mother" ]
            ] )
@@ -213,7 +255,10 @@
      fhir:name [ fhir:v "Alice" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MCOUSN" ] ;
          fhir:display [ fhir:v "maternal cousin" ]
        ] )
@@ -224,7 +269,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:8670-2 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "8670-2" ] ;
        fhir:display [ fhir:v "History of family member diseases" ]
      ] )

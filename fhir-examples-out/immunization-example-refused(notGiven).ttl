@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "notGiven"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -23,14 +26,20 @@
   fhir:status [ fhir:v "not-done"] ; # 
   fhir:statusReason [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "MEDPREC" ] ;
        fhir:display [ fhir:v "medical precaution" ]
      ] )
   ] ; # 
   fhir:vaccineCode [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/sid/cvx>
+       ] ;
        fhir:code [ fhir:v "01" ] ;
        fhir:display [ fhir:v "DTP" ]
      ] )

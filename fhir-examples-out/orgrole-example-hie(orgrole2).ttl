@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "orgrole2"] ; #    describes the relationship between Monument HIE and Founding Fathers Memorial Hospital. Founding Fathers is a member of the HIE   
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
      fhir:type [
        fhir:text [ fhir:v "member hospital" ]
      ] ;
-     fhir:system [ fhir:v "http://example.org/www.monumentHIE.com"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/www.monumentHIE.com"^^xsd:anyURI ;
+       fhir:link <http://example.org/www.monumentHIE.com>
+     ] ;
      fhir:value [ fhir:v "hosp32" ] ;
      fhir:assigner [
        fhir:display [ fhir:v "Monument Health Information Exchange" ] #    <reference value=\"http:\/\/hl7.org\/fhir\/ig\/vhdir\/Organization\/monumentHIE\"\/>   
@@ -40,7 +46,10 @@
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/organization-role"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/organization-role"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/organization-role>
+       ] ;
        fhir:code [ fhir:v "member" ] ;
        fhir:display [ fhir:v "Member" ]
      ] ) ; #    Founding Fathers is a member of the HIE   

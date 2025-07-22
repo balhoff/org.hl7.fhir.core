@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "660152"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,13 +31,19 @@
      fhir:id [ fhir:v "device-lens" ]
   ] ) ; #   rest of the resource omitted for brevity  
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happysight.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happysight.com/claim"^^xsd:anyURI ;
+       fhir:link <http://happysight.com/claim>
+     ] ;
      fhir:value [ fhir:v "6612347" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "vision" ]
      ] )
   ] ; # 
@@ -110,33 +119,48 @@
      fhir:careTeamSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:revenue [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+         ] ;
          fhir:code [ fhir:v "0010" ] ;
          fhir:display [ fhir:v "Vision Clinic" ]
        ] )
      ] ;
      fhir:category [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+         ] ;
          fhir:code [ fhir:v "F6" ] ;
          fhir:display [ fhir:v "Vision Coverage" ]
        ] )
      ] ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+         ] ;
          fhir:code [ fhir:v "glasses" ]
        ] )
      ] ;
      fhir:modifier ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/modifiers>
+         ] ;
          fhir:code [ fhir:v "rooh" ]
        ] )
      ] ) ;
      fhir:programCode ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-programcode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ex-programcode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ex-programcode>
+         ] ;
          fhir:code [ fhir:v "none" ]
        ] )
      ] ) ;
@@ -156,27 +180,39 @@
        fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
        fhir:revenue [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+           ] ;
            fhir:code [ fhir:v "0010" ] ;
            fhir:display [ fhir:v "Vision Clinic" ]
          ] )
        ] ;
        fhir:category [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+           ] ;
            fhir:code [ fhir:v "F6" ] ;
            fhir:display [ fhir:v "Vision Coverage" ]
          ] )
        ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+           ] ;
            fhir:code [ fhir:v "frame" ]
          ] )
        ] ;
        fhir:modifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/modifiers>
+           ] ;
            fhir:code [ fhir:v "rooh" ]
          ] )
        ] ) ;
@@ -196,27 +232,39 @@
        fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
        fhir:revenue [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+           ] ;
            fhir:code [ fhir:v "0010" ] ;
            fhir:display [ fhir:v "Vision Clinic" ]
          ] )
        ] ;
        fhir:category [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+           ] ;
            fhir:code [ fhir:v "F6" ] ;
            fhir:display [ fhir:v "Vision Coverage" ]
          ] )
        ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+           ] ;
            fhir:code [ fhir:v "lens" ]
          ] )
        ] ;
        fhir:programCode ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-programcode"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/ex-programcode"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/ex-programcode>
+           ] ;
            fhir:code [ fhir:v "none" ]
          ] )
        ] ) ;
@@ -235,33 +283,48 @@
          fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
          fhir:revenue [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+             ] ;
              fhir:code [ fhir:v "0010" ] ;
              fhir:display [ fhir:v "Vision Clinic" ]
            ] )
          ] ;
          fhir:category [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+             ] ;
              fhir:code [ fhir:v "F6" ] ;
              fhir:display [ fhir:v "Vision Coverage" ]
            ] )
          ] ;
          fhir:productOrService [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+             ] ;
              fhir:code [ fhir:v "lens" ]
            ] )
          ] ;
          fhir:modifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/modifiers>
+             ] ;
              fhir:code [ fhir:v "rooh" ]
            ] )
          ] ) ;
          fhir:programCode ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-programcode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/ex-programcode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/ex-programcode>
+             ] ;
              fhir:code [ fhir:v "none" ]
            ] )
          ] ) ;
@@ -284,27 +347,39 @@
          fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
          fhir:revenue [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+             ] ;
              fhir:code [ fhir:v "0010" ] ;
              fhir:display [ fhir:v "Vision Clinic" ]
            ] )
          ] ;
          fhir:category [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+             ] ;
              fhir:code [ fhir:v "F6" ] ;
              fhir:display [ fhir:v "Vision Coverage" ]
            ] )
          ] ;
          fhir:productOrService [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+             ] ;
              fhir:code [ fhir:v "hardening" ]
            ] )
          ] ;
          fhir:modifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/modifiers>
+             ] ;
              fhir:code [ fhir:v "rooh" ]
            ] )
          ] ) ;
@@ -324,27 +399,39 @@
          fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
          fhir:revenue [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+             ] ;
              fhir:code [ fhir:v "0010" ] ;
              fhir:display [ fhir:v "Vision Clinic" ]
            ] )
          ] ;
          fhir:category [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+             ] ;
              fhir:code [ fhir:v "F6" ] ;
              fhir:display [ fhir:v "Vision Coverage" ]
            ] )
          ] ;
          fhir:productOrService [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+               fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+             ] ;
              fhir:code [ fhir:v "UV coating" ]
            ] )
          ] ;
          fhir:modifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/modifiers>
+             ] ;
              fhir:code [ fhir:v "rooh" ]
            ] )
          ] ) ;
@@ -365,21 +452,30 @@
        fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
        fhir:revenue [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/ex-revenue-center"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/ex-revenue-center>
+           ] ;
            fhir:code [ fhir:v "0010" ] ;
            fhir:display [ fhir:v "Vision Clinic" ]
          ] )
        ] ;
        fhir:category [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/benefit-subcategory"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/benefit-subcategory>
+           ] ;
            fhir:code [ fhir:v "F6" ] ;
            fhir:display [ fhir:v "Vision Coverage" ]
          ] )
        ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+           ] ;
            fhir:code [ fhir:v "fst" ]
          ] )
        ] ;

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "f201"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -70,11 +73,17 @@
   fhir:maritalStatus [
      fhir:coding ( [
        a sct:36629006 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "36629006" ] ;
        fhir:display [ fhir:v "Legally married" ]
      ] [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-MaritalStatus>
+       ] ;
        fhir:code [ fhir:v "M" ]
      ] ) #    Marital status of the person   
   ] ; # 
@@ -84,20 +93,32 @@
   ] ; # 
   fhir:photo ( [
      fhir:contentType [ fhir:v "image/jpeg" ] ;
-     fhir:url [ fhir:v "Binary/f006"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "Binary/f006"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/Binary/f006>
+     ]
   ] ) ; # 
   fhir:contact ( [
      fhir:relationship ( [
        fhir:coding ( [
          a sct:127850001 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "127850001" ] ;
          fhir:display [ fhir:v "Wife" ]
        ] [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0131>
+         ] ;
          fhir:code [ fhir:v "N" ]
        ] [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "WIFE" ]
        ] ) #    Indicates that the contact is the patient's wife   
      ] ) ; #    Contact of the patient   

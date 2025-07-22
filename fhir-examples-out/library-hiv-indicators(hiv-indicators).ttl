@@ -11,17 +11,26 @@
   fhir:id [ fhir:v "hiv-indicators"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
-  fhir:url [ fhir:v "http://ohie.org/Library/hiv-indicators"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://ohie.org/Library/hiv-indicators"^^xsd:anyURI ;
+     fhir:link <http://ohie.org/Library/hiv-indicators>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.17.1" ]
   ] [
-     fhir:system [ fhir:v "http://ohie.org/Library/"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://ohie.org/Library/"^^xsd:anyURI ;
+       fhir:link <http://ohie.org/Library/>
+     ] ;
      fhir:value [ fhir:v "hiv-indicators" ]
   ] ) ; # 
   fhir:version [ fhir:v "0.0.0"] ; # 
@@ -31,7 +40,10 @@
   fhir:experimental [ fhir:v true] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/library-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/library-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/library-type>
+       ] ;
        fhir:code [ fhir:v "logic-library" ] ;
        fhir:display [ fhir:v "Logic Library" ]
      ] )
@@ -41,7 +53,10 @@
   fhir:relatedArtifact ( [
      fhir:type [ fhir:v "derived-from" ] ;
      fhir:document [
-       fhir:url [ fhir:v "http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"^^xsd:anyURI ;
+         fhir:link <http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV>
+       ]
      ]
   ] ) ; # 
   fhir:content ( [

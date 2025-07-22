@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "genomicFileGroupAsSubject"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"genomicFile4\" </p></div><p><b>identifier</b>: id: 11114</p><p><b>status</b>: current</p><p><b>docStatus</b>: preliminary</p><p><b>subject</b>: <a href=\"Patient-denovoChild.html\">Patient/denovoChild: Child Junior Doe</a> \" DOE\"</p><p><b>description</b>: A sample Document Reference instance representing a generic genomic file that may ber used as input or output of a genomic analysis pipeline.</p><p><b>securityLabel</b>: Restricted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-Confidentiality.html\">Confidentiality</a>#R)</span></p><blockquote><p><b>content</b></p></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://www.somesystemabc.net/identifiers/files"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.somesystemabc.net/identifiers/files"^^xsd:anyURI ;
+       fhir:link <http://www.somesystemabc.net/identifiers/files>
+     ] ;
      fhir:value [ fhir:v "11115" ]
   ] ) ; # 
   fhir:status [ fhir:v "current"] ; # 
@@ -34,14 +40,20 @@
   fhir:description [ fhir:v "Combined VCF file of a Proband and Parents that may be used as input or output of a genomic analysis pipeline."] ; # 
   fhir:securityLabel ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-Confidentiality>
+       ] ;
        fhir:code [ fhir:v "R" ] ;
        fhir:display [ fhir:v "Restricted" ]
      ] )
   ] ) ; # 
   fhir:content ( [
      fhir:attachment [
-       fhir:url [ fhir:v "http://www.somesystemabc.net/identifiers/files/11115"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://www.somesystemabc.net/identifiers/files/11115"^^xsd:anyURI ;
+         fhir:link <http://www.somesystemabc.net/identifiers/files/11115>
+       ] ;
        fhir:title [ fhir:v "Combined VCF File of a Proband and Parents" ] ;
        fhir:creation [ fhir:v "2021-01-01T01:02:01+01:00"^^xsd:dateTime ]
      ]

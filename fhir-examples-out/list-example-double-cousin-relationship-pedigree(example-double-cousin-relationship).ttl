@@ -13,7 +13,10 @@
   fhir:id [ fhir:v "example-double-cousin-relationship"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -34,7 +37,10 @@
      fhir:name [ fhir:v "Mary" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "NMTH" ] ;
          fhir:display [ fhir:v "natural mother" ]
        ] ) ;
@@ -48,7 +54,10 @@
        fhir:code [
          fhir:coding ( [
            a sct:73211009 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "73211009" ] ;
            fhir:display [ fhir:v "Diabetes mellitus" ]
          ] ) ;
@@ -58,7 +67,10 @@
          a fhir:Age ;
          fhir:value [ fhir:v "45"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "yr" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "a" ]
        ]
      ] )
@@ -74,7 +86,10 @@
      fhir:name [ fhir:v "Bob" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "PUNCLE" ] ;
          fhir:display [ fhir:v "paternal uncle" ]
        ] ) ;
@@ -84,7 +99,10 @@
        fhir:code [
          fhir:coding ( [
            a sct:1481000119100 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "1481000119100" ] ;
            fhir:display [ fhir:v "Diabetes mellitus type 2 without retinopathy" ]
          ] ) ;
@@ -94,7 +112,10 @@
          a fhir:Age ;
          fhir:value [ fhir:v "35"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "yr" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "a" ]
        ]
      ] )
@@ -110,7 +131,10 @@
      fhir:name [ fhir:v "Jon" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MUNCLE" ] ;
          fhir:display [ fhir:v "maternal uncle" ]
        ] ) ;
@@ -120,13 +144,19 @@
      a fhir:FamilyMemberHistory ;
      fhir:id [ fhir:v "4" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling>
+       ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:CodeableConcept ;
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+             ] ;
              fhir:code [ fhir:v "NSIS" ] ;
              fhir:display [ fhir:v "natural sister" ]
            ] ) ;
@@ -151,7 +181,10 @@
      fhir:name [ fhir:v "Alica" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MGRMTH" ] ;
          fhir:display [ fhir:v "maternal grandmother" ]
        ] ) ;
@@ -161,20 +194,29 @@
        a fhir:Age ;
        fhir:value [ fhir:v "70"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "yr" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "a" ]
      ]
   ] [
      a fhir:FamilyMemberHistory ;
      fhir:id [ fhir:v "5" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent>
+       ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:CodeableConcept ;
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+             ] ;
              fhir:code [ fhir:v "MTH" ] ;
              fhir:display [ fhir:v "mother" ]
            ] ) ;
@@ -199,7 +241,10 @@
      fhir:name [ fhir:v "Aunt with Parent ID" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "MAUNT" ] ;
          fhir:display [ fhir:v "maternal aunt" ]
        ] ) ;
@@ -207,7 +252,10 @@
      ] ;
      fhir:sex [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/administrative-gender"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/administrative-gender"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/administrative-gender>
+         ] ;
          fhir:code [ fhir:v "female" ] ;
          fhir:display [ fhir:v "Female" ]
        ] )
@@ -216,20 +264,29 @@
        a fhir:Age ;
        fhir:value [ fhir:v "55"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "yr" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "a" ]
      ]
   ] [
      a fhir:FamilyMemberHistory ;
      fhir:id [ fhir:v "6" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling>
+       ] ;
        fhir:extension ( [
          fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:CodeableConcept ;
            fhir:coding ( [
-             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+               fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+             ] ;
              fhir:code [ fhir:v "NBRO" ] ;
              fhir:display [ fhir:v "natural brother" ]
            ] ) ;
@@ -254,7 +311,10 @@
      fhir:name [ fhir:v "Paul" ] ;
      fhir:relationship [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+         ] ;
          fhir:code [ fhir:v "PGRFTH" ] ;
          fhir:display [ fhir:v "Paternal grandfather" ]
        ] ) ;
@@ -264,7 +324,10 @@
        a fhir:Age ;
        fhir:value [ fhir:v "74"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "yr" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "b" ]
      ]
   ] ) ; # 
@@ -273,7 +336,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:80738-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "80738-8" ] ;
        fhir:display [ fhir:v "TPMT gene mutations found [Identifier] in Blood or Tissue by Sequencing Nominal" ]
      ] ) ;

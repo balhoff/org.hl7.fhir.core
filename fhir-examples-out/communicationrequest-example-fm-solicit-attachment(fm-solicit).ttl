@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "fm-solicit"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,14 +27,20 @@
      a fhir:Organization ;
      fhir:id [ fhir:v "provider" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/provideroffices"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/provideroffices"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/provideroffices>
+       ] ;
        fhir:value [ fhir:v "3456" ]
      ] )
   ] [
      a fhir:Organization ;
      fhir:id [ fhir:v "payor" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/insurer"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/insurer"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/insurer>
+       ] ;
        fhir:value [ fhir:v "123456" ]
      ] )
   ] [
@@ -42,7 +51,10 @@
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://www.jurisdiction.com/insurer/123456"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.jurisdiction.com/insurer/123456"^^xsd:anyURI ;
+       fhir:link <http://www.jurisdiction.com/insurer/123456>
+     ] ;
      fhir:value [ fhir:v "ABC123" ]
   ] ) ; #   body of the resource  ,   this is the value to which the response will refer  
   fhir:basedOn ( [
@@ -58,14 +70,20 @@
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://acme.org/messagetypes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://acme.org/messagetypes"^^xsd:anyURI ;
+         fhir:link <http://acme.org/messagetypes>
+       ] ;
        fhir:code [ fhir:v "SolicitedAttachmentRequest" ]
      ] )
   ] ) ; # 
   fhir:priority [ fhir:v "routine"] ; # 
   fhir:medium ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ParticipationMode>
+       ] ;
        fhir:code [ fhir:v "WRITTEN" ] ;
        fhir:display [ fhir:v "written" ]
      ] ) ;

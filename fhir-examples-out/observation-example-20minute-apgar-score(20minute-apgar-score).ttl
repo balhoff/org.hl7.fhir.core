@@ -13,7 +13,10 @@
   fhir:id [ fhir:v "20minute-apgar-score"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
      a fhir:Patient ;
      fhir:id [ fhir:v "newborn" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://acmehealthcare/org/mrns"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://acmehealthcare/org/mrns"^^xsd:anyURI ;
+         fhir:link <http://acmehealthcare/org/mrns>
+       ] ;
        fhir:value [ fhir:v "12345" ]
      ] ) ; #      MRN assigned by ACME healthcare on     
      fhir:active [ fhir:v true ] ;
@@ -38,7 +44,10 @@
      fhir:birthDate [
        fhir:v "2016-05-18"^^xsd:date ;
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ] ;
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/patient-birthTime>
+         ] ;
          fhir:value [
            a fhir:dateTime ;
            fhir:v "2016-05-18T10:28:45Z"^^xsd:dateTime
@@ -49,7 +58,10 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "survey" ] ;
        fhir:display [ fhir:v "Survey" ]
      ] ) ;
@@ -58,7 +70,10 @@
   fhir:code [
      fhir:coding ( [
        a sct:443849008 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "443849008" ] ;
        fhir:display [ fhir:v "Apgar score at 20 minutes" ]
      ] ) ;
@@ -78,14 +93,20 @@
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "10"^^xsd:decimal ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:link <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "{score}" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          a sct:249227004 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "249227004" ] ;
          fhir:display [ fhir:v "Apgar color score" ]
        ] ) ;
@@ -96,17 +117,26 @@
        fhir:coding ( [
          a loinc:LA6724-4 ;
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/StructureDefinition/itemWeight>
+           ] ;
            fhir:value [
              a fhir:decimal ;
              fhir:v "2"^^xsd:decimal
            ]
          ] ) ; #   this  extension  maps a numeric score to the code this may already be known and unecessary  
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "LA6724-4" ] ;
          fhir:display [ fhir:v "Good color all over" ]
        ] [
-         fhir:system [ fhir:v "http://acme.ped/apgarcolor"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.ped/apgarcolor"^^xsd:anyURI ;
+           fhir:link <http://acme.ped/apgarcolor>
+         ] ;
          fhir:code [ fhir:v "2" ]
        ] ) ;
        fhir:text [ fhir:v "2. Good color all over" ]
@@ -115,7 +145,10 @@
      fhir:code [
        fhir:coding ( [
          a sct:249223000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "249223000" ] ;
          fhir:display [ fhir:v "Apgar heart rate score" ]
        ] ) ;
@@ -126,17 +159,26 @@
        fhir:coding ( [
          a loinc:LA6718-6 ;
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/StructureDefinition/itemWeight>
+           ] ;
            fhir:value [
              a fhir:decimal ;
              fhir:v "2"^^xsd:decimal
            ]
          ] ) ; #   this  extension  maps a numeric score to the code this may already be known and unecessary  
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "LA6718-6" ] ;
          fhir:display [ fhir:v "At least 100 beats per minute" ]
        ] [
-         fhir:system [ fhir:v "http://acme.ped/apgarheartrate"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.ped/apgarheartrate"^^xsd:anyURI ;
+           fhir:link <http://acme.ped/apgarheartrate>
+         ] ;
          fhir:code [ fhir:v "2" ]
        ] ) ;
        fhir:text [ fhir:v "2. At least 100 beats per minute" ]
@@ -145,7 +187,10 @@
      fhir:code [
        fhir:coding ( [
          a sct:249226008 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "249226008" ] ;
          fhir:display [ fhir:v "Apgar response to stimulus score" ]
        ] ) ;
@@ -156,17 +201,26 @@
        fhir:coding ( [
          a loinc:LA6721-0 ;
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/StructureDefinition/itemWeight>
+           ] ;
            fhir:value [
              a fhir:decimal ;
              fhir:v "2"^^xsd:decimal
            ]
          ] ) ; #   this  extension  maps a numeric score to the code this may already be known and unecessary  
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "LA6721-0" ] ;
          fhir:display [ fhir:v "Grimace and pulling away, cough, or sneeze during suctioning" ]
        ] [
-         fhir:system [ fhir:v "http://acme.ped/apgarreflexirritability"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.ped/apgarreflexirritability"^^xsd:anyURI ;
+           fhir:link <http://acme.ped/apgarreflexirritability>
+         ] ;
          fhir:code [ fhir:v "2" ]
        ] ) ;
        fhir:text [ fhir:v "2. Grimace and pulling away, cough, or sneeze during suctioning" ]
@@ -175,7 +229,10 @@
      fhir:code [
        fhir:coding ( [
          a sct:249225007 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "249225007" ] ;
          fhir:display [ fhir:v "Apgar muscle tone score" ]
        ] ) ;
@@ -186,17 +243,26 @@
        fhir:coding ( [
          a loinc:LA6715-2 ;
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/StructureDefinition/itemWeight>
+           ] ;
            fhir:value [
              a fhir:decimal ;
              fhir:v "2"^^xsd:decimal
            ]
          ] ) ; #   this  extension  maps a numeric score to the code this may already be known and unecessary  
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "LA6715-2" ] ;
          fhir:display [ fhir:v "Active motion" ]
        ] [
-         fhir:system [ fhir:v "http://acme.ped/apgarmuscletone"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.ped/apgarmuscletone"^^xsd:anyURI ;
+           fhir:link <http://acme.ped/apgarmuscletone>
+         ] ;
          fhir:code [ fhir:v "2" ]
        ] ) ;
        fhir:text [ fhir:v "2. Active motion" ]
@@ -205,7 +271,10 @@
      fhir:code [
        fhir:coding ( [
          a sct:249224006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "249224006" ] ;
          fhir:display [ fhir:v "Apgar respiratory effort score" ]
        ] ) ;
@@ -216,17 +285,26 @@
        fhir:coding ( [
          a loinc:LA6727-7 ;
          fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ] ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/itemWeight"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/StructureDefinition/itemWeight>
+           ] ;
            fhir:value [
              a fhir:decimal ;
              fhir:v "2"^^xsd:decimal
            ]
          ] ) ; #   this  extension  maps a numeric score to the code this may already be known and unecessary  
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "LA6727-7" ] ;
          fhir:display [ fhir:v "Good, strong cry; normal rate and effort of breathing" ]
        ] [
-         fhir:system [ fhir:v "http://acme.ped/apgarrespiratoryeffort"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.ped/apgarrespiratoryeffort"^^xsd:anyURI ;
+           fhir:link <http://acme.ped/apgarrespiratoryeffort>
+         ] ;
          fhir:code [ fhir:v "2" ]
        ] ) ;
        fhir:text [ fhir:v "2. Good, strong cry; normal rate and effort of breathing" ]

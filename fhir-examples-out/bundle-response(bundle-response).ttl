@@ -12,18 +12,27 @@
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2014-08-18T01:43:33Z"^^xsd:dateTime ] ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] ) #    when the transaction response was constructed   
   ] ; #    this example bundle is a transaction response    
   fhir:type [ fhir:v "transaction-response"] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://example.org/fhir/Patient/12423"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://example.org/fhir/Patient/12423"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Patient/12423>
+     ] ;
      fhir:resource ( <http://example.org/fhir/Patient/12423> ) ; #    response for the simple create operation   ,    whether to return the result resource depends on client preference   
      fhir:response [
        fhir:status [ fhir:v "201 Created" ] ; #    important responses from the server   
-       fhir:location [ fhir:v "Patient/12423/_history/1"^^xsd:anyURI ] ;
+       fhir:location [
+         fhir:v "Patient/12423/_history/1"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/Patient/12423/_history/1>
+       ] ;
        fhir:etag [ fhir:v "W/\"1\"" ] ;
        fhir:lastModified [ fhir:v "2014-08-18T01:43:33Z"^^xsd:dateTime ] ;
        fhir:outcome ( [
@@ -45,19 +54,28 @@
   ] [
      fhir:response [
        fhir:status [ fhir:v "200 OK" ] ;
-       fhir:location [ fhir:v "Patient/123/_history/4"^^xsd:anyURI ] ;
+       fhir:location [
+         fhir:v "Patient/123/_history/4"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/Patient/123/_history/4>
+       ] ;
        fhir:etag [ fhir:v "W/\"4\"" ]
      ] #    response to a simple update operation   ,    no return resource for this example, though in a \n      real transaction, all entries would have a resource or all would not \n      
   ] [
      fhir:response [
        fhir:status [ fhir:v "201 Created" ] ; #    created a new resource for this one   
-       fhir:location [ fhir:v "Patient/12424/_history/1"^^xsd:anyURI ] ;
+       fhir:location [
+         fhir:v "Patient/12424/_history/1"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/Patient/12424/_history/1>
+       ] ;
        fhir:etag [ fhir:v "W/\"1\"" ]
      ] #    response to the conditional update operation   
   ] [
      fhir:response [
        fhir:status [ fhir:v "200 ok" ] ; #    created a new resource for this one   
-       fhir:location [ fhir:v "Patient/123a/_history/3"^^xsd:anyURI ] ;
+       fhir:location [
+         fhir:v "Patient/123a/_history/3"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/Patient/123a/_history/3>
+       ] ;
        fhir:etag [ fhir:v "W/\"3\"" ]
      ] #    response to the 2nd conditional update operation   
   ] [
@@ -122,7 +140,10 @@
   fhir:type [ fhir:v "searchset"] ; # 
   fhir:link ( [
      fhir:relation [ fhir:v "self" ] ;
-     fhir:url [ fhir:v "http://example.org/fhir/Patient?somefilter=whatever"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://example.org/fhir/Patient?somefilter=whatever"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/Patient?somefilter=whatever>
+     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

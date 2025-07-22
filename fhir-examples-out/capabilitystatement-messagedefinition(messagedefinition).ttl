@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "messagedefinition"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -34,7 +37,10 @@
   ] ; # 
   fhir:implementation [
      fhir:description [ fhir:v "Acme Message endpoint" ] ;
-     fhir:url [ fhir:v "http://acem.com/fhir/message-drop"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://acem.com/fhir/message-drop"^^xsd:anyURI ;
+       fhir:link <http://acem.com/fhir/message-drop>
+     ]
   ] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; #    while the FHIR infrastructure is turning over prior to development, a version is 
 #    required.    
@@ -42,7 +48,10 @@
   fhir:messaging ( [
      fhir:endpoint ( [
        fhir:protocol [
-         fhir:system [ fhir:v "http://hl7.org/fhir/message-transport"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/message-transport"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/message-transport>
+         ] ;
          fhir:code [ fhir:v "mllp" ]
        ] ;
        fhir:address [ fhir:v "mllp:10.1.1.10:9234"^^xsd:anyURI ] #   LLP server at 10.1.1.10 on port 9234  

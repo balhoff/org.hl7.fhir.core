@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-ctgov-study-record"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -29,7 +32,10 @@
      fhir:description [ fhir:v "AP303 tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -47,7 +53,10 @@
      fhir:description [ fhir:v "AP303 tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -65,7 +74,10 @@
      fhir:description [ fhir:v "AP303 tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -83,7 +95,10 @@
      fhir:description [ fhir:v "AP303 tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -101,7 +116,10 @@
      fhir:description [ fhir:v "Placebo tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -119,7 +137,10 @@
      fhir:description [ fhir:v "Placebo tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -137,7 +158,10 @@
      fhir:description [ fhir:v "Placebo tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -155,7 +179,10 @@
      fhir:description [ fhir:v "Placebo tablet" ] ;
      fhir:useContext ( [
        fhir:code [
-         fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+           fhir:link <https://clinicaltrials.gov>
+         ] ;
          fhir:code [ fhir:v "interventionType" ] ;
          fhir:display [ fhir:v "Intervention Type for CT.gov" ]
        ] ;
@@ -192,7 +219,10 @@
      fhir:progressStatus ( [
        fhir:state [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/research-study-status"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/research-study-status"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/research-study-status>
+           ] ;
            fhir:code [ fhir:v "recruiting" ] ;
            fhir:display [ fhir:v "Recruiting" ]
          ] )
@@ -213,19 +243,28 @@
        fhir:latitude [ fhir:v -37.814 ]
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "https://fevir.net/resources/ResearchStudy/112103"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "https://fevir.net/resources/ResearchStudy/112103"^^xsd:anyURI ;
+     fhir:link <https://fevir.net/resources/ResearchStudy/112103>
+  ] ; # 
   fhir:identifier ( [
      fhir:type [
        fhir:text [ fhir:v "FEvIR Object Identifier" ]
      ] ;
-     fhir:system [ fhir:v "https://fevir.net"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://fevir.net"^^xsd:anyURI ;
+       fhir:link <https://fevir.net>
+     ] ;
      fhir:value [ fhir:v "112103" ] ;
      fhir:assigner [
        fhir:display [ fhir:v "Computable Publishing LLC" ]
      ]
   ] [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://clinicaltrials.gov"^^xsd:anyURI ;
+       fhir:link <https://clinicaltrials.gov>
+     ] ;
      fhir:value [ fhir:v "NCT05503693" ]
   ] [
      fhir:value [ fhir:v "AP303-PK-01" ] ;
@@ -244,26 +283,38 @@
   fhir:relatedArtifact ( [
      fhir:type [ fhir:v "transforms" ] ;
      fhir:document [
-       fhir:url [ fhir:v "https://beta.clinicaltrials.gov/api/v2/studies/NCT05503693"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://beta.clinicaltrials.gov/api/v2/studies/NCT05503693"^^xsd:anyURI ;
+         fhir:link <https://beta.clinicaltrials.gov/api/v2/studies/NCT05503693>
+       ]
      ]
   ] [
      fhir:type [ fhir:v "transformed-with" ] ;
      fhir:display [ fhir:v "Computable Publishing®: ClinicalTrials.gov-to-FEvIR Converter" ] ;
      fhir:document [
-       fhir:url [ fhir:v "https://fevir.net/resources/Project/29885"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "https://fevir.net/resources/Project/29885"^^xsd:anyURI ;
+         fhir:link <https://fevir.net/resources/Project/29885>
+       ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:primaryPurposeType [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type>
+       ] ;
        fhir:code [ fhir:v "treatment" ] ;
        fhir:display [ fhir:v "Treatment" ]
      ] )
   ] ; # 
   fhir:phase [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/research-study-phase>
+       ] ;
        fhir:code [ fhir:v "phase-1" ] ;
        fhir:display [ fhir:v "Phase 1" ]
      ] )
@@ -310,7 +361,10 @@
      fhir:name [ fhir:v "Alebund Pharmaceuticals" ] ;
      fhir:role [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/research-study-party-role>
+         ] ;
          fhir:code [ fhir:v "sponsor" ] ;
          fhir:display [ fhir:v "Sponsor" ]
        ] )
@@ -322,7 +376,10 @@
      fhir:name [ fhir:v "Alebund Pty Ltd" ] ;
      fhir:role [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/research-study-party-role>
+         ] ;
          fhir:code [ fhir:v "lead-sponsor" ] ;
          fhir:display [ fhir:v "Lead Sponsor" ]
        ] )
@@ -334,7 +391,10 @@
      fhir:name [ fhir:v "Zhen LIU" ] ;
      fhir:role [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/research-study-party-role"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/research-study-party-role>
+         ] ;
          fhir:code [ fhir:v "recruitment-contact" ] ;
          fhir:display [ fhir:v "Recruitment Contact" ]
        ] )
@@ -358,7 +418,10 @@
   fhir:progressStatus ( [
      fhir:state [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/research-study-status"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/research-study-status"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/research-study-status>
+         ] ;
          fhir:code [ fhir:v "recruiting" ] ;
          fhir:display [ fhir:v "Recruiting" ]
        ] )
@@ -366,7 +429,10 @@
   ] [
      fhir:state [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/research-study-status"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/research-study-status"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/research-study-status>
+         ] ;
          fhir:code [ fhir:v "overall-study" ] ;
          fhir:display [ fhir:v "Overall Study" ]
        ] )
@@ -387,7 +453,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693 Eligibility Criteria" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -448,7 +517,10 @@
      fhir:name [ fhir:v "Single Dose and Food Effect Safety Outcome Measures" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -460,7 +532,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-0" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -471,7 +546,10 @@
      fhir:name [ fhir:v "Multiple Dose Safety Outcome Measures" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -483,7 +561,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-1" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -494,7 +575,10 @@
      fhir:name [ fhir:v "Cmax after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -506,7 +590,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-2" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -517,7 +604,10 @@
      fhir:name [ fhir:v "Tmax after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -529,7 +619,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-3" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -540,7 +633,10 @@
      fhir:name [ fhir:v "AUC0-last after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -552,7 +648,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-4" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -563,7 +662,10 @@
      fhir:name [ fhir:v "AUC0-inf after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -575,7 +677,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-5" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -586,7 +691,10 @@
      fhir:name [ fhir:v "t1/2 after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -598,7 +706,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-6" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -609,7 +720,10 @@
      fhir:name [ fhir:v "CL/F after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -621,7 +735,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-7" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -632,7 +749,10 @@
      fhir:name [ fhir:v "Ae and CLR (if warranted) after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -644,7 +764,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-8" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -655,7 +778,10 @@
      fhir:name [ fhir:v "V/F after single dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -667,7 +793,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-9" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -678,7 +807,10 @@
      fhir:name [ fhir:v "Cmax after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -690,7 +822,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-10" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -701,7 +836,10 @@
      fhir:name [ fhir:v "Tmax after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -713,7 +851,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-11" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -724,7 +865,10 @@
      fhir:name [ fhir:v "AUC0-τ after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -736,7 +880,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-12" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -747,7 +894,10 @@
      fhir:name [ fhir:v "Cav after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -759,7 +909,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-13" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -770,7 +923,10 @@
      fhir:name [ fhir:v "t1/2 after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -782,7 +938,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-14" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -793,7 +952,10 @@
      fhir:name [ fhir:v "Rac after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -805,7 +967,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-15" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -816,7 +981,10 @@
      fhir:name [ fhir:v "Ae and CLR (if warranted) after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -828,7 +996,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-16" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -839,7 +1010,10 @@
      fhir:name [ fhir:v "V/F after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -851,7 +1025,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-17" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -862,7 +1039,10 @@
      fhir:name [ fhir:v "Ctrough after multiple dose" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "primary" ] ;
          fhir:display [ fhir:v "Primary" ]
        ] )
@@ -874,7 +1054,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-primaryOutcome-18" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -885,7 +1068,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose Cmax" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -897,7 +1083,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-0" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -908,7 +1097,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose Tmax" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -920,7 +1112,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-1" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -931,7 +1126,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose AUC0-last" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -943,7 +1141,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-2" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -954,7 +1155,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose AUC0-inf" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -966,7 +1170,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-3" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -977,7 +1184,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose t1/2" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -989,7 +1199,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-4" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -1000,7 +1213,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose CL/F" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -1012,7 +1228,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-5" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -1023,7 +1242,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose Ae and CLR (if warranted)" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -1035,7 +1257,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-6" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -1046,7 +1271,10 @@
      fhir:name [ fhir:v "Effect of Food on the single dose V/F" ] ;
      fhir:type ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-study-objective-type>
+         ] ;
          fhir:code [ fhir:v "secondary" ] ;
          fhir:display [ fhir:v "Secondary" ]
        ] )
@@ -1058,7 +1286,10 @@
          fhir:type [
            fhir:text [ fhir:v "FEvIR Linking Identifier" ]
          ] ;
-         fhir:system [ fhir:v "https://fevir.net/FLI"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://fevir.net/FLI"^^xsd:anyURI ;
+           fhir:link <https://fevir.net/FLI>
+         ] ;
          fhir:value [ fhir:v "NCT05503693-secondaryOutcome-7" ] ;
          fhir:assigner [
            fhir:display [ fhir:v "Computable Publishing LLC" ]

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "pat2"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,7 +27,10 @@
      fhir:use [ fhir:v "usual" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
          fhir:code [ fhir:v "MR" ]
        ] )
      ] ;
@@ -40,11 +46,17 @@
   fhir:gender [
      fhir:v "other" ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://example.org/Profile/administrative-status"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "http://example.org/Profile/administrative-status"^^xsd:anyURI ;
+         fhir:link <http://example.org/Profile/administrative-status>
+       ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0001"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v2-0001"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v2-0001>
+           ] ;
            fhir:code [ fhir:v "A" ] ;
            fhir:display [ fhir:v "Ambiguous" ]
          ] )

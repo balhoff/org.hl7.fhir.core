@@ -24,7 +24,10 @@
   fhir:id [ fhir:v "3141"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -37,7 +40,10 @@
      a fhir:Patient ;
      fhir:id [ fhir:v "patsub" ] ;
      fhir:identifier ( [
-       fhir:system [ fhir:v "http://cancer.questionnaire.org/systems/id/patientnr"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://cancer.questionnaire.org/systems/id/patientnr"^^xsd:anyURI ;
+         fhir:link <http://cancer.questionnaire.org/systems/id/patientnr>
+       ] ;
        fhir:value [ fhir:v "A34442332" ]
      ] [
        fhir:type [
@@ -67,12 +73,18 @@
        fhir:type [
          fhir:text [ fhir:v "AUMC, Den Helder" ]
        ] ;
-       fhir:system [ fhir:v "http://cancer.questionnaire.org/systems/id/org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://cancer.questionnaire.org/systems/id/org"^^xsd:anyURI ;
+         fhir:link <http://cancer.questionnaire.org/systems/id/org>
+       ] ;
        fhir:value [ fhir:v "AUMC" ]
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/fhir/NamingSystem/questionnaire-ids"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/fhir/NamingSystem/questionnaire-ids"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/NamingSystem/questionnaire-ids>
+     ] ;
      fhir:value [ fhir:v "Q12349876" ]
   ] ) ; #     TODO: decide how to do this
 #  <contained>
@@ -129,7 +141,10 @@
        fhir:answer ( [
          fhir:value [
            a fhir:Coding ;
-           fhir:system [ fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ;
+             fhir:link <http://cancer.questionnaire.org/system/code/yesno>
+           ] ;
            fhir:code [ fhir:v "1" ] ;
            fhir:display [ fhir:v "Yes" ]
          ] ;
@@ -140,7 +155,10 @@
              fhir:answer ( [
                fhir:value [
                  a fhir:Coding ;
-                 fhir:system [ fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ] ;
+                 fhir:system [
+                   fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ;
+                   fhir:link <http://cancer.questionnaire.org/system/code/yesno>
+                 ] ;
                  fhir:code [ fhir:v "1" ]
                ]
              ] )
@@ -149,7 +167,10 @@
              fhir:answer ( [
                fhir:value [
                  a fhir:Coding ;
-                 fhir:system [ fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ] ;
+                 fhir:system [
+                   fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ;
+                   fhir:link <http://cancer.questionnaire.org/system/code/yesno>
+                 ] ;
                  fhir:code [ fhir:v "1" ]
                ]
              ] )
@@ -158,7 +179,10 @@
              fhir:answer ( [
                fhir:value [
                  a fhir:Coding ;
-                 fhir:system [ fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ] ;
+                 fhir:system [
+                   fhir:v "http://cancer.questionnaire.org/system/code/yesno"^^xsd:anyURI ;
+                   fhir:link <http://cancer.questionnaire.org/system/code/yesno>
+                 ] ;
                  fhir:code [ fhir:v "0" ]
                ]
              ] )

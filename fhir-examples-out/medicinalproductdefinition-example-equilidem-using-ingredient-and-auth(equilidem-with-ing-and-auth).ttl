@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "equilidem-with-ing-and-auth"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -29,7 +32,10 @@
      ] ) ;
      fhir:role [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org.uk/fhir/ingredientType"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org.uk/fhir/ingredientType"^^xsd:anyURI ;
+           fhir:link <http://example.org.uk/fhir/ingredientType>
+         ] ;
          fhir:code [ fhir:v "active" ]
        ] )
      ] ;
@@ -37,7 +43,10 @@
        fhir:code [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org.uk/fhir/substances"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org.uk/fhir/substances"^^xsd:anyURI ;
+               fhir:link <http://example.org.uk/fhir/substances>
+             ] ;
              fhir:code [ fhir:v "123456" ] ;
              fhir:display [ fhir:v "Equilidonium Phosphate" ]
            ] )
@@ -49,7 +58,10 @@
            fhir:numerator [
              fhir:value [ fhir:v "22"^^xsd:decimal ] ;
              fhir:unit [ fhir:v "ml" ] ;
-             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:link <http://unitsofmeasure.org>
+             ] ;
              fhir:code [ fhir:v "mL" ]
            ] ;
            fhir:denominator [
@@ -68,7 +80,10 @@
      ] ) ;
      fhir:role [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org.uk/fhir/ingredientType"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org.uk/fhir/ingredientType"^^xsd:anyURI ;
+           fhir:link <http://example.org.uk/fhir/ingredientType>
+         ] ;
          fhir:code [ fhir:v "excipient" ]
        ] )
      ] ;
@@ -76,7 +91,10 @@
        fhir:code [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://example.org.uk/fhir/substances"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://example.org.uk/fhir/substances"^^xsd:anyURI ;
+               fhir:link <http://example.org.uk/fhir/substances>
+             ] ;
              fhir:code [ fhir:v "456789" ] ;
              fhir:display [ fhir:v "Calcium Carbonate" ]
            ] )
@@ -88,7 +106,10 @@
            fhir:numerator [
              fhir:value [ fhir:v "3"^^xsd:decimal ] ;
              fhir:unit [ fhir:v "ml" ] ;
-             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+               fhir:link <http://unitsofmeasure.org>
+             ] ;
              fhir:code [ fhir:v "mL" ]
            ] ;
            fhir:denominator [
@@ -100,26 +121,38 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org.uk/fhir/product"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org.uk/fhir/product"^^xsd:anyURI ;
+       fhir:link <http://example.org.uk/fhir/product>
+     ] ;
      fhir:value [ fhir:v "Equilidem25" ]
   ] ) ; # 
   fhir:combinedPharmaceuticalDoseForm [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://example.org.uk/fhir/dosefom"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org.uk/fhir/dosefom"^^xsd:anyURI ;
+         fhir:link <http://example.org.uk/fhir/dosefom>
+       ] ;
        fhir:code [ fhir:v "tablet" ]
      ] )
   ] ; # 
   fhir:indication [ fhir:v "Prevention of venous thromboembolic events (VTE) in adult patients who have undergone elective hip or knee replacement surgery. Prevention of stroke and systemic embolism in adult patients with non-valvular atrial fibrillation (NVAF), with one or more risk factors, such as prior stroke or transient ischaemic attack (TIA); age ≥ 75 years; hypertension; diabetes mellitus; symptomatic heart failure (NYHA Class >= II). Treatment of deep vein thrombosis (DVT) and pulmonary embolism (PE), and prevention of recurrent DVT and PE in adults."] ; # 
   fhir:legalStatusOfSupply [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://example.org.uk/fhir/legalstatusofsupply"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org.uk/fhir/legalstatusofsupply"^^xsd:anyURI ;
+         fhir:link <http://example.org.uk/fhir/legalstatusofsupply>
+       ] ;
        fhir:code [ fhir:v "POM" ] ;
        fhir:display [ fhir:v "Prescription only medicine" ]
      ] )
   ] ; # 
   fhir:classification ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://www.whocc.no/atc/example"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.whocc.no/atc/example"^^xsd:anyURI ;
+         fhir:link <http://www.whocc.no/atc/example>
+       ] ;
        fhir:code [ fhir:v "B01A" ]
      ] )
   ] ) ; # 

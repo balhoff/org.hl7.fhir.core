@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "SP1234"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of a Self Pay Agreement.</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://hospitalx.com/selfpayagreement"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://hospitalx.com/selfpayagreement"^^xsd:anyURI ;
+       fhir:link <http://hospitalx.com/selfpayagreement>
+     ] ;
      fhir:value [ fhir:v "SP12345678" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -34,7 +40,10 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/coverage-selfpay"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/coverage-selfpay"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/coverage-selfpay>
+       ] ;
        fhir:code [ fhir:v "pay" ] ;
        fhir:display [ fhir:v "PAY" ]
      ] )

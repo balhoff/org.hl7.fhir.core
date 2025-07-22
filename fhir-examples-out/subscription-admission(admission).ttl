@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "admission"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -35,7 +38,10 @@
   fhir:channelType [
      fhir:code [ fhir:v "rest-hook" ]
   ] ; # 
-  fhir:endpoint [ fhir:v "https://example.org/Endpoints/P123"^^xsd:anyURI] ; # 
+  fhir:endpoint [
+     fhir:v "https://example.org/Endpoints/P123"^^xsd:anyURI ;
+     fhir:link <https://example.org/Endpoints/P123>
+  ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "Authorization" ] ;
      fhir:value [ fhir:v "Bearer secret-token-abc-123" ]

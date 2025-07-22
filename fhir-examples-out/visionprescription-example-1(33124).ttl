@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "33124"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sample Contract Lens prescription</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://www.happysight.com/prescription"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.happysight.com/prescription"^^xsd:anyURI ;
+       fhir:link <http://www.happysight.com/prescription>
+     ] ;
      fhir:value [ fhir:v "15014" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -42,7 +48,10 @@
   fhir:lensSpecification ( [
      fhir:product [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct>
+         ] ;
          fhir:code [ fhir:v "contact" ]
        ] )
      ] ;
@@ -56,7 +65,10 @@
      fhir:duration [
        fhir:value [ fhir:v "1"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mo" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mo" ]
      ] ;
      fhir:color [ fhir:v "green" ] ;
@@ -67,7 +79,10 @@
   ] [
      fhir:product [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/ex-visionprescriptionproduct>
+         ] ;
          fhir:code [ fhir:v "contact" ]
        ] )
      ] ;
@@ -81,7 +96,10 @@
      fhir:duration [
        fhir:value [ fhir:v "1"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "month" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:link <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mo" ]
      ] ;
      fhir:color [ fhir:v "green" ] ;

@@ -13,7 +13,10 @@
   fhir:id [ fhir:v "protocol-example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -31,7 +34,10 @@
      fhir:code [
        fhir:coding ( [
          a loinc:39156-5 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "39156-5" ] ;
          fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
        ] )
@@ -40,7 +46,10 @@
        fhir:type [ fhir:v "practitioner" ] ;
        fhir:role [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/practitioner-role"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/practitioner-role"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/practitioner-role>
+           ] ;
            fhir:code [ fhir:v "doctor" ] ;
            fhir:display [ fhir:v "Doctor" ]
          ] )
@@ -48,7 +57,10 @@
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://acme.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://acme.org"^^xsd:anyURI ;
+       fhir:link <http://acme.org>
+     ] ;
      fhir:value [ fhir:v "example-1" ]
   ] ) ; # 
   fhir:name [ fhir:v "ObesityAssessmentProtocol"] ; # 
@@ -68,7 +80,10 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:414916001 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "414916001" ] ;
          fhir:display [ fhir:v "Obesity (disorder)" ]
        ] )
@@ -86,7 +101,10 @@
      fhir:type [ fhir:v "derived-from" ] ;
      fhir:display [ fhir:v "Overweight and Obesity Treatment Guidelines" ] ;
      fhir:document [
-       fhir:url [ fhir:v "http://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/algorthm/algorthm.htm"^^xsd:anyURI ]
+       fhir:url [
+         fhir:v "http://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/algorthm/algorthm.htm"^^xsd:anyURI ;
+         fhir:link <http://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/algorthm/algorthm.htm>
+       ]
      ]
   ] ) ; # 
   fhir:goal ( [
@@ -106,7 +124,10 @@
      fhir:addresses ( [
        fhir:coding ( [
          a sct:414916001 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "414916001" ] ;
          fhir:display [ fhir:v "Obesity (disorder)" ]
        ] )
@@ -115,14 +136,20 @@
        fhir:type [ fhir:v "justification" ] ;
        fhir:display [ fhir:v "Evaluation and Treatment Strategy" ] ;
        fhir:document [
-         fhir:url [ fhir:v "https://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/42.htm"^^xsd:anyURI ]
+         fhir:url [
+           fhir:v "https://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/42.htm"^^xsd:anyURI ;
+           fhir:link <https://www.nhlbi.nih.gov/health-pro/guidelines/current/obesity-guidelines/e_textbook/txgd/42.htm>
+         ]
        ]
      ] ) ;
      fhir:target ( [
        fhir:measure [
          fhir:coding ( [
            a loinc:39156-5 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://loinc.org"^^xsd:anyURI ;
+             fhir:link <http://loinc.org>
+           ] ;
            fhir:code [ fhir:v "39156-5" ] ;
            fhir:display [ fhir:v "Body mass index (BMI) [Ratio]" ]
          ] )

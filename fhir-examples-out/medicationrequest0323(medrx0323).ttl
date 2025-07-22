@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "medrx0323"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
      fhir:doseForm [
        fhir:coding ( [
          a sct:385221006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "385221006" ] ;
          fhir:display [ fhir:v "Injection emulsion" ]
        ] )
@@ -36,7 +42,10 @@
        fhir:item [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/sid/ndc>
+             ] ;
              fhir:code [ fhir:v "0338-1134-03" ] ;
              fhir:display [ fhir:v "Clinimix 4.25/10 sulfite-free (4.25% Amino Acid in 10% Dextrose) Injection, 1000ml" ]
            ] )
@@ -46,7 +55,10 @@
        fhir:item [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/sid/ndc>
+             ] ;
              fhir:code [ fhir:v "0409-5779-01" ] ;
              fhir:display [ fhir:v "TPN Electrolytes SODIUM CHLORIDE, CALCIUM CHLORIDE, POTASSIUM CHLORIDE, MAGNESIUM CHLORIDE, and SODIUM ACETATE ANHYDROUS | INJECTION, SOLUTION, CONCENTRATE | 321 mg/20mL, 331 mg/20mL, 1491 mg/20mL, 508 mg/20mL, 2420 mg/20mL" ]
            ] )
@@ -56,7 +68,10 @@
        fhir:item [
          fhir:concept [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/sid/ndc>
+             ] ;
              fhir:code [ fhir:v "0338-0519-02" ] ;
              fhir:display [ fhir:v "Intralipid 20% IV Fat Emulsion" ]
            ] )
@@ -70,7 +85,10 @@
   ] ) ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://www.bmc.nl/portal/prescriptions"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://www.bmc.nl/portal/prescriptions"^^xsd:anyURI ;
+       fhir:link <http://www.bmc.nl/portal/prescriptions>
+     ] ;
      fhir:value [ fhir:v "12345689" ]
   ] ) ; # 
   fhir:status [ fhir:v "completed"] ; # 
@@ -110,7 +128,10 @@
      fhir:site [
        fhir:coding ( [
          a sct:6073002 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "6073002" ] ;
          fhir:display [ fhir:v "Structure of ligament of left superior vena cava" ]
        ] )
@@ -118,7 +139,10 @@
      fhir:route [
        fhir:coding ( [
          a sct:255560000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "255560000" ] ;
          fhir:display [ fhir:v "Intravenous" ]
        ] )
@@ -129,7 +153,10 @@
      fhir:doseAndRate ( [
        fhir:type [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/dose-rate-type"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/dose-rate-type>
+           ] ;
            fhir:code [ fhir:v "ordered" ] ;
            fhir:display [ fhir:v "Ordered" ]
          ] )
@@ -138,7 +165,10 @@
          a fhir:Quantity ;
          fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "mL" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "mL" ]
        ] ;
        fhir:rate [
@@ -146,13 +176,19 @@
          fhir:numerator [
            fhir:value [ fhir:v "50"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "mL" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "mL" ]
          ] ;
          fhir:denominator [
            fhir:value [ fhir:v "1"^^xsd:decimal ] ;
            fhir:unit [ fhir:v "h" ] ;
-           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:link <http://unitsofmeasure.org>
+           ] ;
            fhir:code [ fhir:v "h" ]
          ]
        ]

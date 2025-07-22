@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "f201"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -28,7 +31,10 @@
        fhir:role [
          fhir:coding ( [
            a sct:425268008 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "425268008" ] ;
            fhir:display [ fhir:v "Review of care plan" ]
          ] )
@@ -42,7 +48,10 @@
        fhir:role [
          fhir:coding ( [
            a sct:229774002 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "229774002" ] ;
            fhir:display [ fhir:v "Carer" ]
          ] )
@@ -59,7 +68,10 @@
      fhir:lifecycleStatus [ fhir:v "completed" ] ;
      fhir:achievementStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-achievement"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/goal-achievement"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/goal-achievement>
+         ] ;
          fhir:code [ fhir:v "achieved" ] ;
          fhir:display [ fhir:v "Achieved" ]
        ] ) ;
@@ -82,7 +94,10 @@
        fhir:concept [
          fhir:coding ( [
            a sct:306005 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "306005" ] ;
            fhir:display [ fhir:v "Echography of kidney" ]
          ] )

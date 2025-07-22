@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,14 +25,20 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			<p>Consultation note for Henry Levin the 7th</p>\n			<p>Managed by Good Health Clinic</p>\n		</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://healthintersections.com.au/test"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://healthintersections.com.au/test"^^xsd:anyURI ;
+       fhir:link <http://healthintersections.com.au/test>
+     ] ;
      fhir:value [ fhir:v "1" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:type [
      fhir:coding ( [
        a loinc:11488-4 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "11488-4" ] ;
        fhir:display [ fhir:v "Consult note" ]
      ] )
@@ -37,7 +46,10 @@
   fhir:category ( [
      fhir:coding ( [
        a loinc:LP173421-1 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "LP173421-1" ] ;
        fhir:display [ fhir:v "Report" ]
      ] )
@@ -61,7 +73,10 @@
   fhir:attester ( [
      fhir:mode [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/composition-attestation-mode"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/composition-attestation-mode"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/composition-attestation-mode>
+         ] ;
          fhir:code [ fhir:v "legal" ] ;
          fhir:display [ fhir:v "Legal" ]
        ] )
@@ -88,7 +103,10 @@
      fhir:type [ fhir:v "appends" ] ;
      fhir:resourceReference [
        fhir:identifier [
-         fhir:system [ fhir:v "http://example.org/fhir/NamingSystem/document-ids"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/NamingSystem/document-ids"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/NamingSystem/document-ids>
+         ] ;
          fhir:value [ fhir:v "ABC123" ]
        ]
      ]
@@ -101,7 +119,10 @@
      fhir:detail ( [
        fhir:concept [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+             fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+           ] ;
            fhir:code [ fhir:v "HEALTHREC" ] ;
            fhir:display [ fhir:v "health record" ]
          ] )
@@ -117,7 +138,10 @@
      fhir:code [
        fhir:coding ( [
          a loinc:11348-0 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "11348-0" ] ;
          fhir:display [ fhir:v "History of past illness Narrative" ]
        ] )
@@ -128,7 +152,10 @@
      ] ;
      fhir:orderedBy [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/list-order"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/list-order"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/list-order>
+         ] ;
          fhir:code [ fhir:v "event-date" ] ;
          fhir:display [ fhir:v "Sorted by Event Date" ]
        ] )
@@ -148,7 +175,10 @@
      fhir:code [
        fhir:coding ( [
          a loinc:10157-6 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "10157-6" ] ;
          fhir:display [ fhir:v "History of family member diseases Narrative" ]
        ] )
@@ -159,7 +189,10 @@
      ] ;
      fhir:emptyReason [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/list-empty-reason"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/list-empty-reason"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/list-empty-reason>
+         ] ;
          fhir:code [ fhir:v "withheld" ] ;
          fhir:display [ fhir:v "Information Withheld" ]
        ] )

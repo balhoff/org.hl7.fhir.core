@@ -23,7 +23,10 @@
   fhir:id [ fhir:v "example-xds"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -48,20 +51,32 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://ihe.net/fhir/CodeSystem/identifier-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://ihe.net/fhir/CodeSystem/identifier-type"^^xsd:anyURI ;
+           fhir:link <http://ihe.net/fhir/CodeSystem/identifier-type>
+         ] ;
          fhir:code [ fhir:v "master" ]
        ] )
      ] ; #    master identifier   
-     fhir:system [ fhir:v "http://example.org/documents"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/documents"^^xsd:anyURI ;
+       fhir:link <http://example.org/documents>
+     ] ;
      fhir:value [ fhir:v "23425234234-2346" ]
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://ihe.net/fhir/CodeSystem/identifier-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://ihe.net/fhir/CodeSystem/identifier-type"^^xsd:anyURI ;
+           fhir:link <http://ihe.net/fhir/CodeSystem/identifier-type>
+         ] ;
          fhir:code [ fhir:v "set" ]
        ] )
      ] ; #    set identifier   
-     fhir:system [ fhir:v "http://example.org/documents"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/documents"^^xsd:anyURI ;
+       fhir:link <http://example.org/documents>
+     ] ;
      fhir:value [ fhir:v "23425234234-2347" ]
   ] ) ; # 
   fhir:status [ fhir:v "current"] ; # 

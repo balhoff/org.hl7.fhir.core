@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -34,7 +37,10 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/shared-ids"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/shared-ids"^^xsd:anyURI ;
+       fhir:link <http://example.org/shared-ids>
+     ] ;
      fhir:value [ fhir:v "HS-12" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 
@@ -45,7 +51,10 @@
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/service-category>
+       ] ;
        fhir:code [ fhir:v "8" ] ;
        fhir:display [ fhir:v "Counselling" ]
      ] ) ;
@@ -54,14 +63,20 @@
   fhir:type ( [
      fhir:coding ( [
        a sct:394913002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "394913002" ] ;
        fhir:display [ fhir:v "Psychotherapy" ]
      ] )
   ] [
      fhir:coding ( [
        a sct:394587001 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "394587001" ] ;
        fhir:display [ fhir:v "Psychiatry" ]
      ] )
@@ -69,7 +84,10 @@
   fhir:specialty ( [
      fhir:coding ( [
        a sct:47505003 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "47505003" ] ;
        fhir:display [ fhir:v "Posttraumatic stress disorder" ]
      ] )
@@ -98,7 +116,10 @@
   ] ) ; # 
   fhir:serviceProvisionCode ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-provision-conditions"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/service-provision-conditions"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/service-provision-conditions>
+       ] ;
        fhir:code [ fhir:v "cost" ] ;
        fhir:display [ fhir:v "Fees apply" ]
      ] )

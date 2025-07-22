@@ -17,7 +17,10 @@
        fhir:link <http://hl7.org/fhir/StructureDefinition/vitalsigns>
      ] ) ;
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -38,7 +41,10 @@
   fhir:status [ fhir:v "cancelled"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ] ;
        fhir:display [ fhir:v "Vital Signs" ]
      ] )
@@ -46,7 +52,10 @@
   fhir:code [
      fhir:coding ( [
        a loinc:85354-9 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:link <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "85354-9" ] ;
        fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
      ] ) ; #    replaced by 85354-9\n		<coding>\n			<system value=\"http:\/\/loinc.org\"\/>\n			<code value=\"85354-9\"\/>\n			<display value=\"Blood pressure systolic &amp; diastolic\"\/>\n		<\/coding>\n  
@@ -66,7 +75,10 @@
   ] ) ; # 
   fhir:interpretation ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+       ] ;
        fhir:code [ fhir:v "L" ] ;
        fhir:display [ fhir:v "low" ]
      ] ) ;
@@ -81,7 +93,10 @@
   fhir:bodySite [
      fhir:coding ( [
        a sct:368209003 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "368209003" ] ;
        fhir:display [ fhir:v "Right arm" ]
      ] )
@@ -90,23 +105,35 @@
      fhir:code [
        fhir:coding ( [
          a loinc:8480-6 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "8480-6" ] ;
          fhir:display [ fhir:v "Systolic blood pressure" ]
        ] [
          a sct:271649006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "271649006" ] ;
          fhir:display [ fhir:v "Systolic blood pressure" ]
        ] [
-         fhir:system [ fhir:v "http://acme.org/devices/clinical-codes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://acme.org/devices/clinical-codes"^^xsd:anyURI ;
+           fhir:link <http://acme.org/devices/clinical-codes>
+         ] ;
          fhir:code [ fhir:v "bp-s" ] ;
          fhir:display [ fhir:v "Systolic Blood pressure" ]
        ] ) #    LOINC - always recommended to have a LOINC code   
      ] ; #   \n           Observations are often coded in multiple code systems.\n           - LOINC provides a very specific code (though not usefully more specific in this particular case)\n           - snomed provides a clinically relevant code that is usually less granular than LOINC\n           - the source system provides its own code, which may be less or more granular than LOINC\n	 this instance shows the concept. The other codes only have a LOINC code   ,    that shows the concept. The next two names only have a LOINC code   
      fhir:dataAbsentReason [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/data-absent-reason>
+         ] ;
          fhir:code [ fhir:v "not-asked" ] ;
          fhir:display [ fhir:v "Not Asked" ]
        ] )
@@ -115,14 +142,20 @@
      fhir:code [
        fhir:coding ( [
          a loinc:8462-4 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "8462-4" ] ;
          fhir:display [ fhir:v "Diastolic blood pressure" ]
        ] )
      ] ;
      fhir:dataAbsentReason [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/data-absent-reason>
+         ] ;
          fhir:code [ fhir:v "not-asked" ] ;
          fhir:display [ fhir:v "Not Asked" ]
        ] )

@@ -13,7 +13,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
   fhir:device [
      fhir:concept [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://www.gs1.org/gtin"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://www.gs1.org/gtin"^^xsd:anyURI ;
+           fhir:link <https://www.gs1.org/gtin>
+         ] ;
          fhir:code [ fhir:v "00613994223838" ] ;
          fhir:display [ fhir:v "ADAPTA (TM) Pacemaker" ]
        ] )

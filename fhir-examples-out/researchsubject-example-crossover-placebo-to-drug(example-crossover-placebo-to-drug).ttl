@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example-crossover-placebo-to-drug"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -27,7 +30,10 @@
   fhir:progress ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-subject-state-type>
+         ] ;
          fhir:code [ fhir:v "Enrollment" ]
        ] ) ;
        fhir:text [ fhir:v "Enrollment status" ]
@@ -35,14 +41,20 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-subject-state-type>
+         ] ;
          fhir:code [ fhir:v "Enrollment" ]
        ] ) ;
        fhir:text [ fhir:v "Enrollment status" ]
      ] ;
      fhir:subjectState [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/research-subject-state>
+         ] ;
          fhir:code [ fhir:v "on-study" ]
        ] ) ;
        fhir:text [ fhir:v "On-study" ]

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "f002"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -37,7 +40,10 @@
      fhir:lifecycleStatus [ fhir:v "completed" ] ;
      fhir:achievementStatus [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/goal-achievement"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/goal-achievement"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/CodeSystem/goal-achievement>
+         ] ;
          fhir:code [ fhir:v "achieved" ] ;
          fhir:display [ fhir:v "Achieved" ]
        ] ) ;
@@ -63,7 +69,10 @@
        fhir:concept [
          fhir:coding ( [
            a sct:359615001 ;
-           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:link <http://snomed.info/sct>
+           ] ;
            fhir:code [ fhir:v "359615001" ] ;
            fhir:display [ fhir:v "Partial lobectomy of lung" ]
          ] )
@@ -86,7 +95,10 @@
   ] ) ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://www.bmc.nl/zorgportal/identifiers/careplans"^^xsd:anyURI ] ; #    urn:oid:2.16.840.1.113883.4.642.1.36   
+     fhir:system [
+       fhir:v "http://www.bmc.nl/zorgportal/identifiers/careplans"^^xsd:anyURI ;
+       fhir:link <http://www.bmc.nl/zorgportal/identifiers/careplans>
+     ] ; #    urn:oid:2.16.840.1.113883.4.642.1.36   
      fhir:value [ fhir:v "CP2934" ]
   ] ) ; # 
   fhir:status [ fhir:v "completed"] ; # 

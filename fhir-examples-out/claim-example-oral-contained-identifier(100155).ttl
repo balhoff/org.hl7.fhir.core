@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "100155"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -39,13 +42,19 @@
      ] )
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happyvalley.com/claim"^^xsd:anyURI ;
+       fhir:link <http://happyvalley.com/claim>
+     ] ;
      fhir:value [ fhir:v "12347" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "oral" ]
      ] )
   ] ; # 
@@ -56,13 +65,19 @@
   fhir:created [ fhir:v "2014-08-16"^^xsd:date] ; # 
   fhir:insurer [
      fhir:identifier [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/insurers"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/insurers"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/insurers>
+       ] ;
        fhir:value [ fhir:v "123456" ]
      ]
   ] ; # 
   fhir:provider [
      fhir:identifier [
-       fhir:system [ fhir:v "http://www.jurisdiction.com/careorganizations"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://www.jurisdiction.com/careorganizations"^^xsd:anyURI ;
+         fhir:link <http://www.jurisdiction.com/careorganizations>
+       ] ;
        fhir:value [ fhir:v "HOSP12345" ]
      ]
   ] ; # 
@@ -82,7 +97,10 @@
      fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
      fhir:provider [
        fhir:identifier [
-         fhir:system [ fhir:v "http://www.jurisdiction.com/providerId"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://www.jurisdiction.com/providerId"^^xsd:anyURI ;
+           fhir:link <http://www.jurisdiction.com/providerId>
+         ] ;
          fhir:value [ fhir:v "MD98765" ]
        ]
      ]

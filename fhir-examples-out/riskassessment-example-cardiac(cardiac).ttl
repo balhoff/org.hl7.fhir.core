@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "cardiac"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "risk-assessment-cardiac" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -64,13 +70,19 @@
        fhir:low [
          fhir:value [ fhir:v "39"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "years" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "a" ]
        ] ;
        fhir:high [
          fhir:value [ fhir:v "49"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "years" ] ;
-         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:link <http://unitsofmeasure.org>
+         ] ;
          fhir:code [ fhir:v "a" ]
        ]
      ]

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "referral"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,7 +25,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p><b>Patient:</b>Roel</p>\n      <p><b>Requestor:</b>Dokter Bronsig</p>\n      <p><b>Type:</b>Consultation</p>\n      <p><b>Target Date:</b>April 1 - April 31</p>\n      <p>COMPLETED</p>\n      <b>The patient had fever peaks over the last couple of days. He is worried about these peaks.</b>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://example.org/do-not-use/fhir-extensions/referral#requestingPractitioner"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://example.org/do-not-use/fhir-extensions/referral#requestingPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/do-not-use/fhir-extensions/referral#requestingPractitioner>
+     ] ;
      fhir:value [
        a fhir:Reference ;
        fhir:link <http://hl7.org/fhir/Practitioner/f201> ;
@@ -30,13 +36,19 @@
        fhir:display [ fhir:v "Dokter Bronsig" ]
      ]
   ] [
-     fhir:url [ fhir:v "http://example.org/do-not-use/fhir-extensions/referral#notes"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://example.org/do-not-use/fhir-extensions/referral#notes"^^xsd:anyURI ;
+       fhir:link <http://example.org/do-not-use/fhir-extensions/referral#notes>
+     ] ;
      fhir:value [
        a fhir:string ;
        fhir:v "The patient had fever peaks over the last couple of days. He is worried about these peaks."
      ]
   ] [
-     fhir:url [ fhir:v "http://example.org/do-not-use/fhir-extensions/referral#fulfillingEncounter"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://example.org/do-not-use/fhir-extensions/referral#fulfillingEncounter"^^xsd:anyURI ;
+       fhir:link <http://example.org/do-not-use/fhir-extensions/referral#fulfillingEncounter>
+     ] ;
      fhir:value [
        a fhir:Reference ;
        fhir:link <http://hl7.org/fhir/Encounter/f201> ;
@@ -44,37 +56,55 @@
      ]
   ] ) ; # 
   fhir:modifierExtension ( [
-     fhir:url [ fhir:v "http://example.org/do-not-use/fhir-extensions/referral#referredForService"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://example.org/do-not-use/fhir-extensions/referral#referredForService"^^xsd:anyURI ;
+       fhir:link <http://example.org/do-not-use/fhir-extensions/referral#referredForService>
+     ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:11429006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "11429006" ] ;
          fhir:display [ fhir:v "Consultation" ]
        ] )
      ]
   ] [
-     fhir:url [ fhir:v "http://example.org/do-not-use/fhir-extensions/referral#targetDate"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://example.org/do-not-use/fhir-extensions/referral#targetDate"^^xsd:anyURI ;
+       fhir:link <http://example.org/do-not-use/fhir-extensions/referral#targetDate>
+     ] ;
      fhir:value [
        a fhir:Period ;
        fhir:start [ fhir:v "2013-04-01"^^xsd:date ] ;
        fhir:end [ fhir:v "2013-04-15"^^xsd:date ]
      ]
   ] [
-     fhir:url [ fhir:v "http://example.org/do-not-use/fhir-extensions/referral#status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://example.org/do-not-use/fhir-extensions/referral#status"^^xsd:anyURI ;
+       fhir:link <http://example.org/do-not-use/fhir-extensions/referral#status>
+     ] ;
      fhir:value [
        a fhir:code ;
        fhir:v "complete"
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://goodhealth.org/basic/identifiers"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://goodhealth.org/basic/identifiers"^^xsd:anyURI ;
+       fhir:link <http://goodhealth.org/basic/identifiers>
+     ] ;
      fhir:value [ fhir:v "19283746" ]
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/basic-resource-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/basic-resource-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/basic-resource-type>
+       ] ;
        fhir:code [ fhir:v "referral" ]
      ] )
   ] ; # 

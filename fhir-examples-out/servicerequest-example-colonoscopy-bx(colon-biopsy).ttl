@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "colon-biopsy"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -25,7 +28,10 @@
      fhir:value [ fhir:v "12345" ]
   ] ) ; # 
   fhir:requisition [
-     fhir:system [ fhir:v "http://bumc.org/requisitions"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://bumc.org/requisitions"^^xsd:anyURI ;
+       fhir:link <http://bumc.org/requisitions>
+     ] ;
      fhir:value [ fhir:v "req12345" ]
   ] ; #    Example of biopsy service request that is part of a colonoscopy  
   fhir:status [ fhir:v "completed"] ; # 
@@ -34,7 +40,10 @@
      fhir:concept [
        fhir:coding ( [
          a sct:76164006 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "76164006" ] ;
          fhir:display [ fhir:v "Biopsy of colon (procedure)" ]
        ] ) ;

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -26,7 +29,10 @@
   fhir:status [ fhir:v "inactive"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/flag-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/flag-category"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/flag-category>
+       ] ;
        fhir:code [ fhir:v "safety" ] ;
        fhir:display [ fhir:v "Safety" ]
      ] ) ;
@@ -34,7 +40,10 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://example.org/local"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/local"^^xsd:anyURI ;
+         fhir:link <http://example.org/local>
+       ] ;
        fhir:code [ fhir:v "bigdog" ] ;
        fhir:display [ fhir:v "Big dog" ]
      ] ) ;

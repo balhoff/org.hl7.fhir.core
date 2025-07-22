@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "risk-of-bias-example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -24,7 +27,10 @@
      fhir:type [
        fhir:text [ fhir:v "FEvIR Object Identifier" ]
      ] ;
-     fhir:system [ fhir:v "https://fevir.net"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://fevir.net"^^xsd:anyURI ;
+       fhir:link <https://fevir.net>
+     ] ;
      fhir:value [ fhir:v "27751" ] ;
      fhir:assigner [
        fhir:display [ fhir:v "Computable Publishing LLC" ]
@@ -42,7 +48,10 @@
      fhir:informationType [ fhir:v "rating" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/certainty-type>
+         ] ;
          fhir:version [ fhir:v "5.0.0" ] ;
          fhir:code [ fhir:v "RiskOfBias" ] ;
          fhir:display [ fhir:v "Risk of bias" ] ;
@@ -51,7 +60,10 @@
      ] ;
      fhir:classifier ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/certainty-rating>
+         ] ;
          fhir:version [ fhir:v "5.0.0" ] ;
          fhir:code [ fhir:v "extremely-serious-concern" ] ;
          fhir:display [ fhir:v "extremely serious concern" ] ;
@@ -69,7 +81,10 @@
        ] ;
        fhir:classifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/certainty-rating>
+           ] ;
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "no-concern" ] ;
            fhir:display [ fhir:v "no serious concern" ] ;
@@ -89,7 +104,10 @@
        ] ;
        fhir:classifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/certainty-rating>
+           ] ;
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "serious-concern" ] ;
            fhir:display [ fhir:v "serious concern" ] ;
@@ -128,7 +146,10 @@
          ] ;
          fhir:classifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/certainty-rating>
+             ] ;
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "serious-concern" ] ;
              fhir:display [ fhir:v "serious concern" ] ;
@@ -153,7 +174,10 @@
        ] ;
        fhir:classifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/certainty-rating>
+           ] ;
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "very-serious-concern" ] ;
            fhir:display [ fhir:v "very serious concern" ] ;
@@ -172,7 +196,10 @@
          ] ;
          fhir:classifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/certainty-rating>
+             ] ;
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "very-serious-concern" ] ;
              fhir:display [ fhir:v "very serious concern" ] ;
@@ -231,7 +258,10 @@
        ] ;
        fhir:classifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/certainty-rating>
+           ] ;
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "no-concern" ] ;
            fhir:display [ fhir:v "no serious concern" ] ;
@@ -251,7 +281,10 @@
        ] ;
        fhir:classifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/certainty-rating>
+           ] ;
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "no-concern" ] ;
            fhir:display [ fhir:v "no serious concern" ] ;
@@ -271,7 +304,10 @@
        ] ;
        fhir:classifier ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+             fhir:link <http://hl7.org/fhir/certainty-rating>
+           ] ;
            fhir:version [ fhir:v "5.0.0" ] ;
            fhir:code [ fhir:v "very-serious-concern" ] ;
            fhir:display [ fhir:v "very serious concern" ] ;
@@ -290,7 +326,10 @@
          ] ;
          fhir:classifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/certainty-rating>
+             ] ;
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "very-serious-concern" ] ;
              fhir:display [ fhir:v "very serious concern" ] ;
@@ -314,7 +353,10 @@
          ] ;
          fhir:classifier ( [
            fhir:coding ( [
-             fhir:system [ fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "http://hl7.org/fhir/certainty-rating"^^xsd:anyURI ;
+               fhir:link <http://hl7.org/fhir/certainty-rating>
+             ] ;
              fhir:version [ fhir:v "5.0.0" ] ;
              fhir:code [ fhir:v "very-serious-concern" ] ;
              fhir:display [ fhir:v "very serious concern" ] ;
@@ -334,7 +376,10 @@
      fhir:summary [ fhir:v "Results not consistent with critically ill cohort." ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/certainty-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/certainty-type>
+         ] ;
          fhir:version [ fhir:v "5.0.0" ] ;
          fhir:code [ fhir:v "Inconsistency" ] ;
          fhir:display [ fhir:v "Inconsistency" ] ;

@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "660151"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,13 +24,19 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Vision Claim for Glasses</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://happysight.com/claim"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://happysight.com/claim"^^xsd:anyURI ;
+       fhir:link <http://happysight.com/claim>
+     ] ;
      fhir:value [ fhir:v "6612346" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/claim-type>
+       ] ;
        fhir:code [ fhir:v "vision" ]
      ] )
   ] ; # 
@@ -90,7 +99,10 @@
      fhir:careTeamSequence ( [ fhir:v "1"^^xsd:positiveInteger ] ) ;
      fhir:productOrService [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+           fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+         ] ;
          fhir:code [ fhir:v "glasses" ]
        ] )
      ] ;
@@ -110,7 +122,10 @@
        fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+           ] ;
            fhir:code [ fhir:v "frame" ]
          ] )
        ] ;
@@ -126,7 +141,10 @@
        fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+           ] ;
            fhir:code [ fhir:v "lens" ]
          ] )
        ] ;
@@ -145,7 +163,10 @@
        fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
        fhir:productOrService [
          fhir:coding ( [
-           fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://example.org/fhir/CodeSystem/ex-visionservice"^^xsd:anyURI ;
+             fhir:link <http://example.org/fhir/CodeSystem/ex-visionservice>
+           ] ;
            fhir:code [ fhir:v "fst" ]
          ] )
        ] ;

@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "summary"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>This code system \n        <code>http://hl7.org/fhir/CodeSystem/summary</code> defines many codes, but they are not represented here\n      </p>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/CodeSystem/summary"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/CodeSystem/summary"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/CodeSystem/summary>
+  ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.4.1821" ]
@@ -42,14 +48,20 @@
   fhir:description [ fhir:v "This is an example code system summary for the ACME codes for body site."] ; # 
   fhir:useContext ( [
      fhir:code [
-       fhir:system [ fhir:v "http://example.org/CodeSystem/contexttype"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://example.org/CodeSystem/contexttype"^^xsd:anyURI ;
+         fhir:link <http://example.org/CodeSystem/contexttype>
+       ] ;
        fhir:code [ fhir:v "species" ]
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          a sct:337915000 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:link <http://snomed.info/sct>
+         ] ;
          fhir:code [ fhir:v "337915000" ] ;
          fhir:display [ fhir:v "Homo sapiens (organism)" ]
        ] )

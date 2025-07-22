@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -34,7 +37,10 @@
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ;
+             fhir:link <http://www.ama-assn.org/go/cpt>
+           ] ;
            fhir:code [ fhir:v "70450" ] ;
            fhir:display [ fhir:v "CT, head, wo iv contrast" ]
          ] )
@@ -50,21 +56,29 @@
        fhir:name [ fhir:v "guideline-followed" ] ;
        fhir:value [
          a fhir:uri ;
-         fhir:v "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"^^xsd:anyURI
+         fhir:v "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"^^xsd:anyURI ;
+         fhir:link <http://someguidelineprovider.org/radiology-appropriateness-guidelines.html>
        ]
      ] )
   ] ) ; # 
   fhir:requestIdentifier [
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "guidanceRequest1" ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "guidanceResponse1" ]
   ] ) ; # 
   fhir:module [
      a fhir:uri ;
-     fhir:v "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"^^xsd:anyURI
+     fhir:v "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"^^xsd:anyURI ;
+     fhir:link <http://someguidelineprovider.org/radiology-appropriateness-guidelines.html>
   ] ; # 
   fhir:status [ fhir:v "success"] ; # 
   fhir:subject [

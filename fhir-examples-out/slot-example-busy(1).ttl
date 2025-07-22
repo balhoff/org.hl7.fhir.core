@@ -11,7 +11,10 @@
   fhir:id [ fhir:v "1"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -21,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n			25 Dec 2013 9:00am - 9:15am: <b>Busy</b> Physiotherapy\n		</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/identifiers/slots"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org/identifiers/slots"^^xsd:anyURI ;
+       fhir:link <http://example.org/identifiers/slots>
+     ] ;
      fhir:value [ fhir:v "123132" ]
   ] ) ; # 
   fhir:serviceCategory ( [

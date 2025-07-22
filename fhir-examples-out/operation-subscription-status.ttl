@@ -14,19 +14,28 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>URL: [base]/Subscription/$status</p>\n      <p>URL: [base]/Subscription/[id]/$status</p>\n      <p>Parameters</p>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Use</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Scope</b>\n          </td>\n          <td>\n            <b>Cardinality</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Binding</b>\n          </td>\n          <td>\n            <b>Documentation</b>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>id</td>\n          <td>type</td>\n          <td>0..*</td>\n          <td>\n            <a href=\"datatypes.html#id\">id</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>At the Instance level, this parameter is ignored. At the Resource level, one or more FHIR ids to Subscription resources to get status information for. In the absence of any specified ids, the server returns the status for all Subscriptions available to the caller. Multiple values are joined via OR (e.g., \"id1\" OR \"id2\").</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>IN</td>\n          <td>status</td>\n          <td>type</td>\n          <td>0..*</td>\n          <td>\n            <a href=\"datatypes.html#code\">code</a>\n          </td>\n          <td>\n            <a href=\"valueset-subscription-status.html\">Subscription Status</a> (Required)\n          </td>\n          <td>\n            <div>\n              <p>At the Instance level, this parameter is ignored. At the Resource level, a Subscription status code to filter by (e.g., \"active\"). In the absence of any specified status values, the server does not filter contents based on the status. Multiple values are joined via OR (e.g., \"error\" OR \"off\").</p>\n\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>OUT</td>\n          <td>return</td>\n          <td/>\n          <td>1..1</td>\n          <td>\n            <a href=\"bundle.html\">Bundle</a>\n          </td>\n          <td/>\n          <td>\n            <div>\n              <p>The operation returns a bundle containing zero or more SubscriptionStatus resources, one per Subscription in the request that was found. The Bundle type is \"searchset\".</p>\n\n            </div>\n          </td>\n        </tr>\n      </table>\n    </div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
      fhir:value [
        a fhir:integer ;
        fhir:v 2
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
      fhir:value [
        a fhir:code ;
        fhir:v "trial-use"
      ]
   ] ) ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-status"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/OperationDefinition/Subscription-status"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/OperationDefinition/Subscription-status>
+  ] ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
   fhir:name [ fhir:v "Status"] ; # 
   fhir:title [ fhir:v "Get Current Subscription Status for One or More Subscriptions"] ; # 
@@ -47,7 +56,10 @@
   fhir:description [ fhir:v "This operation is used to return the current status information about one or more topic-based Subscriptions."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ;
+         fhir:link <http://unstats.un.org/unsd/methods/m49/m49.htm>
+       ] ;
        fhir:code [ fhir:v "001" ] ;
        fhir:display [ fhir:v "World" ]
      ] )
@@ -78,7 +90,7 @@
        fhir:strength [ fhir:v "required" ] ;
        fhir:valueSet [
          fhir:v "http://hl7.org/fhir/ValueSet/subscription-status|5.0.0"^^xsd:anyURI ;
-         fhir:link <http://hl7.org/fhir/ValueSet/subscription-status|5.0.0>
+         fhir:link <http://hl7.org/fhir/ValueSet/subscription-status?version=5.0.0>
        ]
      ]
   ] [

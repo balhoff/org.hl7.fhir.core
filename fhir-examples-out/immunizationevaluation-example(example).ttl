@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -38,7 +41,10 @@
   fhir:targetDisease [
      fhir:coding ( [
        a sct:1857005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:link <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "1857005" ]
      ] )
   ] ; # 
@@ -48,7 +54,10 @@
   ] ; # 
   fhir:doseStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status>
+       ] ;
        fhir:code [ fhir:v "valid" ] ;
        fhir:display [ fhir:v "Valid" ]
      ] )

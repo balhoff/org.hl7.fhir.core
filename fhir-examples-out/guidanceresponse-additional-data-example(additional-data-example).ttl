@@ -12,7 +12,10 @@
   fhir:id [ fhir:v "additional-data-example"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:link <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] )
@@ -22,16 +25,23 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: GuidanceResponse</b><a name=\"additional-data-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource GuidanceResponse \"additional-data-example\" </p></div><p><b>requestIdentifier</b>: <span title=\"  This example demonstrates the response to a decision support guidance request where additional information is requested using the GuidanceResponse resource.  \">id: guidanceRequest2</span></p><p><b>identifier</b>: id: guidanceResponse2</p><p><b>module</b>: <a href=\"http://someguidelineprovider.org/diabetes-guidelines.html\">http://someguidelineprovider.org/diabetes-guidelines.html</a></p><p><b>status</b>: data-required</p><p><b>subject</b>: <a href=\"patient-example.html\">Patient/example</a> \"Peter CHALMERS\"</p><p><b>encounter</b>: <a href=\"encounter-example.html\">Encounter/example</a></p><p><b>occurrenceDateTime</b>: 2017-03-10T16:02:00Z</p><p><b>performer</b>: <a href=\"broken-link.html\">Device/software</a></p><h3>Reasons</h3><table class=\"grid\"><tr><td>-</td><td><b>Concept</b></td></tr><tr><td>*</td><td>Diabetes Guideline <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table><blockquote><p><b>dataRequirement</b></p><p><b>type</b>: Observation</p><p><b>mustSupport</b>: value</p><blockquote><p><b>codeFilter</b></p></blockquote></blockquote></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:requestIdentifier [
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "guidanceRequest2" ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://example.org"^^xsd:anyURI ;
+       fhir:link <http://example.org>
+     ] ;
      fhir:value [ fhir:v "guidanceResponse2" ]
   ] ) ; # 
   fhir:module [
      a fhir:uri ;
-     fhir:v "http://someguidelineprovider.org/diabetes-guidelines.html"^^xsd:anyURI
+     fhir:v "http://someguidelineprovider.org/diabetes-guidelines.html"^^xsd:anyURI ;
+     fhir:link <http://someguidelineprovider.org/diabetes-guidelines.html>
   ] ; # 
   fhir:status [ fhir:v "data-required"] ; # 
   fhir:subject [
@@ -59,7 +69,10 @@
        fhir:path [ fhir:v "code" ] ;
        fhir:code ( [
          a loinc:4548-4 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:link <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "4548-4" ] ;
          fhir:display [ fhir:v "Hemoglobin A1c/Hemoglobin.total in Blood" ]
        ] )
