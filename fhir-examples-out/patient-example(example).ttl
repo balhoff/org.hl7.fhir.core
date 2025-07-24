@@ -34,7 +34,10 @@
          fhir:code [ fhir:v "MR" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "urn:oid:1.2.36.146.595.217.0.1"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.36.146.595.217.0.1"^^xsd:anyURI ;
+       fhir:link <urn:oid:1.2.36.146.595.217.0.1>
+     ] ;
      fhir:value [ fhir:v "12345" ] ;
      fhir:period [
        fhir:start [ fhir:v "2001-05-06"^^xsd:date ]

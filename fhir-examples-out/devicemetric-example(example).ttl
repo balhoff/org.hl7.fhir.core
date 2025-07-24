@@ -32,14 +32,20 @@
   ] ) ; # 
   fhir:type [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "150456" ] ;
        fhir:display [ fhir:v "MDC_PULS_OXIM_SAT_O2" ]
      ] )
   ] ; # 
   fhir:unit [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "262688" ] ;
        fhir:display [ fhir:v "MDC_DIM_PERCENT" ]
      ] )

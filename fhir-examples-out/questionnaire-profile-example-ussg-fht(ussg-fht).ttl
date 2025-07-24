@@ -283,7 +283,10 @@
   ] ) ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "US" ]
      ] )
   ] ) ; # 

@@ -42,7 +42,10 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "152584" ] ;
        fhir:display [ fhir:v "MDC_FLOW_AWAY_EXP_FORCED_PEAK" ]
      ] )
@@ -63,7 +66,10 @@
      a fhir:Quantity ;
      fhir:value [ fhir:v "820"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "cL/s" ] ;
-     fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+       fhir:link <urn:iso:std:iso:11073:10101>
+     ] ;
      fhir:code [ fhir:v "265201" ]
   ] . # 
 

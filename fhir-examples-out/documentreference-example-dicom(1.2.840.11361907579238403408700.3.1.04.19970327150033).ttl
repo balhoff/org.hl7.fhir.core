@@ -41,7 +41,8 @@
      ] ;
      fhir:value [
        a fhir:uri ;
-       fhir:v "urn:oid:1.2.840.10008.1.2.1"^^xsd:anyURI
+       fhir:v "urn:oid:1.2.840.10008.1.2.1"^^xsd:anyURI ;
+       fhir:link <urn:oid:1.2.840.10008.1.2.1>
      ]
   ] ) ; #  
 #    this is added to demonstrate the use of DICOM extensions.
@@ -60,20 +61,29 @@
      fhir:type [
        fhir:text [ fhir:v "studyId" ]
      ] ;
-     fhir:system [ fhir:v "urn:dicom:uid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:dicom:uid"^^xsd:anyURI ;
+       fhir:link <urn:dicom:uid>
+     ] ;
      fhir:value [ fhir:v "urn:oid:1.2.840.113619.2.21.848.34082.0.538976288.3" ]
   ] [
      fhir:type [
        fhir:text [ fhir:v "seriesId" ]
      ] ;
-     fhir:system [ fhir:v "urn:dicom:uid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:dicom:uid"^^xsd:anyURI ;
+       fhir:link <urn:dicom:uid>
+     ] ;
      fhir:value [ fhir:v "urn:oid:1.2.840.113619.2.21.3408.700.0.757923840.3.0" ]
   ] [
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:text [ fhir:v "InstanceUID" ]
      ] ;
-     fhir:system [ fhir:v "urn:dicom:uid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:dicom:uid"^^xsd:anyURI ;
+       fhir:link <urn:dicom:uid>
+     ] ;
      fhir:value [ fhir:v "urn:oid:1.2.840.11361907579238403408700.3.1.04.19970327150033" ]
   ] ) ; # 
   fhir:status [ fhir:v "current"] ; # 

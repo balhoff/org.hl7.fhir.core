@@ -81,7 +81,10 @@
      ] ) ; #   Source active participant, the software making the . AlternativeUserId - Process ID  
      fhir:who [
        fhir:identifier [
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.4.2"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.4.2"^^xsd:anyURI ;
+           fhir:link <urn:oid:2.16.840.1.113883.4.2>
+         ] ;
          fhir:value [ fhir:v "2.16.840.1.113883.4.2" ]
        ]
      ] ;

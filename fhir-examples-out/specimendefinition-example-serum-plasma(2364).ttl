@@ -98,7 +98,10 @@
        ] ;
        fhir:cap [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:iso:std:iso:6710:2017"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:iso:std:iso:6710:2017"^^xsd:anyURI ;
+             fhir:link <urn:iso:std:iso:6710:2017>
+           ] ;
            fhir:code [ fhir:v "yellow" ] ;
            fhir:display [ fhir:v "yellow cap" ]
          ] )
@@ -219,7 +222,10 @@
        ] ;
        fhir:cap [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:iso:std:iso:6710:2017"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:iso:std:iso:6710:2017"^^xsd:anyURI ;
+             fhir:link <urn:iso:std:iso:6710:2017>
+           ] ;
            fhir:code [ fhir:v "green" ] ;
            fhir:display [ fhir:v "green cap" ]
          ] )

@@ -1101,7 +1101,10 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/cm-detectedissue-severity-v3>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.10" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -1169,7 +1172,10 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/cm-composition-status-v3>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.9" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -1240,10 +1246,16 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/101>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.1" ]
   ] [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:uuid:53cd62ee-033e-414c-9f58-3ca97b5ffc3b" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -1276,7 +1288,10 @@
   ] ) ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "US" ]
      ] )
   ] ) ; # 
@@ -1357,10 +1372,16 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/103>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.7" ]
   ] [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:uuid:53cd62ee-033e-414c-9f58-3ca97b5ffc3b" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -1435,7 +1456,10 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/102>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.3" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -3795,7 +3819,10 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/example2>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.8" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -3885,7 +3912,10 @@
      fhir:link <http://cds-hooks.hl7.org/ConceptMap/indicator-to-request-priority>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.6" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -3944,7 +3974,10 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/example-metadata>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.5" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -4092,7 +4125,10 @@
      fhir:link <http://hl7.org/fhir/ConceptMap/example-metadata-2>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.4" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -4338,7 +4374,10 @@
      fhir:link <http://hl7.org/fhir/uv/v2mappings/message-adt-a04-to-bundle>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.14.2" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 

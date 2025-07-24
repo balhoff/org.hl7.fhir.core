@@ -22,7 +22,10 @@
   fhir:type [ fhir:v "subscription-notification"] ; # 
   fhir:timestamp [ fhir:v "2020-04-17T10:24:13.1882432-05:00"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "urn:uuid:dae6bdbc-71ab-4043-b11e-59b52bda60ad"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:dae6bdbc-71ab-4043-b11e-59b52bda60ad"^^xsd:anyURI ;
+       fhir:link <urn:uuid:dae6bdbc-71ab-4043-b11e-59b52bda60ad>
+     ] ;
      fhir:resource ( <urn:uuid:dae6bdbc-71ab-4043-b11e-59b52bda60ad> )
   ] [
      fhir:fullUrl [

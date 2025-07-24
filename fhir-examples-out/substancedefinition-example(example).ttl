@@ -86,7 +86,10 @@
      fhir:preferred [ fhir:v true ] ;
      fhir:language ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:link <urn:ietf:bcp:47>
+         ] ;
          fhir:code [ fhir:v "en" ] ;
          fhir:display [ fhir:v "English" ]
        ] )
@@ -106,7 +109,10 @@
      fhir:preferred [ fhir:v false ] ;
      fhir:language ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:link <urn:ietf:bcp:47>
+         ] ;
          fhir:code [ fhir:v "el" ] ;
          fhir:display [ fhir:v "Greek" ]
        ] )
@@ -126,7 +132,10 @@
      fhir:preferred [ fhir:v false ] ;
      fhir:language ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:link <urn:ietf:bcp:47>
+         ] ;
          fhir:code [ fhir:v "bg" ] ;
          fhir:display [ fhir:v "Bulgarian" ]
        ] )
@@ -146,7 +155,10 @@
      fhir:preferred [ fhir:v false ] ;
      fhir:language ( [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:link <urn:ietf:bcp:47>
+         ] ;
          fhir:code [ fhir:v "en" ] ;
          fhir:display [ fhir:v "English" ]
        ] )

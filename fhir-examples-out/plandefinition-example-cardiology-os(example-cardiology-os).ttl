@@ -415,17 +415,29 @@
      fhir:link <http://va.gov/kas/orderset/B5-Cardiology-ChestPainCAD-OS>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.11.8" ]
   ] [
      fhir:use [ fhir:v "official" ] ; #   identifierName=\"B5\"   
-     fhir:system [ fhir:v "urn:va.gov:kbs:knart:artifact:r1"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:va.gov:kbs:knart:artifact:r1"^^xsd:anyURI ;
+       fhir:link <urn:va.gov:kbs:knart:artifact:r1>
+     ] ;
      fhir:value [ fhir:v "bb7ccea6-9744-4743-854a-bcffd87191f6" ]
   ] [
-     fhir:system [ fhir:v "urn:va.gov:kbs:contract:VA118-16-D-1008:to:VA-118-16-F-1008-0007"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:va.gov:kbs:contract:VA118-16-D-1008:to:VA-118-16-F-1008-0007"^^xsd:anyURI ;
+       fhir:link <urn:va.gov:kbs:contract:VA118-16-D-1008:to:VA-118-16-F-1008-0007>
+     ] ;
      fhir:value [ fhir:v "CLIN0004AG" ]
   ] [
-     fhir:system [ fhir:v "urn:cognitivemedicine.com:lab:jira"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:cognitivemedicine.com:lab:jira"^^xsd:anyURI ;
+       fhir:link <urn:cognitivemedicine.com:lab:jira>
+     ] ;
      fhir:value [ fhir:v "KP-914" ]
   ] ) ; # 
   fhir:version [ fhir:v "0.1"] ; # 

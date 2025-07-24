@@ -28,7 +28,10 @@
      fhir:link <http://hl7.org/fhir/TestScript/testscript-example-multisystem>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.12.6" ]
   ] ) ; # 
   fhir:version [ fhir:v "1.0"] ; # 
@@ -49,7 +52,10 @@
   fhir:description [ fhir:v "TestScript example resource showing use of origin and destination for multisystem support. The single origin will execute a Patient read against the two destination systems using user defined dynamic variables. The test engine will wait at each operation action with a defined origin and destination for the origin test system to send the expected FHIR operation to the destination test system. Once the expected request and response is observed, the test engine will continue with the test execution."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "US" ] ;
        fhir:display [ fhir:v "United States of America (the)" ]
      ] )

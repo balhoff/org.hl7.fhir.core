@@ -319,7 +319,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -441,7 +444,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -563,7 +569,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -685,7 +694,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -807,7 +819,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -891,7 +906,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -975,7 +993,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1059,7 +1080,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1151,7 +1175,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1243,7 +1270,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1335,7 +1365,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1427,7 +1460,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1598,7 +1634,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1689,7 +1728,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )
@@ -1798,7 +1840,10 @@
      fhir:text [ fhir:v "Micro" ]
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.9.195.4.61"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.9.195.4.61>
+       ] ;
        fhir:code [ fhir:v "RSLT" ] ;
        fhir:display [ fhir:v "Result" ]
      ] )

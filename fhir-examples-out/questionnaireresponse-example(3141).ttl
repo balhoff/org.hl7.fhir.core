@@ -49,7 +49,10 @@
        fhir:type [
          fhir:text [ fhir:v "Dutch BSN" ]
        ] ;
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.2.4.6.3>
+       ] ;
        fhir:value [ fhir:v "188912345" ]
      ] ) ;
      fhir:gender [ fhir:v "male" ] ;
@@ -121,7 +124,10 @@
      fhir:link <http://hl7.org/fhir/Procedure/f201> ;
      fhir:reference [ fhir:v "Procedure/f201" ]
   ] ) ; # 
-  fhir:questionnaire [ fhir:v "urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b"^^xsd:anyURI] ; # 
+  fhir:questionnaire [
+     fhir:v "urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b"^^xsd:anyURI ;
+     fhir:link <urn:uuid:95eaedf7-8a24-478a-8300-39acc44c746b>
+  ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:subject [
      fhir:reference [ fhir:v "#patsub" ]

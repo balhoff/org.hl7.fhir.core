@@ -29,7 +29,10 @@
      fhir:type [
        fhir:text [ fhir:v "UZI-nummer" ]
      ] ;
-     fhir:system [ fhir:v "urn:oid:2.16.528.1.1007.3.1"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:2.16.528.1.1007.3.1"^^xsd:anyURI ;
+       fhir:link <urn:oid:2.16.528.1.1007.3.1>
+     ] ;
      fhir:value [ fhir:v "12345678901" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 

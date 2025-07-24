@@ -22,10 +22,16 @@
   fhir:type [ fhir:v "message"] ; # 
   fhir:timestamp [ fhir:v "2020-04-17T10:24:13.1882432-05:00"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "urn:uuid:801728e4-75e9-42e6-b6d0-0cc3e835a70d"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:801728e4-75e9-42e6-b6d0-0cc3e835a70d"^^xsd:anyURI ;
+       fhir:link <urn:uuid:801728e4-75e9-42e6-b6d0-0cc3e835a70d>
+     ] ;
      fhir:resource ( <urn:uuid:801728e4-75e9-42e6-b6d0-0cc3e835a70d> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:c13b0b59-525c-4e41-b874-b5b87538a5b7"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:c13b0b59-525c-4e41-b874-b5b87538a5b7"^^xsd:anyURI ;
+       fhir:link <urn:uuid:c13b0b59-525c-4e41-b874-b5b87538a5b7>
+     ] ;
      fhir:resource ( <urn:uuid:c13b0b59-525c-4e41-b874-b5b87538a5b7> )
   ] ) . # 
 
@@ -51,6 +57,7 @@
      ]
   ] ; # 
   fhir:focus ( [
+     fhir:link <urn:uuid:c13b0b59-525c-4e41-b874-b5b87538a5b7> ;
      fhir:reference [ fhir:v "urn:uuid:c13b0b59-525c-4e41-b874-b5b87538a5b7" ]
   ] ) . # 
 
@@ -59,7 +66,10 @@
   fhir:type [ fhir:v "subscription-notification"] ; # 
   fhir:timestamp [ fhir:v "2020-04-17T10:24:13.1882432-05:00"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "urn:uuid:bef7e5fb-b5ad-4b59-a618-1bace2bbf5c0"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:bef7e5fb-b5ad-4b59-a618-1bace2bbf5c0"^^xsd:anyURI ;
+       fhir:link <urn:uuid:bef7e5fb-b5ad-4b59-a618-1bace2bbf5c0>
+     ] ;
      fhir:resource ( <urn:uuid:bef7e5fb-b5ad-4b59-a618-1bace2bbf5c0> )
   ] [
      fhir:fullUrl [

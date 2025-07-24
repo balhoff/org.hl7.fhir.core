@@ -203,7 +203,10 @@
                fhir:value [
                  a fhir:CodeableConcept ;
                  fhir:coding ( [
-                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+                   fhir:system [
+                     fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ;
+                     fhir:link <urn:oid:2.16.840.1.113883.6.238>
+                   ] ;
                    fhir:code [ fhir:v "2028-9" ] ;
                    fhir:display [ fhir:v "Asian" ]
                  ] ) ;

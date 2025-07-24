@@ -36,7 +36,10 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.113883.6.24>
+       ] ;
        fhir:code [ fhir:v "131328" ] ;
        fhir:display [ fhir:v "MDC_ECG_ELEC_POTL" ]
      ] )
@@ -61,7 +64,10 @@
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ;
+           fhir:link <urn:oid:2.16.840.1.113883.6.24>
+         ] ;
          fhir:code [ fhir:v "131329" ] ;
          fhir:display [ fhir:v "MDC_ECG_ELEC_POTL_I" ]
        ] )
@@ -82,7 +88,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ;
+           fhir:link <urn:oid:2.16.840.1.113883.6.24>
+         ] ;
          fhir:code [ fhir:v "131330" ] ;
          fhir:display [ fhir:v "MDC_ECG_ELEC_POTL_II" ]
        ] )
@@ -103,7 +112,10 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:oid:2.16.840.1.113883.6.24"^^xsd:anyURI ;
+           fhir:link <urn:oid:2.16.840.1.113883.6.24>
+         ] ;
          fhir:code [ fhir:v "131389" ] ;
          fhir:display [ fhir:v "MDC_ECG_ELEC_POTL_III" ]
        ] )

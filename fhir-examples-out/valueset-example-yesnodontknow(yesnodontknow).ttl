@@ -28,7 +28,10 @@
      fhir:link <http://hl7.org/fhir/ValueSet/yesnodontknow>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.3.3149" ]
   ] ) ; # 
   fhir:version [ fhir:v "5.0.0"] ; # 
@@ -55,7 +58,10 @@
      ] )
   ] ; # 
   fhir:expansion [
-     fhir:identifier [ fhir:v "urn:uuid:bf99fe50-2c2b-41ad-bd63-bee6919810b4"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:v "urn:uuid:bf99fe50-2c2b-41ad-bd63-bee6919810b4"^^xsd:anyURI ;
+       fhir:link <urn:uuid:bf99fe50-2c2b-41ad-bd63-bee6919810b4>
+     ] ;
      fhir:timestamp [ fhir:v "2015-07-14T10:00:00Z"^^xsd:dateTime ] ;
      fhir:contains ( [
        fhir:system [

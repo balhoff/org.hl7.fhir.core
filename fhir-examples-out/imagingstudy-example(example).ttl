@@ -25,7 +25,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">CT Chest.  John Smith (MRN: 09236). Accession: W12342398. Performed: 2011-01-01. 3 series, 12 images.</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:dicom:uid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:dicom:uid"^^xsd:anyURI ;
+       fhir:link <urn:dicom:uid>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430045" ]
   ] ) ; # 
   fhir:status [ fhir:v "available"] ; # 
@@ -66,7 +69,10 @@
      fhir:instance ( [
        fhir:uid [ fhir:v "2.16.124.113543.6003.189642796.63084.16748.2599092903" ] ;
        fhir:sopClass [
-         fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+           fhir:link <urn:ietf:rfc:3986>
+         ] ;
          fhir:code [ fhir:v "urn:oid:1.2.840.10008.5.1.4.1.1.2" ]
        ] ;
        fhir:number [ fhir:v "1"^^xsd:nonNegativeInteger ]

@@ -194,7 +194,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C4908" ] ;
            fhir:display [ fhir:v "Ovarian Carcinoma" ]
          ] )
@@ -324,7 +327,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C4872" ] ;
            fhir:display [ fhir:v "Breast Carcinoma" ]
          ] )
@@ -433,7 +439,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C2955" ] ;
            fhir:display [ fhir:v "Colorectal Carcinoma" ]
          ] )
@@ -533,7 +542,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C2955" ] ;
            fhir:display [ fhir:v "Rectal Carcinoma" ]
          ] )
@@ -633,7 +645,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C2924" ] ;
            fhir:display [ fhir:v "Ductal Carcinoma In Situ of the Breast" ]
          ] )
@@ -846,7 +861,10 @@
            fhir:code [ fhir:v "657" ] ; #  No system or OID for NCBI Entrez yet  
            fhir:display [ fhir:v "BRCA2" ]
          ] [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.133"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.6.133"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.6.133>
+           ] ;
            fhir:code [ fhir:v "1101" ] ;
            fhir:display [ fhir:v "BRCA2" ]
          ] ) ;
@@ -1126,7 +1144,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C3224" ] ;
            fhir:display [ fhir:v "Melanoma" ]
          ] )
@@ -1404,7 +1425,10 @@
      fhir:condition ( [
        fhir:code [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:oid:2.16.840.1.113883.3.26.1.1"^^xsd:anyURI ;
+             fhir:link <urn:oid:2.16.840.1.113883.3.26.1.1>
+           ] ;
            fhir:code [ fhir:v "C4872" ] ;
            fhir:display [ fhir:v "Breast Carcinoma" ]
          ] )

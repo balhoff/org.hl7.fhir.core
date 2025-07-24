@@ -69,7 +69,10 @@
        fhir:code [ fhir:v "59408-5" ] ; #    LOINC   
        fhir:display [ fhir:v "Oxygen saturation in Arterial blood by Pulse oximetry" ]
      ] [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "150456" ] ; #       mdc      
        fhir:display [ fhir:v "MDC_PULS_OXIM_SAT_O2" ]
      ] )

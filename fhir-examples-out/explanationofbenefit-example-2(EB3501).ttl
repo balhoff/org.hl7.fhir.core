@@ -222,7 +222,10 @@
      fhir:text [ fhir:v "Invalid claim" ] ;
      fhir:language [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:link <urn:ietf:bcp:47>
+         ] ;
          fhir:code [ fhir:v "en-CA" ]
        ] )
      ]

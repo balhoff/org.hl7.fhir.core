@@ -87,13 +87,19 @@
        fhir:status [ fhir:v "DELETE" ] #    delete matching resource - but you can't find out what was deleted - an inherent limitation in a condition delete   
      ] #    response to the conditional delete operation   
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233"^^xsd:anyURI ;
+       fhir:link <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233>
+     ] ;
      fhir:resource ( <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> ) ; #    operation response   ,    etc.  
      fhir:response [
        fhir:status [ fhir:v "200 ok" ] #    POST to [base]\/ValueSet\/$lookup - invoking a lookup operation (see Terminology Service)   
      ]
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125"^^xsd:anyURI ;
+       fhir:link <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125>
+     ] ;
      fhir:resource ( <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> ) ; #    response to search   ,    etc.  
      fhir:response [
        fhir:status [ fhir:v "200 OK" ]

@@ -24,7 +24,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:oid:0.1.2.3.4.5.6.7"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:0.1.2.3.4.5.6.7"^^xsd:anyURI ;
+       fhir:link <urn:oid:0.1.2.3.4.5.6.7>
+     ] ;
      fhir:value [ fhir:v "654321" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 

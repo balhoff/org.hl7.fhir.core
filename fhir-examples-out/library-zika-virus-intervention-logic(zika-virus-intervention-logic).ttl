@@ -105,19 +105,28 @@
      fhir:type [ fhir:v "Condition" ] ;
      fhir:codeFilter ( [
        fhir:path [ fhir:v "code" ] ;
-       fhir:valueSet [ fhir:v "urn:oid:2.999.0.1.2.3"^^xsd:anyURI ]
+       fhir:valueSet [
+         fhir:v "urn:oid:2.999.0.1.2.3"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.999.0.1.2.3>
+       ]
      ] )
   ] [
      fhir:type [ fhir:v "Observation" ] ;
      fhir:codeFilter ( [
        fhir:path [ fhir:v "code" ] ;
-       fhir:valueSet [ fhir:v "urn:oid:2.999.0.1.2.3"^^xsd:anyURI ]
+       fhir:valueSet [
+         fhir:v "urn:oid:2.999.0.1.2.3"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.999.0.1.2.3>
+       ]
      ] )
   ] [
      fhir:type [ fhir:v "Condition" ] ;
      fhir:codeFilter ( [
        fhir:path [ fhir:v "code" ] ;
-       fhir:valueSet [ fhir:v "urn:oid:2.16.840.1.114222.4.11.7459"^^xsd:anyURI ]
+       fhir:valueSet [
+         fhir:v "urn:oid:2.16.840.1.114222.4.11.7459"^^xsd:anyURI ;
+         fhir:link <urn:oid:2.16.840.1.114222.4.11.7459>
+       ]
      ] )
   ] ) ; # 
   fhir:content ( [

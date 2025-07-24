@@ -34,7 +34,10 @@
          fhir:display [ fhir:v "System Identifier" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ;
+       fhir:link <urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680>
+     ] ;
      fhir:value [ fhir:v "00-09-1F-FF-FE-80-07-3A" ]
   ] [
      fhir:type [
@@ -75,7 +78,10 @@
   fhir:modelNumber [ fhir:v "UA-767PBT-C"] ; # 
   fhir:type ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "65573" ] ;
        fhir:display [ fhir:v "MDC_MOC_VMS_MDS_SIMP" ]
      ] ) ;
@@ -84,7 +90,10 @@
   fhir:version ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "532352" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version" ]
@@ -94,7 +103,10 @@
   fhir:conformsTo ( [
      fhir:specification [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "528391" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter" ]
@@ -104,7 +116,10 @@
   fhir:property ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "532353" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list" ]
@@ -144,7 +159,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "68220" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol" ]
@@ -152,7 +170,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "532224" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_SYNC_NONE: No time synchronization" ]

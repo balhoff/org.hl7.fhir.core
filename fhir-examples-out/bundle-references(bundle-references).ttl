@@ -28,7 +28,10 @@
      ] ;
      fhir:resource ( <http://example.org/fhir/Patient/23> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d"^^xsd:anyURI ;
+       fhir:link <urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d>
+     ] ;
      fhir:resource ( <urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d> )
   ] [
      fhir:fullUrl [
@@ -174,6 +177,7 @@
      ] )
   ] ; # 
   fhir:subject [
+     fhir:link <urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d> ;
      fhir:reference [ fhir:v "urn:uuid:04121321-4af5-424c-a0e1-ed3aab1c349d" ] #    reference to the second patient above   
   ] . # 
 

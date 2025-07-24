@@ -71,14 +71,20 @@
      ] ;
      fhir:who [
        fhir:identifier [
-         fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+           fhir:link <urn:ietf:rfc:3986>
+         ] ;
          fhir:value [ fhir:v "mailto://hhd@ssa.gov" ]
        ]
      ] #    very often, the user won't have a known system - these aren't available \n      for security system log ons. But where you can define it, you should.\n      Most of the time the userId is fully qualfied such as an email address	    
   ] ) ; #    signer = Harold Hippocrates   
   fhir:signature ( [
      fhir:type ( [
-       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ;
+         fhir:link <urn:iso-astm:E1762-95:2013>
+       ] ;
        fhir:code [ fhir:v "1.2.840.10065.1.12.1.5" ] ;
        fhir:display [ fhir:v "Verification Signature" ]
      ] ) ; #    verification signature   

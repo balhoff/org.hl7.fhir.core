@@ -34,7 +34,10 @@
          fhir:code [ fhir:v "MR" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "urn:oid:0.1.2.3.4.5.6.7"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:0.1.2.3.4.5.6.7"^^xsd:anyURI ;
+       fhir:link <urn:oid:0.1.2.3.4.5.6.7>
+     ] ;
      fhir:value [ fhir:v "123458" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 

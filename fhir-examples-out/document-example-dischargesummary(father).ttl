@@ -29,7 +29,10 @@
      ] )
   ] ; # 
   fhir:identifier [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0" ]
   ] ; # 
   fhir:type [ fhir:v "document"] ; # 
@@ -59,21 +62,36 @@
      ] ;
      fhir:resource ( <http://fhir.healthintersections.com.au/open/Encounter/doc-example> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81"^^xsd:anyURI ;
+       fhir:link <urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81>
+     ] ;
      fhir:resource ( <urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86"^^xsd:anyURI ;
+       fhir:link <urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86>
+     ] ;
      fhir:resource ( <urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1"^^xsd:anyURI ;
+       fhir:link <urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1>
+     ] ;
      fhir:resource ( <urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1> )
   ] [
-     fhir:fullUrl [ fhir:v "urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637"^^xsd:anyURI ;
+       fhir:link <urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637>
+     ] ;
      fhir:resource ( <urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637> )
   ] ) ; #      The Composition resource     
   fhir:signature [
      fhir:type ( [
-       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ;
+         fhir:link <urn:iso-astm:E1762-95:2013>
+       ] ;
        fhir:code [ fhir:v "1.2.840.10065.1.12.1.1" ] ;
        fhir:display [ fhir:v "Author's Signature" ]
      ] ) ;
@@ -145,6 +163,7 @@
        fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n              <table>\n\n                <thead>\n\n                  <tr>\n\n                    <td>Details</td>\n\n                    <td/>\n\n                  </tr>\n\n                </thead>\n\n                <tbody>\n\n                  <tr>\n\n                    <td>Acute Asthmatic attack. Was wheezing for days prior to admission.</td>\n\n                    <td/>\n\n                  </tr>\n\n                </tbody>\n\n              </table>\n\n            </div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
+       fhir:link <urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81> ;
        fhir:reference [ fhir:v "urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81" ]
      ] )
   ] [
@@ -165,8 +184,10 @@
        fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n              <table>\n\n                <thead>\n\n                  <tr>\n\n                    <td>Medication</td>\n\n                    <td>Last Change</td>\n\n                    <td>Last ChangeReason</td>\n\n                  </tr>\n\n                </thead>\n\n                <tbody>\n\n                  <tr>\n\n                    <td>Theophylline 200mg BD after meals</td>\n\n                    <td>continued</td>\n\n                  </tr>\n\n                  <tr>\n\n                    <td>Ventolin Inhaler</td>\n\n                    <td>stopped</td>\n\n                    <td>Getting side effect of tremor</td>\n\n                  </tr>\n\n                </tbody>\n\n              </table>\n\n            </div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
+       fhir:link <urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86> ;
        fhir:reference [ fhir:v "urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86" ]
      ] [
+       fhir:link <urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1> ;
        fhir:reference [ fhir:v "urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1" ]
      ] ) #      This is an entry that refers to a MedicationRequest resource in this document.\n                It is a new medication (as indicated by the flag)    
   ] [
@@ -187,6 +208,7 @@
        fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n              <table>\n\n                <thead>\n\n                  <tr>\n\n                    <td>Allergen</td>\n\n                    <td>Reaction</td>\n\n                  </tr>\n\n                </thead>\n\n                <tbody>\n\n                  <tr>\n\n                    <td>Doxycycline</td>\n\n                    <td>Hives</td>\n\n                  </tr>\n\n                </tbody>\n\n              </table>\n\n            </div>"^^rdf:XMLLiteral
      ] ;
      fhir:entry ( [
+       fhir:link <urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637> ;
        fhir:reference [ fhir:v "urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637" ]
      ] )
   ] ) . # 

@@ -30,7 +30,10 @@
      ]
   ] ) ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "urn:uuid:2866af9c-137d-4458-a8a9-eeeec0ce5583"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "urn:uuid:2866af9c-137d-4458-a8a9-eeeec0ce5583"^^xsd:anyURI ;
+       fhir:link <urn:uuid:2866af9c-137d-4458-a8a9-eeeec0ce5583>
+     ] ;
      fhir:resource ( <urn:uuid:2866af9c-137d-4458-a8a9-eeeec0ce5583> ) ;
      fhir:search [
        fhir:mode [ fhir:v "outcome" ] #   this is not a match - it's about the search  

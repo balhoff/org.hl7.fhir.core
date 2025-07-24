@@ -37,7 +37,10 @@
      fhir:asset ( [
        fhir:type ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+             fhir:link <urn:ietf:rfc:3986>
+           ] ;
            fhir:code [ fhir:v "urn:uuid:3a48c68c-318d-4c68-8471-4a3c10fcb41b" ] ;
            fhir:display [ fhir:v "RicardianContract" ]
          ] )

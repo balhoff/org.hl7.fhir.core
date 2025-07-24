@@ -28,7 +28,10 @@
      fhir:link <http://hl7.org/fhir/NamingSystem/example-id>
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:link <urn:ietf:rfc:3986>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.22.3" ]
   ] ) ; # 
   fhir:name [ fhir:v "AustalianHealthcareIdentifierIndividual"] ; # 
@@ -59,7 +62,10 @@
   fhir:description [ fhir:v "Australian HI Identifier as established by relevant regulations etc."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "AU" ]
      ] )
   ] ) ; # 

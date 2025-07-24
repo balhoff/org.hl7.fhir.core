@@ -29,14 +29,20 @@
      fhir:type [
        fhir:text [ fhir:v "BSN" ]
      ] ;
-     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ;
+       fhir:link <urn:oid:2.16.840.1.113883.2.4.6.3>
+     ] ;
      fhir:value [ fhir:v "123456789" ]
   ] [
      fhir:use [ fhir:v "official" ] ; #    The identifier for this individual   
      fhir:type [
        fhir:text [ fhir:v "BSN" ]
      ] ;
-     fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:2.16.840.1.113883.2.4.6.3"^^xsd:anyURI ;
+       fhir:link <urn:oid:2.16.840.1.113883.2.4.6.3>
+     ] ;
      fhir:value [ fhir:v "123456789" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; #    Indicates that the patient is not part of a multiple birth    
@@ -135,7 +141,10 @@
   fhir:communication ( [
      fhir:language [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:link <urn:ietf:bcp:47>
+         ] ;
          fhir:code [ fhir:v "nl-NL" ] ;
          fhir:display [ fhir:v "Dutch" ]
        ] )

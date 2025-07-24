@@ -93,7 +93,10 @@
        ] ) ;
        fhir:language [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+             fhir:link <urn:ietf:bcp:47>
+           ] ;
            fhir:version [ fhir:v "4.0.1" ] ;
            fhir:code [ fhir:v "en" ] ;
            fhir:display [ fhir:v "English" ]
@@ -114,7 +117,10 @@
        ] ;
        fhir:language [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+             fhir:link <urn:ietf:bcp:47>
+           ] ;
            fhir:code [ fhir:v "en" ] ;
            fhir:display [ fhir:v "English" ]
          ] )
@@ -167,7 +173,10 @@
        fhir:articleDate [ fhir:v "2020-11-12"^^xsd:date ] ;
        fhir:language ( [
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+             fhir:link <urn:ietf:bcp:47>
+           ] ;
            fhir:version [ fhir:v "4.0.1" ] ;
            fhir:code [ fhir:v "en" ] ;
            fhir:display [ fhir:v "English" ]

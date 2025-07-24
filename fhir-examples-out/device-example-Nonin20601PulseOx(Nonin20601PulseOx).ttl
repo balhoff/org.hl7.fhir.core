@@ -34,7 +34,10 @@
          fhir:display [ fhir:v "System Identifier" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680"^^xsd:anyURI ;
+       fhir:link <urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680>
+     ] ;
      fhir:value [ fhir:v "00-1C-05-04-00-00-78-25" ]
   ] [
      fhir:type [
@@ -75,7 +78,10 @@
   fhir:modelNumber [ fhir:v "Model 3150"] ; # 
   fhir:type ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:link <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "65573" ] ;
        fhir:display [ fhir:v "MDC_MOC_VMS_MDS_SIMP" ]
      ] ) ;
@@ -84,7 +90,10 @@
   fhir:version ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "531976" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_ID_PROD_SPEC_FW: Firmware revision" ]
@@ -93,7 +102,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "532352" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version" ]
@@ -103,7 +115,10 @@
   fhir:conformsTo ( [
      fhir:specification [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "528388" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_DEV_SPEC_PROFILE_PULS_OXIM: Pulse Oximeter" ]
@@ -113,7 +128,10 @@
   fhir:property ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "532353" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list" ]
@@ -153,7 +171,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "68220" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol" ]
@@ -161,7 +182,10 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "532224" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_SYNC_NONE: No time synchronization" ]
@@ -235,7 +259,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "68222" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_RES_ABS: Resolution of absolute time clock" ]
@@ -252,7 +279,10 @@
   ] [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+           fhir:link <urn:iso:std:iso:11073:10101>
+         ] ;
          fhir:code [ fhir:v "68222" ]
        ] ) ;
        fhir:text [ fhir:v "MDC_TIME_RES_REL: Resolution of relative time clock" ]

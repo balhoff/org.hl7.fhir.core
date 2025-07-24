@@ -37,7 +37,10 @@
      fhir:reference [ fhir:v "Immunization/example" ]
   ] ) ; # 
   fhir:recorded [ fhir:v "2015-06-27T08:39:24+10:00"^^xsd:dateTime] ; # 
-  fhir:policy ( [ fhir:v "urn:ihe:pcc:qedm:2017:document-provenance-policy"^^xsd:anyURI] ) ; # 
+  fhir:policy ( [
+     fhir:v "urn:ihe:pcc:qedm:2017:document-provenance-policy"^^xsd:anyURI ;
+     fhir:link <urn:ihe:pcc:qedm:2017:document-provenance-policy>
+  ] ) ; # 
   fhir:activity [
      fhir:coding ( [
        fhir:system [

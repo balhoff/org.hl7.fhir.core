@@ -45,7 +45,10 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:ihe:event-type-code"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:ihe:event-type-code"^^xsd:anyURI ;
+         fhir:link <urn:ihe:event-type-code>
+       ] ;
        fhir:code [ fhir:v "ITI-32" ] ;
        fhir:display [ fhir:v "Distribute Document Set on Media" ]
      ] )
@@ -140,7 +143,10 @@
        fhir:identifier [
          fhir:type [
            fhir:coding ( [
-             fhir:system [ fhir:v "urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"^^xsd:anyURI ] ;
+             fhir:system [
+               fhir:v "urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"^^xsd:anyURI ;
+               fhir:link <urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd>
+             ] ;
              fhir:code [ fhir:v "IHE XDS Metadata" ] ;
              fhir:display [ fhir:v "submission set classificationNode" ]
            ] )

@@ -26,7 +26,10 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
-     fhir:system [ fhir:v "urn:dicom:uid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:dicom:uid"^^xsd:anyURI ;
+       fhir:link <urn:dicom:uid>
+     ] ;
      fhir:value [ fhir:v "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430046" ]
   ] [
      fhir:use [ fhir:v "secondary" ] ;
@@ -182,7 +185,10 @@
      fhir:instance ( [
        fhir:uid [ fhir:v "2.16.124.113543.6003.1154777499.30246.19789.3503430045.1.1" ] ;
        fhir:sopClass [
-         fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+           fhir:link <urn:ietf:rfc:3986>
+         ] ;
          fhir:code [ fhir:v "urn:oid:1.2.840.10008.5.1.4.1.1.2" ]
        ] ;
        fhir:number [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -190,7 +196,10 @@
      ] [
        fhir:uid [ fhir:v "2.16.124.113543.6003.1154777499.30246.19789.3503430045.1.2" ] ;
        fhir:sopClass [
-         fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+           fhir:link <urn:ietf:rfc:3986>
+         ] ;
          fhir:code [ fhir:v "urn:oid:1.2.840.10008.5.1.4.1.1.2" ]
        ] ;
        fhir:number [ fhir:v "2"^^xsd:nonNegativeInteger ] ;

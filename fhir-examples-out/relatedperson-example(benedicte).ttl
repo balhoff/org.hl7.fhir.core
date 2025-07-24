@@ -28,7 +28,10 @@
      fhir:type [
        fhir:text [ fhir:v "INSEE" ]
      ] ;
-     fhir:system [ fhir:v "urn:oid:1.2.250.1.61"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.250.1.61"^^xsd:anyURI ;
+       fhir:link <urn:oid:1.2.250.1.61>
+     ] ;
      fhir:value [ fhir:v "272117510400399" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 
